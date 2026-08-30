@@ -1,0 +1,7 @@
+interface:
+  display_name: "真实社交"
+  short_description: "分析聊天阶段、识别候选分链，并按完整体系提供真实社交回复建议"
+  default_prompt: "Use $real-social to analyze the chat stage, explain the evidence, align on the user's goal, and provide a small set of context-matched reply examples when requested."
+
+policy:
+  allow_implicit_invocation: true

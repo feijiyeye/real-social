@@ -1,0 +1,198 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-08-27T17:32:32+08:00",
+  "package_id": "real-social",
+  "route": "intimacy_conditional",
+  "label": "亲密与性话题条件性参考",
+  "entries": [
+    {
+      "phrase_key": "PK-c88d0f32c297db7b",
+      "text": "做大做强 带我上床",
+      "sections": [
+        "六、性张力与调情（Sexual Tension & Flirting） / 6.4 情绪拉伸（Jackson）",
+        "情绪拉伸"
+      ],
+      "speaker_roles": [
+        "unknown"
+      ],
+      "occurrence_count": 2,
+      "callability": "candidate_callable_after_context_review",
+      "source_refs": [
+        {
+          "file": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_002_emotional_tension.md",
+          "locator": "line:13",
+          "section": "情绪拉伸"
+        }
+      ]
+    },
+    {
+      "phrase_key": "PK-a46a224674794ce0",
+      "text": "我们可以淡而悠长 除非你想炽热一点",
+      "sections": [
+        "六、性张力与调情（Sexual Tension & Flirting） / 6.4 情绪拉伸（Jackson）",
+        "七、引导投资与邀约（Leading Investment & Date Invitation） / 7.5 给对方反馈/撩（Jackson）",
+        "十、作联系感与日常维护（Connection & Maintenance） / 10.1 作联系感语句（Jackson）",
+        "情绪拉伸",
+        "做联系感"
+      ],
+      "speaker_roles": [
+        "unknown"
+      ],
+      "occurrence_count": 5,
+      "callability": "candidate_callable_after_context_review",
+      "source_refs": [
+        {
+          "file": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_002_emotional_tension.md",
+          "locator": "line:15",
+          "section": "情绪拉伸"
+        }
+      ]
+    },
+    {
+      "phrase_key": "PK-1d5e6ad49fddc1c3",
+      "text": "不解释 抱抱就够了",
+      "sections": [
+        "四、废测破解与框架控制（Shit Test Handling & Frame Control） / 4.3 阻碍废测解决（Jackson）",
+        "六、性张力与调情（Sexual Tension & Flirting） / 6.2 张力与画面感（Jackson）",
+        "六、性张力与调情（Sexual Tension & Flirting） / 6.4 情绪拉伸（Jackson）",
+        "情绪拉伸",
+        "阻碍废测解决"
+      ],
+      "speaker_roles": [
+        "unknown"
+      ],
+      "occurrence_count": 5,
+      "callability": "candidate_callable_after_context_review",
+      "source_refs": [
+        {
+          "file": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_002_emotional_tension.md",
+          "locator": "line:27",
+          "section": "情绪拉伸"
+        }
+      ]
+    },
+    {
+      "phrase_key": "PK-f905b54762f17542",
+      "text": "平时得正经 做的时候浪",
+      "sections": [
+        "六、性张力与调情（Sexual Tension & Flirting） / 6.2 张力与画面感（Jackson）",
+        "张力与画面感"
+      ],
+      "speaker_roles": [
+        "unknown"
+      ],
+      "occurrence_count": 2,
+      "callability": "candidate_callable_after_context_review",
+      "source_refs": [
+        {
+          "file": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_017_tension_and_visual_imagery.md",
+          "locator": "line:17",
+          "section": "张力与画面感"
+        }
+      ]
+    },
+    {
+      "phrase_key": "PK-9b8ab2b8820de861",
+      "text": "不想网恋了 就喜欢实操是吧 你喜欢触感还是听觉还是视觉",
+      "sections": [
+        "六、性张力与调情（Sexual Tension & Flirting） / 6.2 张力与画面感（Jackson）",
+        "六、性张力与调情（Sexual Tension & Flirting） / 6.3 打击情绪（Jackson）",
+        "张力与画面感",
+        "打击情绪"
+      ],
+      "speaker_roles": [
+        "unknown"
+      ],
+      "occurrence_count": 4,
+      "callability": "candidate_callable_after_context_review",
+      "source_refs": [
+        {
+          "file": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_017_tension_and_visual_imagery.md",
+          "locator": "line:25",
+          "section": "张力与画面感"
+        }
+      ]
+    },
+    {
+      "phrase_key": "PK-38a8b4c233a836c4",
+      "text": "那就来一个肉欲的抱抱",
+      "sections": [
+        "六、性张力与调情（Sexual Tension & Flirting） / 6.2 张力与画面感（Jackson）",
+        "张力与画面感"
+      ],
+      "speaker_roles": [
+        "unknown"
+      ],
+      "occurrence_count": 2,
+      "callability": "candidate_callable_after_context_review",
+      "source_refs": [
+        {
+          "file": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_017_tension_and_visual_imagery.md",
+          "locator": "line:31",
+          "section": "张力与画面感"
+        }
+      ]
+    },
+    {
+      "phrase_key": "PK-6344d35bcd6b696f",
+      "text": "Do you want it",
+      "sections": [
+        "六、性张力与调情（Sexual Tension & Flirting） / 6.2 张力与画面感（Jackson）",
+        "十、作联系感与日常维护（Connection & Maintenance） / 10.1 作联系感语句（Jackson）",
+        "张力与画面感",
+        "做联系感"
+      ],
+      "speaker_roles": [
+        "unknown"
+      ],
+      "occurrence_count": 4,
+      "callability": "candidate_callable_after_context_review",
+      "source_refs": [
+        {
+          "file": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_017_tension_and_visual_imagery.md",
+          "locator": "line:33",
+          "section": "张力与画面感"
+        }
+      ]
+    },
+    {
+      "phrase_key": "PK-491ba14396495197",
+      "text": "叫爸爸 乖 赏一鞭子",
+      "sections": [
+        "S M 属性话术"
+      ],
+      "speaker_roles": [
+        "unknown"
+      ],
+      "occurrence_count": 1,
+      "callability": "candidate_callable_after_context_review",
+      "source_refs": [
+        {
+          "file": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_036_SM_attributes_phrases.md",
+          "locator": "line:6",
+          "section": "S M 属性话术"
+        }
+      ]
+    },
+    {
+      "phrase_key": "PK-b4a093f5f50d6e4d",
+      "text": "我爱打屁股 喜欢吗 想象中呢",
+      "sections": [
+        "S M 属性话术",
+        "打击情绪"
+      ],
+      "speaker_roles": [
+        "unknown"
+      ],
+      "occurrence_count": 2,
+      "callability": "candidate_callable_after_context_review",
+      "source_refs": [
+        {
+          "file": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_036_SM_attributes_phrases.md",
+          "locator": "line:8",
+          "section": "S M 属性话术"
+        }
+      ]
+    }
+  ]
+}

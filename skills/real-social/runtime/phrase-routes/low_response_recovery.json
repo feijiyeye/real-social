@@ -1,0 +1,282 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-08-27T17:32:32+08:00",
+  "package_id": "real-social",
+  "route": "low_response_recovery",
+  "label": "低回应、暂停与重启",
+  "entries": [
+    {
+      "phrase_id": "P-0489",
+      "phrase_key": "PK-2c632ae1bc5bc506",
+      "text": "没话说可以直接告诉我。",
+      "sections": [
+        "四、废测破解与框架控制（Shit Test Handling & Frame Control） / 4.3 阻碍废测解决（Jackson）"
+      ],
+      "speaker_roles": [
+        "unknown"
+      ],
+      "occurrence_count": 1,
+      "callability": "candidate_callable_after_context_review",
+      "source_refs": [
+        {
+          "file": "knowledge/01-原始资料/2026-08-23_huashu.docx",
+          "locator": "paragraph:244",
+          "section": "四、废测破解与框架控制（Shit Test Handling & Frame Control） / 4.3 阻碍废测解决（Jackson）"
+        }
+      ]
+    },
+    {
+      "phrase_id": "P-1144",
+      "phrase_key": "PK-7e6e63ce7e7ab8b8",
+      "text": "：我很有诚意 但也要看你的意愿",
+      "sections": [
+        "铺垫邀约"
+      ],
+      "speaker_roles": [
+        "unknown"
+      ],
+      "occurrence_count": 1,
+      "callability": "candidate_callable_after_context_review",
+      "source_refs": [
+        {
+          "file": "knowledge/01-原始资料/2026-08-23_game.docx",
+          "locator": "paragraph:313",
+          "section": "铺垫邀约"
+        }
+      ]
+    },
+    {
+      "phrase_id": "P-1145",
+      "phrase_key": "PK-361e35baddd9743e",
+      "text": "我会更喜欢文字交流啦。",
+      "sections": [
+        "四、废测破解与框架控制（Shit Test Handling & Frame Control） / 4.3 阻碍废测解决（Jackson）"
+      ],
+      "speaker_roles": [
+        "unknown"
+      ],
+      "occurrence_count": 1,
+      "callability": "candidate_callable_after_context_review",
+      "source_refs": [
+        {
+          "file": "knowledge/01-原始资料/2026-08-23_huashu.docx",
+          "locator": "paragraph:241",
+          "section": "四、废测破解与框架控制（Shit Test Handling & Frame Control） / 4.3 阻碍废测解决（Jackson）"
+        }
+      ]
+    },
+    {
+      "phrase_id": "P-0551",
+      "phrase_key": "PK-1609e95f8db338fb",
+      "text": "那么继续吗？",
+      "sections": [
+        "十、作联系感与日常维护（Connection & Maintenance） / 10.1 作联系感语句（Jackson）"
+      ],
+      "speaker_roles": [
+        "unknown"
+      ],
+      "occurrence_count": 1,
+      "callability": "candidate_callable_after_context_review",
+      "source_refs": [
+        {
+          "file": "knowledge/01-原始资料/2026-08-23_huashu.docx",
+          "locator": "paragraph:537",
+          "section": "十、作联系感与日常维护（Connection & Maintenance） / 10.1 作联系感语句（Jackson）"
+        }
+      ]
+    },
+    {
+      "phrase_id": "P-0406",
+      "phrase_key": "PK-a43a5de30effcb8a",
+      "text": "静候佳音。",
+      "sections": [
+        "十、作联系感与日常维护（Connection & Maintenance） / 10.1 作联系感语句（Jackson）"
+      ],
+      "speaker_roles": [
+        "unknown"
+      ],
+      "occurrence_count": 1,
+      "callability": "candidate_callable_after_context_review",
+      "source_refs": [
+        {
+          "file": "knowledge/01-原始资料/2026-08-23_huashu.docx",
+          "locator": "paragraph:541",
+          "section": "十、作联系感与日常维护（Connection & Maintenance） / 10.1 作联系感语句（Jackson）"
+        }
+      ]
+    },
+    {
+      "phrase_id": "P-1250",
+      "phrase_key": "PK-ab2b534568454f21",
+      "text": "下次我注意，你会尴尬吗？",
+      "sections": [
+        "一、开场与搭讪（Openers & Approaches） / 1.3 开场同理心与破冰"
+      ],
+      "speaker_roles": [
+        "unknown"
+      ],
+      "occurrence_count": 1,
+      "callability": "candidate_callable_after_context_review",
+      "source_refs": [
+        {
+          "file": "knowledge/01-原始资料/2026-08-23_huashu.docx",
+          "locator": "paragraph:14",
+          "section": "一、开场与搭讪（Openers & Approaches） / 1.3 开场同理心与破冰"
+        }
+      ]
+    },
+    {
+      "phrase_key": "PK-4be91882c4083e0d",
+      "text": "（对方翻看朋友圈夸审美好）你很懂嘛",
+      "sections": [
+        "做联系感"
+      ],
+      "speaker_roles": [
+        "unknown"
+      ],
+      "occurrence_count": 1,
+      "callability": "context_required",
+      "source_refs": [
+        {
+          "file": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_024_building_connection.md",
+          "locator": "line:39",
+          "section": "做联系感"
+        }
+      ]
+    },
+    {
+      "phrase_key": "PK-6240eb0dec627203",
+      "text": "你不讨厌",
+      "sections": [
+        "做联系感"
+      ],
+      "speaker_roles": [
+        "unknown"
+      ],
+      "occurrence_count": 1,
+      "callability": "context_required",
+      "source_refs": [
+        {
+          "file": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_024_building_connection.md",
+          "locator": "line:99",
+          "section": "做联系感"
+        }
+      ]
+    },
+    {
+      "phrase_key": "PK-9a6d65532a4748bc",
+      "text": "暂时只为你开放",
+      "sections": [
+        "七、引导投资与邀约（Leading Investment & Date Invitation） / 7.5 给对方反馈/撩（Jackson）",
+        "给价值反馈，撩的部分："
+      ],
+      "speaker_roles": [
+        "unknown"
+      ],
+      "occurrence_count": 2,
+      "callability": "context_required",
+      "source_refs": [
+        {
+          "file": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_033_value_feedback_and_flirting.md",
+          "locator": "line:11",
+          "section": "给价值反馈，撩的部分："
+        }
+      ]
+    },
+    {
+      "phrase_key": "PK-4640f4f0e9159014",
+      "text": "不用那么深 想爱你 就想说 想到什么说什么",
+      "sections": [
+        "给价值反馈，撩的部分："
+      ],
+      "speaker_roles": [
+        "unknown"
+      ],
+      "occurrence_count": 1,
+      "callability": "context_required",
+      "source_refs": [
+        {
+          "file": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_033_value_feedback_and_flirting.md",
+          "locator": "line:29",
+          "section": "给价值反馈，撩的部分："
+        }
+      ]
+    },
+    {
+      "phrase_key": "PK-4e29f57b9b419af3",
+      "text": "相信你自己 宝宝 你值得一切好的",
+      "sections": [
+        "给价值反馈，撩的部分："
+      ],
+      "speaker_roles": [
+        "unknown"
+      ],
+      "occurrence_count": 1,
+      "callability": "context_required",
+      "source_refs": [
+        {
+          "file": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_033_value_feedback_and_flirting.md",
+          "locator": "line:31",
+          "section": "给价值反馈，撩的部分："
+        }
+      ]
+    },
+    {
+      "phrase_key": "PK-7678705d0cff1b5e",
+      "text": "这不超级棒吗",
+      "sections": [
+        "给价值反馈，撩的部分："
+      ],
+      "speaker_roles": [
+        "unknown"
+      ],
+      "occurrence_count": 1,
+      "callability": "context_required",
+      "source_refs": [
+        {
+          "file": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_033_value_feedback_and_flirting.md",
+          "locator": "line:45",
+          "section": "给价值反馈，撩的部分："
+        }
+      ]
+    },
+    {
+      "phrase_key": "PK-15d77861293d8219",
+      "text": "早安呢 需要咖啡吗 在想约你咖啡这事",
+      "sections": [
+        "高位奖品性塑造"
+      ],
+      "speaker_roles": [
+        "unknown"
+      ],
+      "occurrence_count": 1,
+      "callability": "context_required",
+      "source_refs": [
+        {
+          "file": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_044_high_value_prize_positioning.md",
+          "locator": "line:26",
+          "section": "高位奖品性塑造"
+        }
+      ]
+    },
+    {
+      "phrase_key": "PK-6d49f09b4ea2d585",
+      "text": "奖励你约咖啡吧",
+      "sections": [
+        "高位奖品性塑造"
+      ],
+      "speaker_roles": [
+        "unknown"
+      ],
+      "occurrence_count": 1,
+      "callability": "context_required",
+      "source_refs": [
+        {
+          "file": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_044_high_value_prize_positioning.md",
+          "locator": "line:35",
+          "section": "高位奖品性塑造"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,453 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-08-27T17:32:32+08:00",
+  "package_id": "real-social",
+  "route": "invite_schedule",
+  "label": "邀约与条件调度",
+  "entries": [
+    {
+      "phrase_id": "P-1455",
+      "phrase_key": "PK-ab0636566cac0273",
+      "text": "（这么执着于咖啡吗）咖啡厅聊天安静而已。",
+      "sections": [
+        "四、废测破解与框架控制（Shit Test Handling & Frame Control） / 4.3 阻碍废测解决（Jackson）"
+      ],
+      "speaker_roles": [
+        "unknown"
+      ],
+      "occurrence_count": 1,
+      "callability": "candidate_callable_after_context_review",
+      "source_refs": [
+        {
+          "file": "knowledge/01-原始资料/2026-08-23_huashu.docx",
+          "locator": "paragraph:236",
+          "section": "四、废测破解与框架控制（Shit Test Handling & Frame Control） / 4.3 阻碍废测解决（Jackson）"
+        }
+      ]
+    },
+    {
+      "phrase_id": "P-1262",
+      "phrase_key": "PK-9f286414d822ba1a",
+      "text": "想当面聊聊。",
+      "sections": [
+        "七、引导投资与邀约（Leading Investment & Date Invitation） / 7.4 待机/邀约跟进（Jackson）"
+      ],
+      "speaker_roles": [
+        "unknown"
+      ],
+      "occurrence_count": 1,
+      "callability": "candidate_callable_after_context_review",
+      "source_refs": [
+        {
+          "file": "knowledge/01-原始资料/2026-08-23_huashu.docx",
+          "locator": "paragraph:461",
+          "section": "七、引导投资与邀约（Leading Investment & Date Invitation） / 7.4 待机/邀约跟进（Jackson）"
+        }
+      ]
+    },
+    {
+      "phrase_id": "P-1272",
+      "phrase_key": "PK-ada70d9ee82d0f9f",
+      "text": "想知道你的休息时间。",
+      "sections": [
+        "七、引导投资与邀约（Leading Investment & Date Invitation） / 7.3 邀约语句（Jackson）"
+      ],
+      "speaker_roles": [
+        "unknown"
+      ],
+      "occurrence_count": 1,
+      "callability": "candidate_callable_after_context_review",
+      "source_refs": [
+        {
+          "file": "knowledge/01-原始资料/2026-08-23_huashu.docx",
+          "locator": "paragraph:413",
+          "section": "七、引导投资与邀约（Leading Investment & Date Invitation） / 7.3 邀约语句（Jackson）"
+        }
+      ]
+    },
+    {
+      "phrase_id": "P-0763",
+      "phrase_key": "PK-49ae3a06896817ec",
+      "text": "你在哪？",
+      "sections": [
+        "七、引导投资与邀约（Leading Investment & Date Invitation） / 7.3 邀约语句（Jackson）"
+      ],
+      "speaker_roles": [
+        "unknown"
+      ],
+      "occurrence_count": 1,
+      "callability": "candidate_callable_after_context_review",
+      "source_refs": [
+        {
+          "file": "knowledge/01-原始资料/2026-08-23_huashu.docx",
+          "locator": "paragraph:425",
+          "section": "七、引导投资与邀约（Leading Investment & Date Invitation） / 7.3 邀约语句（Jackson）"
+        }
+      ]
+    },
+    {
+      "phrase_id": "P-1325",
+      "phrase_key": "PK-1bf2f859474b2a18",
+      "text": "壹方天地比较热闹，就观音桥？",
+      "sections": [
+        "七、引导投资与邀约（Leading Investment & Date Invitation） / 7.3 邀约语句（Jackson）"
+      ],
+      "speaker_roles": [
+        "unknown"
+      ],
+      "occurrence_count": 1,
+      "callability": "candidate_callable_after_context_review",
+      "source_refs": [
+        {
+          "file": "knowledge/01-原始资料/2026-08-23_huashu.docx",
+          "locator": "paragraph:427",
+          "section": "七、引导投资与邀约（Leading Investment & Date Invitation） / 7.3 邀约语句（Jackson）"
+        }
+      ]
+    },
+    {
+      "phrase_id": "P-0809",
+      "phrase_key": "PK-19a6fe6e4dacaf61",
+      "text": "（女人说忙）具体可以确定哪天。",
+      "sections": [
+        "七、引导投资与邀约（Leading Investment & Date Invitation） / 7.4 待机/邀约跟进（Jackson）",
+        "邀约部分："
+      ],
+      "speaker_roles": [
+        "unknown"
+      ],
+      "occurrence_count": 2,
+      "callability": "candidate_callable_after_context_review",
+      "source_refs": [
+        {
+          "file": "knowledge/01-原始资料/2026-08-23_huashu.docx",
+          "locator": "paragraph:460",
+          "section": "七、引导投资与邀约（Leading Investment & Date Invitation） / 7.4 待机/邀约跟进（Jackson）"
+        },
+        {
+          "file": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_040_invitation_phrases.md",
+          "locator": "line:56",
+          "section": "邀约部分："
+        }
+      ]
+    },
+    {
+      "phrase_id": "P-0748",
+      "phrase_key": "PK-7338c9112f64489e",
+      "text": "你要是也不喜欢线上尬聊，那我们可以约杯咖啡线下见一下。",
+      "sections": [
+        "七、引导投资与邀约（Leading Investment & Date Invitation） / 7.3 邀约语句（Jackson）",
+        "邀约部分："
+      ],
+      "speaker_roles": [
+        "unknown"
+      ],
+      "occurrence_count": 2,
+      "callability": "candidate_callable_after_context_review",
+      "source_refs": [
+        {
+          "file": "knowledge/01-原始资料/2026-08-23_huashu.docx",
+          "locator": "paragraph:439",
+          "section": "七、引导投资与邀约（Leading Investment & Date Invitation） / 7.3 邀约语句（Jackson）"
+        },
+        {
+          "file": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_040_invitation_phrases.md",
+          "locator": "line:34",
+          "section": "邀约部分："
+        }
+      ]
+    },
+    {
+      "phrase_id": "P-0310",
+      "phrase_key": "PK-7987aa58aba53de7",
+      "text": "国庆什么安排，我的意思是，什么时候跟我约咖？",
+      "sections": [
+        "七、引导投资与邀约（Leading Investment & Date Invitation） / 7.4 待机/邀约跟进（Jackson）"
+      ],
+      "speaker_roles": [
+        "unknown"
+      ],
+      "occurrence_count": 1,
+      "callability": "candidate_callable_after_context_review",
+      "source_refs": [
+        {
+          "file": "knowledge/01-原始资料/2026-08-23_huashu.docx",
+          "locator": "paragraph:466",
+          "section": "七、引导投资与邀约（Leading Investment & Date Invitation） / 7.4 待机/邀约跟进（Jackson）"
+        }
+      ]
+    },
+    {
+      "phrase_id": "P-0672",
+      "phrase_key": "PK-f342ec9509493f9e",
+      "text": "你忙吗？喝点饮料？",
+      "sections": [
+        "七、引导投资与邀约（Leading Investment & Date Invitation） / 7.3 邀约语句（Jackson）"
+      ],
+      "speaker_roles": [
+        "unknown"
+      ],
+      "occurrence_count": 1,
+      "callability": "candidate_callable_after_context_review",
+      "source_refs": [
+        {
+          "file": "knowledge/01-原始资料/2026-08-23_huashu.docx",
+          "locator": "paragraph:437",
+          "section": "七、引导投资与邀约（Leading Investment & Date Invitation） / 7.3 邀约语句（Jackson）"
+        }
+      ]
+    },
+    {
+      "phrase_key": "PK-97d91b81749cbb65",
+      "text": "我xx会有时间，你呢",
+      "sections": [
+        "遇到邀约女生社恐等阻碍"
+      ],
+      "speaker_roles": [
+        "unknown"
+      ],
+      "occurrence_count": 1,
+      "callability": "candidate_callable_after_context_review",
+      "source_refs": [
+        {
+          "file": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_001_jackson_top_phrases_seriousness_and_invitation_obstacles.md",
+          "locator": "line:87",
+          "section": "遇到邀约女生社恐等阻碍"
+        }
+      ]
+    },
+    {
+      "phrase_key": "PK-66aea7ba056ad5a4",
+      "text": "要见的话 哪天可以",
+      "sections": [
+        "遇到邀约女生社恐等阻碍"
+      ],
+      "speaker_roles": [
+        "unknown"
+      ],
+      "occurrence_count": 1,
+      "callability": "candidate_callable_after_context_review",
+      "source_refs": [
+        {
+          "file": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_001_jackson_top_phrases_seriousness_and_invitation_obstacles.md",
+          "locator": "line:97",
+          "section": "遇到邀约女生社恐等阻碍"
+        }
+      ]
+    },
+    {
+      "phrase_key": "PK-91bb65305976dce8",
+      "text": "看看你的时间",
+      "sections": [
+        "遇到邀约女生社恐等阻碍"
+      ],
+      "speaker_roles": [
+        "unknown"
+      ],
+      "occurrence_count": 1,
+      "callability": "candidate_callable_after_context_review",
+      "source_refs": [
+        {
+          "file": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_001_jackson_top_phrases_seriousness_and_invitation_obstacles.md",
+          "locator": "line:101",
+          "section": "遇到邀约女生社恐等阻碍"
+        }
+      ]
+    },
+    {
+      "phrase_key": "PK-4e62c26f03051611",
+      "text": "（好远）聊得好 不是问题",
+      "sections": [
+        "外卖百里千里送流程话术"
+      ],
+      "speaker_roles": [
+        "unknown"
+      ],
+      "occurrence_count": 1,
+      "callability": "candidate_callable_after_context_review",
+      "source_refs": [
+        {
+          "file": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_026_long_distance_delivery_flow.md",
+          "locator": "line:11",
+          "section": "外卖百里千里送流程话术"
+        }
+      ]
+    },
+    {
+      "phrase_key": "PK-0f97f5ab43a29f46",
+      "text": "换个地了解你",
+      "sections": [
+        "软件收号"
+      ],
+      "speaker_roles": [
+        "unknown"
+      ],
+      "occurrence_count": 1,
+      "callability": "candidate_callable_after_context_review",
+      "source_refs": [
+        {
+          "file": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_028_app_contact_exchange.md",
+          "locator": "line:15",
+          "section": "软件收号"
+        }
+      ]
+    },
+    {
+      "phrase_key": "PK-ba208ee898e87507",
+      "text": "换个地调度",
+      "sections": [
+        "软件收号"
+      ],
+      "speaker_roles": [
+        "unknown"
+      ],
+      "occurrence_count": 1,
+      "callability": "candidate_callable_after_context_review",
+      "source_refs": [
+        {
+          "file": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_028_app_contact_exchange.md",
+          "locator": "line:17",
+          "section": "软件收号"
+        }
+      ]
+    },
+    {
+      "phrase_key": "PK-d23181832d8f1472",
+      "text": "你觉得当面聊天好还是在线好",
+      "sections": [
+        "女人主动开",
+        "邀约部分："
+      ],
+      "speaker_roles": [
+        "unknown"
+      ],
+      "occurrence_count": 2,
+      "callability": "candidate_callable_after_context_review",
+      "source_refs": [
+        {
+          "file": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_029_woman_initiates_opening.md",
+          "locator": "line:13",
+          "section": "女人主动开"
+        }
+      ]
+    },
+    {
+      "phrase_key": "PK-2dfa89caeca9ad74",
+      "text": "什么时候约我",
+      "sections": [
+        "七、引导投资与邀约（Leading Investment & Date Invitation） / 7.3 邀约语句（Jackson）",
+        "邀约部分："
+      ],
+      "speaker_roles": [
+        "unknown"
+      ],
+      "occurrence_count": 2,
+      "callability": "candidate_callable_after_context_review",
+      "source_refs": [
+        {
+          "file": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_040_invitation_phrases.md",
+          "locator": "line:7",
+          "section": "邀约部分："
+        }
+      ]
+    },
+    {
+      "phrase_key": "PK-73d3a63d24907feb",
+      "text": "当面更有趣不是吗",
+      "sections": [
+        "七、引导投资与邀约（Leading Investment & Date Invitation） / 7.3 邀约语句（Jackson）",
+        "邀约部分："
+      ],
+      "speaker_roles": [
+        "unknown"
+      ],
+      "occurrence_count": 2,
+      "callability": "candidate_callable_after_context_review",
+      "source_refs": [
+        {
+          "file": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_040_invitation_phrases.md",
+          "locator": "line:10",
+          "section": "邀约部分："
+        }
+      ]
+    },
+    {
+      "phrase_key": "PK-8c5da9a24779aa7b",
+      "text": "闻字不如相见 温度在当面",
+      "sections": [
+        "七、引导投资与邀约（Leading Investment & Date Invitation） / 7.3 邀约语句（Jackson）",
+        "邀约部分："
+      ],
+      "speaker_roles": [
+        "unknown"
+      ],
+      "occurrence_count": 2,
+      "callability": "candidate_callable_after_context_review",
+      "source_refs": [
+        {
+          "file": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_040_invitation_phrases.md",
+          "locator": "line:14",
+          "section": "邀约部分："
+        }
+      ]
+    },
+    {
+      "phrase_key": "PK-6197df07dfef3883",
+      "text": "要聊聊吗 感情 但是当面",
+      "sections": [
+        "七、引导投资与邀约（Leading Investment & Date Invitation） / 7.3 邀约语句（Jackson）",
+        "邀约部分："
+      ],
+      "speaker_roles": [
+        "unknown"
+      ],
+      "occurrence_count": 2,
+      "callability": "candidate_callable_after_context_review",
+      "source_refs": [
+        {
+          "file": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_040_invitation_phrases.md",
+          "locator": "line:17",
+          "section": "邀约部分："
+        }
+      ]
+    },
+    {
+      "phrase_key": "PK-530182c8420401e0",
+      "text": "逗你的 坐坐随便聊聊天别紧张",
+      "sections": [
+        "邀约部分："
+      ],
+      "speaker_roles": [
+        "unknown"
+      ],
+      "occurrence_count": 1,
+      "callability": "candidate_callable_after_context_review",
+      "source_refs": [
+        {
+          "file": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_040_invitation_phrases.md",
+          "locator": "line:80",
+          "section": "邀约部分："
+        }
+      ]
+    },
+    {
+      "phrase_key": "PK-430d71da4ecd9ca9",
+      "text": "天气还不错 适合约会和散步",
+      "sections": [
+        "邀约部分："
+      ],
+      "speaker_roles": [
+        "unknown"
+      ],
+      "occurrence_count": 1,
+      "callability": "candidate_callable_after_context_review",
+      "source_refs": [
+        {
+          "file": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_040_invitation_phrases.md",
+          "locator": "line:102",
+          "section": "邀约部分："
+        }
+      ]
+    }
+  ]
+}

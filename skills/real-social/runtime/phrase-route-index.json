@@ -1,0 +1,370 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-08-27T17:32:32+08:00",
+  "package_id": "real-social",
+  "retrieval_policy": {
+    "candidate_first": true,
+    "full_index": "on_demand",
+    "context_readback_required": true,
+    "recovery": "disabled",
+    "sexual_route_requires": [
+      "explicit_same_topic",
+      "age_identity_basis",
+      "mutual_feedback",
+      "no_refusal_or_discomfort"
+    ]
+  },
+  "routes": [
+    {
+      "id": "clarify_open",
+      "label": "澄清与开放问题",
+      "source_groups": [
+        "clarify_and_open",
+        "clarify_and_boundary"
+      ],
+      "section_terms": [
+        "开场同理心",
+        "情景加话术",
+        "真评",
+        "明确意图与前提",
+        "澄清"
+      ],
+      "related_units": [
+        "K-20260821-003",
+        "K-20260823-051",
+        "K-20260823-052"
+      ],
+      "callability": "candidate_callable_after_context_review",
+      "preferred_entry_count": 20,
+      "shard": "runtime/phrase-routes/clarify_open.json",
+      "full_index": {
+        "path": "knowledge/01-原始资料/2026-08-23_Jackson体系话术去重索引.json",
+        "lookup": "on_demand",
+        "section_terms": [
+          "开场同理心",
+          "情景加话术",
+          "真评",
+          "明确意图与前提",
+          "澄清"
+        ]
+      }
+    },
+    {
+      "id": "boundary_channel",
+      "label": "边界、意愿与沟通方式",
+      "source_groups": [
+        "boundary_and_channel",
+        "clarify_and_boundary"
+      ],
+      "section_terms": [
+        "边界",
+        "沟通",
+        "意愿",
+        "废测破解",
+        "阻碍"
+      ],
+      "related_units": [
+        "K-20260821-021",
+        "K-20260821-022",
+        "K-20260823-053"
+      ],
+      "callability": "candidate_callable_after_context_review",
+      "preferred_entry_count": 16,
+      "shard": "runtime/phrase-routes/boundary_channel.json",
+      "full_index": {
+        "path": "knowledge/01-原始资料/2026-08-23_Jackson体系话术去重索引.json",
+        "lookup": "on_demand",
+        "section_terms": [
+          "边界",
+          "沟通",
+          "意愿",
+          "废测破解",
+          "阻碍"
+        ]
+      }
+    },
+    {
+      "id": "true_feedback",
+      "label": "基于可观察信息的认可",
+      "source_groups": [
+        "true_feedback",
+        "connection_and_feedback"
+      ],
+      "section_terms": [
+        "真评",
+        "联系感",
+        "正向反馈",
+        "价值输出",
+        "认可"
+      ],
+      "related_units": [
+        "K-20260821-018",
+        "K-20260822-027",
+        "K-20260823-051"
+      ],
+      "callability": "candidate_callable_after_context_review",
+      "preferred_entry_count": 12,
+      "shard": "runtime/phrase-routes/true_feedback.json",
+      "full_index": {
+        "path": "knowledge/01-原始资料/2026-08-23_Jackson体系话术去重索引.json",
+        "lookup": "on_demand",
+        "section_terms": [
+          "真评",
+          "联系感",
+          "正向反馈",
+          "价值输出",
+          "认可"
+        ]
+      }
+    },
+    {
+      "id": "teasing_push_pull",
+      "label": "轻调侃与兴趣证据",
+      "source_groups": [
+        "context_required_teasing",
+        "connection_and_feedback"
+      ],
+      "section_terms": [
+        "开场假评",
+        "聊天假评",
+        "假评集合",
+        "失格推拉",
+        "情绪拉伸",
+        "推拉"
+      ],
+      "related_units": [
+        "K-20260821-004",
+        "K-20260821-017",
+        "K-20260826-001"
+      ],
+      "callability": "context_required",
+      "preferred_entry_count": 17,
+      "shard": "runtime/phrase-routes/teasing_push_pull.json",
+      "full_index": {
+        "path": "knowledge/01-原始资料/2026-08-23_Jackson体系话术去重索引.json",
+        "lookup": "on_demand",
+        "section_terms": [
+          "开场假评",
+          "聊天假评",
+          "假评集合",
+          "失格推拉",
+          "情绪拉伸",
+          "推拉"
+        ]
+      }
+    },
+    {
+      "id": "concern_test",
+      "label": "质疑、误解与真实顾虑",
+      "source_groups": [
+        "boundary_and_channel",
+        "clarify_and_boundary"
+      ],
+      "section_terms": [
+        "破费测",
+        "废测集合",
+        "阻碍",
+        "消除评判",
+        "顾虑"
+      ],
+      "related_units": [
+        "K-20260821-016",
+        "K-20260821-021",
+        "K-20260822-032",
+        "K-20260823-053"
+      ],
+      "callability": "context_required",
+      "preferred_entry_count": 16,
+      "shard": "runtime/phrase-routes/concern_test.json",
+      "full_index": {
+        "path": "knowledge/01-原始资料/2026-08-23_Jackson体系话术去重索引.json",
+        "lookup": "on_demand",
+        "section_terms": [
+          "破费测",
+          "废测集合",
+          "阻碍",
+          "消除评判",
+          "顾虑"
+        ]
+      }
+    },
+    {
+      "id": "low_response_recovery",
+      "label": "低回应、暂停与重启",
+      "source_groups": [
+        "boundary_and_channel",
+        "connection_and_feedback"
+      ],
+      "section_terms": [
+        "面对冷暴力",
+        "忽冷忽热",
+        "重启",
+        "拉回",
+        "后撤",
+        "待机",
+        "暂停"
+      ],
+      "related_units": [
+        "K-20260821-020",
+        "K-20260821-021",
+        "K-20260823-051"
+      ],
+      "callability": "context_required",
+      "preferred_entry_count": 14,
+      "shard": "runtime/phrase-routes/low_response_recovery.json",
+      "full_index": {
+        "path": "knowledge/01-原始资料/2026-08-23_Jackson体系话术去重索引.json",
+        "lookup": "on_demand",
+        "section_terms": [
+          "面对冷暴力",
+          "忽冷忽热",
+          "重启",
+          "拉回",
+          "后撤",
+          "待机",
+          "暂停"
+        ]
+      }
+    },
+    {
+      "id": "invite_schedule",
+      "label": "邀约与条件调度",
+      "source_groups": [
+        "invite_and_schedule"
+      ],
+      "section_terms": [
+        "铺垫邀约",
+        "邀约语句",
+        "待机",
+        "邀约跟进",
+        "情景加话术",
+        "排假",
+        "时间地点"
+      ],
+      "related_units": [
+        "K-20260822-032",
+        "K-20260822-037",
+        "K-20260823-052"
+      ],
+      "callability": "candidate_reference",
+      "preferred_entry_count": 22,
+      "shard": "runtime/phrase-routes/invite_schedule.json",
+      "full_index": {
+        "path": "knowledge/01-原始资料/2026-08-23_Jackson体系话术去重索引.json",
+        "lookup": "on_demand",
+        "section_terms": [
+          "铺垫邀约",
+          "邀约语句",
+          "待机",
+          "邀约跟进",
+          "情景加话术",
+          "排假",
+          "时间地点"
+        ]
+      }
+    },
+    {
+      "id": "connection_repair",
+      "label": "联系感、修复与关系边界",
+      "source_groups": [
+        "true_feedback",
+        "clarify_and_boundary"
+      ],
+      "section_terms": [
+        "作联系感",
+        "日常维护",
+        "关系定位",
+        "制定规则",
+        "修复"
+      ],
+      "related_units": [
+        "K-20260822-027",
+        "K-20260822-038",
+        "K-20260823-053"
+      ],
+      "callability": "context_required",
+      "preferred_entry_count": 17,
+      "shard": "runtime/phrase-routes/connection_repair.json",
+      "full_index": {
+        "path": "knowledge/01-原始资料/2026-08-23_Jackson体系话术去重索引.json",
+        "lookup": "on_demand",
+        "section_terms": [
+          "作联系感",
+          "日常维护",
+          "关系定位",
+          "制定规则",
+          "修复"
+        ]
+      }
+    },
+    {
+      "id": "intimacy_conditional",
+      "label": "亲密与性话题条件性参考",
+      "source_groups": [
+        "intimacy_conditional"
+      ],
+      "section_terms": [
+        "性张力",
+        "调情",
+        "亲密",
+        "张力与画面感",
+        "情绪拉伸"
+      ],
+      "related_units": [
+        "K-20260822-028",
+        "K-20260823-043",
+        "K-20260823-053"
+      ],
+      "callability": "candidate_callable_after_context_review",
+      "requires": [
+        "explicit_same_topic",
+        "age_identity_basis",
+        "mutual_feedback",
+        "no_refusal_or_discomfort"
+      ],
+      "preferred_entry_count": 9,
+      "shard": "runtime/phrase-routes/intimacy_conditional.json",
+      "full_index": {
+        "path": "knowledge/01-原始资料/2026-08-23_Jackson体系话术去重索引.json",
+        "lookup": "on_demand",
+        "section_terms": [
+          "性张力",
+          "调情",
+          "亲密",
+          "张力与画面感",
+          "情绪拉伸"
+        ]
+      }
+    },
+    {
+      "id": "stop_boundary",
+      "label": "停止与边界审计",
+      "source_groups": [
+        "boundary_only_examples"
+      ],
+      "section_terms": [
+        "停止",
+        "拒绝",
+        "删除",
+        "边界"
+      ],
+      "related_units": [
+        "K-20260821-021",
+        "K-20260823-053"
+      ],
+      "callability": "boundary_only",
+      "preferred_entry_count": 6,
+      "shard": "runtime/phrase-routes/stop_boundary.json",
+      "full_index": {
+        "path": "knowledge/01-原始资料/2026-08-23_Jackson体系话术去重索引.json",
+        "lookup": "on_demand",
+        "section_terms": [
+          "停止",
+          "拒绝",
+          "删除",
+          "边界"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-08-27T17:32:32+08:00",
+  "package_id": "real-social",
+  "route": "true_feedback",
+  "label": "基于可观察信息的认可",
+  "entries": [
+    {
+      "phrase_id": "P-1150",
+      "phrase_key": "PK-a8afafeabb5967b2",
+      "text": "我觉得你挺高能量的。",
+      "sections": [
+        "三、真性评估与筛选（Genuine Assessment & Screening） / 3.3 真评/Genuine Evaluation"
+      ],
+      "speaker_roles": [
+        "unknown"
+      ],
+      "occurrence_count": 1,
+      "callability": "candidate_callable_after_context_review",
+      "source_refs": [
+        {
+          "file": "knowledge/01-原始资料/2026-08-23_huashu.docx",
+          "locator": "paragraph:134",
+          "section": "三、真性评估与筛选（Genuine Assessment & Screening） / 3.3 真评/Genuine Evaluation"
+        }
+      ]
+    },
+    {
+      "phrase_id": "P-0782",
+      "phrase_key": "PK-0c430667fd3f0900",
+      "text": "你真诚这点我觉得还是挺值得认可的。",
+      "sections": [
+        "三、真性评估与筛选（Genuine Assessment & Screening） / 3.3 真评/Genuine Evaluation"
+      ],
+      "speaker_roles": [
+        "unknown"
+      ],
+      "occurrence_count": 1,
+      "callability": "candidate_callable_after_context_review",
+      "source_refs": [
+        {
+          "file": "knowledge/01-原始资料/2026-08-23_huashu.docx",
+          "locator": "paragraph:133",
+          "section": "三、真性评估与筛选（Genuine Assessment & Screening） / 3.3 真评/Genuine Evaluation"
+        }
+      ]
+    },
+    {
+      "phrase_id": "P-0320",
+      "phrase_key": "PK-c3795b9ac897fc21",
+      "text": "还不错，直来直去。",
+      "sections": [
+        "三、真性评估与筛选（Genuine Assessment & Screening） / 3.3 真评/Genuine Evaluation"
+      ],
+      "speaker_roles": [
+        "unknown"
+      ],
+      "occurrence_count": 1,
+      "callability": "candidate_callable_after_context_review",
+      "source_refs": [
+        {
+          "file": "knowledge/01-原始资料/2026-08-23_huashu.docx",
+          "locator": "paragraph:132",
+          "section": "三、真性评估与筛选（Genuine Assessment & Screening） / 3.3 真评/Genuine Evaluation"
+        }
+      ]
+    },
+    {
+      "phrase_id": "P-1380",
+      "phrase_key": "PK-9406e170b973517e",
+      "text": "又不是没见过女人素颜，主要看你人。",
+      "sections": [
+        "八、ASD处理与关系定位（ASD Handling & Relationship Positioning） / 8.1 消除评判"
+      ],
+      "speaker_roles": [
+        "unknown"
+      ],
+      "occurrence_count": 1,
+      "callability": "candidate_callable_after_context_review",
+      "source_refs": [
+        {
+          "file": "knowledge/01-原始资料/2026-08-23_huashu.docx",
+          "locator": "paragraph:482",
+          "section": "八、ASD处理与关系定位（ASD Handling & Relationship Positioning） / 8.1 消除评判"
+        }
+      ]
+    },
+    {
+      "phrase_key": "PK-4be91882c4083e0d",
+      "text": "（对方翻看朋友圈夸审美好）你很懂嘛",
+      "sections": [
+        "做联系感"
+      ],
+      "speaker_roles": [
+        "unknown"
+      ],
+      "occurrence_count": 1,
+      "callability": "context_required",
+      "source_refs": [
+        {
+          "file": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_024_building_connection.md",
+          "locator": "line:39",
+          "section": "做联系感"
+        }
+      ]
+    },
+    {
+      "phrase_key": "PK-6240eb0dec627203",
+      "text": "你不讨厌",
+      "sections": [
+        "做联系感"
+      ],
+      "speaker_roles": [
+        "unknown"
+      ],
+      "occurrence_count": 1,
+      "callability": "context_required",
+      "source_refs": [
+        {
+          "file": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_024_building_connection.md",
+          "locator": "line:99",
+          "section": "做联系感"
+        }
+      ]
+    },
+    {
+      "phrase_key": "PK-9a6d65532a4748bc",
+      "text": "暂时只为你开放",
+      "sections": [
+        "七、引导投资与邀约（Leading Investment & Date Invitation） / 7.5 给对方反馈/撩（Jackson）",
+        "给价值反馈，撩的部分："
+      ],
+      "speaker_roles": [
+        "unknown"
+      ],
+      "occurrence_count": 2,
+      "callability": "context_required",
+      "source_refs": [
+        {
+          "file": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_033_value_feedback_and_flirting.md",
+          "locator": "line:11",
+          "section": "给价值反馈，撩的部分："
+        }
+      ]
+    },
+    {
+      "phrase_key": "PK-4640f4f0e9159014",
+      "text": "不用那么深 想爱你 就想说 想到什么说什么",
+      "sections": [
+        "给价值反馈，撩的部分："
+      ],
+      "speaker_roles": [
+        "unknown"
+      ],
+      "occurrence_count": 1,
+      "callability": "context_required",
+      "source_refs": [
+        {
+          "file": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_033_value_feedback_and_flirting.md",
+          "locator": "line:29",
+          "section": "给价值反馈，撩的部分："
+        }
+      ]
+    },
+    {
+      "phrase_key": "PK-4e29f57b9b419af3",
+      "text": "相信你自己 宝宝 你值得一切好的",
+      "sections": [
+        "给价值反馈，撩的部分："
+      ],
+      "speaker_roles": [
+        "unknown"
+      ],
+      "occurrence_count": 1,
+      "callability": "context_required",
+      "source_refs": [
+        {
+          "file": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_033_value_feedback_and_flirting.md",
+          "locator": "line:31",
+          "section": "给价值反馈，撩的部分："
+        }
+      ]
+    },
+    {
+      "phrase_key": "PK-7678705d0cff1b5e",
+      "text": "这不超级棒吗",
+      "sections": [
+        "给价值反馈，撩的部分："
+      ],
+      "speaker_roles": [
+        "unknown"
+      ],
+      "occurrence_count": 1,
+      "callability": "context_required",
+      "source_refs": [
+        {
+          "file": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_033_value_feedback_and_flirting.md",
+          "locator": "line:45",
+          "section": "给价值反馈，撩的部分："
+        }
+      ]
+    },
+    {
+      "phrase_key": "PK-15d77861293d8219",
+      "text": "早安呢 需要咖啡吗 在想约你咖啡这事",
+      "sections": [
+        "高位奖品性塑造"
+      ],
+      "speaker_roles": [
+        "unknown"
+      ],
+      "occurrence_count": 1,
+      "callability": "context_required",
+      "source_refs": [
+        {
+          "file": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_044_high_value_prize_positioning.md",
+          "locator": "line:26",
+          "section": "高位奖品性塑造"
+        }
+      ]
+    },
+    {
+      "phrase_key": "PK-6d49f09b4ea2d585",
+      "text": "奖励你约咖啡吧",
+      "sections": [
+        "高位奖品性塑造"
+      ],
+      "speaker_roles": [
+        "unknown"
+      ],
+      "occurrence_count": 1,
+      "callability": "context_required",
+      "source_refs": [
+        {
+          "file": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_044_high_value_prize_positioning.md",
+          "locator": "line:35",
+          "section": "高位奖品性塑造"
+        }
+      ]
+    }
+  ]
+}
