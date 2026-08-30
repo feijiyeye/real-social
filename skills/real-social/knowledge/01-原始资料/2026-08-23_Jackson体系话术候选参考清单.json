@@ -1,0 +1,893 @@
+{
+  "schema_version": 1,
+  "generated": "2026-08-23",
+  "status": "candidate_reference_only",
+  "protocol_unit": "K-20260823-051",
+  "routing_unit": "K-20260823-052",
+  "boundary_unit": "K-20260823-053",
+  "note": "这是人工首轮小范围候选参考层，不是完整白名单；每条仍需按当前聊天回读、改写和过滤。未列出的 1556 条仍可作为 source_only 检索源，但不默认调用。客户未选方向但要求直接回复时，先对齐真实需求，再由 AI 从已提供方向中选择最匹配的一条。双方明确进入同类性话题后，符合条件的露骨原句可从完整索引中进入候选参考。",
+  "runtime_decisions": {
+    "direct_reply_without_direction": "needs_alignment_then_ai_selects_best_matching_provided_direction",
+    "explicit_sexual_phrases": {
+      "callability": "candidate_callable_after_context_review",
+      "required_context": [
+        "双方明确进入并持续同类性话题",
+        "成年/身份风险已有足够依据",
+        "存在持续互惠反馈且没有拒绝或不适信号",
+        "表达不含威胁、羞辱、欺骗、强迫或私密空间诱导"
+      ],
+      "fallback": "boundary_only_or_not_default_direction"
+    }
+  },
+  "groups": [
+    {
+      "id": "clarify_and_open",
+      "title": "澄清与开放问题",
+      "callability": "candidate_callable_after_context_review",
+      "conditions": [
+        "当前仍有正常互动",
+        "问题与对方刚才的话直接相关",
+        "不用于逼迫对方解释或证明"
+      ],
+      "entries": [
+        {
+          "phrase_id": "P-0708",
+          "phrase_key": "PK-017421aeba0c3c74",
+          "text": "男：你说的是哪种照顾人",
+          "sections": [
+            "情景加话术"
+          ],
+          "speaker_roles": [
+            "male"
+          ],
+          "occurrence_count": 1,
+          "source_refs": [
+            {
+              "file": "01-原始资料/2026-08-23_888内部群杰哥话术（3.3-8.17）.md",
+              "locator": "line:9",
+              "section": "情景加话术"
+            }
+          ]
+        },
+        {
+          "phrase_id": "P-1331",
+          "phrase_key": "PK-b83e524534c35392",
+          "text": "男：意思是你的内在很有内容吗",
+          "sections": [
+            "情景加话术"
+          ],
+          "speaker_roles": [
+            "male"
+          ],
+          "occurrence_count": 1,
+          "source_refs": [
+            {
+              "file": "01-原始资料/2026-08-23_888内部群杰哥话术（3.3-8.17）.md",
+              "locator": "line:21",
+              "section": "情景加话术"
+            }
+          ]
+        },
+        {
+          "phrase_id": "P-0335",
+          "phrase_key": "PK-6b1aa27661f0643d",
+          "text": "男：好还是坏",
+          "sections": [
+            "情景加话术",
+            "未分段"
+          ],
+          "speaker_roles": [
+            "male",
+            "unknown"
+          ],
+          "occurrence_count": 2,
+          "source_refs": [
+            {
+              "file": "01-原始资料/2026-08-23_888内部群杰哥话术（3.3-8.17）.md",
+              "locator": "line:39",
+              "section": "情景加话术"
+            },
+            {
+              "file": "01-原始资料/2026-08-23_真实流话术总结.docx",
+              "locator": "paragraph:23",
+              "section": "未分段"
+            }
+          ]
+        },
+        {
+          "phrase_id": "P-0557",
+          "phrase_key": "PK-97e229ddb7d10ebc",
+          "text": "那你倾向哪种？",
+          "sections": [
+            "聊天假评"
+          ],
+          "speaker_roles": [
+            "unknown"
+          ],
+          "occurrence_count": 2,
+          "source_refs": [
+            {
+              "file": "01-原始资料/2026-08-23_话术库.docx",
+              "locator": "paragraph:45",
+              "section": "聊天假评"
+            },
+            {
+              "file": "01-原始资料/2026-08-23_game.docx",
+              "locator": "paragraph:48",
+              "section": "聊天假评"
+            }
+          ]
+        },
+        {
+          "phrase_id": "P-0671",
+          "phrase_key": "PK-7f257c4c47d0941b",
+          "text": "你理解的同频是什么呢",
+          "sections": [
+            "真评"
+          ],
+          "speaker_roles": [
+            "unknown"
+          ],
+          "occurrence_count": 1,
+          "source_refs": [
+            {
+              "file": "01-原始资料/2026-08-23_话术库.docx",
+              "locator": "paragraph:198",
+              "section": "真评"
+            }
+          ]
+        },
+        {
+          "phrase_id": "P-0703",
+          "phrase_key": "PK-8d128d1a978251e1",
+          "text": "你是偏感性还是理性的？",
+          "sections": [
+            "三、真性评估与筛选（Genuine Assessment & Screening） / 3.1 感情状态/习惯评估"
+          ],
+          "speaker_roles": [
+            "unknown"
+          ],
+          "occurrence_count": 1,
+          "source_refs": [
+            {
+              "file": "01-原始资料/2026-08-23_huashu.docx",
+              "locator": "paragraph:124",
+              "section": "三、真性评估与筛选（Genuine Assessment & Screening） / 3.1 感情状态/习惯评估"
+            }
+          ]
+        },
+        {
+          "phrase_id": "P-1266",
+          "phrase_key": "PK-be9f074280b2a6f0",
+          "text": "想了解你。",
+          "sections": [
+            "十、作联系感与日常维护（Connection & Maintenance） / 10.1 作联系感语句（Jackson）"
+          ],
+          "speaker_roles": [
+            "unknown"
+          ],
+          "occurrence_count": 1,
+          "source_refs": [
+            {
+              "file": "01-原始资料/2026-08-23_huashu.docx",
+              "locator": "paragraph:547",
+              "section": "十、作联系感与日常维护（Connection & Maintenance） / 10.1 作联系感语句（Jackson）"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "boundary_and_channel",
+      "title": "边界、意愿与沟通方式",
+      "callability": "candidate_callable_after_context_review",
+      "conditions": [
+        "需要澄清是否继续、偏好何种沟通或是否愿意安排",
+        "不得覆盖明确拒绝或停止"
+      ],
+      "entries": [
+        {
+          "phrase_id": "P-0489",
+          "phrase_key": "PK-2c632ae1bc5bc506",
+          "text": "没话说可以直接告诉我。",
+          "sections": [
+            "四、废测破解与框架控制（Shit Test Handling & Frame Control） / 4.3 阻碍废测解决（Jackson）"
+          ],
+          "speaker_roles": [
+            "unknown"
+          ],
+          "occurrence_count": 1,
+          "source_refs": [
+            {
+              "file": "01-原始资料/2026-08-23_huashu.docx",
+              "locator": "paragraph:244",
+              "section": "四、废测破解与框架控制（Shit Test Handling & Frame Control） / 4.3 阻碍废测解决（Jackson）"
+            }
+          ]
+        },
+        {
+          "phrase_id": "P-1144",
+          "phrase_key": "PK-7e6e63ce7e7ab8b8",
+          "text": "：我很有诚意 但也要看你的意愿",
+          "sections": [
+            "铺垫邀约"
+          ],
+          "speaker_roles": [
+            "unknown"
+          ],
+          "occurrence_count": 1,
+          "source_refs": [
+            {
+              "file": "01-原始资料/2026-08-23_game.docx",
+              "locator": "paragraph:313",
+              "section": "铺垫邀约"
+            }
+          ]
+        },
+        {
+          "phrase_id": "P-1145",
+          "phrase_key": "PK-361e35baddd9743e",
+          "text": "我会更喜欢文字交流啦。",
+          "sections": [
+            "四、废测破解与框架控制（Shit Test Handling & Frame Control） / 4.3 阻碍废测解决（Jackson）"
+          ],
+          "speaker_roles": [
+            "unknown"
+          ],
+          "occurrence_count": 1,
+          "source_refs": [
+            {
+              "file": "01-原始资料/2026-08-23_huashu.docx",
+              "locator": "paragraph:241",
+              "section": "四、废测破解与框架控制（Shit Test Handling & Frame Control） / 4.3 阻碍废测解决（Jackson）"
+            }
+          ]
+        },
+        {
+          "phrase_id": "P-0551",
+          "phrase_key": "PK-1609e95f8db338fb",
+          "text": "那么继续吗？",
+          "sections": [
+            "十、作联系感与日常维护（Connection & Maintenance） / 10.1 作联系感语句（Jackson）"
+          ],
+          "speaker_roles": [
+            "unknown"
+          ],
+          "occurrence_count": 1,
+          "source_refs": [
+            {
+              "file": "01-原始资料/2026-08-23_huashu.docx",
+              "locator": "paragraph:537",
+              "section": "十、作联系感与日常维护（Connection & Maintenance） / 10.1 作联系感语句（Jackson）"
+            }
+          ]
+        },
+        {
+          "phrase_id": "P-0406",
+          "phrase_key": "PK-a43a5de30effcb8a",
+          "text": "静候佳音。",
+          "sections": [
+            "十、作联系感与日常维护（Connection & Maintenance） / 10.1 作联系感语句（Jackson）"
+          ],
+          "speaker_roles": [
+            "unknown"
+          ],
+          "occurrence_count": 1,
+          "source_refs": [
+            {
+              "file": "01-原始资料/2026-08-23_huashu.docx",
+              "locator": "paragraph:541",
+              "section": "十、作联系感与日常维护（Connection & Maintenance） / 10.1 作联系感语句（Jackson）"
+            }
+          ]
+        },
+        {
+          "phrase_id": "P-1250",
+          "phrase_key": "PK-ab2b534568454f21",
+          "text": "下次我注意，你会尴尬吗？",
+          "sections": [
+            "一、开场与搭讪（Openers & Approaches） / 1.3 开场同理心与破冰"
+          ],
+          "speaker_roles": [
+            "unknown"
+          ],
+          "occurrence_count": 1,
+          "source_refs": [
+            {
+              "file": "01-原始资料/2026-08-23_huashu.docx",
+              "locator": "paragraph:14",
+              "section": "一、开场与搭讪（Openers & Approaches） / 1.3 开场同理心与破冰"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "true_feedback",
+      "title": "基于可观察信息的认可",
+      "callability": "candidate_callable_after_context_review",
+      "conditions": [
+        "评价必须基于对方已经展示的具体内容",
+        "不评价身体隐私、群体属性或不可验证心理"
+      ],
+      "entries": [
+        {
+          "phrase_id": "P-1150",
+          "phrase_key": "PK-a8afafeabb5967b2",
+          "text": "我觉得你挺高能量的。",
+          "sections": [
+            "三、真性评估与筛选（Genuine Assessment & Screening） / 3.3 真评/Genuine Evaluation"
+          ],
+          "speaker_roles": [
+            "unknown"
+          ],
+          "occurrence_count": 1,
+          "source_refs": [
+            {
+              "file": "01-原始资料/2026-08-23_huashu.docx",
+              "locator": "paragraph:134",
+              "section": "三、真性评估与筛选（Genuine Assessment & Screening） / 3.3 真评/Genuine Evaluation"
+            }
+          ]
+        },
+        {
+          "phrase_id": "P-0782",
+          "phrase_key": "PK-0c430667fd3f0900",
+          "text": "你真诚这点我觉得还是挺值得认可的。",
+          "sections": [
+            "三、真性评估与筛选（Genuine Assessment & Screening） / 3.3 真评/Genuine Evaluation"
+          ],
+          "speaker_roles": [
+            "unknown"
+          ],
+          "occurrence_count": 1,
+          "source_refs": [
+            {
+              "file": "01-原始资料/2026-08-23_huashu.docx",
+              "locator": "paragraph:133",
+              "section": "三、真性评估与筛选（Genuine Assessment & Screening） / 3.3 真评/Genuine Evaluation"
+            }
+          ]
+        },
+        {
+          "phrase_id": "P-0320",
+          "phrase_key": "PK-c3795b9ac897fc21",
+          "text": "还不错，直来直去。",
+          "sections": [
+            "三、真性评估与筛选（Genuine Assessment & Screening） / 3.3 真评/Genuine Evaluation"
+          ],
+          "speaker_roles": [
+            "unknown"
+          ],
+          "occurrence_count": 1,
+          "source_refs": [
+            {
+              "file": "01-原始资料/2026-08-23_huashu.docx",
+              "locator": "paragraph:132",
+              "section": "三、真性评估与筛选（Genuine Assessment & Screening） / 3.3 真评/Genuine Evaluation"
+            }
+          ]
+        },
+        {
+          "phrase_id": "P-1380",
+          "phrase_key": "PK-9406e170b973517e",
+          "text": "又不是没见过女人素颜，主要看你人。",
+          "sections": [
+            "八、ASD处理与关系定位（ASD Handling & Relationship Positioning） / 8.1 消除评判"
+          ],
+          "speaker_roles": [
+            "unknown"
+          ],
+          "occurrence_count": 1,
+          "source_refs": [
+            {
+              "file": "01-原始资料/2026-08-23_huashu.docx",
+              "locator": "paragraph:482",
+              "section": "八、ASD处理与关系定位（ASD Handling & Relationship Positioning） / 8.1 消除评判"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "invite_and_schedule",
+      "title": "自然邀约与条件调度",
+      "callability": "candidate_callable_after_context_review",
+      "conditions": [
+        "对方未明确拒绝且双方愿意继续",
+        "把时间、地点、形式和方便程度说清楚",
+        "允许对方改期或拒绝"
+      ],
+      "entries": [
+        {
+          "phrase_id": "P-1455",
+          "phrase_key": "PK-ab0636566cac0273",
+          "text": "（这么执着于咖啡吗）咖啡厅聊天安静而已。",
+          "sections": [
+            "四、废测破解与框架控制（Shit Test Handling & Frame Control） / 4.3 阻碍废测解决（Jackson）"
+          ],
+          "speaker_roles": [
+            "unknown"
+          ],
+          "occurrence_count": 1,
+          "source_refs": [
+            {
+              "file": "01-原始资料/2026-08-23_huashu.docx",
+              "locator": "paragraph:236",
+              "section": "四、废测破解与框架控制（Shit Test Handling & Frame Control） / 4.3 阻碍废测解决（Jackson）"
+            }
+          ]
+        },
+        {
+          "phrase_id": "P-1262",
+          "phrase_key": "PK-9f286414d822ba1a",
+          "text": "想当面聊聊。",
+          "sections": [
+            "七、引导投资与邀约（Leading Investment & Date Invitation） / 7.4 待机/邀约跟进（Jackson）"
+          ],
+          "speaker_roles": [
+            "unknown"
+          ],
+          "occurrence_count": 1,
+          "source_refs": [
+            {
+              "file": "01-原始资料/2026-08-23_huashu.docx",
+              "locator": "paragraph:461",
+              "section": "七、引导投资与邀约（Leading Investment & Date Invitation） / 7.4 待机/邀约跟进（Jackson）"
+            }
+          ]
+        },
+        {
+          "phrase_id": "P-1272",
+          "phrase_key": "PK-ada70d9ee82d0f9f",
+          "text": "想知道你的休息时间。",
+          "sections": [
+            "七、引导投资与邀约（Leading Investment & Date Invitation） / 7.3 邀约语句（Jackson）"
+          ],
+          "speaker_roles": [
+            "unknown"
+          ],
+          "occurrence_count": 1,
+          "source_refs": [
+            {
+              "file": "01-原始资料/2026-08-23_huashu.docx",
+              "locator": "paragraph:413",
+              "section": "七、引导投资与邀约（Leading Investment & Date Invitation） / 7.3 邀约语句（Jackson）"
+            }
+          ]
+        },
+        {
+          "phrase_id": "P-0763",
+          "phrase_key": "PK-49ae3a06896817ec",
+          "text": "你在哪？",
+          "sections": [
+            "七、引导投资与邀约（Leading Investment & Date Invitation） / 7.3 邀约语句（Jackson）"
+          ],
+          "speaker_roles": [
+            "unknown"
+          ],
+          "occurrence_count": 1,
+          "source_refs": [
+            {
+              "file": "01-原始资料/2026-08-23_huashu.docx",
+              "locator": "paragraph:425",
+              "section": "七、引导投资与邀约（Leading Investment & Date Invitation） / 7.3 邀约语句（Jackson）"
+            }
+          ]
+        },
+        {
+          "phrase_id": "P-1325",
+          "phrase_key": "PK-1bf2f859474b2a18",
+          "text": "壹方天地比较热闹，就观音桥？",
+          "sections": [
+            "七、引导投资与邀约（Leading Investment & Date Invitation） / 7.3 邀约语句（Jackson）"
+          ],
+          "speaker_roles": [
+            "unknown"
+          ],
+          "occurrence_count": 1,
+          "source_refs": [
+            {
+              "file": "01-原始资料/2026-08-23_huashu.docx",
+              "locator": "paragraph:427",
+              "section": "七、引导投资与邀约（Leading Investment & Date Invitation） / 7.3 邀约语句（Jackson）"
+            }
+          ]
+        },
+        {
+          "phrase_id": "P-0809",
+          "phrase_key": "PK-19a6fe6e4dacaf61",
+          "text": "（女人说忙）具体可以确定哪天。",
+          "sections": [
+            "七、引导投资与邀约（Leading Investment & Date Invitation） / 7.4 待机/邀约跟进（Jackson）"
+          ],
+          "speaker_roles": [
+            "unknown"
+          ],
+          "occurrence_count": 1,
+          "source_refs": [
+            {
+              "file": "01-原始资料/2026-08-23_huashu.docx",
+              "locator": "paragraph:460",
+              "section": "七、引导投资与邀约（Leading Investment & Date Invitation） / 7.4 待机/邀约跟进（Jackson）"
+            }
+          ]
+        },
+        {
+          "phrase_id": "P-0748",
+          "phrase_key": "PK-7338c9112f64489e",
+          "text": "你要是也不喜欢线上尬聊，那我们可以约杯咖啡线下见一下。",
+          "sections": [
+            "七、引导投资与邀约（Leading Investment & Date Invitation） / 7.3 邀约语句（Jackson）"
+          ],
+          "speaker_roles": [
+            "unknown"
+          ],
+          "occurrence_count": 1,
+          "source_refs": [
+            {
+              "file": "01-原始资料/2026-08-23_huashu.docx",
+              "locator": "paragraph:439",
+              "section": "七、引导投资与邀约（Leading Investment & Date Invitation） / 7.3 邀约语句（Jackson）"
+            }
+          ]
+        },
+        {
+          "phrase_id": "P-0310",
+          "phrase_key": "PK-7987aa58aba53de7",
+          "text": "国庆什么安排，我的意思是，什么时候跟我约咖？",
+          "sections": [
+            "七、引导投资与邀约（Leading Investment & Date Invitation） / 7.4 待机/邀约跟进（Jackson）"
+          ],
+          "speaker_roles": [
+            "unknown"
+          ],
+          "occurrence_count": 1,
+          "source_refs": [
+            {
+              "file": "01-原始资料/2026-08-23_huashu.docx",
+              "locator": "paragraph:466",
+              "section": "七、引导投资与邀约（Leading Investment & Date Invitation） / 7.4 待机/邀约跟进（Jackson）"
+            }
+          ]
+        },
+        {
+          "phrase_id": "P-0672",
+          "phrase_key": "PK-f342ec9509493f9e",
+          "text": "你忙吗？喝点饮料？",
+          "sections": [
+            "七、引导投资与邀约（Leading Investment & Date Invitation） / 7.3 邀约语句（Jackson）"
+          ],
+          "speaker_roles": [
+            "unknown"
+          ],
+          "occurrence_count": 1,
+          "source_refs": [
+            {
+              "file": "01-原始资料/2026-08-23_huashu.docx",
+              "locator": "paragraph:437",
+              "section": "七、引导投资与邀约（Leading Investment & Date Invitation） / 7.3 邀约语句（Jackson）"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "context_required_teasing",
+      "title": "需要语境复核的轻调侃与邀约",
+      "callability": "context_required",
+      "conditions": [
+        "双方已有可观察的轻松玩笑语境",
+        "对方没有不适或停止信号",
+        "逐句回读上下文后才能决定"
+      ],
+      "entries": [
+        {
+          "phrase_id": "P-0204",
+          "phrase_key": "PK-3eae0c634b978d2c",
+          "text": "对你的软感兴趣。",
+          "sections": [
+            "十、作联系感与日常维护（Connection & Maintenance） / 10.1 作联系感语句（Jackson）"
+          ],
+          "speaker_roles": [
+            "unknown"
+          ],
+          "occurrence_count": 1,
+          "source_refs": [
+            {
+              "file": "01-原始资料/2026-08-23_huashu.docx",
+              "locator": "paragraph:552",
+              "section": "十、作联系感与日常维护（Connection & Maintenance） / 10.1 作联系感语句（Jackson）"
+            }
+          ]
+        },
+        {
+          "phrase_id": "P-0148",
+          "phrase_key": "PK-73d3a63d24907feb",
+          "text": "当面更有趣不是吗？",
+          "sections": [
+            "七、引导投资与邀约（Leading Investment & Date Invitation） / 7.3 邀约语句（Jackson）"
+          ],
+          "speaker_roles": [
+            "unknown"
+          ],
+          "occurrence_count": 1,
+          "source_refs": [
+            {
+              "file": "01-原始资料/2026-08-23_huashu.docx",
+              "locator": "paragraph:415",
+              "section": "七、引导投资与邀约（Leading Investment & Date Invitation） / 7.3 邀约语句（Jackson）"
+            }
+          ]
+        },
+        {
+          "phrase_id": "P-0719",
+          "phrase_key": "PK-ab387f29235ecb50",
+          "text": "你喜欢网聊吗？我不喜欢，所以约当面。",
+          "sections": [
+            "七、引导投资与邀约（Leading Investment & Date Invitation） / 7.3 邀约语句（Jackson）"
+          ],
+          "speaker_roles": [
+            "unknown"
+          ],
+          "occurrence_count": 1,
+          "source_refs": [
+            {
+              "file": "01-原始资料/2026-08-23_huashu.docx",
+              "locator": "paragraph:438",
+              "section": "七、引导投资与邀约（Leading Investment & Date Invitation） / 7.3 邀约语句（Jackson）"
+            }
+          ]
+        },
+        {
+          "phrase_id": "P-0491",
+          "phrase_key": "PK-c2904642b00188bf",
+          "text": "没那么闲 你先说个时间 我看看OK不",
+          "sections": [
+            "聊天假评"
+          ],
+          "speaker_roles": [
+            "unknown"
+          ],
+          "occurrence_count": 2,
+          "source_refs": [
+            {
+              "file": "01-原始资料/2026-08-23_话术库.docx",
+              "locator": "paragraph:75",
+              "section": "聊天假评"
+            },
+            {
+              "file": "01-原始资料/2026-08-23_game.docx",
+              "locator": "paragraph:83",
+              "section": "聊天假评"
+            }
+          ]
+        },
+        {
+          "phrase_id": "P-0808",
+          "phrase_key": "PK-6514a04a8322e8be",
+          "text": "（女人说不喝咖）可以改茶，但是我想搞清楚是拒绝还是不喝咖。",
+          "sections": [
+            "四、废测破解与框架控制（Shit Test Handling & Frame Control） / 4.3 阻碍废测解决（Jackson）"
+          ],
+          "speaker_roles": [
+            "unknown"
+          ],
+          "occurrence_count": 1,
+          "source_refs": [
+            {
+              "file": "01-原始资料/2026-08-23_huashu.docx",
+              "locator": "paragraph:224",
+              "section": "四、废测破解与框架控制（Shit Test Handling & Frame Control） / 4.3 阻碍废测解决（Jackson）"
+            }
+          ]
+        },
+        {
+          "phrase_id": "P-1086",
+          "phrase_key": "PK-8c7cabe82a4eadd3",
+          "text": "微信先不急……我可能比较喜欢当面接触。",
+          "sections": [
+            "一、开场与搭讪（Openers & Approaches） / 1.2 微信/社交软件转场"
+          ],
+          "speaker_roles": [
+            "unknown"
+          ],
+          "occurrence_count": 1,
+          "source_refs": [
+            {
+              "file": "01-原始资料/2026-08-23_huashu.docx",
+              "locator": "paragraph:10",
+              "section": "一、开场与搭讪（Openers & Approaches） / 1.2 微信/社交软件转场"
+            }
+          ]
+        },
+        {
+          "phrase_id": "P-1437",
+          "phrase_key": "PK-20322b173c729d21",
+          "text": "长得甜是一回事，感觉是一回事。",
+          "sections": [
+            "七、引导投资与邀约（Leading Investment & Date Invitation） / 7.5 给对方反馈/撩（Jackson）"
+          ],
+          "speaker_roles": [
+            "unknown"
+          ],
+          "occurrence_count": 1,
+          "source_refs": [
+            {
+              "file": "01-原始资料/2026-08-23_huashu.docx",
+              "locator": "paragraph:472",
+              "section": "七、引导投资与邀约（Leading Investment & Date Invitation） / 7.5 给对方反馈/撩（Jackson）"
+            }
+          ]
+        },
+        {
+          "phrase_id": "P-1258",
+          "phrase_key": "PK-d403dc6dc38c0d30",
+          "text": "现在冷静下来，如何评价？",
+          "sections": [
+            "十、作联系感与日常维护（Connection & Maintenance） / 10.1 作联系感语句（Jackson）"
+          ],
+          "speaker_roles": [
+            "unknown"
+          ],
+          "occurrence_count": 1,
+          "source_refs": [
+            {
+              "file": "01-原始资料/2026-08-23_huashu.docx",
+              "locator": "paragraph:534",
+              "section": "十、作联系感与日常维护（Connection & Maintenance） / 10.1 作联系感语句（Jackson）"
+            }
+          ]
+        },
+        {
+          "phrase_id": "P-0998",
+          "phrase_key": "PK-0639f8e4b0dbebbe",
+          "text": "说到不一定马上做。",
+          "sections": [
+            "七、引导投资与邀约（Leading Investment & Date Invitation） / 7.3 邀约语句（Jackson）"
+          ],
+          "speaker_roles": [
+            "unknown"
+          ],
+          "occurrence_count": 1,
+          "source_refs": [
+            {
+              "file": "01-原始资料/2026-08-23_huashu.docx",
+              "locator": "paragraph:420",
+              "section": "七、引导投资与邀约（Leading Investment & Date Invitation） / 7.3 邀约语句（Jackson）"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "boundary_only_examples",
+      "title": "只用于边界审计的来源句",
+      "callability": "boundary_only",
+      "conditions": [
+        "用于说明为什么不能继续追问、施压或绕过拒绝",
+        "不作为正向示例"
+      ],
+      "entries": [
+        {
+          "phrase_id": "P-0186",
+          "phrase_key": "PK-db16e2facadf1ee1",
+          "text": "对方没回可以重发一遍加一个问号。",
+          "sections": [
+            "十、作联系感与日常维护（Connection & Maintenance） / 10.1 作联系感语句（Jackson）"
+          ],
+          "speaker_roles": [
+            "unknown"
+          ],
+          "occurrence_count": 1,
+          "source_refs": [
+            {
+              "file": "01-原始资料/2026-08-23_huashu.docx",
+              "locator": "paragraph:538",
+              "section": "十、作联系感与日常维护（Connection & Maintenance） / 10.1 作联系感语句（Jackson）"
+            }
+          ]
+        },
+        {
+          "phrase_id": "P-0738",
+          "phrase_key": "PK-e95631ad1c3f6a7f",
+          "text": "你消失了呢",
+          "sections": [
+            "情景加话术"
+          ],
+          "speaker_roles": [
+            "unknown"
+          ],
+          "occurrence_count": 1,
+          "source_refs": [
+            {
+              "file": "01-原始资料/2026-08-23_888内部群杰哥话术（3.3-8.17）.md",
+              "locator": "line:63",
+              "section": "情景加话术"
+            }
+          ]
+        },
+        {
+          "phrase_id": "P-0417",
+          "phrase_key": "PK-ff70cb05037258bb",
+          "text": "咖啡厅不止有咖啡，你的借口很烂。",
+          "sections": [
+            "四、废测破解与框架控制（Shit Test Handling & Frame Control） / 4.3 阻碍废测解决（Jackson）"
+          ],
+          "speaker_roles": [
+            "unknown"
+          ],
+          "occurrence_count": 1,
+          "source_refs": [
+            {
+              "file": "01-原始资料/2026-08-23_huashu.docx",
+              "locator": "paragraph:228",
+              "section": "四、废测破解与框架控制（Shit Test Handling & Frame Control） / 4.3 阻碍废测解决（Jackson）"
+            }
+          ]
+        },
+        {
+          "phrase_id": "P-0554",
+          "phrase_key": "PK-0e805c7a6c50cf3a",
+          "text": "那么准备什么时候变现？那可不行，不能给你拒绝我的机会。",
+          "sections": [
+            "七、引导投资与邀约（Leading Investment & Date Invitation） / 7.4 待机/邀约跟进（Jackson）"
+          ],
+          "speaker_roles": [
+            "unknown"
+          ],
+          "occurrence_count": 1,
+          "source_refs": [
+            {
+              "file": "01-原始资料/2026-08-23_huashu.docx",
+              "locator": "paragraph:451",
+              "section": "七、引导投资与邀约（Leading Investment & Date Invitation） / 7.4 待机/邀约跟进（Jackson）"
+            }
+          ]
+        },
+        {
+          "phrase_id": "P-1305",
+          "phrase_key": "PK-53b9e5131bb23a26",
+          "text": "（邀约对方说改时间）该怎么惩罚你呢？",
+          "sections": [
+            "四、废测破解与框架控制（Shit Test Handling & Frame Control） / 4.3 阻碍废测解决（Jackson）"
+          ],
+          "speaker_roles": [
+            "unknown"
+          ],
+          "occurrence_count": 1,
+          "source_refs": [
+            {
+              "file": "01-原始资料/2026-08-23_huashu.docx",
+              "locator": "paragraph:231",
+              "section": "四、废测破解与框架控制（Shit Test Handling & Frame Control） / 4.3 阻碍废测解决（Jackson）"
+            }
+          ]
+        },
+        {
+          "phrase_id": "P-0183",
+          "phrase_key": "PK-e77077ce4301f65c",
+          "text": "（对方拒绝）那删？",
+          "sections": [
+            "四、废测破解与框架控制（Shit Test Handling & Frame Control） / 4.3 阻碍废测解决（Jackson）"
+          ],
+          "speaker_roles": [
+            "unknown"
+          ],
+          "occurrence_count": 1,
+          "source_refs": [
+            {
+              "file": "01-原始资料/2026-08-23_huashu.docx",
+              "locator": "paragraph:235",
+              "section": "四、废测破解与框架控制（Shit Test Handling & Frame Control） / 4.3 阻碍废测解决（Jackson）"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "supplemental_reference_files": [
+    "2026-08-23_AppleNotesQuickNotes候选参考增补清单.json"
+  ],
+  "supplemental_note": "Apple Notes 增补只提供有限优先候选与 45 条笔记的章节路由；完整 2867 条索引仍是 source_only 检索层。"
+}

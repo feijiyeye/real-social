@@ -1,0 +1,867 @@
+{
+  "schema_version": 1,
+  "generated": "2026-08-23",
+  "collection": "Apple Notes Quick Notes / Jackson体系话术增补",
+  "source_root": "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08",
+  "readme_file": "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/README.md",
+  "readme_archive_file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_README.md",
+  "readme_sha256": "55030d22d0256a4d60d0ffa560f19b12a4c9d0d45fb9562b886b57bd755cb2ed",
+  "notes_expected": 45,
+  "notes_found": 45,
+  "text_notes": 44,
+  "media_only_notes": [
+    "023_defusing_tests_and_body_language.md"
+  ],
+  "finder_metadata_files_excluded": 45,
+  "notes": [
+    {
+      "source_file": "001_jackson_top_phrases_seriousness_and_invitation_obstacles.md",
+      "source_path": "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/001_jackson_top_phrases_seriousness_and_invitation_obstacles.md",
+      "title": "杰哥顶级话术",
+      "source_modified_at": "2026-08-17 17:00",
+      "attachments": "2 embedded images retained in Apple Notes",
+      "import_status": "text imported",
+      "sha256": "7afd30d010ea9e0b58eda3056aaf83a734c2d966476088054f04884ca4d1b94e",
+      "bytes": 2065,
+      "line_count": 115,
+      "extracted_entry_count": 49,
+      "sections": [
+        "对方不严肃嘻嘻哈哈或者表情包",
+        "遇到邀约女生社恐等阻碍"
+      ],
+      "archive_file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_001_jackson_top_phrases_seriousness_and_invitation_obstacles.md",
+      "indexed_entry_count": 49,
+      "non_indexable_rows": []
+    },
+    {
+      "source_file": "002_emotional_tension.md",
+      "source_path": "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/002_emotional_tension.md",
+      "title": "情绪拉伸",
+      "source_modified_at": "2026-08-17 17:00",
+      "attachments": "none",
+      "import_status": "text imported",
+      "sha256": "8c6a68af29e6f5efe8b4e32db4541b2be880dea623c8fc3f521d19096df007e9",
+      "bytes": 506,
+      "line_count": 33,
+      "extracted_entry_count": 12,
+      "sections": [
+        "情绪拉伸"
+      ],
+      "archive_file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_002_emotional_tension.md",
+      "indexed_entry_count": 12,
+      "non_indexable_rows": []
+    },
+    {
+      "source_file": "003_within_five_days.md",
+      "source_path": "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/003_within_five_days.md",
+      "title": "五天以内",
+      "source_modified_at": "2026-08-17 16:54",
+      "attachments": "none",
+      "import_status": "text imported",
+      "sha256": "35f18facf474045dbffa68278e1991bd825873b527de3feaf71d99665b8d7a8b",
+      "bytes": 266,
+      "line_count": 19,
+      "extracted_entry_count": 1,
+      "sections": [
+        "你有信用卡吗"
+      ],
+      "archive_file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_003_within_five_days.md",
+      "indexed_entry_count": 1,
+      "non_indexable_rows": []
+    },
+    {
+      "source_file": "004_displaying_aggression.md",
+      "source_path": "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/004_displaying_aggression.md",
+      "title": "展示攻击性",
+      "source_modified_at": "2026-08-17 16:59",
+      "attachments": "none",
+      "import_status": "text imported",
+      "sha256": "da9a990e7503bf29c4b7c40d1b141cb27ebeb66596cbdc5f13e985158af390ad",
+      "bytes": 350,
+      "line_count": 19,
+      "extracted_entry_count": 5,
+      "sections": [
+        "展示攻击性"
+      ],
+      "archive_file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_004_displaying_aggression.md",
+      "indexed_entry_count": 5,
+      "non_indexable_rows": []
+    },
+    {
+      "source_file": "005_sticker_and_non_seriousness_obstacles.md",
+      "source_path": "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/005_sticker_and_non_seriousness_obstacles.md",
+      "title": "表情包阻碍 不认真无张力阻碍",
+      "source_modified_at": "2026-08-17 16:59",
+      "attachments": "none",
+      "import_status": "text imported",
+      "sha256": "caf0c7edd590a071ad2f8abbe14261800306f9f7f14a00a16fe9393053fc376e",
+      "bytes": 847,
+      "line_count": 45,
+      "extracted_entry_count": 18,
+      "sections": [
+        "表情包阻碍 不认真无张力阻碍"
+      ],
+      "archive_file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_005_sticker_and_non_seriousness_obstacles.md",
+      "indexed_entry_count": 18,
+      "non_indexable_rows": []
+    },
+    {
+      "source_file": "006_closing_or_returning_home_obstacles.md",
+      "source_path": "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/006_closing_or_returning_home_obstacles.md",
+      "title": "收尾或者带回家阻碍",
+      "source_modified_at": "2026-08-17 16:59",
+      "attachments": "none",
+      "import_status": "text imported",
+      "sha256": "a2dfc9b907ba3dfe4bf19b05f8fe57f513cab8222b23292453a9d5b83ef80eed",
+      "bytes": 317,
+      "line_count": 17,
+      "extracted_entry_count": 4,
+      "sections": [
+        "收尾或者带回家阻碍"
+      ],
+      "archive_file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_006_closing_or_returning_home_obstacles.md",
+      "indexed_entry_count": 4,
+      "non_indexable_rows": []
+    },
+    {
+      "source_file": "007_leading_the_interaction.md",
+      "source_path": "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/007_leading_the_interaction.md",
+      "title": "主导",
+      "source_modified_at": "2026-08-17 16:59",
+      "attachments": "none",
+      "import_status": "text imported",
+      "sha256": "880cf381a6a5f5b496b2aad152f4cdbc9271a5f773992d0918df5df1b0149d16",
+      "bytes": 365,
+      "line_count": 21,
+      "extracted_entry_count": 6,
+      "sections": [
+        "主导"
+      ],
+      "archive_file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_007_leading_the_interaction.md",
+      "indexed_entry_count": 6,
+      "non_indexable_rows": []
+    },
+    {
+      "source_file": "008_escalation_by_pulling_back.md",
+      "source_path": "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/008_escalation_by_pulling_back.md",
+      "title": "以退为进的升级",
+      "source_modified_at": "2026-08-17 16:58",
+      "attachments": "none",
+      "import_status": "text imported",
+      "sha256": "f107869e5958e199a8531f583b314fa684cbac896f4e55aee4c0a623ccc41487",
+      "bytes": 231,
+      "line_count": 15,
+      "extracted_entry_count": 3,
+      "sections": [
+        "以退为进的升级"
+      ],
+      "archive_file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_008_escalation_by_pulling_back.md",
+      "indexed_entry_count": 3,
+      "non_indexable_rows": []
+    },
+    {
+      "source_file": "009_asking_for_commitment.md",
+      "source_path": "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/009_asking_for_commitment.md",
+      "title": "逼单",
+      "source_modified_at": "2026-08-17 16:58",
+      "attachments": "none",
+      "import_status": "text imported",
+      "sha256": "ae7df3ff58feb22713291ba74200beb2f35d0c3557b9ea5b5e0eb2b352c30ced",
+      "bytes": 272,
+      "line_count": 13,
+      "extracted_entry_count": 2,
+      "sections": [
+        "逼单"
+      ],
+      "archive_file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_009_asking_for_commitment.md",
+      "indexed_entry_count": 2,
+      "non_indexable_rows": []
+    },
+    {
+      "source_file": "010_teaching_frame.md",
+      "source_path": "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/010_teaching_frame.md",
+      "title": "调教框架",
+      "source_modified_at": "2026-08-17 16:58",
+      "attachments": "none",
+      "import_status": "text imported",
+      "sha256": "9a47f54bb99b7f141d9c09b0bae514fa646c4cfb110c1b5486e2b7f419d8412f",
+      "bytes": 175,
+      "line_count": 11,
+      "extracted_entry_count": 1,
+      "sections": [
+        "调教框架"
+      ],
+      "archive_file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_010_teaching_frame.md",
+      "indexed_entry_count": 1,
+      "non_indexable_rows": []
+    },
+    {
+      "source_file": "011_playful_evaluation_opening.md",
+      "source_path": "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/011_playful_evaluation_opening.md",
+      "title": "假性评估（开局）",
+      "source_modified_at": "2026-08-17 16:58",
+      "attachments": "none",
+      "import_status": "text imported",
+      "sha256": "48f34d6433fc3eede30d4d636229a43fa95d3f023fd4f4437063d98fa6a01889",
+      "bytes": 250,
+      "line_count": 17,
+      "extracted_entry_count": 4,
+      "sections": [
+        "假性评估（开局）"
+      ],
+      "archive_file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_011_playful_evaluation_opening.md",
+      "indexed_entry_count": 4,
+      "non_indexable_rows": []
+    },
+    {
+      "source_file": "012_values_and_stance.md",
+      "source_path": "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/012_values_and_stance.md",
+      "title": "价值观输出",
+      "source_modified_at": "2026-08-17 16:57",
+      "attachments": "none",
+      "import_status": "text imported",
+      "sha256": "cef9de2a4d1077082dcd5c3dc274e6a7579b070976120de010bf6382ff42cbe1",
+      "bytes": 1122,
+      "line_count": 43,
+      "extracted_entry_count": 17,
+      "sections": [
+        "价值观输出"
+      ],
+      "archive_file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_012_values_and_stance.md",
+      "indexed_entry_count": 17,
+      "non_indexable_rows": []
+    },
+    {
+      "source_file": "013_empathic_opening.md",
+      "source_path": "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/013_empathic_opening.md",
+      "title": "开场同理心环节",
+      "source_modified_at": "2026-08-17 16:57",
+      "attachments": "none",
+      "import_status": "text imported",
+      "sha256": "658fe104e1dab3c4e1ced4446f02a4fce9e2b8de3870cae4f3f42c5b1395b7d2",
+      "bytes": 763,
+      "line_count": 47,
+      "extracted_entry_count": 19,
+      "sections": [
+        "开场同理心环节"
+      ],
+      "archive_file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_013_empathic_opening.md",
+      "indexed_entry_count": 19,
+      "non_indexable_rows": []
+    },
+    {
+      "source_file": "014_jackson_key_tactics.md",
+      "source_path": "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/014_jackson_key_tactics.md",
+      "title": "杰哥干货",
+      "source_modified_at": "2026-08-17 16:57",
+      "attachments": "none",
+      "import_status": "text imported",
+      "sha256": "9205cc7ef52c251424c55b1913f28e7cdb2710d2b1280b64ad815d45f4828d4b",
+      "bytes": 317,
+      "line_count": 17,
+      "extracted_entry_count": 4,
+      "sections": [
+        "杰哥干货"
+      ],
+      "archive_file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_014_jackson_key_tactics.md",
+      "indexed_entry_count": 4,
+      "non_indexable_rows": []
+    },
+    {
+      "source_file": "015_experience_based_routines.md",
+      "source_path": "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/015_experience_based_routines.md",
+      "title": "阅历惯例",
+      "source_modified_at": "2026-08-17 16:57",
+      "attachments": "none",
+      "import_status": "text imported",
+      "sha256": "8d36c6435fa911e13e113384f911e9c16513a86a147bdeeb998fb69d30dabcf3",
+      "bytes": 867,
+      "line_count": 39,
+      "extracted_entry_count": 15,
+      "sections": [
+        "阅历惯例"
+      ],
+      "archive_file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_015_experience_based_routines.md",
+      "indexed_entry_count": 15,
+      "non_indexable_rows": []
+    },
+    {
+      "source_file": "016_clear_intent_and_premise.md",
+      "source_path": "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/016_clear_intent_and_premise.md",
+      "title": "明确意图与前提",
+      "source_modified_at": "2026-08-17 16:56",
+      "attachments": "none",
+      "import_status": "text imported",
+      "sha256": "90d5ef5e131f67a0489812a441168ef0648e63d9f474ec3aa3fc091a3b835c5a",
+      "bytes": 409,
+      "line_count": 25,
+      "extracted_entry_count": 8,
+      "sections": [
+        "明确意图与前提"
+      ],
+      "archive_file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_016_clear_intent_and_premise.md",
+      "indexed_entry_count": 8,
+      "non_indexable_rows": []
+    },
+    {
+      "source_file": "017_tension_and_visual_imagery.md",
+      "source_path": "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/017_tension_and_visual_imagery.md",
+      "title": "张力与画面感",
+      "source_modified_at": "2026-08-17 16:56",
+      "attachments": "none",
+      "import_status": "text imported",
+      "sha256": "cf9cede2c2f14acf315696f5ef077c70a2f66d88bab35a0d047bb245ea5f77d3",
+      "bytes": 1947,
+      "line_count": 121,
+      "extracted_entry_count": 56,
+      "sections": [
+        "张力与画面感"
+      ],
+      "archive_file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_017_tension_and_visual_imagery.md",
+      "indexed_entry_count": 56,
+      "non_indexable_rows": []
+    },
+    {
+      "source_file": "018_gaze_and_direct_answers.md",
+      "source_path": "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/018_gaze_and_direct_answers.md",
+      "title": "凝视",
+      "source_modified_at": "2026-08-17 16:56",
+      "attachments": "none",
+      "import_status": "text imported",
+      "sha256": "0c75d1205a5a919fa7683daed8366808e1e89efea10b8e6a3c3caacc2d9c3668",
+      "bytes": 919,
+      "line_count": 63,
+      "extracted_entry_count": 27,
+      "sections": [
+        "凝视"
+      ],
+      "archive_file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_018_gaze_and_direct_answers.md",
+      "indexed_entry_count": 27,
+      "non_indexable_rows": []
+    },
+    {
+      "source_file": "019_extending_the_conversation.md",
+      "source_path": "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/019_extending_the_conversation.md",
+      "title": "延续话题",
+      "source_modified_at": "2026-08-17 16:55",
+      "attachments": "none",
+      "import_status": "text imported",
+      "sha256": "0cd13d978cb03f0c86b40be6e306eedfd910ec22ba75f10d6cd7142ed2aa45da",
+      "bytes": 672,
+      "line_count": 51,
+      "extracted_entry_count": 21,
+      "sections": [
+        "延续话题"
+      ],
+      "archive_file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_019_extending_the_conversation.md",
+      "indexed_entry_count": 21,
+      "non_indexable_rows": []
+    },
+    {
+      "source_file": "020_strong_attraction_persona_examples.md",
+      "source_path": "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/020_strong_attraction_persona_examples.md",
+      "title": "强吸引个性样本输出",
+      "source_modified_at": "2026-08-17 16:55",
+      "attachments": "none",
+      "import_status": "text imported",
+      "sha256": "ceb83546791bf8a376e6a603e10382ef6e23708edf3d6de7085ee2b2f93e49c8",
+      "bytes": 2069,
+      "line_count": 95,
+      "extracted_entry_count": 43,
+      "sections": [
+        "强吸引个性样本输出"
+      ],
+      "archive_file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_020_strong_attraction_persona_examples.md",
+      "indexed_entry_count": 43,
+      "non_indexable_rows": []
+    },
+    {
+      "source_file": "021_values_and_stance_2.md",
+      "source_path": "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/021_values_and_stance_2.md",
+      "title": "价值观输出",
+      "source_modified_at": "2026-08-17 16:55",
+      "attachments": "none",
+      "import_status": "text imported",
+      "sha256": "89ab9b9e20c4007034a2f3b22baca4dcd223d957a10c94100e5de7743420bc25",
+      "bytes": 928,
+      "line_count": 33,
+      "extracted_entry_count": 12,
+      "sections": [
+        "价值观输出"
+      ],
+      "archive_file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_021_values_and_stance_2.md",
+      "indexed_entry_count": 12,
+      "non_indexable_rows": []
+    },
+    {
+      "source_file": "022_short_term_and_low_fit.md",
+      "source_path": "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/022_short_term_and_low_fit.md",
+      "title": "短期和土妹勿扰",
+      "source_modified_at": "2026-08-17 16:55",
+      "attachments": "none",
+      "import_status": "text imported",
+      "sha256": "0c4f9fc39dcc2ad4fc159f7aa28c0cb5949800f98c03ab4c74c18889f00d5d0f",
+      "bytes": 224,
+      "line_count": 11,
+      "extracted_entry_count": 1,
+      "sections": [
+        "短期和土妹勿扰"
+      ],
+      "archive_file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_022_short_term_and_low_fit.md",
+      "indexed_entry_count": 1,
+      "non_indexable_rows": []
+    },
+    {
+      "source_file": "023_defusing_tests_and_body_language.md",
+      "source_path": "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/023_defusing_tests_and_body_language.md",
+      "title": "破防的肢体动作 应对废测的关键话术",
+      "source_modified_at": "2026-08-17 16:54",
+      "attachments": "possible embedded media",
+      "import_status": "title imported; text needs media review",
+      "sha256": "73842ba8e39e929aadc5bd4707eb35666d704d32ebb4d5d3007896eb6714dcc4",
+      "bytes": 385,
+      "line_count": 11,
+      "extracted_entry_count": 0,
+      "sections": [],
+      "archive_file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_023_defusing_tests_and_body_language.md",
+      "indexed_entry_count": 0,
+      "non_indexable_rows": []
+    },
+    {
+      "source_file": "024_building_connection.md",
+      "source_path": "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/024_building_connection.md",
+      "title": "做联系感",
+      "source_modified_at": "2026-08-17 16:54",
+      "attachments": "none",
+      "import_status": "text imported",
+      "sha256": "d39b8d9615e7148f0b0371c26f880c8cf325abba0aa76fac40a6f9edc5957b70",
+      "bytes": 3198,
+      "line_count": 131,
+      "extracted_entry_count": 61,
+      "sections": [
+        "做联系感"
+      ],
+      "archive_file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_024_building_connection.md",
+      "indexed_entry_count": 61,
+      "non_indexable_rows": []
+    },
+    {
+      "source_file": "025_asking_for_commitment_2.md",
+      "source_path": "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/025_asking_for_commitment_2.md",
+      "title": "逼单",
+      "source_modified_at": "2026-08-17 16:54",
+      "attachments": "none",
+      "import_status": "text imported",
+      "sha256": "e228b8f19072b25e723bd13f6353471d91d2f27c87520943f959f5c7ab331359",
+      "bytes": 471,
+      "line_count": 29,
+      "extracted_entry_count": 10,
+      "sections": [
+        "逼单"
+      ],
+      "archive_file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_025_asking_for_commitment_2.md",
+      "indexed_entry_count": 10,
+      "non_indexable_rows": []
+    },
+    {
+      "source_file": "026_long_distance_delivery_flow.md",
+      "source_path": "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/026_long_distance_delivery_flow.md",
+      "title": "外卖百里千里送流程话术",
+      "source_modified_at": "2026-08-17 16:53",
+      "attachments": "none",
+      "import_status": "text imported",
+      "sha256": "22b7f913d764930902e08b86e86c7cd680dbe73ed8a5a4ddd9bd0efef00f2c8a",
+      "bytes": 252,
+      "line_count": 15,
+      "extracted_entry_count": 3,
+      "sections": [
+        "外卖百里千里送流程话术"
+      ],
+      "archive_file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_026_long_distance_delivery_flow.md",
+      "indexed_entry_count": 3,
+      "non_indexable_rows": []
+    },
+    {
+      "source_file": "027_victim_frame.md",
+      "source_path": "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/027_victim_frame.md",
+      "title": "伪装受害者视角",
+      "source_modified_at": "2026-08-17 16:53",
+      "attachments": "none",
+      "import_status": "text imported",
+      "sha256": "1976df3d7268b422201a113348cf7ff5a9ca9b63fe43f43c7e5e6c7719e50783",
+      "bytes": 494,
+      "line_count": 31,
+      "extracted_entry_count": 11,
+      "sections": [
+        "伪装受害者视角"
+      ],
+      "archive_file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_027_victim_frame.md",
+      "indexed_entry_count": 11,
+      "non_indexable_rows": []
+    },
+    {
+      "source_file": "028_app_contact_exchange.md",
+      "source_path": "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/028_app_contact_exchange.md",
+      "title": "软件收号",
+      "source_modified_at": "2026-08-17 16:53",
+      "attachments": "none",
+      "import_status": "text imported",
+      "sha256": "9cab8d5f638b244895569136e2be37776d0586a29878ddbc0cdf2bd164ac298a",
+      "bytes": 232,
+      "line_count": 17,
+      "extracted_entry_count": 4,
+      "sections": [
+        "软件收号"
+      ],
+      "archive_file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_028_app_contact_exchange.md",
+      "indexed_entry_count": 4,
+      "non_indexable_rows": []
+    },
+    {
+      "source_file": "029_woman_initiates_opening.md",
+      "source_path": "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/029_woman_initiates_opening.md",
+      "title": "女人主动开",
+      "source_modified_at": "2026-08-17 16:53",
+      "attachments": "none",
+      "import_status": "text imported",
+      "sha256": "8b19a90ce8f968a93f9791649d2cb9e5f31bc3df0fd1cccfb53adf00bc839952",
+      "bytes": 228,
+      "line_count": 13,
+      "extracted_entry_count": 2,
+      "sections": [
+        "女人主动开"
+      ],
+      "archive_file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_029_woman_initiates_opening.md",
+      "indexed_entry_count": 2,
+      "non_indexable_rows": []
+    },
+    {
+      "source_file": "030_long_term_relationship_dynamics.md",
+      "source_path": "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/030_long_term_relationship_dynamics.md",
+      "title": "长期关系调教",
+      "source_modified_at": "2026-08-17 16:53",
+      "attachments": "none",
+      "import_status": "text imported",
+      "sha256": "940660c04abca103eabd0843680c34595dda14c171d79046e9fcd406fe0e3e42",
+      "bytes": 478,
+      "line_count": 25,
+      "extracted_entry_count": 8,
+      "sections": [
+        "长期关系调教"
+      ],
+      "archive_file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_030_long_term_relationship_dynamics.md",
+      "indexed_entry_count": 8,
+      "non_indexable_rows": []
+    },
+    {
+      "source_file": "031_male_to_female_framing.md",
+      "source_path": "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/031_male_to_female_framing.md",
+      "title": "切男对女",
+      "source_modified_at": "2026-08-17 16:53",
+      "attachments": "none",
+      "import_status": "text imported",
+      "sha256": "5730f95387ad2862c3c38a6c3720f8eca742cea6b7c2e9d9517a40526116f472",
+      "bytes": 1004,
+      "line_count": 49,
+      "extracted_entry_count": 20,
+      "sections": [
+        "切男对女"
+      ],
+      "archive_file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_031_male_to_female_framing.md",
+      "indexed_entry_count": 20,
+      "non_indexable_rows": []
+    },
+    {
+      "source_file": "032_how_to_continue_replies.md",
+      "source_path": "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/032_how_to_continue_replies.md",
+      "title": "不知道怎么回思路",
+      "source_modified_at": "2026-08-17 16:52",
+      "attachments": "none",
+      "import_status": "text imported",
+      "sha256": "10518e57556db4888b4d79b759c18e3f1880884170220963a5abbdbdf70323ac",
+      "bytes": 1713,
+      "line_count": 119,
+      "extracted_entry_count": 55,
+      "sections": [
+        "不知道怎么回思路"
+      ],
+      "archive_file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_032_how_to_continue_replies.md",
+      "indexed_entry_count": 54,
+      "non_indexable_rows": [
+        {
+          "line": 97,
+          "text": "."
+        }
+      ]
+    },
+    {
+      "source_file": "033_value_feedback_and_flirting.md",
+      "source_path": "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/033_value_feedback_and_flirting.md",
+      "title": "给价值反馈，撩的部分：",
+      "source_modified_at": "2026-08-17 16:52",
+      "attachments": "none",
+      "import_status": "text imported",
+      "sha256": "0efd49c9e2156dd84995ad4b624709f662970c71e150f8ec75bee9bed89a097f",
+      "bytes": 941,
+      "line_count": 53,
+      "extracted_entry_count": 22,
+      "sections": [
+        "给价值反馈，撩的部分："
+      ],
+      "archive_file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_033_value_feedback_and_flirting.md",
+      "indexed_entry_count": 22,
+      "non_indexable_rows": []
+    },
+    {
+      "source_file": "034_pulling_the_conversation.md",
+      "source_path": "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/034_pulling_the_conversation.md",
+      "title": "拉",
+      "source_modified_at": "2026-08-17 16:52",
+      "attachments": "none",
+      "import_status": "text imported",
+      "sha256": "224fb477dc07d29187f1396edf62fab5ea8d0756b8e5be88dfd00f85d819ec4f",
+      "bytes": 1233,
+      "line_count": 65,
+      "extracted_entry_count": 28,
+      "sections": [
+        "拉"
+      ],
+      "archive_file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_034_pulling_the_conversation.md",
+      "indexed_entry_count": 28,
+      "non_indexable_rows": []
+    },
+    {
+      "source_file": "035_opening_patterns.md",
+      "source_path": "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/035_opening_patterns.md",
+      "title": "打开方式",
+      "source_modified_at": "2026-08-17 16:52",
+      "attachments": "none",
+      "import_status": "text imported",
+      "sha256": "b0e365a74563b3effc7729df4253ccb318002365a5aabca13a91cf2e4d637131",
+      "bytes": 1256,
+      "line_count": 77,
+      "extracted_entry_count": 34,
+      "sections": [
+        "打开方式"
+      ],
+      "archive_file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_035_opening_patterns.md",
+      "indexed_entry_count": 34,
+      "non_indexable_rows": []
+    },
+    {
+      "source_file": "036_SM_attributes_phrases.md",
+      "source_path": "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/036_SM_attributes_phrases.md",
+      "title": "S M 属性话术",
+      "source_modified_at": "2026-08-17 16:51",
+      "attachments": "none",
+      "import_status": "text imported",
+      "sha256": "32d6e5669703fc469abd488d2ff8b99234d212bc148821a44b88d976c50f60e7",
+      "bytes": 685,
+      "line_count": 34,
+      "extracted_entry_count": 15,
+      "sections": [
+        "S M 属性话术"
+      ],
+      "archive_file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_036_SM_attributes_phrases.md",
+      "indexed_entry_count": 15,
+      "non_indexable_rows": []
+    },
+    {
+      "source_file": "037_using_their_own_logic.md",
+      "source_path": "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/037_using_their_own_logic.md",
+      "title": "以其人之道还治其人之身",
+      "source_modified_at": "2026-08-17 16:49",
+      "attachments": "none",
+      "import_status": "text imported",
+      "sha256": "22f321bc1c8906bb4c5b0daec3bb55b4706c4e5ccc319bd00a8dc87c8f25e6e9",
+      "bytes": 312,
+      "line_count": 16,
+      "extracted_entry_count": 6,
+      "sections": [
+        "以其人之道还治其人之身"
+      ],
+      "archive_file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_037_using_their_own_logic.md",
+      "indexed_entry_count": 6,
+      "non_indexable_rows": []
+    },
+    {
+      "source_file": "038_cooperation_breakthrough.md",
+      "source_path": "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/038_cooperation_breakthrough.md",
+      "title": "合作突破",
+      "source_modified_at": "2026-08-17 16:48",
+      "attachments": "none",
+      "import_status": "text imported",
+      "sha256": "37f599586eb65ffa64fbf00de7db3562e7ab5831bed9297db2af1c61ccfe5555",
+      "bytes": 132,
+      "line_count": 6,
+      "extracted_entry_count": 1,
+      "sections": [
+        "合作突破"
+      ],
+      "archive_file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_038_cooperation_breakthrough.md",
+      "indexed_entry_count": 1,
+      "non_indexable_rows": []
+    },
+    {
+      "source_file": "039_reengagement_phrases.md",
+      "source_path": "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/039_reengagement_phrases.md",
+      "title": "回蓝话术",
+      "source_modified_at": "2026-08-17 16:47",
+      "attachments": "none",
+      "import_status": "text imported",
+      "sha256": "86a811879744bec531cdd3860c09eba2ef291d49271d9eb3a28911ade830bdc8",
+      "bytes": 2044,
+      "line_count": 62,
+      "extracted_entry_count": 29,
+      "sections": [
+        "回蓝话术"
+      ],
+      "archive_file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_039_reengagement_phrases.md",
+      "indexed_entry_count": 29,
+      "non_indexable_rows": []
+    },
+    {
+      "source_file": "040_invitation_phrases.md",
+      "source_path": "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/040_invitation_phrases.md",
+      "title": "邀约部分：",
+      "source_modified_at": "2026-08-17 16:47",
+      "attachments": "none",
+      "import_status": "text imported",
+      "sha256": "3bcb039bc1093438087cabfa11a0a239cd5a7cf6ec2a1ba1aaca27b1cb1091a5",
+      "bytes": 5955,
+      "line_count": 143,
+      "extracted_entry_count": 137,
+      "sections": [
+        "邀约部分："
+      ],
+      "archive_file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_040_invitation_phrases.md",
+      "indexed_entry_count": 137,
+      "non_indexable_rows": []
+    },
+    {
+      "source_file": "041_disqualifying_pushback.md",
+      "source_path": "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/041_disqualifying_pushback.md",
+      "title": "失格推女生的话：",
+      "source_modified_at": "2026-08-17 16:46",
+      "attachments": "none",
+      "import_status": "text imported",
+      "sha256": "8c52a39fb12d4fdea1a71ccdce3d55e5e7e7a50c2ed92decb940cd18db520416",
+      "bytes": 10645,
+      "line_count": 257,
+      "extracted_entry_count": 251,
+      "sections": [
+        "失格推女生的话：",
+        "**<u>废话文学 我会带你烛光晚餐和鲜花 不怕杀猪盘啊（推拉失格三件套）  够胆 那走吧**</u>"
+      ],
+      "archive_file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_041_disqualifying_pushback.md",
+      "indexed_entry_count": 250,
+      "non_indexable_rows": [
+        {
+          "line": 152,
+          "text": "."
+        }
+      ]
+    },
+    {
+      "source_file": "042_obstacle_and_test_responses.md",
+      "source_path": "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/042_obstacle_and_test_responses.md",
+      "title": "阻碍废测解决",
+      "source_modified_at": "2026-08-17 16:46",
+      "attachments": "none",
+      "import_status": "text imported",
+      "sha256": "087d2bbfbf2e1b7661d04698b87d60a1838fd8e98a1b1fd8eec01aa620fc6a32",
+      "bytes": 3039,
+      "line_count": 70,
+      "extracted_entry_count": 59,
+      "sections": [
+        "阻碍废测解决"
+      ],
+      "archive_file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_042_obstacle_and_test_responses.md",
+      "indexed_entry_count": 58,
+      "non_indexable_rows": [
+        {
+          "line": 13,
+          "text": "</u>"
+        }
+      ]
+    },
+    {
+      "source_file": "043_screening_and_evaluation.md",
+      "source_path": "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/043_screening_and_evaluation.md",
+      "title": "筛选评估：",
+      "source_modified_at": "2026-08-17 16:46",
+      "attachments": "none",
+      "import_status": "text imported",
+      "sha256": "80a214eca3c7f0c532f45aece1a62e5017e7f7b3592220663ab103faf470b2c4",
+      "bytes": 16366,
+      "line_count": 292,
+      "extracted_entry_count": 286,
+      "sections": [
+        "筛选评估："
+      ],
+      "archive_file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_043_screening_and_evaluation.md",
+      "indexed_entry_count": 286,
+      "non_indexable_rows": []
+    },
+    {
+      "source_file": "044_high_value_prize_positioning.md",
+      "source_path": "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/044_high_value_prize_positioning.md",
+      "title": "高位奖品性塑造",
+      "source_modified_at": "2026-08-17 16:46",
+      "attachments": "none",
+      "import_status": "text imported",
+      "sha256": "c03ba191c6c6a4fce2b17115fcb7977c723dcacf352882ce5d9dfc5e6dda8622",
+      "bytes": 2440,
+      "line_count": 65,
+      "extracted_entry_count": 57,
+      "sections": [
+        "高位奖品性塑造"
+      ],
+      "archive_file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_044_high_value_prize_positioning.md",
+      "indexed_entry_count": 57,
+      "non_indexable_rows": []
+    },
+    {
+      "source_file": "045_emotional_disruption.md",
+      "source_path": "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/045_emotional_disruption.md",
+      "title": "打击情绪",
+      "source_modified_at": "2026-08-17 16:46",
+      "attachments": "none",
+      "import_status": "text imported",
+      "sha256": "fbeaf6e472c8f8be1b9ff2a867c87a9985bfac1058251557355b31fc72ee61d1",
+      "bytes": 11039,
+      "line_count": 242,
+      "extracted_entry_count": 236,
+      "sections": [
+        "打击情绪"
+      ],
+      "archive_file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_045_emotional_disruption.md",
+      "indexed_entry_count": 236,
+      "non_indexable_rows": []
+    }
+  ],
+  "source_occurrences": 1663,
+  "indexed_occurrences": 1660,
+  "non_indexable_rows": [
+    {
+      "source_file": "032_how_to_continue_replies.md",
+      "line": 97,
+      "text": "."
+    },
+    {
+      "source_file": "041_disqualifying_pushback.md",
+      "line": 152,
+      "text": "."
+    },
+    {
+      "source_file": "042_obstacle_and_test_responses.md",
+      "line": 13,
+      "text": "</u>"
+    }
+  ],
+  "notes_with_non_indexable_rows": [
+    "032_how_to_continue_replies.md",
+    "041_disqualifying_pushback.md",
+    "042_obstacle_and_test_responses.md"
+  ]
+}

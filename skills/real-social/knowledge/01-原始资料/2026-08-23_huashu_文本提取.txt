@@ -1,0 +1,577 @@
+P	0	Heading 1	一、开场与搭讪（Openers & Approaches）
+P	1	Heading 2	1.1 街搭经典开场
+P	2	List Bullet	别怕别怕，我不是推销，我本来是准备去那边打车回家了，感觉你风格像我喜欢那种，所以想过来认识一下。
+P	3	List Bullet	你给我感觉独特。
+P	4	List Bullet	作为正妹习惯了是么。
+P	5	List Bullet	现在冷静下来了吗？
+P	6	List Bullet	不是只要来跟你说话，都叫搭讪哦。
+P	7	List Bullet	停止你的懵。
+P	8	List Bullet	没好好聊聊。
+P	9	Heading 2	1.2 微信/社交软件转场
+P	10	List Bullet	微信先不急……我可能比较喜欢当面接触。
+P	11	List Bullet	发神秘代码/换个地调度/换个地了解你。
+P	12	List Bullet	（请问是哪位）未来的（）。
+P	13	Heading 2	1.3 开场同理心与破冰
+P	14	List Bullet	下次我注意，你会尴尬吗？
+P	15	List Bullet	（对方说社恐）这不好，得改，我来带领，我来带带你。
+P	16	List Bullet	（社恐类型）学会勇敢你要。
+P	17	List Bullet	不是好习惯，总要学会长大。
+P	18	Heading 2	1.4 关系筛选开场
+P	19	List Bullet	我不是来找你做朋友的，我觉得聊不来我可能就直接走了。
+P	21	Heading 1	二、假评与推拉（False Appraisal & Push-Pull）
+P	22	Heading 2	2.1 形象类假评
+P	23	List Bullet	精装朋友圈
+P	24	List Bullet	感觉你挺高能量的（针对健身/阳光朋友圈）。
+P	25	List Bullet	你像个做第一排的好学生。
+P	26	List Bullet	你像个萨摩耶伪装的贵宾犬。
+P	27	List Bullet	你看着挺细的（观察对方健身照细节）。
+P	28	List Bullet	你的笑容和小金毛一样治愈（针对头像或笑容照）。
+P	29	List Bullet	感觉你像那种经常宅家的社恐妹。
+P	30	List Bullet	你像个快乐小狗。
+P	31	List Bullet	你看起来更偏小只的狗。
+P	32	List Bullet	感觉你没有（E罩杯）。
+P	33	List Bullet	看在你是少妇的份上原谅你吧。
+P	34	List Bullet	清澈愚蠢。
+P	35	List Bullet	有点像那种清澈愚蠢的大学生。
+P	36	List Bullet	你的照片看上去挺瘦的。
+P	37	List Bullet	你的照片看上去挺瘦的。（带有失格意味）
+P	38	List Bullet	这么早睡觉，那你难道是老年人啊？
+P	39	List Bullet	你像猫咪。
+P	40	List Bullet	你太细狗了，有点营养不良。
+P	41	List Bullet	感觉你风格挺酷的，有点像二次元/初中生。
+P	42	List Bullet	感觉你有点像那种二次元。
+P	43	List Bullet	感觉你头发有点少。
+P	44	List Bullet	感觉你发际线有点高。
+P	45	List Bullet	感觉你额头有点大。
+P	46	List Bullet	你今天穿搭挺小学生的。
+P	47	List Bullet	感觉更小学生一点。
+P	48	Heading 2	2.2 反差/属性类假评
+P	49	List Bullet	你像个网恋高手（针对网感照）。
+P	50	List Bullet	你看着不像好学生啊，家长能相信你吗？
+P	51	List Bullet	你声音怎么像打了内固醇（针对健身教练）。
+P	52	List Bullet	你怎么像个老奶奶（针对某些老气穿搭）。
+P	53	List Bullet	感觉你像是个打杂的（打压对方职业光环）。
+P	54	List Bullet	你声音比较适合网恋。
+P	55	List Bullet	你这种穿搭像个小学生甜妹。
+P	56	List Bullet	说明你很少被男人撩。
+P	57	List Bullet	感觉你像那种喜欢摸鱼的。
+P	58	Heading 2	2.3 即时互动类假评
+P	59	List Bullet	你是不是走后门进的（针对身材/长相与环境不符）？
+P	60	List Bullet	感觉你有点笨手笨脚的（针对对方操作失误）。
+P	61	List Bullet	你怎么像个赖皮狗。
+P	62	List Bullet	你这种家伙肯定一肚子的坏水。
+P	63	List Bullet	看来皮鞭已经治不了你了。
+P	64	Heading 2	2.4 推拉（Push & Pull）
+P	65	List Bullet	你确实是甜妹，但太甜会比较腻。
+P	66	List Bullet	你眼神挺清纯，但讲起话来像个少妇。
+P	67	List Bullet	你很有活力的样子，不过两个人都闹腾也挺麻烦。
+P	68	List Bullet	（对方表现好时）奖励你一下，你可以实现跟我约会的梦想了。
+P	69	List Bullet	（对方撒娇时）你叫声爸爸，我就告诉你。
+P	70	Heading 2	2.5 失格推拉语句（Jackson）
+P	71	List Bullet	（对方反应难解）这样就没法聊了，那就聊死了。
+P	72	List Bullet	贪心的女人。
+P	73	List Bullet	怂。
+P	74	List Bullet	不要把负能量给你爱的人。
+P	75	List Bullet	（对方不接）改天聊吧，你不在交流状态。
+P	76	List Bullet	（对方朋友圈价值展示多）展示面大师。
+P	77	List Bullet	那就是口嗨。
+P	78	List Bullet	狗头搞笑女。
+P	79	List Bullet	男人见少了，没出息。
+P	80	List Bullet	（女人单字或者敷衍回复）投入度好低。
+P	81	List Bullet	（女人耍人）你在耍我吗？
+P	82	List Bullet	我不喜欢线上口嗨。
+P	83	List Bullet	少打探。（女人问名字）不太方便熟了告诉你，熟了来。
+P	84	List Bullet	你喝多了。
+P	85	List Bullet	少点哈哈。
+P	86	List Bullet	木钩，你还能干嘛，你就只能删人，废物，你除了化妆好看，还有什么本事，就是化妆后好看的屌丝。
+P	87	List Bullet	（女生装逼）还真是不客气。
+P	88	List Bullet	（对方冒昧）收起你的冒昧。
+P	89	List Bullet	（对方礼貌客气机械）好人机的回复～当面会人机吗？
+P	90	List Bullet	（对方想聊骚）线上聊这么深入吗？
+P	91	List Bullet	（对方接得太顺利）但其实性格同频很重要。
+P	92	List Bullet	开始你的表演。
+P	93	List Bullet	（对方装逼舔狗多）把你的素颜发给舔狗们看看，写个感想给我。
+P	94	List Bullet	（对方说喜欢身高）俗。
+P	95	List Bullet	男人见少了。
+P	96	List Bullet	感觉你水。
+P	97	List Bullet	说点有用的。
+P	98	List Bullet	你不是说看我时间吗，又扯淡。
+P	99	List Bullet	（女人说你会聊天）会聊≠迎合。
+P	100	List Bullet	那是你的问题。
+P	101	List Bullet	你开心就好。
+P	102	List Bullet	我不是主动表现的类型。
+P	103	List Bullet	你说的效率跟我的效率不一样，认知问题。
+P	104	List Bullet	约会≠情侣，大姐。
+P	105	List Bullet	（女生说你大男子或者失格）是你身边全是软蛋。
+P	106	List Bullet	再发表情拉黑。
+P	107	List Bullet	脆弱的内核。
+P	108	Heading 2	2.6 拉（Pull，Jackson）
+P	109	List Bullet	（少妇）其实我蛮喜欢成熟风格。
+P	110	List Bullet	sry，我其实想说你成熟吸引我。
+P	111	List Bullet	我能说我爱成熟吗？
+P	112	List Bullet	但吸引力很高。
+P	113	List Bullet	没说不好，夸你，我老实孩子，不骗人。
+P	114	List Bullet	阿姨我尽量兼容你。
+P	116	Heading 1	三、真性评估与筛选（Genuine Assessment & Screening）
+P	117	Heading 2	3.1 感情状态/习惯评估
+P	118	List Bullet	你在恋爱中是属于比较'粘人'的那种类型吗？
+P	119	List Bullet	你这种性格，在学校里是不是喜欢黄毛？
+P	120	List Bullet	你是不是那种人前很乖，床上很骚的类型？
+P	121	List Bullet	你谈恋爱是属于比较主动的，还是恋爱脑？
+P	122	List Bullet	所以你觉得回消息才算投入？
+P	123	List Bullet	你感觉我谈过几个？
+P	124	List Bullet	你是偏感性还是理性的？
+P	125	Heading 2	3.2 深度洞察
+P	126	List Bullet	你小时候是不是比较丑、比较自卑？
+P	127	List Bullet	你跟你爸爸关系怎么样？
+P	128	List Bullet	你是妈妈带大的还是爸爸带大的？
+P	129	List Bullet	物质方面的东西，在你感情关系里占多少比例？
+P	130	List Bullet	所以你觉得成熟度高和年龄有必然联系吗？
+P	131	Heading 2	3.3 真评/Genuine Evaluation
+P	132	List Bullet	还不错，直来直去。
+P	133	List Bullet	你真诚这点我觉得还是挺值得认可的。
+P	134	List Bullet	我觉得你挺高能量的。
+P	135	Heading 2	3.4 筛选评估语句（Jackson）
+P	136	List Bullet	那我们可以继续。
+P	137	List Bullet	狗头搞笑女，情绪价值足够。
+P	138	List Bullet	成熟了的女人。
+P	139	List Bullet	事业型女人。
+P	140	List Bullet	甜少妇。
+P	141	List Bullet	展示面大师。
+P	142	List Bullet	身体是没小女生好，但会更稳的成熟。
+P	143	List Bullet	可以，女人会更黄，只不过怕人言辞。（会吸走我的男性精气）
+P	144	List Bullet	跟着感觉走，没你那么多心眼子。
+P	145	List Bullet	自由战士（女说不被定义）。
+P	146	List Bullet	碳水战士。
+P	147	List Bullet	你可怕吗？只要你不骗人，我们可以尝试单纯的咖啡。
+P	148	List Bullet	挤奶大师。
+P	149	List Bullet	扯淡专家。
+P	150	List Bullet	你的优点是什么呢？
+P	151	List Bullet	冒险型女生，我喜欢胆子大的，好玩一些，带我去冒险。
+P	152	List Bullet	（女人哈喽开场）介绍下你自己/自我介绍一下。
+P	153	List Bullet	（反差）人和名字有反差，我喜欢反差，你是反差吗？多反差，形容一下。
+P	154	List Bullet	那么你是什么人设？
+P	155	List Bullet	朋友圈比脸白。
+P	156	List Bullet	通过废物测试了。
+P	157	List Bullet	（反馈不好，对方忙）大忙妹呢。
+P	158	List Bullet	（遇见黄毛）黄毛就这样，保质期短。
+P	159	List Bullet	（遇见大女人）抱不起会怪我吗？你还可以抱我吗？
+P	160	List Bullet	可以强势，但别犯傻就行。
+P	161	List Bullet	强势就代表责任，所以必须聪明点。
+P	162	List Bullet	（个子高的）这样比较难搂。
+P	163	List Bullet	（对方索取）伸手党。
+P	164	List Bullet	感觉像乖女孩。（对方说不是）感兴趣了，期待你的表现，坏的表现。
+P	165	List Bullet	像御姐，比起小孩，当然更喜欢御。
+P	166	List Bullet	游戏姐。
+P	167	List Bullet	（说完该胖的地方胖之后女生问哪里）奶和屁股。
+P	168	List Bullet	甜妹还是辣妹。（穿个包臀裙试试）
+P	169	List Bullet	（怎么样算有女人味）奶大屁股翘。
+P	170	List Bullet	no bad。
+P	171	List Bullet	会把我捆起来那种吗？
+P	172	List Bullet	大只点好。
+P	173	List Bullet	排面型少女。
+P	174	List Bullet	精神抖擞。
+P	175	List Bullet	妈宝女。
+P	176	List Bullet	（喜欢姐姐）我是例外，我是讨厌幼稚女生。
+P	177	List Bullet	BBW：该胖的地方胖才是BBW，但得有腰臀比的才算。
+P	179	Heading 1	四、废测破解与框架控制（Shit Test Handling & Frame Control）
+P	180	Heading 2	4.1 废测破解与防守反击
+P	181	List Bullet	面对'你应该很喜欢撩别人吧'：为什么要喜欢撩别人？
+P	182	List Bullet	面对'感觉你像是经常加别人微信'：证据呢？
+P	183	List Bullet	面对'发张你的帅照'或要红包：我不是舔狗。
+P	184	List Bullet	面对'你像相亲的'等质问框架：你平时是很闲吗？
+P	185	List Bullet	面对'你像相亲的'：怎么怎么开始查我户口？
+P	186	List Bullet	面对'你不和老板演吗'：我直接后入老板。
+P	187	List Bullet	面对'你是带属性的（SM）？'：喜欢吗？
+P	188	List Bullet	面对下雨不想出来的借口：你要因为一个无关痛痒的雨去鸽我吗？
+P	189	List Bullet	面对'你上就这样，这对我吗'等实质性指责：我风格如此，你接受不了就不用继续了。
+P	190	List Bullet	面对'咱能不能好好说话'：我风格如此，你接受不了就不用继续了。
+P	191	Heading 2	4.2 框架控制（奖品性）
+P	192	List Bullet	应对'你是不是海王/养鱼/渣男'：确实在养鱼，要不我先来叫它一起（反讽）。
+P	193	List Bullet	应对'你是不是海王'：女人都是侦探吗？
+P	194	List Bullet	应对'你是不是海王'：你这么敏感，你是来我家当侦探的吗？
+P	195	List Bullet	应对'你是不是海王'：问那么多干嘛。
+P	196	List Bullet	（对方迟到/来得远）那挺好的，让你见我有点障碍，延迟满足一下。
+P	197	List Bullet	以前女生见我都是跨城坐高铁的，一个小时还好吧。
+P	198	List Bullet	（针对要钱/转账）你希望男朋友给你转钱？我会带你吃喝玩乐，但我不会直接转账。
+P	199	List Bullet	（针对要礼物）这戒指不能给不值得的女人看。
+P	200	List Bullet	（应对拒绝/冷淡）兴趣降低了。
+P	201	List Bullet	（应对拒绝/冷淡）太棒了，终于可以不用聊天了。
+P	202	List Bullet	我如果不发消息，你能拿我怎么样呢？
+P	203	List Bullet	如果你不投入的话，我们不如直接回家。
+P	204	List Bullet	女生约饭说你不想出饭钱：跟钱没关系，主要是聊的很尴尬的话，一顿饭的时间太长了呢。
+P	205	List Bullet	女生说自己是一个懂礼貌的小女孩：有时候太礼貌在关系里会显得疏远。
+P	206	List Bullet	要查手机才能发生关系：不行，最基本的信任和隐私需要，不然不会长久，你确定看可以，看完你就走。
+P	207	List Bullet	女生年纪大：阿姨我尽量兼容你。
+P	208	Heading 2	4.3 阻碍废测解决（Jackson）
+P	209	List Bullet	（女人说你说话慢）别把效率至上那套搬到感情中来/撩你需要多斟酌。
+P	210	List Bullet	跟着感觉走，没你那么多心眼子。
+P	211	List Bullet	（女人敷衍说下次）怎么了，编个理由 or 靠谱一点。
+P	212	List Bullet	（女人说不喝咖啡）你看我喝。
+P	213	List Bullet	（女生说害怕）可怕的敌人，也是可靠的队友哦。
+P	214	List Bullet	不解释，抱抱就够了。
+P	215	List Bullet	（搭讪废测）搭讪一点屁事，说得这么严重。
+P	216	List Bullet	想到什么就说，没那么多'套路'。
+P	217	List Bullet	那人还吃得一样呢。
+P	218	List Bullet	（撩疑惑）不然还得准备几道菜。
+P	219	List Bullet	（见面阻碍）你社恐别怪国外，见面又不代表确定关系。
+P	220	List Bullet	正常聊天了，哪有那么复杂。
+P	221	List Bullet	没有sex，只是正常聊天。
+P	222	List Bullet	（微信回得慢）你礼貌吗？微信都不在，不简单。
+P	223	List Bullet	哪来那么多尴尬，想见就见废话多。
+P	224	List Bullet	（女人说不喝咖）可以改茶，但是我想搞清楚是拒绝还是不喝咖。
+P	225	List Bullet	（怎么不说约酒/不问酒精过敏）因为不想约酒哦亲，约亲亲呢。
+P	226	List Bullet	（有点冒昧）没有人想要跟你sex，这只是一个问题，你太敏感了。
+P	227	List Bullet	（有男友）我希望以男女的前提接触，大不了再做'朋友'。
+P	228	List Bullet	咖啡厅不止有咖啡，你的借口很烂。
+P	229	List Bullet	（对方说比起咖啡更香）那就二者都吧（合作并突破）。
+P	230	List Bullet	（不会给我卖缅甸去吧）缅甸不要傻子。
+P	231	List Bullet	（邀约对方说改时间）该怎么惩罚你呢？
+P	232	List Bullet	（对方拒绝）倔强青铜。
+P	233	List Bullet	（对方说谢谢）真谢假谢，没诚意。
+P	234	List Bullet	假忙。
+P	235	List Bullet	（对方拒绝）那删？
+P	236	List Bullet	（这么执着于咖啡吗）咖啡厅聊天安静而已。
+P	237	List Bullet	（评估完BBW对方说不是）多吃点饭。
+P	238	List Bullet	（我以为你是推销或者办卡）办卡没这么敬业 bb。
+P	239	List Bullet	（确实有点突然）男人见少了，被搭讪少了。
+P	240	List Bullet	表情包阻碍：有点伤脑筋呢，表情包太多。
+P	241	List Bullet	我会更喜欢文字交流啦。
+P	242	List Bullet	表情狗。
+P	243	List Bullet	少点表情多点爱。
+P	244	List Bullet	没话说可以直接告诉我。
+P	245	List Bullet	太礼貌了，可以亲近一点。
+P	246	List Bullet	丢掉你的礼貌。
+P	247	List Bullet	你需要见见男人了。
+P	248	List Bullet	还是希望你配合，不然我一个人也没兴趣。
+P	249	List Bullet	不想废话，只想当面。
+P	250	List Bullet	礼貌不太好哦，太客气会有点距离。（妹子说这不是正常吗）算是检测你的自由度。
+P	251	List Bullet	感情这件事容不得玩笑。
+P	252	List Bullet	（对方表情冷淡回复）不开心啊。
+P	253	List Bullet	接下来是有效沟通，约你，算不算有效。
+P	254	Heading 2	4.4 渣男废测（Jackson）
+P	255	List Bullet	渣=帅。
+P	256	List Bullet	不允许你这样形容你自己。
+P	257	List Bullet	你给我感觉独特。
+P	259	Heading 1	五、高价值展示与叙事（DHV & Storytelling）
+P	260	Heading 2	5.1 价值感/生存哲学类
+P	261	List Bullet	我走一步看一步。如果所有人都以结果为导向，那大家都是死路一条。
+P	262	List Bullet	感情是需要契约性的，需要节点。我不希望到那个时候我们成了陌生人。
+P	263	List Bullet	我的精力不会放在闲聊或社交上，我觉得真正重要的时候要放在有价值的人生里。
+P	264	Heading 2	5.2 成长经历类（DHV故事）
+P	265	List Bullet	黑羊效应故事：讲述高中小时候被孤立、被误解（如'偷听癖'标签），展示如何通过自强（如考全班前三、去部队、研究心理学）完成蜕变。
+P	266	List Bullet	部队经历：提到部队叠方块、极端自律，以此合理化现在的'高效率'和'不回无意义消息'。
+P	267	Heading 2	5.3 职场/身份展示
+P	268	List Bullet	我们在国内已经做到头部的位置了，所以挣钱还挺轻松。
+P	269	List Bullet	我时间可以自己调度。
+P	270	List Bullet	我其实是深圳那边大学毕业，然后来重庆这里创业的。
+P	271	List Bullet	下次来深圳可能是分公司开业。（展示高价值人设+长期属性）
+P	272	Heading 2	5.4 人设辅助类
+P	273	List Bullet	我之前是个彻底的'I人'，直到在部队里研究了心理学。
+P	274	List Bullet	我其实特别讨厌那种被社会捧得太神圣的女生，人都有动物性和短期的一面。
+P	275	Heading 2	5.5 关系观/价值观展示
+P	276	List Bullet	我是先有爱再有sex……跟男人做爱很投入的话，会有催产素以及荷尔蒙的力量让你升华高潮。
+P	277	List Bullet	我之前谈的很多的小女生，她们就是会比较幼稚……我希望你没有粘气的时候，我们做自己的事情，然后我们见面的时候可以黏一点。
+P	278	List Bullet	我这叫不畏强权革命分子，你等商女可知亡国恨。
+P	279	Heading 2	5.6 价值观输出（Jackson）
+P	280	List Bullet	跟着感觉走，没你那么多心眼子。
+P	281	List Bullet	我大方向成熟，某些点幼稚。
+P	282	List Bullet	有经验的会很同频啊，然后活会很好。
+P	283	List Bullet	坏女人吸引人，但是很危险。
+P	284	List Bullet	（给唯一）如果是认定的人，我会跟她面对到底。
+P	285	List Bullet	得改。
+P	286	List Bullet	人生在世，要与人合作，所以不能敏感。
+P	287	Heading 2	5.7 强吸引个性样本输出（Jackson）
+P	288	List Bullet	我比较坏，腹黑。
+P	289	List Bullet	我想到就做，一个人也挺酷。
+P	290	List Bullet	我功能正常。
+P	291	List Bullet	我是反差。
+P	292	List Bullet	得你有投入度，不能我一个人唱双簧吧，得加钱。
+P	293	List Bullet	高P吸引我，喜欢我照骗哥吗？故意逗你，看你没情绪。
+P	294	List Bullet	（给了评估后）就我妈让我小心点那种女人。
+P	295	List Bullet	走一步看一步。
+P	296	List Bullet	我只是一个喜欢撩妹的普通人，多情但是深情，前提是那个人值得。
+P	297	List Bullet	我是大哥，不靠钱靠颜值的大哥。
+P	298	List Bullet	（甜妹话术加几分甜加再加点辣）我好这口，喜欢你辣，记得穿包臀裙来见我。
+P	300	Heading 1	六、性张力与调情（Sexual Tension & Flirting）
+P	301	Heading 2	6.1 性张力语句
+P	302	List Bullet	我爱打屁股。
+P	303	List Bullet	抽你用粉色皮鞭。
+P	304	List Bullet	好马需要策鞭。
+P	305	List Bullet	叫爸爸。
+P	306	List Bullet	我是表面乖，床上坏。
+P	307	List Bullet	不是说男人坏女人爱吗？
+P	308	List Bullet	其实我是那种外表比较弟弟，然后内在是爸爸型的。
+P	309	List Bullet	下半身比较实用。
+P	310	List Bullet	面对问身高体重回答：'长18宽22。'
+P	311	List Bullet	允许你坏一点。
+P	312	List Bullet	公主可以保护骑士。（针对大胸/大屁股女生的语境）
+P	313	List Bullet	你是喜欢吃黄瓜还是用黄瓜？
+P	314	List Bullet	大人的检验方式。
+P	315	List Bullet	我觉得黑色情趣内衣很有性张力。
+P	316	List Bullet	粉色皮鞭抽，你选大的还是小的？
+P	317	Heading 2	6.2 张力与画面感（Jackson）
+P	318	List Bullet	想抱，挺好抱的感觉，抱抱就够了。
+P	319	List Bullet	想摸。
+P	320	List Bullet	想探索。
+P	321	List Bullet	平时得正经，做的时候浪。
+P	322	List Bullet	可爱吗？
+P	323	List Bullet	喜欢吗？
+P	324	List Bullet	（喝酒话题）醉了好办事。
+P	325	List Bullet	不想网恋了，就喜欢实操是吧，你喜欢触感还是听觉还是视觉？
+P	326	List Bullet	做爱，野外，在小树林里做啊，又怕又爽。
+P	327	List Bullet	（是我想的意思吗）你期待吗？（不管她想什么，直接给到画面）
+P	328	List Bullet	那就来一个肉欲的抱抱。
+P	329	List Bullet	Do you want it？
+P	330	List Bullet	不解释，抱抱就够了。
+P	331	List Bullet	约个抱。
+P	332	List Bullet	切，怂。
+P	333	List Bullet	想摸你头，当场摸，有种想保护的冲动。
+P	334	Heading 2	6.3 打击情绪（Jackson）
+P	335	List Bullet	内在是爸爸型，叫爸爸，跪下来叫爸爸。（遇到抵抗回：死守你的面子）
+P	336	List Bullet	叫爸爸平衡一下。
+P	337	List Bullet	q，试探你的在线状态。
+P	338	List Bullet	告诉你老板，划水。
+P	339	List Bullet	不配合的话会被抽打哦。
+P	340	List Bullet	惩罚是妆好看点。
+P	341	List Bullet	那么吸引我，坏女人，就我妈说的让我小心点那种女人。
+P	342	List Bullet	不想网恋了，就喜欢实操是吧，你喜欢触感还是听觉还是视觉？
+P	343	List Bullet	网聊伤肾。
+P	344	List Bullet	甘蔗男，嚼一嚼吐出来，全是渣。
+P	345	List Bullet	朋友圈比腿白。
+P	346	List Bullet	（朋友圈精致）精致的营业，得看你的内涵够不够了。
+P	347	List Bullet	（对方说百遍）不老实。
+P	348	List Bullet	加了胸垫的甜妹。
+P	349	List Bullet	甜妹，尝尝，差点辣。
+P	350	List Bullet	看来我最多只能做你的炮友了。
+P	351	List Bullet	（对方问干啥）肯定不是做爱。
+P	352	List Bullet	甜妹舔狗多（对方说没有）白长这么甜了/因为你宅吗？
+P	353	List Bullet	鞭子抽，皮带抽。
+P	354	List Bullet	御姐爽。
+P	355	List Bullet	跪下来口。
+P	356	List Bullet	接下来是有效沟通。
+P	357	List Bullet	乖猫咪，爱称，没有理由。
+P	358	List Bullet	我的蛔虫跑你喉咙里去了哦。
+P	359	List Bullet	骑士不可以暗中保护公主吗？
+P	360	List Bullet	（我感觉打不过你/是细狗）怕了吗？
+P	361	List Bullet	（为什么喜欢BBW/少妇/微胖）好用吗？
+P	362	List Bullet	让我无法拒绝。
+P	363	List Bullet	偷偷关注可不是个好事，不怕你老公发现。
+P	364	List Bullet	（对方问好看吗）不好看也不过来了。
+P	365	List Bullet	答非所问。
+P	366	List Bullet	转人工。
+P	367	List Bullet	醉几天了。
+P	368	List Bullet	你老公呢？那就好，我喜欢戴彭于晏的绿帽。
+P	369	List Bullet	你很不耐烦啊。
+P	370	List Bullet	差点东西，我的桃子味香气。
+P	371	List Bullet	来兴趣了，想弄你的兴趣。
+P	372	List Bullet	你社恐的话，就隔条河。
+P	373	List Bullet	多喝热水呢。
+P	374	List Bullet	你喜欢口嗨呢。
+P	375	List Bullet	不知道怎么回思路：切（装受害者思路）。
+P	376	List Bullet	那怎么办（反抛问题）。
+P	377	List Bullet	那是什么？
+P	378	List Bullet	有人说过你说话像男人吗？聊天聊死这个点。
+P	379	List Bullet	怎么办？
+P	380	List Bullet	尝试撩你，得先有个前提嘛，接受这个前提，出来跟我约咖啡。
+P	381	List Bullet	说点有用的。
+P	382	List Bullet	是不是？
+P	383	List Bullet	是不是嘛？
+P	384	List Bullet	我要答案。
+P	385	List Bullet	（朋友圈屏蔽）打开你的朋友圈。
+P	386	List Bullet	对吧。
+P	387	Heading 2	6.4 情绪拉伸（Jackson）
+P	388	List Bullet	允许了。
+P	389	List Bullet	做大做强，带我上床。
+P	390	List Bullet	我们可以淡而悠长，除非你想炽热一点。
+P	391	List Bullet	狗头搞笑女。
+P	392	List Bullet	好看的人都带点傻。
+P	393	List Bullet	看看会怎么样'收尾'。
+P	394	List Bullet	差点东西，我的桃子味香气。
+P	395	List Bullet	（对方是老师）喜欢皮鞭伺候是吧，突然想起那个形象，女教师抽人。
+P	396	List Bullet	不解释，抱抱就够了。
+P	397	List Bullet	约个抱。
+P	398	List Bullet	切，怂。
+P	399	List Bullet	xx姐，xx妹子。
+P	400	List Bullet	内在是爸爸型。
+P	402	Heading 1	七、引导投资与邀约（Leading Investment & Date Invitation）
+P	403	Heading 2	7.1 引导投资
+P	404	List Bullet	怎么把意外变成开心？
+P	405	List Bullet	交杯晚安酒吗？
+P	406	List Bullet	把你老公卖了，我们买酒喝。
+P	407	List Bullet	时间和钱要给值得的女人。
+P	408	List Bullet	少花两小时刷抖音看GV点外卖抠鼻屎，你就可以实现和我约会。
+P	409	Heading 2	7.2 邀约铺垫
+P	410	List Bullet	不会sex。（用于破解女方去私密空间/公寓的ASD防备机制，铺设安全台阶）
+P	411	Heading 2	7.3 邀约语句（Jackson）
+P	412	List Bullet	什么时候约我？
+P	413	List Bullet	想知道你的休息时间。
+P	414	List Bullet	除了撩你还有件事。
+P	415	List Bullet	当面更有趣不是吗？
+P	416	List Bullet	说那么多不如见。
+P	417	List Bullet	想变现。
+P	418	List Bullet	没事就约你咖啡了。
+P	419	List Bullet	闻字不如相见，温度在当面。
+P	420	List Bullet	说到不一定马上做。
+P	421	List Bullet	我们可以约个晚上，怕你晒成黑妹。
+P	422	List Bullet	要聊聊吗？感情，但是当面。
+P	423	List Bullet	我可能就约你咖啡，继续计划，提前约你，哪天嘛。
+P	424	List Bullet	你找个？我对龙华以外的地方很路痴。
+P	425	List Bullet	你在哪？
+P	426	List Bullet	离龙华多近？
+P	427	List Bullet	壹方天地比较热闹，就观音桥？
+P	428	List Bullet	干嘛呢？那干点什么，我们可以做点。
+P	429	List Bullet	所以不想拉扯了。
+P	430	List Bullet	想摸你头，当场摸，有种想保护的冲动。
+P	431	List Bullet	说正事，男人和女人的。
+P	432	List Bullet	所以你害怕跟人接触吗？
+P	433	List Bullet	（对方自我赋格）只要你不骗人，我们可以尝试单纯的咖啡。
+P	434	List Bullet	（对方想聊几天再见）哪来那么多尴尬，想见就见废话多。
+P	435	List Bullet	安排你，我们喝xx时间。
+P	436	List Bullet	怎么变现你的甜？
+P	437	List Bullet	你忙吗？喝点饮料？
+P	438	List Bullet	你喜欢网聊吗？我不喜欢，所以约当面。
+P	439	List Bullet	你要是也不喜欢线上尬聊，那我们可以约杯咖啡线下见一下。
+P	440	List Bullet	（女人冷淡）你线下冷吗？我是自来熟，毕竟网上不适合聊感情。
+P	441	List Bullet	想到你，试探你窗口，你心情好吗？那就准备啥时候聊感情。
+P	442	List Bullet	（对方不常上）可以的话，发神秘代码。
+P	443	Heading 2	7.4 待机/邀约跟进（Jackson）
+P	444	List Bullet	奶茶过敏吗？
+P	445	List Bullet	不习惯文字聊，效率低。
+P	446	List Bullet	因为不喜欢网聊。
+P	447	List Bullet	撩你需要斟酌。
+P	448	List Bullet	（女人说有机会）现在就是个好机会。
+P	449	List Bullet	官方妹子，太礼貌，问我咖啡过敏吗？过敏，但你约我会考虑。
+P	450	List Bullet	想着约你，前戏喝咖啡。
+P	451	List Bullet	那么准备什么时候变现？那可不行，不能给你拒绝我的机会。
+P	452	List Bullet	hi，官方妹子，太礼貌，问我咖啡过敏吗？我过敏，但你约我会考虑。
+P	453	List Bullet	（妹子说不喝咖啡）可以改茶，但是我想搞清楚是拒绝还是不喝咖。
+P	454	List Bullet	隔着屏幕不够。
+P	455	List Bullet	所以屏幕不是个好平台。
+P	456	List Bullet	咖啡过敏吗？那就约咖啡。
+P	457	List Bullet	所以你咖啡过敏吗？那我们就约她吧。
+P	458	List Bullet	那就变现吧。
+P	459	List Bullet	E人的话，约你咖啡没问题吧。
+P	460	List Bullet	（女人说忙）具体可以确定哪天。
+P	461	List Bullet	想当面聊聊。
+P	462	List Bullet	差点黑皮，需要好好跟我出来晒太阳。
+P	463	List Bullet	（有时间/敷衍）很勉强啊，来点落地的times。
+P	464	List Bullet	（家里人）是时候离家出走了。（那我们晚上睡哪）走到小黑屋里去。
+P	465	List Bullet	（离得远）那辛苦你一下。（不能辛苦你吗）一起辛苦，居中吧。
+P	466	List Bullet	国庆什么安排，我的意思是，什么时候跟我约咖？
+P	467	List Bullet	咖啡厅不只有咖啡，你的借口很烂。
+P	468	List Bullet	（女人有事）到时出现。
+P	469	Heading 2	7.5 给对方反馈/撩（Jackson）
+P	470	List Bullet	暂时只为你开放。
+P	471	List Bullet	还不错，奖励一颗糖。
+P	472	List Bullet	长得甜是一回事，感觉是一回事。
+P	473	List Bullet	我连发了两条消息，可以证明我想你吗？
+P	474	List Bullet	重要的是这一刻脑子里只有我们。
+P	475	List Bullet	明明就很开心。
+P	476	List Bullet	我们可以淡而悠长，除非你想炽热一点。
+P	478	Heading 1	八、ASD处理与关系定位（ASD Handling & Relationship Positioning）
+P	479	Heading 2	8.1 消除评判
+P	480	List Bullet	允许你坏一点，没让你一直傻笑。
+P	481	List Bullet	女生看片（GV/AV）也很正常吧，作为成熟的人我理解。
+P	482	List Bullet	又不是没见过女人素颜，主要看你人。
+P	483	Heading 2	8.2 给台阶/削弱阻碍
+P	484	List Bullet	今天肯定不会发生关系的，宝宝，我们只是互相感受一下。
+P	485	List Bullet	我敢爱敢恨，我不像你这么拧巴。
+P	486	List Bullet	热度这个东西会随时间消退，我不希望到时候我们变成陌生人。
+P	487	List Bullet	不会sex。（用于破解女方去私密空间/公寓的ASD防备机制，铺设安全台阶）
+P	488	Heading 2	8.3 性暗示/植入
+P	489	List Bullet	大人的检验方式。
+P	490	List Bullet	长18宽22。（针对身高体重/大小的模糊回应）
+P	491	List Bullet	我觉得黑色情趣内衣很有性张力。
+P	492	List Bullet	粉色皮鞭抽，你选大的还是小的？
+P	493	Heading 2	8.4 关系定位
+P	494	List Bullet	99%的男女朋友本质上都是炮友，只是很多人不具备深度挖掘对方特质的能力。
+P	495	List Bullet	我觉得当面相处的信息量远超网聊，认识的时候距离不是问题。
+P	496	List Bullet	下次来深圳可能是分公司开业。（展示高价值人设+长期属性）
+P	497	Heading 2	8.5 连招/综合应对（Jackson）
+P	498	List Bullet	说错话了：前面我弟发的/重新开始撩你。
+P	499	List Bullet	发'我爱你'/'搞你情绪'。
+P	500	List Bullet	真好假好，真ok假ok，为继续测试窗口，引导赋格。
+P	501	List Bullet	小学生甜妹-重点是后者-贴切不？
+P	502	List Bullet	反应难-你一向这么聊天？/转人工/投入好低。
+P	503	List Bullet	所以不粘人吗？适当粘人在关系里是讨喜的。
+P	504	Heading 2	8.6 女生私密空间ASD综合应对（Jackson）
+P	505	List Bullet	有吸引，此时说话需要强势，上三大需求，学术调情。首先说享受当下，未来的事说不准，顺其自然，再说学术调情：每个人都有三种价值需求，可能这个人满足你供养需求，那个人带给你情绪价值，另一个人满足你对未来的期待。而且你现在展现的对性看法，搞得像我在占你便宜似的，我们两互相有好感，只要是正常人都会有性的想法，如果你看小红书或者抖音觉得男生应该怎么怎么样先能做，那我们不合适，这点是让我感觉下头的。
+P	506	Heading 2	8.7 女生问有没有女朋友应对（Jackson）
+P	507	List Bullet	你希望我有还是无？不想骗你，有，但我觉得她有些地方满足不了我，我比较挑不随便，然后上价值观等等；说没有，那继续推进，后面制定规则：我觉得跟你相处挺不错的，但是恋爱容易分，暧昧不会，我们先这样相处下去，后面顺其自然，这种类似的话。
+P	508	Heading 2	8.8 女生问'是你喜欢的类型吗'应对（Jackson）
+P	509	List Bullet	还不了解你，只能先从外表爱上。
+P	511	Heading 1	九、高位奖品性塑造（High-Value Prize Framing）
+P	512	Heading 2	9.1 高位奖品性语句（Jackson）
+P	513	List Bullet	（女生工作）你可以下班拥有我。
+P	514	List Bullet	明明就很开心。
+P	515	List Bullet	（高位价值反馈）谢谢老板。
+P	516	List Bullet	勇敢点。
+P	517	List Bullet	对每个帅哥都这样？通过废物测试了。
+P	518	List Bullet	其他女人也在等我回，要吃点醋嘛，嫂子倒是有。
+P	519	List Bullet	人帅活好算吗？
+P	520	List Bullet	我硬不起来，是你的原因哦。
+P	521	List Bullet	（拉回上面其他女人也在等我回）我说爱你不信，说故事你连连点头。
+P	522	List Bullet	别梦到我。
+P	523	List Bullet	打算怎么补偿我？不得三星米其林。
+P	524	List Bullet	伪装受害者视角。
+P	525	List Bullet	白天安全一点。
+P	526	List Bullet	准备怎么补偿我？
+P	527	List Bullet	你适合保护我。
+P	529	Heading 1	十、作联系感与日常维护（Connection & Maintenance）
+P	530	Heading 2	10.1 作联系感语句（Jackson）
+P	531	List Bullet	我们可以淡而悠长，除非你想炽热一点。
+P	532	List Bullet	朋友圈比脸白+想知道你的人。
+P	533	List Bullet	内在是爸爸型。
+P	534	List Bullet	现在冷静下来，如何评价？
+P	535	List Bullet	Do you want it？
+P	536	List Bullet	（朋友圈天天发）最近好闲你。
+P	537	List Bullet	那么继续吗？
+P	538	List Bullet	对方没回可以重发一遍加一个问号。
+P	539	List Bullet	（社交软件加V话术）发神秘代码/换个地调度/换个地了解你。
+P	540	List Bullet	（请问是哪位）未来的（）。
+P	541	List Bullet	静候佳音。
+P	542	List Bullet	记得穿包臀裙来见我。
+P	543	List Bullet	切男对女。
+P	544	List Bullet	感情也要顾到哦。
+P	545	List Bullet	（失眠）很久没谈男人，所以会失眠。
+P	546	List Bullet	q，撩你的开场白，试探你的在线状态。
+P	547	List Bullet	想了解你。
+P	548	List Bullet	（问工作）少打探。
+P	549	List Bullet	（对方喝多了）还以为你需要男人。
+P	550	List Bullet	看来只有白天搞你了（约你咖啡怎么样）。
+P	551	List Bullet	比时间（项目）更重要的是你的想法。
+P	552	List Bullet	对你的软感兴趣。
+P	554	Heading 1	十一、进度.txt 补充内容（按主题归类）
+P	555	Heading 2	11.1 框架/推拉补充
+P	556	List Bullet	破费测。
+P	557	List Bullet	遇到难回的问题就不说话。
+P	558	List Bullet	感情里需要些情趣不是吗？
+P	559	List Bullet	你喜欢客套严肃的感情？
+P	560	List Bullet	只要走的下去，迟早会互相了解'这些'的，不是吗？
+P	561	List Bullet	还是说你喜欢人为刻意拖慢进度？
+P	562	List Bullet	love和sex是分离的？
+P	563	List Bullet	还有越界一说？
+P	564	List Bullet	我们是普通网友？
+P	565	List Bullet	所以我一开始会问：这么远暂时没法见，是打算网恋吗？
+P	566	List Bullet	你要真想和我做普通网友，我可没那闲工夫。
+P	567	List Bullet	哦，我觉得你意思是，我忙着泡其他妞？
+P	568	List Bullet	那我也不能工作生活学习都不要了，瞬移到你面前吧。
+P	569	List Bullet	你又没安全感了。
+P	570	List Bullet	你给我头上装个24小时摄像头，这样我的啥你都可以如愿以偿一直监视着了，照顾你没安全感脆弱的小心脏。
+P	571	Heading 2	11.2 应对有男友的情况
+P	572	List Bullet	女：有男朋友——有男朋友跟要认识你有关系吗？大不了先做朋友，我也还不太了解你。真有男朋友，分手记得和我说。
+P	573	Heading 2	11.3 调情/性张力补充
+P	574	List Bullet	甜妹会有咸的地方吗？不喜欢吗？
+P	575	List Bullet	你长到我心坎上了，如果实在没找到内在的点。
+P	576	Heading 2	11.4 关系定位/多偶说明补充
+P	577	List Bullet	你没有必要说明牌多偶的事，你可以降下比较级。你可以说：'我会去和其他女生有这种聊天的接触，但不会有肉体接触，就最多在网上聊聊天这样子。'
+P	578	List Bullet	如果她真的要了，你就说：'你是不喜欢离别的人。你谈恋爱的话，接受不了那种分手会很伤心的情况。你觉得这个恋爱关系或者结婚，就是牢靠的吗？现在离婚率都快70%了。你说这些传统的关系，不如我们现在这种浪漫关系。只要你这点不消失，我就会坚定地选择你。'
+P	579	Heading 2	11.5 其他补充
+P	580	List Bullet	上班族吗hh。
+P	581	List Bullet	我们可以约一个call。sad我的主动都被拒绝了，生活需要情趣不是吗？所以我包容你也理解你，但需要你的投入度。
+P	582	List Bullet	忙完想到你，想到我什么人。
+P	583	List Bullet	漂亮话是骗人的，真诚才是必杀技。
+P	585	Heading 1	教练建议
+P	586	List Bullet	初次学习请重点背诵'假评'和'框架控制'类话术。
+P	587	List Bullet	后期复习时，请重点通过'叙事'类话术构建属于你个人的、具有逻辑闭环的人设系统。

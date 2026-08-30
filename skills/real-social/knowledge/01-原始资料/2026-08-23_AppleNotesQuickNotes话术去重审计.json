@@ -1,0 +1,263 @@
+{
+  "schema_version": 1,
+  "generated": "2026-08-23",
+  "source_manifest": "2026-08-23_AppleNotesQuickNotes来源清单.json",
+  "previous_index": "2026-08-23_Jackson体系话术去重索引.json",
+  "normalization": "沿用既有索引：NFKC、大小写、说话人前缀、开头编号、空白和常见标点标准化；phrase_key 为标准化文本 SHA-256 前16位。",
+  "policy": "标准化精确重复已合并；近似表达默认保留，以下仅为待人工/上下文复核的候选，不是自动合并决定。",
+  "counts": {
+    "source_notes": 45,
+    "source_occurrences": 1660,
+    "batch_unique_keys": 1609,
+    "exact_overlap_unique_keys": 298,
+    "exact_overlap_occurrences": 317,
+    "new_unique_keys": 1311,
+    "within_batch_duplicate_occurrences": 51,
+    "near_old_pairs_found_capped": 18,
+    "near_within_batch_pairs_found_capped": 2,
+    "source_lines_extracted_before_normalization": 1663,
+    "non_indexable_rows": 3
+  },
+  "old_index_near_duplicate_decisions": "2026-08-23_Jackson体系话术近似重复审计.json",
+  "near_old_pairs": [
+    {
+      "score": 0.9796,
+      "left_key": "PK-2a6feec411e2dd8b",
+      "left_text": "（家里人）是时候离家出走了（那我们晚上睡哪）走小黑屋里去",
+      "left_source_file": "040_invitation_phrases.md",
+      "right_key": "PK-f572f98d36ca8284",
+      "right_text": "（家里人）是时候离家出走了。（那我们晚上睡哪）走到小黑屋里去。",
+      "right_source_file": "huashu.docx",
+      "decision": "pending_manual_review",
+      "reason": "高相似度字面变体；未凭相似度自动合并，需结合说话人、章节和适用场景复核。"
+    },
+    {
+      "score": 0.9756,
+      "left_key": "PK-ae8ebb9795e1e1ec",
+      "left_text": "（对方礼貌客气机械）好人机的回复～当面会人机吗",
+      "left_source_file": "041_disqualifying_pushback.md",
+      "right_key": "PK-fb7194d8dd47e08e",
+      "right_text": "（对方礼貌客气机械）好人机的回复～当面会人机吗？",
+      "right_source_file": "huashu.docx",
+      "decision": "pending_manual_review",
+      "reason": "高相似度字面变体；未凭相似度自动合并，需结合说话人、章节和适用场景复核。"
+    },
+    {
+      "score": 0.9655,
+      "left_key": "PK-2d9ca28ed398234b",
+      "left_text": "（对方不常上）可以的话 发神秘代码 微？",
+      "left_source_file": "040_invitation_phrases.md",
+      "right_key": "PK-e4121b727608b1f0",
+      "right_text": "（对方不常上）可以的话，发神秘代码。",
+      "right_source_file": "huashu.docx",
+      "decision": "pending_manual_review",
+      "reason": "高相似度字面变体；未凭相似度自动合并，需结合说话人、章节和适用场景复核。"
+    },
+    {
+      "score": 0.9655,
+      "left_key": "PK-d260f875452997c0",
+      "left_text": "强势就代表责任 所以必须要聪明点",
+      "left_source_file": "043_screening_and_evaluation.md",
+      "right_key": "PK-6fcd900c14f9645f",
+      "right_text": "强势就代表责任，所以必须聪明点。",
+      "right_source_file": "huashu.docx",
+      "decision": "pending_manual_review",
+      "reason": "高相似度字面变体；未凭相似度自动合并，需结合说话人、章节和适用场景复核。"
+    },
+    {
+      "score": 0.9655,
+      "left_key": "PK-ec3ac3bf799e58d7",
+      "left_text": "你找个？我对龙华以外的地很路痴",
+      "left_source_file": "040_invitation_phrases.md",
+      "right_key": "PK-0b4002129a827f0d",
+      "right_text": "你找个？我对龙华以外的地方很路痴。",
+      "right_source_file": "huashu.docx",
+      "decision": "pending_manual_review",
+      "reason": "高相似度字面变体；未凭相似度自动合并，需结合说话人、章节和适用场景复核。"
+    },
+    {
+      "score": 0.9583,
+      "left_key": "PK-7d5e49ec411da529",
+      "left_text": "（女人冷淡）你线下冷吗  我是自来熟 毕竟往上不适合聊感情",
+      "left_source_file": "040_invitation_phrases.md",
+      "right_key": "PK-d5ce0dec1c4d5515",
+      "right_text": "（女人冷淡）你线下冷吗？我是自来熟，毕竟网上不适合聊感情。",
+      "right_source_file": "huashu.docx",
+      "decision": "pending_manual_review",
+      "reason": "高相似度字面变体；未凭相似度自动合并，需结合说话人、章节和适用场景复核。"
+    },
+    {
+      "score": 0.95,
+      "left_key": "PK-825b99f44bc94187",
+      "left_text": "（对方说比起咖啡更想）那就二者都吧（合作并突破）",
+      "left_source_file": "042_obstacle_and_test_responses.md",
+      "right_key": "PK-6637265ea54cfff0",
+      "right_text": "（对方说比起咖啡更香）那就二者都吧（合作并突破）。",
+      "right_source_file": "huashu.docx",
+      "decision": "pending_manual_review",
+      "reason": "高相似度字面变体；未凭相似度自动合并，需结合说话人、章节和适用场景复核。"
+    },
+    {
+      "score": 0.9487,
+      "left_key": "PK-f82512348a081392",
+      "left_text": "木勾 你还能干嘛 你就只能删人 废物 你除了化妆好看 还有什么本事 女人就是化妆后好看的屌丝",
+      "left_source_file": "041_disqualifying_pushback.md",
+      "right_key": "PK-abef8bf47d1c49e2",
+      "right_text": "木钩，你还能干嘛，你就只能删人，废物，你除了化妆好看，还有什么本事，就是化妆后好看的屌丝。",
+      "right_source_file": "huashu.docx",
+      "decision": "pending_manual_review",
+      "reason": "高相似度字面变体；未凭相似度自动合并，需结合说话人、章节和适用场景复核。"
+    },
+    {
+      "score": 0.9474,
+      "left_key": "PK-0e24256aeba29a40",
+      "left_text": "（遇见大女人）抱不起会怪我吗 你还可以抱我嘛",
+      "left_source_file": "043_screening_and_evaluation.md",
+      "right_key": "PK-b779a54c4a5b5719",
+      "right_text": "（遇见大女人）抱不起会怪我吗？你还可以抱我吗？",
+      "right_source_file": "huashu.docx",
+      "decision": "pending_manual_review",
+      "reason": "高相似度字面变体；未凭相似度自动合并，需结合说话人、章节和适用场景复核。"
+    },
+    {
+      "score": 0.9412,
+      "left_key": "PK-a1ad41d21c29e6c1",
+      "left_text": "（对方接的太顺利）但其实性格同频很重要",
+      "left_source_file": "041_disqualifying_pushback.md",
+      "right_key": "PK-630fb50f4993a5e8",
+      "right_text": "（对方接得太顺利）但其实性格同频很重要。",
+      "right_source_file": "huashu.docx",
+      "decision": "pending_manual_review",
+      "reason": "高相似度字面变体；未凭相似度自动合并，需结合说话人、章节和适用场景复核。"
+    },
+    {
+      "score": 0.9412,
+      "left_key": "PK-ad71d986ac804cf9",
+      "left_text": "（为什么喜欢bbw/少妇/微胖）好用嘛",
+      "left_source_file": "045_emotional_disruption.md",
+      "right_key": "PK-ef51938baed2d111",
+      "right_text": "（为什么喜欢BBW/少妇/微胖）好用吗？",
+      "right_source_file": "huashu.docx",
+      "decision": "pending_manual_review",
+      "reason": "高相似度字面变体；未凭相似度自动合并，需结合说话人、章节和适用场景复核。"
+    },
+    {
+      "score": 0.9388,
+      "left_key": "PK-2ca5f22b49744628",
+      "left_text": "（是我想的意思吗）你期待吗（杰哥说：不管她想什么 直接给到画面）",
+      "left_source_file": "017_tension_and_visual_imagery.md",
+      "right_key": "PK-1eb626f32a60063a",
+      "right_text": "（是我想的意思吗）你期待吗？（不管她想什么，直接给到画面）",
+      "right_source_file": "huashu.docx",
+      "decision": "pending_manual_review",
+      "reason": "高相似度字面变体；未凭相似度自动合并，需结合说话人、章节和适用场景复核。"
+    },
+    {
+      "score": 0.9375,
+      "left_key": "PK-f5444a4901bcd229",
+      "left_text": "（搭讪废测）搭讪一点屁事 说的这么严重",
+      "left_source_file": "042_obstacle_and_test_responses.md",
+      "right_key": "PK-06217afda8f6eb44",
+      "right_text": "（搭讪废测）搭讪一点屁事，说得这么严重。",
+      "right_source_file": "huashu.docx",
+      "decision": "pending_manual_review",
+      "reason": "高相似度字面变体；未凭相似度自动合并，需结合说话人、章节和适用场景复核。"
+    },
+    {
+      "score": 0.9231,
+      "left_key": "PK-cc3d19ad5a7b2fa8",
+      "left_text": "朋友圈比脸白 ➕想知道你的人",
+      "left_source_file": "024_building_connection.md",
+      "right_key": "PK-5f34a02c93ee089f",
+      "right_text": "朋友圈比脸白+想知道你的人。",
+      "right_source_file": "huashu.docx",
+      "decision": "pending_manual_review",
+      "reason": "高相似度字面变体；未凭相似度自动合并，需结合说话人、章节和适用场景复核。"
+    },
+    {
+      "score": 0.9189,
+      "left_key": "PK-23c553ab7b39272b",
+      "left_text": "（对方反应难姐）这样就没法聊了  那就天聊死了",
+      "left_source_file": "041_disqualifying_pushback.md",
+      "right_key": "PK-4fe0bb207ea9cf35",
+      "right_text": "（对方反应难解）这样就没法聊了，那就聊死了。",
+      "right_source_file": "huashu.docx",
+      "decision": "pending_manual_review",
+      "reason": "高相似度字面变体；未凭相似度自动合并，需结合说话人、章节和适用场景复核。"
+    },
+    {
+      "score": 0.9167,
+      "left_key": "PK-a55de9040366ead4",
+      "left_text": "你不是说看我时间吗 又扯蛋",
+      "left_source_file": "041_disqualifying_pushback.md",
+      "right_key": "PK-e2b000e2aa39506b",
+      "right_text": "你不是说看我时间吗，又扯淡。",
+      "right_source_file": "huashu.docx",
+      "decision": "pending_manual_review",
+      "reason": "高相似度字面变体；未凭相似度自动合并，需结合说话人、章节和适用场景复核。"
+    },
+    {
+      "score": 0.9167,
+      "left_key": "PK-df09bc4653f23ede",
+      "left_text": "（撩疑惑）不然还得准备几个菜",
+      "left_source_file": "042_obstacle_and_test_responses.md",
+      "right_key": "PK-0a577728cafcd2c6",
+      "right_text": "（撩疑惑）不然还得准备几道菜。",
+      "right_source_file": "huashu.docx",
+      "decision": "pending_manual_review",
+      "reason": "高相似度字面变体；未凭相似度自动合并，需结合说话人、章节和适用场景复核。"
+    },
+    {
+      "score": 0.913,
+      "left_key": "PK-4d094e5838bc2761",
+      "left_text": "（见面阻碍）你社恐别怪国外 见面又不代表确定关系[破涕为笑]",
+      "left_source_file": "042_obstacle_and_test_responses.md",
+      "right_key": "PK-cb6fa5da7515723e",
+      "right_text": "（见面阻碍）你社恐别怪国外，见面又不代表确定关系。",
+      "right_source_file": "huashu.docx",
+      "decision": "pending_manual_review",
+      "reason": "高相似度字面变体；未凭相似度自动合并，需结合说话人、章节和适用场景复核。"
+    }
+  ],
+  "near_within_batch_pairs": [
+    {
+      "score": 0.9231,
+      "left_key": "PK-b5b3074f8ce35419",
+      "left_text": "是有味道的那一面 没有柴米油盐的那一面",
+      "left_source_file": "034_pulling_the_conversation.md",
+      "right_key": "PK-2d335334c8d39780",
+      "right_text": "像少妇 是有味道的那一面 没有柴米油盐的那一面",
+      "right_source_file": "043_screening_and_evaluation.md",
+      "decision": "pending_manual_review",
+      "reason": "高相似度字面变体；未凭相似度自动合并，需结合说话人、章节和适用场景复核。"
+    },
+    {
+      "score": 0.913,
+      "left_key": "PK-42a66763a5d6809b",
+      "left_text": "叫先生 花样多 我是老实人 你不是 你是端庄的少妇",
+      "left_source_file": "045_emotional_disruption.md",
+      "right_key": "PK-325498719df5ab66",
+      "right_text": "解释解释 叫先生   花样多 我是老实人 你不是 你是端庄的少妇",
+      "right_source_file": "045_emotional_disruption.md",
+      "decision": "pending_manual_review",
+      "reason": "高相似度字面变体；未凭相似度自动合并，需结合说话人、章节和适用场景复核。"
+    }
+  ],
+  "non_indexable_rows": [
+    {
+      "source_file": "032_how_to_continue_replies.md",
+      "line": 97,
+      "text": "."
+    },
+    {
+      "source_file": "041_disqualifying_pushback.md",
+      "line": 152,
+      "text": "."
+    },
+    {
+      "source_file": "042_obstacle_and_test_responses.md",
+      "line": 13,
+      "text": "</u>"
+    }
+  ]
+}

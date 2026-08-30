@@ -1,0 +1,1943 @@
+{
+  "schema_version": 1,
+  "generated": "2026-08-23",
+  "status": "candidate_reference_only",
+  "collection": "Apple Notes Quick Notes / Jackson体系话术增补",
+  "source_manifest": "01-原始资料/2026-08-23_AppleNotesQuickNotes来源清单.json",
+  "full_index": "2026-08-23_Jackson体系话术去重索引.json",
+  "protocol_units": [
+    "K-20260823-051",
+    "K-20260823-052",
+    "K-20260823-053"
+  ],
+  "note": "这是本批的有限优先候选层，不是白名单。未列出的条目仍可在完整索引中 source_only 检索；任何示例都要先完成证据、阶段、方向和需求对齐，再按上下文改写。",
+  "runtime_decisions": {
+    "direct_reply_without_direction": "needs_alignment_then_ai_selects_best_matching_provided_direction",
+    "sexual_phrases": "candidate_callable_after_context_review_only",
+    "media_only_note": "023_defusing_tests_and_body_language.md remains source-preserved; do not infer its images until separately exported/reviewed"
+  },
+  "groups": [
+    {
+      "id": "clarify_and_boundary",
+      "title": "澄清、意愿与沟通边界（Apple Notes 增补）",
+      "callability": "candidate_callable_after_context_review",
+      "conditions": [
+        "当前仍有正常互动",
+        "表达与对方刚才的话直接相关",
+        "用于澄清意愿/偏好，不把沉默或拒绝解释为测试"
+      ],
+      "forbidden": [
+        "不得逼迫解释或证明",
+        "明确拒绝/停止时不继续路由"
+      ],
+      "entries": [
+        {
+          "phrase_key": "PK-361e35baddd9743e",
+          "text": "我会更喜欢文字交流啦",
+          "sections": [
+            "四、废测破解与框架控制（Shit Test Handling & Frame Control） / 4.3 阻碍废测解决（Jackson）",
+            "表情包阻碍 不认真无张力阻碍"
+          ],
+          "speaker_roles": [
+            "unknown"
+          ],
+          "occurrence_count_in_merged_index": 2,
+          "source_refs": [
+            {
+              "file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_005_sticker_and_non_seriousness_obstacles.md",
+              "locator": "line:13",
+              "section": "表情包阻碍 不认真无张力阻碍"
+            }
+          ],
+          "callability": "candidate_callable_after_context_review",
+          "relation_to_initial_candidate": "existing_key_source_addition"
+        },
+        {
+          "phrase_key": "PK-2c632ae1bc5bc506",
+          "text": "没话说可以直接告诉我",
+          "sections": [
+            "四、废测破解与框架控制（Shit Test Handling & Frame Control） / 4.3 阻碍废测解决（Jackson）",
+            "表情包阻碍 不认真无张力阻碍"
+          ],
+          "speaker_roles": [
+            "unknown"
+          ],
+          "occurrence_count_in_merged_index": 2,
+          "source_refs": [
+            {
+              "file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_005_sticker_and_non_seriousness_obstacles.md",
+              "locator": "line:19",
+              "section": "表情包阻碍 不认真无张力阻碍"
+            }
+          ],
+          "callability": "candidate_callable_after_context_review",
+          "relation_to_initial_candidate": "existing_key_source_addition"
+        },
+        {
+          "phrase_key": "PK-ab2b534568454f21",
+          "text": "下次我注意，你会尴尬吗",
+          "sections": [
+            "一、开场与搭讪（Openers & Approaches） / 1.3 开场同理心与破冰",
+            "开场同理心环节"
+          ],
+          "speaker_roles": [
+            "unknown"
+          ],
+          "occurrence_count_in_merged_index": 2,
+          "source_refs": [
+            {
+              "file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_013_empathic_opening.md",
+              "locator": "line:11",
+              "section": "开场同理心环节"
+            }
+          ],
+          "callability": "candidate_callable_after_context_review",
+          "relation_to_initial_candidate": "existing_key_source_addition"
+        },
+        {
+          "phrase_key": "PK-b827c206b94ab116",
+          "text": "你给我感觉独特",
+          "sections": [
+            "一、开场与搭讪（Openers & Approaches） / 1.1 街搭经典开场",
+            "四、废测破解与框架控制（Shit Test Handling & Frame Control） / 4.4 渣男废测（Jackson）",
+            "开场同理心环节"
+          ],
+          "speaker_roles": [
+            "unknown"
+          ],
+          "occurrence_count_in_merged_index": 3,
+          "source_refs": [
+            {
+              "file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_013_empathic_opening.md",
+              "locator": "line:17",
+              "section": "开场同理心环节"
+            }
+          ],
+          "callability": "candidate_callable_after_context_review",
+          "relation_to_initial_candidate": "new_supplemental_candidate"
+        },
+        {
+          "phrase_key": "PK-b255485cefba15ed",
+          "text": "没好好聊聊",
+          "sections": [
+            "一、开场与搭讪（Openers & Approaches） / 1.1 街搭经典开场",
+            "开场同理心环节"
+          ],
+          "speaker_roles": [
+            "unknown"
+          ],
+          "occurrence_count_in_merged_index": 2,
+          "source_refs": [
+            {
+              "file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_013_empathic_opening.md",
+              "locator": "line:33",
+              "section": "开场同理心环节"
+            }
+          ],
+          "callability": "candidate_callable_after_context_review",
+          "relation_to_initial_candidate": "new_supplemental_candidate"
+        },
+        {
+          "phrase_key": "PK-b93487f6e02f5c57",
+          "text": "比时间（项目）更重要的是你的想法",
+          "sections": [
+            "十、作联系感与日常维护（Connection & Maintenance） / 10.1 作联系感语句（Jackson）",
+            "明确意图与前提"
+          ],
+          "speaker_roles": [
+            "unknown"
+          ],
+          "occurrence_count_in_merged_index": 2,
+          "source_refs": [
+            {
+              "file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_016_clear_intent_and_premise.md",
+              "locator": "line:11",
+              "section": "明确意图与前提"
+            }
+          ],
+          "callability": "candidate_callable_after_context_review",
+          "relation_to_initial_candidate": "new_supplemental_candidate"
+        },
+        {
+          "phrase_key": "PK-f69fed569edebb40",
+          "text": "想接触",
+          "sections": [
+            "明确意图与前提"
+          ],
+          "speaker_roles": [
+            "unknown"
+          ],
+          "occurrence_count_in_merged_index": 1,
+          "source_refs": [
+            {
+              "file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_016_clear_intent_and_premise.md",
+              "locator": "line:21",
+              "section": "明确意图与前提"
+            }
+          ],
+          "callability": "candidate_callable_after_context_review",
+          "relation_to_initial_candidate": "new_supplemental_candidate"
+        },
+        {
+          "phrase_key": "PK-9d0a1b07f4921d1c",
+          "text": "怎么验证",
+          "sections": [
+            "延续话题"
+          ],
+          "speaker_roles": [
+            "unknown"
+          ],
+          "occurrence_count_in_merged_index": 1,
+          "source_refs": [
+            {
+              "file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_019_extending_the_conversation.md",
+              "locator": "line:11",
+              "section": "延续话题"
+            }
+          ],
+          "callability": "candidate_callable_after_context_review",
+          "relation_to_initial_candidate": "new_supplemental_candidate"
+        },
+        {
+          "phrase_key": "PK-e771ed2eb91e8551",
+          "text": "（觉得你xx）具体哪xx 信你嘛",
+          "sections": [
+            "延续话题"
+          ],
+          "speaker_roles": [
+            "unknown"
+          ],
+          "occurrence_count_in_merged_index": 1,
+          "source_refs": [
+            {
+              "file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_019_extending_the_conversation.md",
+              "locator": "line:25",
+              "section": "延续话题"
+            }
+          ],
+          "callability": "candidate_callable_after_context_review",
+          "relation_to_initial_candidate": "new_supplemental_candidate"
+        },
+        {
+          "phrase_key": "PK-2dc78b63c5a68815",
+          "text": "那么开始真实的交流",
+          "sections": [
+            "做联系感"
+          ],
+          "speaker_roles": [
+            "unknown"
+          ],
+          "occurrence_count_in_merged_index": 1,
+          "source_refs": [
+            {
+              "file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_024_building_connection.md",
+              "locator": "line:73",
+              "section": "做联系感"
+            }
+          ],
+          "callability": "candidate_callable_after_context_review",
+          "relation_to_initial_candidate": "new_supplemental_candidate"
+        },
+        {
+          "phrase_key": "PK-8f26085b72019f82",
+          "text": "我打字不爱语气词 不是冷",
+          "sections": [
+            "做联系感"
+          ],
+          "speaker_roles": [
+            "unknown"
+          ],
+          "occurrence_count_in_merged_index": 1,
+          "source_refs": [
+            {
+              "file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_024_building_connection.md",
+              "locator": "line:95",
+              "section": "做联系感"
+            }
+          ],
+          "callability": "candidate_callable_after_context_review",
+          "relation_to_initial_candidate": "new_supplemental_candidate"
+        },
+        {
+          "phrase_key": "PK-56b45c3e93ea8dbb",
+          "text": "（妹子说不喝咖啡）可以改茶 但是我想搞清楚是拒绝还是不喝咖",
+          "sections": [
+            "七、引导投资与邀约（Leading Investment & Date Invitation） / 7.4 待机/邀约跟进（Jackson）",
+            "邀约部分："
+          ],
+          "speaker_roles": [
+            "unknown"
+          ],
+          "occurrence_count_in_merged_index": 2,
+          "source_refs": [
+            {
+              "file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_040_invitation_phrases.md",
+              "locator": "line:49",
+              "section": "邀约部分："
+            }
+          ],
+          "callability": "candidate_callable_after_context_review",
+          "relation_to_initial_candidate": "new_supplemental_candidate"
+        },
+        {
+          "phrase_key": "PK-47c7945ce6b88203",
+          "text": "这里不适合聊太深入的话题",
+          "sections": [
+            "邀约部分："
+          ],
+          "speaker_roles": [
+            "unknown"
+          ],
+          "occurrence_count_in_merged_index": 1,
+          "source_refs": [
+            {
+              "file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_040_invitation_phrases.md",
+              "locator": "line:123",
+              "section": "邀约部分："
+            }
+          ],
+          "callability": "candidate_callable_after_context_review",
+          "relation_to_initial_candidate": "new_supplemental_candidate"
+        }
+      ]
+    },
+    {
+      "id": "invite_and_schedule",
+      "title": "自然邀约与条件调度（Apple Notes 增补）",
+      "callability": "candidate_callable_after_context_review",
+      "conditions": [
+        "双方仍有互惠互动",
+        "对方未明确拒绝且讨论时间/形式/地点是当下目标",
+        "先核对愿意、方便与安全"
+      ],
+      "forbidden": [
+        "不得把改期/不方便称为借口",
+        "不得不给拒绝机会或把来源结果当保证"
+      ],
+      "entries": [
+        {
+          "phrase_key": "PK-97d91b81749cbb65",
+          "text": "我xx会有时间，你呢",
+          "sections": [
+            "遇到邀约女生社恐等阻碍"
+          ],
+          "speaker_roles": [
+            "unknown"
+          ],
+          "occurrence_count_in_merged_index": 1,
+          "source_refs": [
+            {
+              "file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_001_jackson_top_phrases_seriousness_and_invitation_obstacles.md",
+              "locator": "line:87",
+              "section": "遇到邀约女生社恐等阻碍"
+            }
+          ],
+          "callability": "candidate_callable_after_context_review",
+          "relation_to_initial_candidate": "new_supplemental_candidate"
+        },
+        {
+          "phrase_key": "PK-66aea7ba056ad5a4",
+          "text": "要见的话 哪天可以",
+          "sections": [
+            "遇到邀约女生社恐等阻碍"
+          ],
+          "speaker_roles": [
+            "unknown"
+          ],
+          "occurrence_count_in_merged_index": 1,
+          "source_refs": [
+            {
+              "file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_001_jackson_top_phrases_seriousness_and_invitation_obstacles.md",
+              "locator": "line:97",
+              "section": "遇到邀约女生社恐等阻碍"
+            }
+          ],
+          "callability": "candidate_callable_after_context_review",
+          "relation_to_initial_candidate": "new_supplemental_candidate"
+        },
+        {
+          "phrase_key": "PK-91bb65305976dce8",
+          "text": "看看你的时间",
+          "sections": [
+            "遇到邀约女生社恐等阻碍"
+          ],
+          "speaker_roles": [
+            "unknown"
+          ],
+          "occurrence_count_in_merged_index": 1,
+          "source_refs": [
+            {
+              "file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_001_jackson_top_phrases_seriousness_and_invitation_obstacles.md",
+              "locator": "line:101",
+              "section": "遇到邀约女生社恐等阻碍"
+            }
+          ],
+          "callability": "candidate_callable_after_context_review",
+          "relation_to_initial_candidate": "new_supplemental_candidate"
+        },
+        {
+          "phrase_key": "PK-4e62c26f03051611",
+          "text": "（好远）聊得好 不是问题",
+          "sections": [
+            "外卖百里千里送流程话术"
+          ],
+          "speaker_roles": [
+            "unknown"
+          ],
+          "occurrence_count_in_merged_index": 1,
+          "source_refs": [
+            {
+              "file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_026_long_distance_delivery_flow.md",
+              "locator": "line:11",
+              "section": "外卖百里千里送流程话术"
+            }
+          ],
+          "callability": "candidate_callable_after_context_review",
+          "relation_to_initial_candidate": "new_supplemental_candidate"
+        },
+        {
+          "phrase_key": "PK-0f97f5ab43a29f46",
+          "text": "换个地了解你",
+          "sections": [
+            "软件收号"
+          ],
+          "speaker_roles": [
+            "unknown"
+          ],
+          "occurrence_count_in_merged_index": 1,
+          "source_refs": [
+            {
+              "file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_028_app_contact_exchange.md",
+              "locator": "line:15",
+              "section": "软件收号"
+            }
+          ],
+          "callability": "candidate_callable_after_context_review",
+          "relation_to_initial_candidate": "new_supplemental_candidate"
+        },
+        {
+          "phrase_key": "PK-ba208ee898e87507",
+          "text": "换个地调度",
+          "sections": [
+            "软件收号"
+          ],
+          "speaker_roles": [
+            "unknown"
+          ],
+          "occurrence_count_in_merged_index": 1,
+          "source_refs": [
+            {
+              "file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_028_app_contact_exchange.md",
+              "locator": "line:17",
+              "section": "软件收号"
+            }
+          ],
+          "callability": "candidate_callable_after_context_review",
+          "relation_to_initial_candidate": "new_supplemental_candidate"
+        },
+        {
+          "phrase_key": "PK-d23181832d8f1472",
+          "text": "你觉得当面聊天好还是在线好",
+          "sections": [
+            "女人主动开",
+            "邀约部分："
+          ],
+          "speaker_roles": [
+            "unknown"
+          ],
+          "occurrence_count_in_merged_index": 2,
+          "source_refs": [
+            {
+              "file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_029_woman_initiates_opening.md",
+              "locator": "line:13",
+              "section": "女人主动开"
+            }
+          ],
+          "callability": "candidate_callable_after_context_review",
+          "relation_to_initial_candidate": "new_supplemental_candidate"
+        },
+        {
+          "phrase_key": "PK-2dfa89caeca9ad74",
+          "text": "什么时候约我",
+          "sections": [
+            "七、引导投资与邀约（Leading Investment & Date Invitation） / 7.3 邀约语句（Jackson）",
+            "邀约部分："
+          ],
+          "speaker_roles": [
+            "unknown"
+          ],
+          "occurrence_count_in_merged_index": 2,
+          "source_refs": [
+            {
+              "file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_040_invitation_phrases.md",
+              "locator": "line:7",
+              "section": "邀约部分："
+            }
+          ],
+          "callability": "candidate_callable_after_context_review",
+          "relation_to_initial_candidate": "new_supplemental_candidate"
+        },
+        {
+          "phrase_key": "PK-73d3a63d24907feb",
+          "text": "当面更有趣不是吗",
+          "sections": [
+            "七、引导投资与邀约（Leading Investment & Date Invitation） / 7.3 邀约语句（Jackson）",
+            "邀约部分："
+          ],
+          "speaker_roles": [
+            "unknown"
+          ],
+          "occurrence_count_in_merged_index": 2,
+          "source_refs": [
+            {
+              "file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_040_invitation_phrases.md",
+              "locator": "line:10",
+              "section": "邀约部分："
+            }
+          ],
+          "callability": "candidate_callable_after_context_review",
+          "relation_to_initial_candidate": "existing_key_source_addition"
+        },
+        {
+          "phrase_key": "PK-8c5da9a24779aa7b",
+          "text": "闻字不如相见 温度在当面",
+          "sections": [
+            "七、引导投资与邀约（Leading Investment & Date Invitation） / 7.3 邀约语句（Jackson）",
+            "邀约部分："
+          ],
+          "speaker_roles": [
+            "unknown"
+          ],
+          "occurrence_count_in_merged_index": 2,
+          "source_refs": [
+            {
+              "file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_040_invitation_phrases.md",
+              "locator": "line:14",
+              "section": "邀约部分："
+            }
+          ],
+          "callability": "candidate_callable_after_context_review",
+          "relation_to_initial_candidate": "new_supplemental_candidate"
+        },
+        {
+          "phrase_key": "PK-6197df07dfef3883",
+          "text": "要聊聊吗 感情 但是当面",
+          "sections": [
+            "七、引导投资与邀约（Leading Investment & Date Invitation） / 7.3 邀约语句（Jackson）",
+            "邀约部分："
+          ],
+          "speaker_roles": [
+            "unknown"
+          ],
+          "occurrence_count_in_merged_index": 2,
+          "source_refs": [
+            {
+              "file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_040_invitation_phrases.md",
+              "locator": "line:17",
+              "section": "邀约部分："
+            }
+          ],
+          "callability": "candidate_callable_after_context_review",
+          "relation_to_initial_candidate": "new_supplemental_candidate"
+        },
+        {
+          "phrase_key": "PK-7338c9112f64489e",
+          "text": "你要是也不喜欢线上尬聊 那我们可以约杯咖啡线下见一下",
+          "sections": [
+            "七、引导投资与邀约（Leading Investment & Date Invitation） / 7.3 邀约语句（Jackson）",
+            "邀约部分："
+          ],
+          "speaker_roles": [
+            "unknown"
+          ],
+          "occurrence_count_in_merged_index": 2,
+          "source_refs": [
+            {
+              "file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_040_invitation_phrases.md",
+              "locator": "line:34",
+              "section": "邀约部分："
+            }
+          ],
+          "callability": "candidate_callable_after_context_review",
+          "relation_to_initial_candidate": "existing_key_source_addition"
+        },
+        {
+          "phrase_key": "PK-19a6fe6e4dacaf61",
+          "text": "（女人说忙）具体可以确定哪天",
+          "sections": [
+            "七、引导投资与邀约（Leading Investment & Date Invitation） / 7.4 待机/邀约跟进（Jackson）",
+            "邀约部分："
+          ],
+          "speaker_roles": [
+            "unknown"
+          ],
+          "occurrence_count_in_merged_index": 2,
+          "source_refs": [
+            {
+              "file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_040_invitation_phrases.md",
+              "locator": "line:56",
+              "section": "邀约部分："
+            }
+          ],
+          "callability": "candidate_callable_after_context_review",
+          "relation_to_initial_candidate": "existing_key_source_addition"
+        },
+        {
+          "phrase_key": "PK-530182c8420401e0",
+          "text": "逗你的 坐坐随便聊聊天别紧张",
+          "sections": [
+            "邀约部分："
+          ],
+          "speaker_roles": [
+            "unknown"
+          ],
+          "occurrence_count_in_merged_index": 1,
+          "source_refs": [
+            {
+              "file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_040_invitation_phrases.md",
+              "locator": "line:80",
+              "section": "邀约部分："
+            }
+          ],
+          "callability": "candidate_callable_after_context_review",
+          "relation_to_initial_candidate": "new_supplemental_candidate"
+        },
+        {
+          "phrase_key": "PK-430d71da4ecd9ca9",
+          "text": "天气还不错 适合约会和散步",
+          "sections": [
+            "邀约部分："
+          ],
+          "speaker_roles": [
+            "unknown"
+          ],
+          "occurrence_count_in_merged_index": 1,
+          "source_refs": [
+            {
+              "file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_040_invitation_phrases.md",
+              "locator": "line:102",
+              "section": "邀约部分："
+            }
+          ],
+          "callability": "candidate_callable_after_context_review",
+          "relation_to_initial_candidate": "new_supplemental_candidate"
+        }
+      ]
+    },
+    {
+      "id": "connection_and_feedback",
+      "title": "联系感与正向反馈（Apple Notes 增补）",
+      "callability": "context_required",
+      "conditions": [
+        "表达基于真实可观察信息或明确的当下感受",
+        "不伪造经历、承诺或关系状态"
+      ],
+      "forbidden": [
+        "不得用奖励/高位框架替代双向回应",
+        "低回应时服从减少投入和停止边界"
+      ],
+      "entries": [
+        {
+          "phrase_key": "PK-4be91882c4083e0d",
+          "text": "（对方翻看朋友圈夸审美好）你很懂嘛",
+          "sections": [
+            "做联系感"
+          ],
+          "speaker_roles": [
+            "unknown"
+          ],
+          "occurrence_count_in_merged_index": 1,
+          "source_refs": [
+            {
+              "file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_024_building_connection.md",
+              "locator": "line:39",
+              "section": "做联系感"
+            }
+          ],
+          "callability": "context_required",
+          "relation_to_initial_candidate": "new_supplemental_candidate"
+        },
+        {
+          "phrase_key": "PK-6240eb0dec627203",
+          "text": "你不讨厌",
+          "sections": [
+            "做联系感"
+          ],
+          "speaker_roles": [
+            "unknown"
+          ],
+          "occurrence_count_in_merged_index": 1,
+          "source_refs": [
+            {
+              "file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_024_building_connection.md",
+              "locator": "line:99",
+              "section": "做联系感"
+            }
+          ],
+          "callability": "context_required",
+          "relation_to_initial_candidate": "new_supplemental_candidate"
+        },
+        {
+          "phrase_key": "PK-9a6d65532a4748bc",
+          "text": "暂时只为你开放",
+          "sections": [
+            "七、引导投资与邀约（Leading Investment & Date Invitation） / 7.5 给对方反馈/撩（Jackson）",
+            "给价值反馈，撩的部分："
+          ],
+          "speaker_roles": [
+            "unknown"
+          ],
+          "occurrence_count_in_merged_index": 2,
+          "source_refs": [
+            {
+              "file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_033_value_feedback_and_flirting.md",
+              "locator": "line:11",
+              "section": "给价值反馈，撩的部分："
+            }
+          ],
+          "callability": "context_required",
+          "relation_to_initial_candidate": "new_supplemental_candidate"
+        },
+        {
+          "phrase_key": "PK-4640f4f0e9159014",
+          "text": "不用那么深 想爱你 就想说 想到什么说什么",
+          "sections": [
+            "给价值反馈，撩的部分："
+          ],
+          "speaker_roles": [
+            "unknown"
+          ],
+          "occurrence_count_in_merged_index": 1,
+          "source_refs": [
+            {
+              "file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_033_value_feedback_and_flirting.md",
+              "locator": "line:29",
+              "section": "给价值反馈，撩的部分："
+            }
+          ],
+          "callability": "context_required",
+          "relation_to_initial_candidate": "new_supplemental_candidate"
+        },
+        {
+          "phrase_key": "PK-4e29f57b9b419af3",
+          "text": "相信你自己 宝宝 你值得一切好的",
+          "sections": [
+            "给价值反馈，撩的部分："
+          ],
+          "speaker_roles": [
+            "unknown"
+          ],
+          "occurrence_count_in_merged_index": 1,
+          "source_refs": [
+            {
+              "file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_033_value_feedback_and_flirting.md",
+              "locator": "line:31",
+              "section": "给价值反馈，撩的部分："
+            }
+          ],
+          "callability": "context_required",
+          "relation_to_initial_candidate": "new_supplemental_candidate"
+        },
+        {
+          "phrase_key": "PK-7678705d0cff1b5e",
+          "text": "这不超级棒吗",
+          "sections": [
+            "给价值反馈，撩的部分："
+          ],
+          "speaker_roles": [
+            "unknown"
+          ],
+          "occurrence_count_in_merged_index": 1,
+          "source_refs": [
+            {
+              "file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_033_value_feedback_and_flirting.md",
+              "locator": "line:45",
+              "section": "给价值反馈，撩的部分："
+            }
+          ],
+          "callability": "context_required",
+          "relation_to_initial_candidate": "new_supplemental_candidate"
+        },
+        {
+          "phrase_key": "PK-15d77861293d8219",
+          "text": "早安呢 需要咖啡吗 在想约你咖啡这事",
+          "sections": [
+            "高位奖品性塑造"
+          ],
+          "speaker_roles": [
+            "unknown"
+          ],
+          "occurrence_count_in_merged_index": 1,
+          "source_refs": [
+            {
+              "file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_044_high_value_prize_positioning.md",
+              "locator": "line:26",
+              "section": "高位奖品性塑造"
+            }
+          ],
+          "callability": "context_required",
+          "relation_to_initial_candidate": "new_supplemental_candidate"
+        },
+        {
+          "phrase_key": "PK-6d49f09b4ea2d585",
+          "text": "奖励你约咖啡吧",
+          "sections": [
+            "高位奖品性塑造"
+          ],
+          "speaker_roles": [
+            "unknown"
+          ],
+          "occurrence_count_in_merged_index": 1,
+          "source_refs": [
+            {
+              "file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_044_high_value_prize_positioning.md",
+              "locator": "line:35",
+              "section": "高位奖品性塑造"
+            }
+          ],
+          "callability": "context_required",
+          "relation_to_initial_candidate": "new_supplemental_candidate"
+        }
+      ]
+    },
+    {
+      "id": "intimacy_conditional",
+      "title": "亲密/性话题条件性候选（Apple Notes 增补）",
+      "callability": "candidate_callable_after_context_review",
+      "conditions": [
+        "双方明确进入并持续同类性话题",
+        "成年/身份风险已有足够依据",
+        "存在持续互惠反馈、无拒绝/不适/停止信号",
+        "不含威胁、羞辱、欺骗、强迫或私密空间诱导"
+      ],
+      "forbidden": [
+        "未满足条件时只作 source_only 或 boundary_only",
+        "任何停止/不适优先结束该主题"
+      ],
+      "entries": [
+        {
+          "phrase_key": "PK-c88d0f32c297db7b",
+          "text": "做大做强 带我上床",
+          "sections": [
+            "六、性张力与调情（Sexual Tension & Flirting） / 6.4 情绪拉伸（Jackson）",
+            "情绪拉伸"
+          ],
+          "speaker_roles": [
+            "unknown"
+          ],
+          "occurrence_count_in_merged_index": 2,
+          "source_refs": [
+            {
+              "file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_002_emotional_tension.md",
+              "locator": "line:13",
+              "section": "情绪拉伸"
+            }
+          ],
+          "callability": "candidate_callable_after_context_review",
+          "relation_to_initial_candidate": "new_supplemental_candidate"
+        },
+        {
+          "phrase_key": "PK-a46a224674794ce0",
+          "text": "我们可以淡而悠长 除非你想炽热一点",
+          "sections": [
+            "六、性张力与调情（Sexual Tension & Flirting） / 6.4 情绪拉伸（Jackson）",
+            "七、引导投资与邀约（Leading Investment & Date Invitation） / 7.5 给对方反馈/撩（Jackson）",
+            "十、作联系感与日常维护（Connection & Maintenance） / 10.1 作联系感语句（Jackson）",
+            "情绪拉伸",
+            "做联系感"
+          ],
+          "speaker_roles": [
+            "unknown"
+          ],
+          "occurrence_count_in_merged_index": 5,
+          "source_refs": [
+            {
+              "file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_002_emotional_tension.md",
+              "locator": "line:15",
+              "section": "情绪拉伸"
+            }
+          ],
+          "callability": "candidate_callable_after_context_review",
+          "relation_to_initial_candidate": "new_supplemental_candidate"
+        },
+        {
+          "phrase_key": "PK-1d5e6ad49fddc1c3",
+          "text": "不解释 抱抱就够了",
+          "sections": [
+            "四、废测破解与框架控制（Shit Test Handling & Frame Control） / 4.3 阻碍废测解决（Jackson）",
+            "六、性张力与调情（Sexual Tension & Flirting） / 6.2 张力与画面感（Jackson）",
+            "六、性张力与调情（Sexual Tension & Flirting） / 6.4 情绪拉伸（Jackson）",
+            "情绪拉伸",
+            "阻碍废测解决"
+          ],
+          "speaker_roles": [
+            "unknown"
+          ],
+          "occurrence_count_in_merged_index": 5,
+          "source_refs": [
+            {
+              "file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_002_emotional_tension.md",
+              "locator": "line:27",
+              "section": "情绪拉伸"
+            }
+          ],
+          "callability": "candidate_callable_after_context_review",
+          "relation_to_initial_candidate": "new_supplemental_candidate"
+        },
+        {
+          "phrase_key": "PK-f905b54762f17542",
+          "text": "平时得正经 做的时候浪",
+          "sections": [
+            "六、性张力与调情（Sexual Tension & Flirting） / 6.2 张力与画面感（Jackson）",
+            "张力与画面感"
+          ],
+          "speaker_roles": [
+            "unknown"
+          ],
+          "occurrence_count_in_merged_index": 2,
+          "source_refs": [
+            {
+              "file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_017_tension_and_visual_imagery.md",
+              "locator": "line:17",
+              "section": "张力与画面感"
+            }
+          ],
+          "callability": "candidate_callable_after_context_review",
+          "relation_to_initial_candidate": "new_supplemental_candidate"
+        },
+        {
+          "phrase_key": "PK-9b8ab2b8820de861",
+          "text": "不想网恋了 就喜欢实操是吧 你喜欢触感还是听觉还是视觉",
+          "sections": [
+            "六、性张力与调情（Sexual Tension & Flirting） / 6.2 张力与画面感（Jackson）",
+            "六、性张力与调情（Sexual Tension & Flirting） / 6.3 打击情绪（Jackson）",
+            "张力与画面感",
+            "打击情绪"
+          ],
+          "speaker_roles": [
+            "unknown"
+          ],
+          "occurrence_count_in_merged_index": 4,
+          "source_refs": [
+            {
+              "file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_017_tension_and_visual_imagery.md",
+              "locator": "line:25",
+              "section": "张力与画面感"
+            }
+          ],
+          "callability": "candidate_callable_after_context_review",
+          "relation_to_initial_candidate": "new_supplemental_candidate"
+        },
+        {
+          "phrase_key": "PK-38a8b4c233a836c4",
+          "text": "那就来一个肉欲的抱抱",
+          "sections": [
+            "六、性张力与调情（Sexual Tension & Flirting） / 6.2 张力与画面感（Jackson）",
+            "张力与画面感"
+          ],
+          "speaker_roles": [
+            "unknown"
+          ],
+          "occurrence_count_in_merged_index": 2,
+          "source_refs": [
+            {
+              "file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_017_tension_and_visual_imagery.md",
+              "locator": "line:31",
+              "section": "张力与画面感"
+            }
+          ],
+          "callability": "candidate_callable_after_context_review",
+          "relation_to_initial_candidate": "new_supplemental_candidate"
+        },
+        {
+          "phrase_key": "PK-6344d35bcd6b696f",
+          "text": "Do you want it",
+          "sections": [
+            "六、性张力与调情（Sexual Tension & Flirting） / 6.2 张力与画面感（Jackson）",
+            "十、作联系感与日常维护（Connection & Maintenance） / 10.1 作联系感语句（Jackson）",
+            "张力与画面感",
+            "做联系感"
+          ],
+          "speaker_roles": [
+            "unknown"
+          ],
+          "occurrence_count_in_merged_index": 4,
+          "source_refs": [
+            {
+              "file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_017_tension_and_visual_imagery.md",
+              "locator": "line:33",
+              "section": "张力与画面感"
+            }
+          ],
+          "callability": "candidate_callable_after_context_review",
+          "relation_to_initial_candidate": "new_supplemental_candidate"
+        },
+        {
+          "phrase_key": "PK-491ba14396495197",
+          "text": "叫爸爸 乖 赏一鞭子",
+          "sections": [
+            "S M 属性话术"
+          ],
+          "speaker_roles": [
+            "unknown"
+          ],
+          "occurrence_count_in_merged_index": 1,
+          "source_refs": [
+            {
+              "file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_036_SM_attributes_phrases.md",
+              "locator": "line:6",
+              "section": "S M 属性话术"
+            }
+          ],
+          "callability": "candidate_callable_after_context_review",
+          "relation_to_initial_candidate": "new_supplemental_candidate"
+        },
+        {
+          "phrase_key": "PK-b4a093f5f50d6e4d",
+          "text": "我爱打屁股 喜欢吗 想象中呢",
+          "sections": [
+            "S M 属性话术",
+            "打击情绪"
+          ],
+          "speaker_roles": [
+            "unknown"
+          ],
+          "occurrence_count_in_merged_index": 2,
+          "source_refs": [
+            {
+              "file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_036_SM_attributes_phrases.md",
+              "locator": "line:8",
+              "section": "S M 属性话术"
+            }
+          ],
+          "callability": "candidate_callable_after_context_review",
+          "relation_to_initial_candidate": "new_supplemental_candidate"
+        }
+      ]
+    }
+  ],
+  "note_routes": [
+    {
+      "source_file": "001_jackson_top_phrases_seriousness_and_invitation_obstacles.md",
+      "archive_file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_001_jackson_top_phrases_seriousness_and_invitation_obstacles.md",
+      "title": "杰哥顶级话术",
+      "sections": [
+        "对方不严肃嘻嘻哈哈或者表情包",
+        "遇到邀约女生社恐等阻碍"
+      ],
+      "extracted_entry_count": 49,
+      "indexed_entry_count": 49,
+      "route_ids": [
+        "boundary_and_channel",
+        "invite_and_schedule",
+        "context_required_teasing"
+      ],
+      "related_units": [
+        "K-20260821-003",
+        "K-20260822-032",
+        "K-20260823-053"
+      ],
+      "route_status": "candidate_reference_after_stage_review",
+      "note": "章节名只提供检索线索，不是安全白名单；逐条命中后必须回读上下文并经过 K-053。"
+    },
+    {
+      "source_file": "002_emotional_tension.md",
+      "archive_file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_002_emotional_tension.md",
+      "title": "情绪拉伸",
+      "sections": [
+        "情绪拉伸"
+      ],
+      "extracted_entry_count": 12,
+      "indexed_entry_count": 12,
+      "route_ids": [
+        "intimacy_conditional",
+        "boundary_only"
+      ],
+      "related_units": [
+        "K-20260822-028",
+        "K-20260823-053"
+      ],
+      "route_status": "mixed_requires_boundary_filter",
+      "note": "章节名只提供检索线索，不是安全白名单；逐条命中后必须回读上下文并经过 K-053。"
+    },
+    {
+      "source_file": "003_within_five_days.md",
+      "archive_file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_003_within_five_days.md",
+      "title": "五天以内",
+      "sections": [
+        "你有信用卡吗"
+      ],
+      "extracted_entry_count": 1,
+      "indexed_entry_count": 1,
+      "route_ids": [
+        "invite_and_schedule",
+        "boundary_only"
+      ],
+      "related_units": [
+        "K-20260822-032",
+        "K-20260822-037"
+      ],
+      "route_status": "candidate_reference_after_stage_review",
+      "note": "章节名只提供检索线索，不是安全白名单；逐条命中后必须回读上下文并经过 K-053。"
+    },
+    {
+      "source_file": "004_displaying_aggression.md",
+      "archive_file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_004_displaying_aggression.md",
+      "title": "展示攻击性",
+      "sections": [
+        "展示攻击性"
+      ],
+      "extracted_entry_count": 5,
+      "indexed_entry_count": 5,
+      "route_ids": [
+        "context_required_teasing",
+        "boundary_only"
+      ],
+      "related_units": [
+        "K-20260823-053"
+      ],
+      "route_status": "mixed_requires_boundary_filter",
+      "note": "章节名只提供检索线索，不是安全白名单；逐条命中后必须回读上下文并经过 K-053。"
+    },
+    {
+      "source_file": "005_sticker_and_non_seriousness_obstacles.md",
+      "archive_file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_005_sticker_and_non_seriousness_obstacles.md",
+      "title": "表情包阻碍 不认真无张力阻碍",
+      "sections": [
+        "表情包阻碍 不认真无张力阻碍"
+      ],
+      "extracted_entry_count": 18,
+      "indexed_entry_count": 18,
+      "route_ids": [
+        "boundary_and_channel",
+        "low_response"
+      ],
+      "related_units": [
+        "K-20260821-020",
+        "K-20260821-021",
+        "K-20260823-052"
+      ],
+      "route_status": "candidate_reference_after_stage_review",
+      "note": "章节名只提供检索线索，不是安全白名单；逐条命中后必须回读上下文并经过 K-053。"
+    },
+    {
+      "source_file": "006_closing_or_returning_home_obstacles.md",
+      "archive_file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_006_closing_or_returning_home_obstacles.md",
+      "title": "收尾或者带回家阻碍",
+      "sections": [
+        "收尾或者带回家阻碍"
+      ],
+      "extracted_entry_count": 4,
+      "indexed_entry_count": 4,
+      "route_ids": [
+        "intimacy_conditional",
+        "boundary_only"
+      ],
+      "related_units": [
+        "K-20260822-028",
+        "K-20260823-053"
+      ],
+      "route_status": "mixed_requires_boundary_filter",
+      "note": "章节名只提供检索线索，不是安全白名单；逐条命中后必须回读上下文并经过 K-053。"
+    },
+    {
+      "source_file": "007_leading_the_interaction.md",
+      "archive_file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_007_leading_the_interaction.md",
+      "title": "主导",
+      "sections": [
+        "主导"
+      ],
+      "extracted_entry_count": 6,
+      "indexed_entry_count": 6,
+      "route_ids": [
+        "context_required_teasing",
+        "boundary_only"
+      ],
+      "related_units": [
+        "K-20260823-053"
+      ],
+      "route_status": "mixed_requires_boundary_filter",
+      "note": "章节名只提供检索线索，不是安全白名单；逐条命中后必须回读上下文并经过 K-053。"
+    },
+    {
+      "source_file": "008_escalation_by_pulling_back.md",
+      "archive_file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_008_escalation_by_pulling_back.md",
+      "title": "以退为进的升级",
+      "sections": [
+        "以退为进的升级"
+      ],
+      "extracted_entry_count": 3,
+      "indexed_entry_count": 3,
+      "route_ids": [
+        "low_response",
+        "context_required_teasing"
+      ],
+      "related_units": [
+        "K-20260821-020",
+        "K-20260822-027"
+      ],
+      "route_status": "candidate_reference_after_stage_review",
+      "note": "章节名只提供检索线索，不是安全白名单；逐条命中后必须回读上下文并经过 K-053。"
+    },
+    {
+      "source_file": "009_asking_for_commitment.md",
+      "archive_file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_009_asking_for_commitment.md",
+      "title": "逼单",
+      "sections": [
+        "逼单"
+      ],
+      "extracted_entry_count": 2,
+      "indexed_entry_count": 2,
+      "route_ids": [
+        "invite_and_schedule",
+        "boundary_only"
+      ],
+      "related_units": [
+        "K-20260822-032",
+        "K-20260823-053"
+      ],
+      "route_status": "mixed_requires_boundary_filter",
+      "note": "章节名只提供检索线索，不是安全白名单；逐条命中后必须回读上下文并经过 K-053。"
+    },
+    {
+      "source_file": "010_teaching_frame.md",
+      "archive_file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_010_teaching_frame.md",
+      "title": "调教框架",
+      "sections": [
+        "调教框架"
+      ],
+      "extracted_entry_count": 1,
+      "indexed_entry_count": 1,
+      "route_ids": [
+        "intimacy_conditional",
+        "boundary_only"
+      ],
+      "related_units": [
+        "K-20260822-028",
+        "K-20260823-053"
+      ],
+      "route_status": "mixed_requires_boundary_filter",
+      "note": "章节名只提供检索线索，不是安全白名单；逐条命中后必须回读上下文并经过 K-053。"
+    },
+    {
+      "source_file": "011_playful_evaluation_opening.md",
+      "archive_file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_011_playful_evaluation_opening.md",
+      "title": "假性评估（开局）",
+      "sections": [
+        "假性评估（开局）"
+      ],
+      "extracted_entry_count": 4,
+      "indexed_entry_count": 4,
+      "route_ids": [
+        "context_required_teasing"
+      ],
+      "related_units": [
+        "K-20260821-017",
+        "K-20260823-052"
+      ],
+      "route_status": "candidate_reference_after_stage_review",
+      "note": "章节名只提供检索线索，不是安全白名单；逐条命中后必须回读上下文并经过 K-053。"
+    },
+    {
+      "source_file": "012_values_and_stance.md",
+      "archive_file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_012_values_and_stance.md",
+      "title": "价值观输出",
+      "sections": [
+        "价值观输出"
+      ],
+      "extracted_entry_count": 17,
+      "indexed_entry_count": 17,
+      "route_ids": [
+        "values_and_stance",
+        "context_required"
+      ],
+      "related_units": [
+        "K-20260821-001",
+        "K-20260823-053"
+      ],
+      "route_status": "candidate_reference_after_stage_review",
+      "note": "章节名只提供检索线索，不是安全白名单；逐条命中后必须回读上下文并经过 K-053。"
+    },
+    {
+      "source_file": "013_empathic_opening.md",
+      "archive_file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_013_empathic_opening.md",
+      "title": "开场同理心环节",
+      "sections": [
+        "开场同理心环节"
+      ],
+      "extracted_entry_count": 19,
+      "indexed_entry_count": 19,
+      "route_ids": [
+        "clarify_and_boundary",
+        "context_required_teasing"
+      ],
+      "related_units": [
+        "K-20260823-052"
+      ],
+      "route_status": "candidate_reference_after_stage_review",
+      "note": "章节名只提供检索线索，不是安全白名单；逐条命中后必须回读上下文并经过 K-053。"
+    },
+    {
+      "source_file": "014_jackson_key_tactics.md",
+      "archive_file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_014_jackson_key_tactics.md",
+      "title": "杰哥干货",
+      "sections": [
+        "杰哥干货"
+      ],
+      "extracted_entry_count": 4,
+      "indexed_entry_count": 4,
+      "route_ids": [
+        "source_only_mixed"
+      ],
+      "related_units": [
+        "K-20260823-051"
+      ],
+      "route_status": "source_only_unreviewed",
+      "note": "章节名只提供检索线索，不是安全白名单；逐条命中后必须回读上下文并经过 K-053。"
+    },
+    {
+      "source_file": "015_experience_based_routines.md",
+      "archive_file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_015_experience_based_routines.md",
+      "title": "阅历惯例",
+      "sections": [
+        "阅历惯例"
+      ],
+      "extracted_entry_count": 15,
+      "indexed_entry_count": 15,
+      "route_ids": [
+        "source_only_mixed"
+      ],
+      "related_units": [
+        "K-20260823-051"
+      ],
+      "route_status": "source_only_unreviewed",
+      "note": "章节名只提供检索线索，不是安全白名单；逐条命中后必须回读上下文并经过 K-053。"
+    },
+    {
+      "source_file": "016_clear_intent_and_premise.md",
+      "archive_file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_016_clear_intent_and_premise.md",
+      "title": "明确意图与前提",
+      "sections": [
+        "明确意图与前提"
+      ],
+      "extracted_entry_count": 8,
+      "indexed_entry_count": 8,
+      "route_ids": [
+        "clarify_and_boundary",
+        "invite_and_schedule"
+      ],
+      "related_units": [
+        "K-20260821-003",
+        "K-20260822-032"
+      ],
+      "route_status": "candidate_reference_after_stage_review",
+      "note": "章节名只提供检索线索，不是安全白名单；逐条命中后必须回读上下文并经过 K-053。"
+    },
+    {
+      "source_file": "017_tension_and_visual_imagery.md",
+      "archive_file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_017_tension_and_visual_imagery.md",
+      "title": "张力与画面感",
+      "sections": [
+        "张力与画面感"
+      ],
+      "extracted_entry_count": 56,
+      "indexed_entry_count": 56,
+      "route_ids": [
+        "intimacy_conditional",
+        "boundary_only"
+      ],
+      "related_units": [
+        "K-20260822-028",
+        "K-20260823-053"
+      ],
+      "route_status": "mixed_requires_boundary_filter",
+      "note": "章节名只提供检索线索，不是安全白名单；逐条命中后必须回读上下文并经过 K-053。"
+    },
+    {
+      "source_file": "018_gaze_and_direct_answers.md",
+      "archive_file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_018_gaze_and_direct_answers.md",
+      "title": "凝视",
+      "sections": [
+        "凝视"
+      ],
+      "extracted_entry_count": 27,
+      "indexed_entry_count": 27,
+      "route_ids": [
+        "clarify_and_boundary",
+        "out_of_scope"
+      ],
+      "related_units": [
+        "K-20260823-052"
+      ],
+      "route_status": "candidate_reference_after_stage_review",
+      "note": "章节名只提供检索线索，不是安全白名单；逐条命中后必须回读上下文并经过 K-053。"
+    },
+    {
+      "source_file": "019_extending_the_conversation.md",
+      "archive_file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_019_extending_the_conversation.md",
+      "title": "延续话题",
+      "sections": [
+        "延续话题"
+      ],
+      "extracted_entry_count": 21,
+      "indexed_entry_count": 21,
+      "route_ids": [
+        "clarify_and_boundary"
+      ],
+      "related_units": [
+        "K-20260823-052"
+      ],
+      "route_status": "candidate_reference_after_stage_review",
+      "note": "章节名只提供检索线索，不是安全白名单；逐条命中后必须回读上下文并经过 K-053。"
+    },
+    {
+      "source_file": "020_strong_attraction_persona_examples.md",
+      "archive_file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_020_strong_attraction_persona_examples.md",
+      "title": "强吸引个性样本输出",
+      "sections": [
+        "强吸引个性样本输出"
+      ],
+      "extracted_entry_count": 43,
+      "indexed_entry_count": 43,
+      "route_ids": [
+        "context_required_teasing",
+        "boundary_only"
+      ],
+      "related_units": [
+        "K-20260823-052",
+        "K-20260823-053"
+      ],
+      "route_status": "mixed_requires_boundary_filter",
+      "note": "章节名只提供检索线索，不是安全白名单；逐条命中后必须回读上下文并经过 K-053。"
+    },
+    {
+      "source_file": "021_values_and_stance_2.md",
+      "archive_file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_021_values_and_stance_2.md",
+      "title": "价值观输出",
+      "sections": [
+        "价值观输出"
+      ],
+      "extracted_entry_count": 12,
+      "indexed_entry_count": 12,
+      "route_ids": [
+        "values_and_stance",
+        "context_required"
+      ],
+      "related_units": [
+        "K-20260821-001",
+        "K-20260823-053"
+      ],
+      "route_status": "candidate_reference_after_stage_review",
+      "note": "章节名只提供检索线索，不是安全白名单；逐条命中后必须回读上下文并经过 K-053。"
+    },
+    {
+      "source_file": "022_short_term_and_low_fit.md",
+      "archive_file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_022_short_term_and_low_fit.md",
+      "title": "短期和土妹勿扰",
+      "sections": [
+        "短期和土妹勿扰"
+      ],
+      "extracted_entry_count": 1,
+      "indexed_entry_count": 1,
+      "route_ids": [
+        "screening_and_evaluation",
+        "context_required"
+      ],
+      "related_units": [
+        "K-20260823-052",
+        "K-20260823-053"
+      ],
+      "route_status": "candidate_reference_after_stage_review",
+      "note": "章节名只提供检索线索，不是安全白名单；逐条命中后必须回读上下文并经过 K-053。"
+    },
+    {
+      "source_file": "023_defusing_tests_and_body_language.md",
+      "archive_file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_023_defusing_tests_and_body_language.md",
+      "title": "破防的肢体动作 应对废测的关键话术",
+      "sections": [],
+      "extracted_entry_count": 0,
+      "indexed_entry_count": 0,
+      "route_ids": [
+        "out_of_scope_media_pending"
+      ],
+      "related_units": [
+        "K-20260823-053"
+      ],
+      "route_status": "out_of_scope_pending_media_export",
+      "note": "章节名只提供检索线索，不是安全白名单；逐条命中后必须回读上下文并经过 K-053。"
+    },
+    {
+      "source_file": "024_building_connection.md",
+      "archive_file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_024_building_connection.md",
+      "title": "做联系感",
+      "sections": [
+        "做联系感"
+      ],
+      "extracted_entry_count": 61,
+      "indexed_entry_count": 61,
+      "route_ids": [
+        "connection_and_feedback",
+        "boundary_and_channel"
+      ],
+      "related_units": [
+        "K-20260823-051",
+        "K-20260823-052"
+      ],
+      "route_status": "candidate_reference_after_stage_review",
+      "note": "章节名只提供检索线索，不是安全白名单；逐条命中后必须回读上下文并经过 K-053。"
+    },
+    {
+      "source_file": "025_asking_for_commitment_2.md",
+      "archive_file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_025_asking_for_commitment_2.md",
+      "title": "逼单",
+      "sections": [
+        "逼单"
+      ],
+      "extracted_entry_count": 10,
+      "indexed_entry_count": 10,
+      "route_ids": [
+        "invite_and_schedule",
+        "boundary_only"
+      ],
+      "related_units": [
+        "K-20260822-032",
+        "K-20260823-053"
+      ],
+      "route_status": "mixed_requires_boundary_filter",
+      "note": "章节名只提供检索线索，不是安全白名单；逐条命中后必须回读上下文并经过 K-053。"
+    },
+    {
+      "source_file": "026_long_distance_delivery_flow.md",
+      "archive_file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_026_long_distance_delivery_flow.md",
+      "title": "外卖百里千里送流程话术",
+      "sections": [
+        "外卖百里千里送流程话术"
+      ],
+      "extracted_entry_count": 3,
+      "indexed_entry_count": 3,
+      "route_ids": [
+        "invite_and_schedule",
+        "context_required"
+      ],
+      "related_units": [
+        "K-20260822-032",
+        "K-20260822-037"
+      ],
+      "route_status": "candidate_reference_after_stage_review",
+      "note": "章节名只提供检索线索，不是安全白名单；逐条命中后必须回读上下文并经过 K-053。"
+    },
+    {
+      "source_file": "027_victim_frame.md",
+      "archive_file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_027_victim_frame.md",
+      "title": "伪装受害者视角",
+      "sections": [
+        "伪装受害者视角"
+      ],
+      "extracted_entry_count": 11,
+      "indexed_entry_count": 11,
+      "route_ids": [
+        "boundary_only"
+      ],
+      "related_units": [
+        "K-20260823-053"
+      ],
+      "route_status": "mixed_requires_boundary_filter",
+      "note": "章节名只提供检索线索，不是安全白名单；逐条命中后必须回读上下文并经过 K-053。"
+    },
+    {
+      "source_file": "028_app_contact_exchange.md",
+      "archive_file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_028_app_contact_exchange.md",
+      "title": "软件收号",
+      "sections": [
+        "软件收号"
+      ],
+      "extracted_entry_count": 4,
+      "indexed_entry_count": 4,
+      "route_ids": [
+        "platform_migration",
+        "boundary_and_channel"
+      ],
+      "related_units": [
+        "K-20260823-052",
+        "K-20260823-053"
+      ],
+      "route_status": "candidate_reference_after_stage_review",
+      "note": "章节名只提供检索线索，不是安全白名单；逐条命中后必须回读上下文并经过 K-053。"
+    },
+    {
+      "source_file": "029_woman_initiates_opening.md",
+      "archive_file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_029_woman_initiates_opening.md",
+      "title": "女人主动开",
+      "sections": [
+        "女人主动开"
+      ],
+      "extracted_entry_count": 2,
+      "indexed_entry_count": 2,
+      "route_ids": [
+        "opening",
+        "clarify_and_boundary"
+      ],
+      "related_units": [
+        "K-20260823-052"
+      ],
+      "route_status": "candidate_reference_after_stage_review",
+      "note": "章节名只提供检索线索，不是安全白名单；逐条命中后必须回读上下文并经过 K-053。"
+    },
+    {
+      "source_file": "030_long_term_relationship_dynamics.md",
+      "archive_file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_030_long_term_relationship_dynamics.md",
+      "title": "长期关系调教",
+      "sections": [
+        "长期关系调教"
+      ],
+      "extracted_entry_count": 8,
+      "indexed_entry_count": 8,
+      "route_ids": [
+        "intimacy_conditional",
+        "boundary_only"
+      ],
+      "related_units": [
+        "K-20260822-028",
+        "K-20260823-053"
+      ],
+      "route_status": "mixed_requires_boundary_filter",
+      "note": "章节名只提供检索线索，不是安全白名单；逐条命中后必须回读上下文并经过 K-053。"
+    },
+    {
+      "source_file": "031_male_to_female_framing.md",
+      "archive_file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_031_male_to_female_framing.md",
+      "title": "切男对女",
+      "sections": [
+        "切男对女"
+      ],
+      "extracted_entry_count": 20,
+      "indexed_entry_count": 20,
+      "route_ids": [
+        "values_and_stance",
+        "boundary_and_channel"
+      ],
+      "related_units": [
+        "K-20260823-052",
+        "K-20260823-053"
+      ],
+      "route_status": "candidate_reference_after_stage_review",
+      "note": "章节名只提供检索线索，不是安全白名单；逐条命中后必须回读上下文并经过 K-053。"
+    },
+    {
+      "source_file": "032_how_to_continue_replies.md",
+      "archive_file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_032_how_to_continue_replies.md",
+      "title": "不知道怎么回思路",
+      "sections": [
+        "不知道怎么回思路"
+      ],
+      "extracted_entry_count": 55,
+      "indexed_entry_count": 54,
+      "route_ids": [
+        "source_only_mixed",
+        "clarify_and_boundary"
+      ],
+      "related_units": [
+        "K-20260823-051",
+        "K-20260823-052"
+      ],
+      "route_status": "source_only_unreviewed",
+      "note": "章节名只提供检索线索，不是安全白名单；逐条命中后必须回读上下文并经过 K-053。"
+    },
+    {
+      "source_file": "033_value_feedback_and_flirting.md",
+      "archive_file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_033_value_feedback_and_flirting.md",
+      "title": "给价值反馈，撩的部分：",
+      "sections": [
+        "给价值反馈，撩的部分："
+      ],
+      "extracted_entry_count": 22,
+      "indexed_entry_count": 22,
+      "route_ids": [
+        "connection_and_feedback",
+        "intimacy_conditional"
+      ],
+      "related_units": [
+        "K-20260823-051",
+        "K-20260822-028"
+      ],
+      "route_status": "candidate_reference_after_stage_review",
+      "note": "章节名只提供检索线索，不是安全白名单；逐条命中后必须回读上下文并经过 K-053。"
+    },
+    {
+      "source_file": "034_pulling_the_conversation.md",
+      "archive_file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_034_pulling_the_conversation.md",
+      "title": "拉",
+      "sections": [
+        "拉"
+      ],
+      "extracted_entry_count": 28,
+      "indexed_entry_count": 28,
+      "route_ids": [
+        "context_required_teasing",
+        "intimacy_conditional"
+      ],
+      "related_units": [
+        "K-20260821-017",
+        "K-20260822-028"
+      ],
+      "route_status": "candidate_reference_after_stage_review",
+      "note": "章节名只提供检索线索，不是安全白名单；逐条命中后必须回读上下文并经过 K-053。"
+    },
+    {
+      "source_file": "035_opening_patterns.md",
+      "archive_file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_035_opening_patterns.md",
+      "title": "打开方式",
+      "sections": [
+        "打开方式"
+      ],
+      "extracted_entry_count": 34,
+      "indexed_entry_count": 34,
+      "route_ids": [
+        "opening",
+        "context_required_teasing"
+      ],
+      "related_units": [
+        "K-20260823-052"
+      ],
+      "route_status": "candidate_reference_after_stage_review",
+      "note": "章节名只提供检索线索，不是安全白名单；逐条命中后必须回读上下文并经过 K-053。"
+    },
+    {
+      "source_file": "036_SM_attributes_phrases.md",
+      "archive_file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_036_SM_attributes_phrases.md",
+      "title": "S M 属性话术",
+      "sections": [
+        "S M 属性话术"
+      ],
+      "extracted_entry_count": 15,
+      "indexed_entry_count": 15,
+      "route_ids": [
+        "intimacy_conditional",
+        "boundary_only"
+      ],
+      "related_units": [
+        "K-20260822-028",
+        "K-20260823-053"
+      ],
+      "route_status": "mixed_requires_boundary_filter",
+      "note": "章节名只提供检索线索，不是安全白名单；逐条命中后必须回读上下文并经过 K-053。"
+    },
+    {
+      "source_file": "037_using_their_own_logic.md",
+      "archive_file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_037_using_their_own_logic.md",
+      "title": "以其人之道还治其人之身",
+      "sections": [
+        "以其人之道还治其人之身"
+      ],
+      "extracted_entry_count": 6,
+      "indexed_entry_count": 6,
+      "route_ids": [
+        "boundary_only",
+        "source_only_mixed"
+      ],
+      "related_units": [
+        "K-20260823-053"
+      ],
+      "route_status": "mixed_requires_boundary_filter",
+      "note": "章节名只提供检索线索，不是安全白名单；逐条命中后必须回读上下文并经过 K-053。"
+    },
+    {
+      "source_file": "038_cooperation_breakthrough.md",
+      "archive_file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_038_cooperation_breakthrough.md",
+      "title": "合作突破",
+      "sections": [
+        "合作突破"
+      ],
+      "extracted_entry_count": 1,
+      "indexed_entry_count": 1,
+      "route_ids": [
+        "invite_and_schedule",
+        "boundary_only"
+      ],
+      "related_units": [
+        "K-20260822-032",
+        "K-20260823-053"
+      ],
+      "route_status": "mixed_requires_boundary_filter",
+      "note": "章节名只提供检索线索，不是安全白名单；逐条命中后必须回读上下文并经过 K-053。"
+    },
+    {
+      "source_file": "039_reengagement_phrases.md",
+      "archive_file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_039_reengagement_phrases.md",
+      "title": "回蓝话术",
+      "sections": [
+        "回蓝话术"
+      ],
+      "extracted_entry_count": 29,
+      "indexed_entry_count": 29,
+      "route_ids": [
+        "low_response",
+        "boundary_only"
+      ],
+      "related_units": [
+        "K-20260821-020",
+        "K-20260821-021",
+        "K-20260823-053"
+      ],
+      "route_status": "mixed_requires_boundary_filter",
+      "note": "章节名只提供检索线索，不是安全白名单；逐条命中后必须回读上下文并经过 K-053。"
+    },
+    {
+      "source_file": "040_invitation_phrases.md",
+      "archive_file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_040_invitation_phrases.md",
+      "title": "邀约部分：",
+      "sections": [
+        "邀约部分："
+      ],
+      "extracted_entry_count": 137,
+      "indexed_entry_count": 137,
+      "route_ids": [
+        "invite_and_schedule",
+        "boundary_and_channel"
+      ],
+      "related_units": [
+        "K-20260822-032",
+        "K-20260822-037",
+        "K-20260823-052"
+      ],
+      "route_status": "candidate_reference_after_stage_review",
+      "note": "章节名只提供检索线索，不是安全白名单；逐条命中后必须回读上下文并经过 K-053。"
+    },
+    {
+      "source_file": "041_disqualifying_pushback.md",
+      "archive_file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_041_disqualifying_pushback.md",
+      "title": "失格推女生的话：",
+      "sections": [
+        "失格推女生的话：",
+        "**<u>废话文学 我会带你烛光晚餐和鲜花 不怕杀猪盘啊（推拉失格三件套）  够胆 那走吧**</u>"
+      ],
+      "extracted_entry_count": 251,
+      "indexed_entry_count": 250,
+      "route_ids": [
+        "boundary_only",
+        "context_required_teasing"
+      ],
+      "related_units": [
+        "K-20260821-017",
+        "K-20260823-053"
+      ],
+      "route_status": "mixed_requires_boundary_filter",
+      "note": "章节名只提供检索线索，不是安全白名单；逐条命中后必须回读上下文并经过 K-053。"
+    },
+    {
+      "source_file": "042_obstacle_and_test_responses.md",
+      "archive_file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_042_obstacle_and_test_responses.md",
+      "title": "阻碍废测解决",
+      "sections": [
+        "阻碍废测解决"
+      ],
+      "extracted_entry_count": 59,
+      "indexed_entry_count": 58,
+      "route_ids": [
+        "boundary_and_channel",
+        "context_required_teasing"
+      ],
+      "related_units": [
+        "K-20260821-016",
+        "K-20260821-021",
+        "K-20260823-053"
+      ],
+      "route_status": "candidate_reference_after_stage_review",
+      "note": "章节名只提供检索线索，不是安全白名单；逐条命中后必须回读上下文并经过 K-053。"
+    },
+    {
+      "source_file": "043_screening_and_evaluation.md",
+      "archive_file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_043_screening_and_evaluation.md",
+      "title": "筛选评估：",
+      "sections": [
+        "筛选评估："
+      ],
+      "extracted_entry_count": 286,
+      "indexed_entry_count": 286,
+      "route_ids": [
+        "screening_and_evaluation",
+        "context_required_teasing"
+      ],
+      "related_units": [
+        "K-20260821-017",
+        "K-20260823-052"
+      ],
+      "route_status": "candidate_reference_after_stage_review",
+      "note": "章节名只提供检索线索，不是安全白名单；逐条命中后必须回读上下文并经过 K-053。"
+    },
+    {
+      "source_file": "044_high_value_prize_positioning.md",
+      "archive_file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_044_high_value_prize_positioning.md",
+      "title": "高位奖品性塑造",
+      "sections": [
+        "高位奖品性塑造"
+      ],
+      "extracted_entry_count": 57,
+      "indexed_entry_count": 57,
+      "route_ids": [
+        "connection_and_feedback",
+        "context_required_teasing"
+      ],
+      "related_units": [
+        "K-20260823-052",
+        "K-20260823-053"
+      ],
+      "route_status": "candidate_reference_after_stage_review",
+      "note": "章节名只提供检索线索，不是安全白名单；逐条命中后必须回读上下文并经过 K-053。"
+    },
+    {
+      "source_file": "045_emotional_disruption.md",
+      "archive_file": "01-原始资料/2026-08-23_AppleNotesQuickNotes_045_emotional_disruption.md",
+      "title": "打击情绪",
+      "sections": [
+        "打击情绪"
+      ],
+      "extracted_entry_count": 236,
+      "indexed_entry_count": 236,
+      "route_ids": [
+        "intimacy_conditional",
+        "boundary_only"
+      ],
+      "related_units": [
+        "K-20260822-028",
+        "K-20260823-053"
+      ],
+      "route_status": "mixed_requires_boundary_filter",
+      "note": "章节名只提供检索线索，不是安全白名单；逐条命中后必须回读上下文并经过 K-053。"
+    }
+  ],
+  "risk_layer": {
+    "source_preserved_only_or_boundary_review": [
+      "侮辱贬损",
+      "拒绝后突破",
+      "欺骗/隐瞒",
+      "随机冷热或奖惩",
+      "控制服从",
+      "私密空间意图伪装",
+      "线下肢体/距离操作"
+    ],
+    "sexual_candidate_conditions": [
+      "双方明确进入并持续同类性话题",
+      "成年/身份风险已有足够依据",
+      "存在持续互惠反馈、无拒绝/不适/停止信号",
+      "不含威胁、羞辱、欺骗、强迫或私密空间诱导"
+    ],
+    "non_indexed_format_rows": [
+      {
+        "source_file": "032_how_to_continue_replies.md",
+        "line": 97,
+        "text": "."
+      },
+      {
+        "source_file": "041_disqualifying_pushback.md",
+        "line": 152,
+        "text": "."
+      },
+      {
+        "source_file": "042_obstacle_and_test_responses.md",
+        "line": 13,
+        "text": "</u>"
+      }
+    ]
+  }
+}

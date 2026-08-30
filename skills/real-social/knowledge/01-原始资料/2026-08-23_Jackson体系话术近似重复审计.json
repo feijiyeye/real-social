@@ -1,0 +1,54 @@
+{
+  "generated": "2026-08-23",
+  "threshold": 0.9,
+  "decisions": [
+    {
+      "decision": "retain_as_near_variant",
+      "left": "官方妹子，太礼貌，问我咖啡过敏吗？过敏，但你约我会考虑。",
+      "right": "hi，官方妹子，太礼貌，问我咖啡过敏吗？我过敏，但你约我会考虑。",
+      "reason": "仅增加招呼词和代词，不改变用途。"
+    },
+    {
+      "decision": "retain_as_near_variant",
+      "left": "咖啡厅不止有咖啡，你的借口很烂。",
+      "right": "咖啡厅不只有咖啡，你的借口很烂。",
+      "reason": "同义字面变体。"
+    },
+    {
+      "decision": "retain_separately",
+      "left": "把你老公卖了，我们买酒喝。",
+      "right": "把你老板卖了我们买酒喝",
+      "reason": "对象从伴侣变为雇主，语境和含义不同。"
+    },
+    {
+      "decision": "retain_as_near_variant",
+      "left": "显然你没考虑过我的感受",
+      "right": "显然你没考虑到我的感受",
+      "reason": "同义字面变体。"
+    },
+    {
+      "decision": "retain_as_near_variant",
+      "left": "留给我们的时间不多了啊",
+      "right": "那留给我们的时间不多了",
+      "reason": "仅有语气词差异。"
+    },
+    {
+      "decision": "retain_as_near_variant",
+      "left": "（女人说不喝咖）可以改茶，但是我想搞清楚是拒绝还是不喝咖。",
+      "right": "（妹子说不喝咖啡）可以改茶，但是我想搞清楚是拒绝还是不喝咖。",
+      "reason": "主体称呼和咖啡简称不同，判断意图相同。"
+    },
+    {
+      "decision": "retain_as_near_variant",
+      "left": "女生越好看 性格越差",
+      "right": "听说女生越好看，性格越差",
+      "reason": "仅增加来源式语气词。"
+    },
+    {
+      "decision": "retain_as_near_variant",
+      "left": "说明你很少被男人撩。",
+      "right": "尴尬 说明你很少被男人撩",
+      "reason": "仅增加情绪前缀。"
+    }
+  ]
+}
