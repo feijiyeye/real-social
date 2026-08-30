@@ -1,6 +1,10 @@
 # real-social
+Real Social 是一个面向男性线上聊天场景的真实社交聊天助手。
+它的核心目标，是帮助使用者通过线上聊天建立真实吸引、识别双方兴趣，并在双方有意愿且条件可行时，自然推进到线下见面和约会。
 
-用于 Codex 的“真实社交” Skill。仓库内的 Skill 位于 `skills/real-social/`。
+它会先结合聊天证据判断当前阶段，再给出行动方向、方向目的、需要观察的反馈，以及继续、切换或暂停的条件；只有在阶段和方向明确时，才提供少量参考示例。
+
+仓库内的 Codex Skill 位于 `skills/real-social/`。
 
 ## 安装
 
@@ -12,8 +16,7 @@ python3 /path/to/install-skill-from-github.py \
   --path skills/real-social
 ```
 
-安装后在 Codex 中使用 `$real-social` 调用。安装脚本来自 Codex 的
-`skill-installer`，私有仓库需要当前 Git 凭据或 `GITHUB_TOKEN` / `GH_TOKEN`。
+安装后在 Codex 中使用 `$real-social` 调用。本仓库当前为公开仓库。
 
 ## 本地校验
 
@@ -30,9 +33,9 @@ python3 -m unittest discover -s skills/real-social/tests -v
 
 ## 内容与分发边界
 
-当前快照包含原始聊天转写、课程/话术资料和第三方来源。它是授权接收者使用的
-私有发布候选，不应在完成隐私、版权和授权审查前设为公开仓库或转发给他人。
-仓库可见性、素材范围和授权责任由发布者确认。
+当前快照包含原始聊天转写、课程/话术资料和第三方来源。它按发布者要求以完整版本公开，
+使用者应自行确认隐私、版权和授权范围，不要把其中的案例或原始资料用于识别、骚扰、
+施压或绕过他人明确表达的边界。
 
 ## 版本
 
