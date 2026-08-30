@@ -1,0 +1,479 @@
+{
+  "schema_version": 1,
+  "package_id": "real-social",
+  "display_name": "真实社交",
+  "default_task_route": "analyze_chat",
+  "default_state_route": "unknown_stage",
+  "limits": {
+    "max_primary_modules": 1,
+    "max_auxiliary_modules": 2,
+    "max_stage_candidates": 3,
+    "max_case_results": 3,
+    "max_phrase_results": 3
+  },
+  "stage_navigation": {
+    "priority": "before_reply",
+    "scope": ["analyze_chat", "reply_request"],
+    "evidence_layers": ["observed", "reported", "inferred"],
+    "max_stage_candidates": 3,
+    "required_outputs": [
+      "completed",
+      "current_problem",
+      "state_route",
+      "allowed_next",
+      "direction_purpose",
+      "feedback_gate",
+      "continue_switch_pause"
+    ],
+    "examples_require": [
+      "stage_clear",
+      "direction_clear",
+      "explicit_sendable_request",
+      "boundaries_satisfied"
+    ],
+    "on_new_feedback": "reassess_stage_direction_feedback_gate_next_step",
+    "terminology_policy": "evidence_bound_not_template",
+    "mechanical_continuation": "forbidden"
+  },
+  "task_routes": [
+    {
+      "id": "first_use",
+      "label": "首次使用与入口说明",
+      "match_any": ["第一次使用", "首次使用", "新手入门", "怎么用这个skill", "如何调用这个skill", "怎么调用这个skill"],
+      "primary_units": ["K-20260821-001"],
+      "output_mode": "onboarding",
+      "load": ["runtime/runtime-entry.md", "runtime/route-index.json"],
+      "defer": ["knowledge/manifest.json", "knowledge/01-原始资料/2026-08-23_Jackson体系话术去重索引.json"]
+    },
+    {
+      "id": "analyze_chat",
+      "label": "聊天分析与阶段判断",
+      "match_any": ["分析聊天", "聊天分析", "截图", "聊天记录", "她说", "女生回复", "这句话怎么理解", "阶段判断"],
+      "primary_units": ["K-20260826-001", "K-20260821-018"],
+      "output_mode": "analysis",
+      "load": ["runtime/runtime-entry.md", "runtime/route-index.json", "runtime/unit-index.json", "knowledge/02-知识单元/K-20260826-001_真实社交线上流程推拉方向与回蓝闸门.md"],
+      "defer": ["knowledge/manifest.json", "knowledge/04-系统/2026-08-23_男性情感聊天项目续接摘要.md", "knowledge/01-原始资料/2026-08-23_Jackson体系话术去重索引.json"]
+    },
+    {
+      "id": "reply_request",
+      "label": "回复方向与少量示例",
+      "match_any": ["直接帮我回复", "帮我回复", "怎么回", "回复她", "回什么", "给我一句", "给我几句", "可发送", "帮我道歉", "怎么道歉", "道歉怎么说", "澄清怎么说"],
+      "primary_units": ["K-20260826-001", "K-20260823-051", "K-20260823-052", "K-20260823-053"],
+      "output_mode": "reply_guidance",
+      "load": ["runtime/runtime-entry.md", "runtime/route-index.json", "runtime/unit-index.json", "knowledge/02-知识单元/K-20260826-001_真实社交线上流程推拉方向与回蓝闸门.md"],
+      "defer": ["knowledge/01-原始资料/2026-08-23_Jackson体系话术去重索引.json", "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes候选参考增补清单.json"]
+    },
+    {
+      "id": "case_lookup",
+      "label": "相似案例检索",
+      "match_any": ["相似案例", "找案例", "有没有案例", "经典案例", "案例参考", "类似聊天"],
+      "primary_units": ["K-20260826-001"],
+      "output_mode": "case_reference",
+      "load": ["runtime/runtime-entry.md", "runtime/route-index.json", "runtime/unit-index.json"],
+      "defer": ["knowledge/01-原始资料/", "knowledge/external-sources/"]
+    },
+    {
+      "id": "source_audit",
+      "label": "素材与来源审计",
+      "match_any": ["素材审计", "来源审计", "核对原文", "查原文", "来源在哪里", "证据核对", "原始资料"],
+      "primary_units": ["K-20260821-001"],
+      "output_mode": "source_audit",
+      "load": ["runtime/runtime-entry.md", "runtime/route-index.json", "runtime/unit-index.json", "knowledge/manifest.json"],
+      "defer": []
+    },
+    {
+      "id": "ingest_material",
+      "label": "素材入库与查重",
+      "match_any": ["入库", "存起来", "记录一下", "归档", "以后要用", "保存这段", "收录素材"],
+      "primary_units": ["K-20260821-001"],
+      "output_mode": "ingest",
+      "load": ["runtime/runtime-entry.md", "runtime/route-index.json", "knowledge/04-系统/入库与查重规则.md", "knowledge/04-系统/检索与调用规则.md"],
+      "defer": ["knowledge/01-原始资料/2026-08-23_Jackson体系话术去重索引.json"]
+    },
+    {
+      "id": "architecture_maintenance",
+      "label": "架构、路由与维护",
+      "match_any": ["整体架构", "路由体系", "路由系统", "响应速度", "速度慢", "延迟", "性能", "构建发布包", "维护skill", "更新索引", "架构怎么做"],
+      "primary_units": ["K-20260821-001"],
+      "output_mode": "architecture",
+      "load": ["runtime/runtime-entry.md", "runtime/route-index.json", "runtime/navigation-index.json", "knowledge/04-系统/真实社交运行时路由设计.md", "knowledge/04-系统/真实社交运行时路由配置.json"],
+      "defer": ["knowledge/01-原始资料/", "knowledge/external-sources/"]
+    }
+  ],
+  "state_routes": [
+    {
+      "id": "stop_boundary",
+      "label": "明确停止与拒绝边界",
+      "priority": 100,
+      "match_any": ["不要再联系", "别再联系", "不要联系我", "别联系我", "删除我", "删掉我", "拉黑我", "拉黑", "屏蔽我", "屏蔽", "停止联系", "明确拒绝", "不想跟你讲话", "不想和你聊天", "不想聊了", "不想再聊这个话题", "不想聊这个话题", "先不聊这个", "不聊这个话题", "这让我不舒服", "让我不舒服", "让她不舒服", "让女生不舒服", "让对方不舒服", "她说不舒服", "她觉得不舒服", "听着不舒服", "聊得不舒服", "被冒犯", "不要这样", "停止这样", "别这样", "不要这么说", "别这么说", "不舒服，别", "请你停止"],
+      "primary_units": ["K-20260821-021", "K-20260823-053", "K-20260826-001"],
+      "exception_route": "overall_stop",
+      "phrase_retrieval": "enabled_boundary_only",
+      "required_reads": ["knowledge/02-知识单元/K-20260826-001_真实社交线上流程推拉方向与回蓝闸门.md", "knowledge/02-知识单元/K-20260821-021_zhenshi明确拒绝与停止时不纠缠边界候选.md"],
+      "defer": ["knowledge/01-原始资料/2026-08-23_Jackson体系话术去重索引.json"]
+    },
+    {
+      "id": "privacy_safety_age_consent",
+      "label": "隐私、安全、成年与同意核对",
+      "priority": 90,
+      "match_any": ["隐私", "安全风险", "担心安全", "安全顾虑", "人身安全", "见面安全", "安全问题", "不安全", "安全", "未成年", "年龄不明", "身份不明", "没有同意", "害怕", "被威胁", "强迫", "私密空间", "泄露联系方式"],
+      "primary_units": ["K-20260823-053", "K-20260821-022", "K-20260826-001"],
+      "exception_route": "concern",
+      "phrase_retrieval": "disabled_until_verified",
+      "required_reads": ["knowledge/02-知识单元/K-20260823-053_体系话术高风险隔离边界候选.md", "knowledge/02-知识单元/K-20260826-001_真实社交线上流程推拉方向与回蓝闸门.md"],
+      "defer": ["knowledge/01-原始资料/2026-08-23_Jackson体系话术去重索引.json"]
+    },
+    {
+      "id": "recovery",
+      "label": "回蓝恢复闸门",
+      "priority": 80,
+      "match_any": ["回蓝", "我很焦虑", "我很耗竭", "忍不住追问", "想继续加码", "必须把她聊下来", "连续失败", "继续投入只会", "社交能量耗尽"],
+      "primary_units": ["K-20260826-001"],
+      "exception_route": "recovery",
+      "phrase_retrieval": "disabled",
+      "required_reads": ["knowledge/02-知识单元/K-20260826-001_真实社交线上流程推拉方向与回蓝闸门.md"],
+      "defer": ["knowledge/01-原始资料/2026-08-23_Jackson体系话术去重索引.json", "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes候选参考增补清单.json"]
+    },
+    {
+      "id": "clarify",
+      "label": "事实澄清与责任修复",
+      "priority": 75,
+      "match_any": ["说错", "误会", "误解", "冒犯", "道歉", "认错", "事实错误", "伤害她", "伤害对方", "我错了", "需要澄清", "帮我道歉", "只想做朋友", "只愿意做朋友", "只做朋友", "不考虑恋爱", "没有恋爱意向", "不想谈恋爱", "朋友就好"],
+      "primary_units": ["K-20260826-001"],
+      "exception_route": "clarify",
+      "phrase_retrieval": "enabled_after_context_review",
+      "required_reads": ["knowledge/02-知识单元/K-20260826-001_真实社交线上流程推拉方向与回蓝闸门.md"],
+      "defer": ["knowledge/01-原始资料/2026-08-23_Jackson体系话术去重索引.json"]
+    },
+    {
+      "id": "concern_condition",
+      "label": "真实顾虑与现实条件",
+      "priority": 70,
+      "match_any": ["顾虑", "担心", "忙", "生病", "疲劳", "社恐", "交通", "时区", "排假", "不方便", "改期", "条件", "安全感"],
+      "primary_units": ["K-20260822-032", "K-20260822-037", "K-20260826-001"],
+      "exception_route": "concern",
+      "phrase_retrieval": "enabled_after_context_review",
+      "required_reads": ["knowledge/02-知识单元/K-20260826-001_真实社交线上流程推拉方向与回蓝闸门.md", "runtime/phrase-route-index.json"],
+      "defer": ["knowledge/01-原始资料/2026-08-23_Jackson体系话术去重索引.json"]
+    },
+    {
+      "id": "low_response",
+      "label": "低回应、暂停与重启判断",
+      "priority": 60,
+      "match_any": ["不回复", "没回复", "不回", "已读不回", "连续低回应", "多轮低回应", "低回应", "断联", "没有主动延展", "没主动延展", "连续几轮只回", "只回嗯", "回复持续变少"],
+      "primary_units": ["K-20260821-020", "K-20260821-018", "K-20260826-001"],
+      "exception_route": "low_response",
+      "phrase_retrieval": "enabled_after_context_review",
+      "required_reads": ["knowledge/02-知识单元/K-20260826-001_真实社交线上流程推拉方向与回蓝闸门.md", "knowledge/02-知识单元/K-20260821-020_zhenshi低回应时减少投入方向候选.md"],
+      "defer": ["knowledge/01-原始资料/2026-08-23_Jackson体系话术去重索引.json"]
+    },
+    {
+      "id": "invite",
+      "label": "直接邀约窗口与条件调度",
+      "priority": 50,
+      "match_any": ["邀约", "约出来", "见面", "约会", "时间地点", "哪天见", "安排见面", "线下见", "行程调度"],
+      "primary_units": ["K-20260822-032", "K-20260822-037", "K-20260826-001"],
+      "exception_route": "direct_window",
+      "phrase_retrieval": "enabled_after_context_review",
+      "required_reads": ["knowledge/02-知识单元/K-20260826-001_真实社交线上流程推拉方向与回蓝闸门.md", "runtime/phrase-route-index.json"],
+      "defer": ["knowledge/01-原始资料/2026-08-23_Jackson体系话术去重索引.json"]
+    },
+    {
+      "id": "interest_push_pull",
+      "label": "兴趣证据收集：推或拉",
+      "priority": 40,
+      "match_any": ["推拉", "她推我", "她在推我", "女生推我", "女人推我", "对方推我", "开始推", "推回去", "推回", "推完", "推后", "先推后拉", "先拉后推", "首次假评", "第一次假评", "最开始假评", "还没假评过", "下一步拉", "推拉逻辑", "推拉组合", "推", "拉", "假性评估", "假评", "兴趣指标", "调动情绪", "没有情绪", "没什么情绪", "情绪平淡", "语气平淡", "情绪很平", "情绪起伏", "情绪张力", "情绪过山车", "轻度调侃", "调情", "男女意图", "恋爱对象", "朋友框架", "偏成朋友", "聊成朋友", "变成朋友", "普通朋友话题", "回归男女", "回到男女", "回到恋爱", "恋爱方向"],
+      "primary_units": ["K-20260826-001", "K-20260821-004", "K-20260821-017"],
+      "exception_route": "interest_evidence",
+      "phrase_retrieval": "enabled_after_context_review",
+      "allowed_directions": ["push", "pull"],
+      "push_pull_logic": {
+        "push_back_eligible": {
+          "requires": ["playful_challenge_or_light_disagreement", "continued_voluntary_engagement", "no_boundary_or_discomfort_signal"],
+          "otherwise": "use_exception_route"
+        },
+        "post_push_check": "required",
+        "pull_after_push": "preferred_if_positive_feedback",
+        "push_purpose": "light_tension_and_feedback",
+        "romantic_intent_anchor": {
+          "target": "honest_romantic_or_dating_intent",
+          "reanchor_when": ["sustained_topic_drift", "continued_mutual_engagement"],
+          "fixed_turn_count": "forbidden",
+          "blocked_by": ["friend_only_boundary", "romantic_disinterest", "low_response", "discomfort", "stop_boundary"]
+        },
+        "affect_engagement_policy": {
+          "neutral_state": "flat_but_engaged",
+          "neutral_affect_requires": ["flat_or_low_emotional_expression", "continued_reciprocal_engagement", "no_concern_discomfort_or_boundary_signal"],
+          "low_response_requires": ["reduced_or_absent_response", "no_extension_or_initiative_over_multiple_turns"],
+          "neutral_affect_is_not_low_response": true,
+          "neutral_action": "prefer_push_or_playful_false_evaluation_if_eligible"
+        },
+        "direction_bias": {
+          "when_both_eligible": "prefer_push",
+          "ratio_policy": "qualitative_preference_not_fixed_quota",
+          "consecutive_push_authorized": false
+        },
+        "initial_false_evaluation_order": {
+          "required_order": "push_then_feedback_gated_pull",
+          "first_direction": "push",
+          "pull_before_push": "forbidden",
+          "automatic_pull": false,
+          "activation_requires": ["first_false_evaluation", "interest_push_pull_eligible", "continued_reciprocal_engagement", "comfortable", "no_boundary_or_discomfort_signal"],
+          "pull_release_gate": "positive_reciprocal_comfortable_feedback",
+          "blocked_by": ["concern", "low_response", "discomfort", "refusal", "stop_boundary"]
+        },
+        "planned_pull": {
+          "prepare_with_push": true,
+          "status_before_feedback": "pending_feedback",
+          "release_gate": "positive_reciprocal_comfortable_feedback",
+          "on_ambiguous_or_negative": "cancel_auto_sequence_and_reassess"
+        },
+        "tactical_action_constraints": {
+          "scope": "interest_push_pull_only",
+          "status": "forbidden_in_push_pull",
+          "disallowed": [
+            "over_explaining",
+            "defensive_justification",
+            "performative_apology",
+            "strategic_concession",
+            "appeasement_or_boundary_abandonment"
+          ],
+          "allowed_only_outside_tactical": [
+            "truthful_clarification",
+            "genuine_apology",
+            "boundary_respecting_adjustment"
+          ],
+          "redirect_on": {
+            "factual_error_or_harm": "clarify",
+            "explicit_discomfort_or_stop": "stop_boundary",
+            "safety_consent_age": "privacy_safety_age_consent",
+            "logistics_or_mutual_negotiation": "concern_condition"
+          }
+        },
+        "roller_coaster_goal": "forbidden",
+        "frame_definition": "hold_own_consistent_preferences_and_boundaries; never dominate_or_force",
+        "negative_feedback_action": "stop_push_and_choose_pull_clarify_pause_or_boundary_by_evidence"
+      },
+      "required_reads": ["knowledge/02-知识单元/K-20260826-001_真实社交线上流程推拉方向与回蓝闸门.md", "runtime/phrase-route-index.json"],
+      "defer": ["knowledge/01-原始资料/2026-08-23_Jackson体系话术去重索引.json"]
+    },
+    {
+      "id": "unknown_stage",
+      "label": "证据不足，暂不判定",
+      "priority": 0,
+      "match_any": [],
+      "primary_units": ["K-20260826-001"],
+      "exception_route": "clarify",
+      "phrase_retrieval": "disabled_until_context",
+      "required_reads": ["knowledge/02-知识单元/K-20260826-001_真实社交线上流程推拉方向与回蓝闸门.md"],
+      "defer": ["knowledge/01-原始资料/2026-08-23_Jackson体系话术去重索引.json"]
+    }
+  ],
+  "phrase_routes": [
+    {
+      "id": "clarify_open",
+      "label": "澄清与开放问题",
+      "source_groups": ["clarify_and_open", "clarify_and_boundary"],
+      "section_terms": ["开场同理心", "情景加话术", "真评", "明确意图与前提", "澄清"],
+      "related_units": ["K-20260821-003", "K-20260823-051", "K-20260823-052"],
+      "callability": "candidate_callable_after_context_review"
+    },
+    {
+      "id": "boundary_channel",
+      "label": "边界、意愿与沟通方式",
+      "source_groups": ["boundary_and_channel", "clarify_and_boundary"],
+      "section_terms": ["边界", "沟通", "意愿", "废测破解", "阻碍"],
+      "related_units": ["K-20260821-021", "K-20260821-022", "K-20260823-053"],
+      "callability": "candidate_callable_after_context_review"
+    },
+    {
+      "id": "true_feedback",
+      "label": "基于可观察信息的认可",
+      "source_groups": ["true_feedback", "connection_and_feedback"],
+      "section_terms": ["真评", "联系感", "正向反馈", "价值输出", "认可"],
+      "related_units": ["K-20260821-018", "K-20260822-027", "K-20260823-051"],
+      "callability": "candidate_callable_after_context_review"
+    },
+    {
+      "id": "teasing_push_pull",
+      "label": "轻调侃与兴趣证据",
+      "source_groups": ["context_required_teasing", "connection_and_feedback"],
+      "section_terms": ["开场假评", "聊天假评", "假评集合", "失格推拉", "情绪拉伸", "推拉"],
+      "related_units": ["K-20260821-004", "K-20260821-017", "K-20260826-001"],
+      "callability": "context_required"
+    },
+    {
+      "id": "concern_test",
+      "label": "质疑、误解与真实顾虑",
+      "source_groups": ["boundary_and_channel", "clarify_and_boundary"],
+      "section_terms": ["破费测", "废测集合", "阻碍", "消除评判", "顾虑"],
+      "related_units": ["K-20260821-016", "K-20260821-021", "K-20260822-032", "K-20260823-053"],
+      "callability": "context_required"
+    },
+    {
+      "id": "low_response_recovery",
+      "label": "低回应、暂停与重启",
+      "source_groups": ["boundary_and_channel", "connection_and_feedback"],
+      "section_terms": ["面对冷暴力", "忽冷忽热", "重启", "拉回", "后撤", "待机", "暂停"],
+      "related_units": ["K-20260821-020", "K-20260821-021", "K-20260823-051"],
+      "callability": "context_required"
+    },
+    {
+      "id": "invite_schedule",
+      "label": "邀约与条件调度",
+      "source_groups": ["invite_and_schedule"],
+      "section_terms": ["铺垫邀约", "邀约语句", "待机", "邀约跟进", "情景加话术", "排假", "时间地点"],
+      "related_units": ["K-20260822-032", "K-20260822-037", "K-20260823-052"],
+      "callability": "candidate_reference"
+    },
+    {
+      "id": "connection_repair",
+      "label": "联系感、修复与关系边界",
+      "source_groups": ["true_feedback", "clarify_and_boundary"],
+      "section_terms": ["作联系感", "日常维护", "关系定位", "制定规则", "修复"],
+      "related_units": ["K-20260822-027", "K-20260822-038", "K-20260823-053"],
+      "callability": "context_required"
+    },
+    {
+      "id": "intimacy_conditional",
+      "label": "亲密与性话题条件性参考",
+      "source_groups": ["intimacy_conditional"],
+      "section_terms": ["性张力", "调情", "亲密", "张力与画面感", "情绪拉伸"],
+      "related_units": ["K-20260822-028", "K-20260823-043", "K-20260823-053"],
+      "callability": "candidate_callable_after_context_review",
+      "requires": ["explicit_same_topic", "age_identity_basis", "mutual_feedback", "no_refusal_or_discomfort"]
+    },
+    {
+      "id": "stop_boundary",
+      "label": "停止与边界审计",
+      "source_groups": ["boundary_only_examples"],
+      "section_terms": ["停止", "拒绝", "删除", "边界"],
+      "related_units": ["K-20260821-021", "K-20260823-053"],
+      "callability": "boundary_only"
+    }
+  ],
+  "navigation_rules": [
+    {
+      "from": "first_use",
+      "when": "用户提交具体聊天或任务",
+      "next": "analyze_chat",
+      "reason": "入口说明完成后只处理当前任务"
+    },
+    {
+      "from": "analyze_chat",
+      "when": "需要可发送示例且目标已说清",
+      "next": "reply_request",
+      "reason": "先完成阶段和边界判断，再进入示例门槛"
+    },
+    {
+      "from": "analyze_chat",
+      "when": "出现低回应或顾虑证据",
+      "next": "low_response_or_concern",
+      "reason": "新反馈优先于原先的兴趣方向"
+    },
+    {
+      "from": "reply_request",
+      "when": "命中回蓝闸门",
+      "next": "recovery",
+      "reason": "恢复状态优先，停止话术检索"
+    },
+    {
+      "from": "reply_request",
+      "when": "对方明确拒绝或停止",
+      "next": "stop_boundary",
+      "reason": "停止边界覆盖所有战术和重启"
+    },
+    {
+      "from": "invite",
+      "when": "双方形成明确意愿与可执行条件",
+      "next": "conversation_complete",
+      "reason": "终点是双向兴趣与可执行见面"
+    },
+    {
+      "from": "invite",
+      "when": "条件未齐或邀约未成功",
+      "next": "analyze_chat",
+      "reason": "回到新证据判断，不按固定话术循环"
+    },
+    {
+      "from": "recovery",
+      "when": "出现新的自愿、可观察互动",
+      "next": "analyze_chat",
+      "reason": "回蓝结束后重新评估，不按固定等待自动重启"
+    }
+  ],
+  "hard_boundaries": {
+    "stop_boundary_overrides": ["privacy_safety_age_consent", "recovery", "concern_condition", "low_response", "invite", "interest_push_pull"],
+    "push_pull": {
+      "counter_push_requires_mutual_playful_context": true,
+      "post_push_recheck_required": true,
+      "pull_after_push": "preferred_if_positive_feedback",
+      "emotional_destabilization_goal": "forbidden",
+      "romantic_intent_anchor": {
+        "target": "honest_romantic_or_dating_intent",
+        "reanchor_when": ["sustained_topic_drift", "continued_mutual_engagement"],
+        "fixed_turn_count": "forbidden",
+        "blocked_by": ["friend_only_boundary", "romantic_disinterest", "low_response", "discomfort", "stop_boundary"]
+      },
+      "affect_engagement_policy": {
+        "neutral_state": "flat_but_engaged",
+        "neutral_affect_requires": ["flat_or_low_emotional_expression", "continued_reciprocal_engagement", "no_concern_discomfort_or_boundary_signal"],
+        "neutral_affect_is_not_low_response": true,
+        "neutral_action": "prefer_push_or_playful_false_evaluation_if_eligible"
+      },
+      "direction_bias": {
+        "when_both_eligible": "prefer_push",
+        "ratio_policy": "qualitative_preference_not_fixed_quota",
+        "consecutive_push_authorized": false
+      },
+      "initial_false_evaluation_order": {
+        "required_order": "push_then_feedback_gated_pull",
+        "first_direction": "push",
+        "pull_before_push": "forbidden",
+        "automatic_pull": false,
+        "activation_requires": ["first_false_evaluation", "interest_push_pull_eligible", "continued_reciprocal_engagement", "comfortable", "no_boundary_or_discomfort_signal"],
+        "pull_release_gate": "positive_reciprocal_comfortable_feedback",
+        "blocked_by": ["concern", "low_response", "discomfort", "refusal", "stop_boundary"]
+      },
+      "planned_pull": {
+        "prepare_with_push": true,
+        "status_before_feedback": "pending_feedback",
+        "release_gate": "positive_reciprocal_comfortable_feedback",
+        "on_ambiguous_or_negative": "cancel_auto_sequence_and_reassess"
+      },
+      "tactical_action_constraints": {
+        "scope": "interest_push_pull_only",
+        "status": "forbidden_in_push_pull",
+        "disallowed": [
+          "over_explaining",
+          "defensive_justification",
+          "performative_apology",
+          "strategic_concession",
+          "appeasement_or_boundary_abandonment"
+        ],
+        "allowed_only_outside_tactical": [
+          "truthful_clarification",
+          "genuine_apology",
+          "boundary_respecting_adjustment"
+        ],
+        "redirect_on": {
+          "factual_error_or_harm": "clarify",
+          "explicit_discomfort_or_stop": "stop_boundary",
+          "safety_consent_age": "privacy_safety_age_consent",
+          "logistics_or_mutual_negotiation": "concern_condition"
+        }
+      }
+    },
+    "recovery_phrase_retrieval": "disabled",
+    "candidate_status": "preserve_status_and_canonical_flags",
+    "sexual_topic_requires": ["explicit_same_topic", "age_identity_basis", "mutual_feedback", "no_refusal_or_discomfort", "no_threat_humiliation_deception_coercion_private_space_inducement"],
+    "offline_material": "out_of_scope_for_online_reply"
+  },
+  "lazy_loading": {
+    "always": ["runtime/runtime-entry.md", "runtime/route-index.json"],
+    "chat_default": ["runtime/unit-index.json", "knowledge/02-知识单元/K-20260826-001_真实社交线上流程推拉方向与回蓝闸门.md"],
+    "on_demand": ["runtime/navigation-index.json", "runtime/phrase-route-index.json", "knowledge/02-知识单元/"],
+    "maintenance_only": ["knowledge/manifest.json", "knowledge/04-系统/2026-08-23_男性情感聊天项目续接摘要.md", "knowledge/01-原始资料/2026-08-23_Jackson体系话术去重索引.json", "knowledge/external-sources/"],
+    "never_default": ["knowledge/_original_dragon_root/", "knowledge/archive/"]
+  }
+}

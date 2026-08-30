@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "description": "仅登记迁移前已经存在的旧知识单元。未登记的新单元不得使用兼容放行。",
+  "legacy_units": {
+    "K-20260814-001": {
+      "scope": "short-video",
+      "accepted_status": "active",
+      "required_canonical": true,
+      "allow_missing": ["type", "version"],
+      "reason": "旧版短视频知识单元模板；不属于男性情感聊天 Skill。"
+    },
+    "K-20260816-001": {
+      "scope": "short-video",
+      "accepted_status": "active",
+      "required_canonical": true,
+      "allow_missing": ["type", "version"],
+      "reason": "旧版短视频知识单元模板；不属于男性情感聊天 Skill。"
+    },
+    "K-20260816-002": {
+      "scope": "short-video",
+      "accepted_status": "active",
+      "required_canonical": true,
+      "allow_missing": ["type", "version"],
+      "reason": "旧版短视频知识单元模板；不属于男性情感聊天 Skill。"
+    },
+    "K-20260817-001": {
+      "scope": "short-video",
+      "accepted_status": "active",
+      "required_canonical": true,
+      "allow_missing": ["type", "version"],
+      "reason": "旧版短视频知识单元模板；不属于男性情感聊天 Skill。"
+    },
+    "K-20260817-002": {
+      "scope": "short-video",
+      "accepted_status": "active",
+      "required_canonical": true,
+      "allow_missing": ["type", "version"],
+      "reason": "旧版短视频知识单元模板；不属于男性情感聊天 Skill。"
+    },
+    "K-20260821-001": {
+      "scope": "male-emotion-chat",
+      "accepted_status": "active",
+      "required_canonical": true,
+      "allow_missing": ["type", "version"],
+      "reason": "男性情感聊天 Skill 的正式架构单元，创建于当前九类 Schema 固化前。"
+    }
+  }
+}
