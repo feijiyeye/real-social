@@ -1,0 +1,129 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-08-27T17:32:32+08:00",
+  "package_id": "real-social",
+  "route": "stop_boundary",
+  "label": "停止与边界审计",
+  "entries": [
+    {
+      "phrase_id": "P-0186",
+      "phrase_key": "PK-db16e2facadf1ee1",
+      "text": "对方没回可以重发一遍加一个问号。",
+      "sections": [
+        "十、作联系感与日常维护（Connection & Maintenance） / 10.1 作联系感语句（Jackson）"
+      ],
+      "speaker_roles": [
+        "unknown"
+      ],
+      "occurrence_count": 1,
+      "callability": "boundary_only",
+      "source_refs": [
+        {
+          "file": "knowledge/01-原始资料/2026-08-23_huashu.docx",
+          "locator": "paragraph:538",
+          "section": "十、作联系感与日常维护（Connection & Maintenance） / 10.1 作联系感语句（Jackson）"
+        }
+      ]
+    },
+    {
+      "phrase_id": "P-0738",
+      "phrase_key": "PK-e95631ad1c3f6a7f",
+      "text": "你消失了呢",
+      "sections": [
+        "情景加话术"
+      ],
+      "speaker_roles": [
+        "unknown"
+      ],
+      "occurrence_count": 1,
+      "callability": "boundary_only",
+      "source_refs": [
+        {
+          "file": "knowledge/01-原始资料/2026-08-23_888内部群杰哥话术（3.3-8.17）.md",
+          "locator": "line:63",
+          "section": "情景加话术"
+        }
+      ]
+    },
+    {
+      "phrase_id": "P-0417",
+      "phrase_key": "PK-ff70cb05037258bb",
+      "text": "咖啡厅不止有咖啡，你的借口很烂。",
+      "sections": [
+        "四、废测破解与框架控制（Shit Test Handling & Frame Control） / 4.3 阻碍废测解决（Jackson）"
+      ],
+      "speaker_roles": [
+        "unknown"
+      ],
+      "occurrence_count": 1,
+      "callability": "boundary_only",
+      "source_refs": [
+        {
+          "file": "knowledge/01-原始资料/2026-08-23_huashu.docx",
+          "locator": "paragraph:228",
+          "section": "四、废测破解与框架控制（Shit Test Handling & Frame Control） / 4.3 阻碍废测解决（Jackson）"
+        }
+      ]
+    },
+    {
+      "phrase_id": "P-0554",
+      "phrase_key": "PK-0e805c7a6c50cf3a",
+      "text": "那么准备什么时候变现？那可不行，不能给你拒绝我的机会。",
+      "sections": [
+        "七、引导投资与邀约（Leading Investment & Date Invitation） / 7.4 待机/邀约跟进（Jackson）"
+      ],
+      "speaker_roles": [
+        "unknown"
+      ],
+      "occurrence_count": 1,
+      "callability": "boundary_only",
+      "source_refs": [
+        {
+          "file": "knowledge/01-原始资料/2026-08-23_huashu.docx",
+          "locator": "paragraph:451",
+          "section": "七、引导投资与邀约（Leading Investment & Date Invitation） / 7.4 待机/邀约跟进（Jackson）"
+        }
+      ]
+    },
+    {
+      "phrase_id": "P-1305",
+      "phrase_key": "PK-53b9e5131bb23a26",
+      "text": "（邀约对方说改时间）该怎么惩罚你呢？",
+      "sections": [
+        "四、废测破解与框架控制（Shit Test Handling & Frame Control） / 4.3 阻碍废测解决（Jackson）"
+      ],
+      "speaker_roles": [
+        "unknown"
+      ],
+      "occurrence_count": 1,
+      "callability": "boundary_only",
+      "source_refs": [
+        {
+          "file": "knowledge/01-原始资料/2026-08-23_huashu.docx",
+          "locator": "paragraph:231",
+          "section": "四、废测破解与框架控制（Shit Test Handling & Frame Control） / 4.3 阻碍废测解决（Jackson）"
+        }
+      ]
+    },
+    {
+      "phrase_id": "P-0183",
+      "phrase_key": "PK-e77077ce4301f65c",
+      "text": "（对方拒绝）那删？",
+      "sections": [
+        "四、废测破解与框架控制（Shit Test Handling & Frame Control） / 4.3 阻碍废测解决（Jackson）"
+      ],
+      "speaker_roles": [
+        "unknown"
+      ],
+      "occurrence_count": 1,
+      "callability": "boundary_only",
+      "source_refs": [
+        {
+          "file": "knowledge/01-原始资料/2026-08-23_huashu.docx",
+          "locator": "paragraph:235",
+          "section": "四、废测破解与框架控制（Shit Test Handling & Frame Control） / 4.3 阻碍废测解决（Jackson）"
+        }
+      ]
+    }
+  ]
+}

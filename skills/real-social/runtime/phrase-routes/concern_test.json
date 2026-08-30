@@ -1,0 +1,342 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-08-27T17:32:32+08:00",
+  "package_id": "real-social",
+  "route": "concern_test",
+  "label": "质疑、误解与真实顾虑",
+  "entries": [
+    {
+      "phrase_id": "P-0489",
+      "phrase_key": "PK-2c632ae1bc5bc506",
+      "text": "没话说可以直接告诉我。",
+      "sections": [
+        "四、废测破解与框架控制（Shit Test Handling & Frame Control） / 4.3 阻碍废测解决（Jackson）",
+        "表情包阻碍 不认真无张力阻碍"
+      ],
+      "speaker_roles": [
+        "unknown"
+      ],
+      "occurrence_count": 2,
+      "callability": "candidate_callable_after_context_review",
+      "source_refs": [
+        {
+          "file": "knowledge/01-原始资料/2026-08-23_huashu.docx",
+          "locator": "paragraph:244",
+          "section": "四、废测破解与框架控制（Shit Test Handling & Frame Control） / 4.3 阻碍废测解决（Jackson）"
+        },
+        {
+          "file": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_005_sticker_and_non_seriousness_obstacles.md",
+          "locator": "line:19",
+          "section": "表情包阻碍 不认真无张力阻碍"
+        }
+      ]
+    },
+    {
+      "phrase_id": "P-1144",
+      "phrase_key": "PK-7e6e63ce7e7ab8b8",
+      "text": "：我很有诚意 但也要看你的意愿",
+      "sections": [
+        "铺垫邀约"
+      ],
+      "speaker_roles": [
+        "unknown"
+      ],
+      "occurrence_count": 1,
+      "callability": "candidate_callable_after_context_review",
+      "source_refs": [
+        {
+          "file": "knowledge/01-原始资料/2026-08-23_game.docx",
+          "locator": "paragraph:313",
+          "section": "铺垫邀约"
+        }
+      ]
+    },
+    {
+      "phrase_id": "P-1145",
+      "phrase_key": "PK-361e35baddd9743e",
+      "text": "我会更喜欢文字交流啦。",
+      "sections": [
+        "四、废测破解与框架控制（Shit Test Handling & Frame Control） / 4.3 阻碍废测解决（Jackson）",
+        "表情包阻碍 不认真无张力阻碍"
+      ],
+      "speaker_roles": [
+        "unknown"
+      ],
+      "occurrence_count": 2,
+      "callability": "candidate_callable_after_context_review",
+      "source_refs": [
+        {
+          "file": "knowledge/01-原始资料/2026-08-23_huashu.docx",
+          "locator": "paragraph:241",
+          "section": "四、废测破解与框架控制（Shit Test Handling & Frame Control） / 4.3 阻碍废测解决（Jackson）"
+        },
+        {
+          "file": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_005_sticker_and_non_seriousness_obstacles.md",
+          "locator": "line:13",
+          "section": "表情包阻碍 不认真无张力阻碍"
+        }
+      ]
+    },
+    {
+      "phrase_id": "P-0551",
+      "phrase_key": "PK-1609e95f8db338fb",
+      "text": "那么继续吗？",
+      "sections": [
+        "十、作联系感与日常维护（Connection & Maintenance） / 10.1 作联系感语句（Jackson）"
+      ],
+      "speaker_roles": [
+        "unknown"
+      ],
+      "occurrence_count": 1,
+      "callability": "candidate_callable_after_context_review",
+      "source_refs": [
+        {
+          "file": "knowledge/01-原始资料/2026-08-23_huashu.docx",
+          "locator": "paragraph:537",
+          "section": "十、作联系感与日常维护（Connection & Maintenance） / 10.1 作联系感语句（Jackson）"
+        }
+      ]
+    },
+    {
+      "phrase_id": "P-0406",
+      "phrase_key": "PK-a43a5de30effcb8a",
+      "text": "静候佳音。",
+      "sections": [
+        "十、作联系感与日常维护（Connection & Maintenance） / 10.1 作联系感语句（Jackson）"
+      ],
+      "speaker_roles": [
+        "unknown"
+      ],
+      "occurrence_count": 1,
+      "callability": "candidate_callable_after_context_review",
+      "source_refs": [
+        {
+          "file": "knowledge/01-原始资料/2026-08-23_huashu.docx",
+          "locator": "paragraph:541",
+          "section": "十、作联系感与日常维护（Connection & Maintenance） / 10.1 作联系感语句（Jackson）"
+        }
+      ]
+    },
+    {
+      "phrase_id": "P-1250",
+      "phrase_key": "PK-ab2b534568454f21",
+      "text": "下次我注意，你会尴尬吗？",
+      "sections": [
+        "一、开场与搭讪（Openers & Approaches） / 1.3 开场同理心与破冰",
+        "开场同理心环节"
+      ],
+      "speaker_roles": [
+        "unknown"
+      ],
+      "occurrence_count": 2,
+      "callability": "candidate_callable_after_context_review",
+      "source_refs": [
+        {
+          "file": "knowledge/01-原始资料/2026-08-23_huashu.docx",
+          "locator": "paragraph:14",
+          "section": "一、开场与搭讪（Openers & Approaches） / 1.3 开场同理心与破冰"
+        },
+        {
+          "file": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_013_empathic_opening.md",
+          "locator": "line:11",
+          "section": "开场同理心环节"
+        }
+      ]
+    },
+    {
+      "phrase_key": "PK-b827c206b94ab116",
+      "text": "你给我感觉独特",
+      "sections": [
+        "一、开场与搭讪（Openers & Approaches） / 1.1 街搭经典开场",
+        "四、废测破解与框架控制（Shit Test Handling & Frame Control） / 4.4 渣男废测（Jackson）",
+        "开场同理心环节"
+      ],
+      "speaker_roles": [
+        "unknown"
+      ],
+      "occurrence_count": 3,
+      "callability": "candidate_callable_after_context_review",
+      "source_refs": [
+        {
+          "file": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_013_empathic_opening.md",
+          "locator": "line:17",
+          "section": "开场同理心环节"
+        }
+      ]
+    },
+    {
+      "phrase_key": "PK-b255485cefba15ed",
+      "text": "没好好聊聊",
+      "sections": [
+        "一、开场与搭讪（Openers & Approaches） / 1.1 街搭经典开场",
+        "开场同理心环节"
+      ],
+      "speaker_roles": [
+        "unknown"
+      ],
+      "occurrence_count": 2,
+      "callability": "candidate_callable_after_context_review",
+      "source_refs": [
+        {
+          "file": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_013_empathic_opening.md",
+          "locator": "line:33",
+          "section": "开场同理心环节"
+        }
+      ]
+    },
+    {
+      "phrase_key": "PK-b93487f6e02f5c57",
+      "text": "比时间（项目）更重要的是你的想法",
+      "sections": [
+        "十、作联系感与日常维护（Connection & Maintenance） / 10.1 作联系感语句（Jackson）",
+        "明确意图与前提"
+      ],
+      "speaker_roles": [
+        "unknown"
+      ],
+      "occurrence_count": 2,
+      "callability": "candidate_callable_after_context_review",
+      "source_refs": [
+        {
+          "file": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_016_clear_intent_and_premise.md",
+          "locator": "line:11",
+          "section": "明确意图与前提"
+        }
+      ]
+    },
+    {
+      "phrase_key": "PK-f69fed569edebb40",
+      "text": "想接触",
+      "sections": [
+        "明确意图与前提"
+      ],
+      "speaker_roles": [
+        "unknown"
+      ],
+      "occurrence_count": 1,
+      "callability": "candidate_callable_after_context_review",
+      "source_refs": [
+        {
+          "file": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_016_clear_intent_and_premise.md",
+          "locator": "line:21",
+          "section": "明确意图与前提"
+        }
+      ]
+    },
+    {
+      "phrase_key": "PK-9d0a1b07f4921d1c",
+      "text": "怎么验证",
+      "sections": [
+        "延续话题"
+      ],
+      "speaker_roles": [
+        "unknown"
+      ],
+      "occurrence_count": 1,
+      "callability": "candidate_callable_after_context_review",
+      "source_refs": [
+        {
+          "file": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_019_extending_the_conversation.md",
+          "locator": "line:11",
+          "section": "延续话题"
+        }
+      ]
+    },
+    {
+      "phrase_key": "PK-e771ed2eb91e8551",
+      "text": "（觉得你xx）具体哪xx 信你嘛",
+      "sections": [
+        "延续话题"
+      ],
+      "speaker_roles": [
+        "unknown"
+      ],
+      "occurrence_count": 1,
+      "callability": "candidate_callable_after_context_review",
+      "source_refs": [
+        {
+          "file": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_019_extending_the_conversation.md",
+          "locator": "line:25",
+          "section": "延续话题"
+        }
+      ]
+    },
+    {
+      "phrase_key": "PK-2dc78b63c5a68815",
+      "text": "那么开始真实的交流",
+      "sections": [
+        "做联系感"
+      ],
+      "speaker_roles": [
+        "unknown"
+      ],
+      "occurrence_count": 1,
+      "callability": "candidate_callable_after_context_review",
+      "source_refs": [
+        {
+          "file": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_024_building_connection.md",
+          "locator": "line:73",
+          "section": "做联系感"
+        }
+      ]
+    },
+    {
+      "phrase_key": "PK-8f26085b72019f82",
+      "text": "我打字不爱语气词 不是冷",
+      "sections": [
+        "做联系感"
+      ],
+      "speaker_roles": [
+        "unknown"
+      ],
+      "occurrence_count": 1,
+      "callability": "candidate_callable_after_context_review",
+      "source_refs": [
+        {
+          "file": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_024_building_connection.md",
+          "locator": "line:95",
+          "section": "做联系感"
+        }
+      ]
+    },
+    {
+      "phrase_key": "PK-56b45c3e93ea8dbb",
+      "text": "（妹子说不喝咖啡）可以改茶 但是我想搞清楚是拒绝还是不喝咖",
+      "sections": [
+        "七、引导投资与邀约（Leading Investment & Date Invitation） / 7.4 待机/邀约跟进（Jackson）",
+        "邀约部分："
+      ],
+      "speaker_roles": [
+        "unknown"
+      ],
+      "occurrence_count": 2,
+      "callability": "candidate_callable_after_context_review",
+      "source_refs": [
+        {
+          "file": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_040_invitation_phrases.md",
+          "locator": "line:49",
+          "section": "邀约部分："
+        }
+      ]
+    },
+    {
+      "phrase_key": "PK-47c7945ce6b88203",
+      "text": "这里不适合聊太深入的话题",
+      "sections": [
+        "邀约部分："
+      ],
+      "speaker_roles": [
+        "unknown"
+      ],
+      "occurrence_count": 1,
+      "callability": "candidate_callable_after_context_review",
+      "source_refs": [
+        {
+          "file": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_040_invitation_phrases.md",
+          "locator": "line:123",
+          "section": "邀约部分："
+        }
+      ]
+    }
+  ]
+}
