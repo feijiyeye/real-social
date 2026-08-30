@@ -6,7 +6,7 @@
 [![Codex Skill](https://img.shields.io/badge/platform-Codex-111827.svg?style=flat-square)](skills/real-social/SKILL.md)
 [![Public snapshot](https://img.shields.io/badge/release-public%20snapshot-16A34A.svg?style=flat-square)](NOTICE.md)
 
-已验证：Codex 的 `skill-installer` 安装与运行。其他支持 Skills 的 Agent 尚未逐一验证。
+已验证：`skills` CLI 从公开 GitHub 仓库发现并隔离安装 `real-social`，以及 Codex 自带的 `skill-installer` 安装与运行。其他支持 Skills 的 Agent 尚未逐一验证。
 
 [快速开始](#快速开始) · [能力一览](#能力一览) · [工作方式](#工作方式) · [安装](#安装) · [目录结构](#目录结构) · [校验](#校验) · [数据与边界](#数据与边界) · [贡献与反馈](#贡献与反馈)
 
@@ -115,7 +115,29 @@ $real-social
 
 ## 安装
 
-仓库是公开的，使用 Codex 自带的 `skill-installer`：
+### 推荐：终端一行安装
+
+前置条件：Node.js 22.20.0 或更高版本（含 npm）。在终端执行：
+
+```bash
+npx -y skills add feijiyeye/real-social -g --all
+```
+
+这条命令会从公开 GitHub 仓库发现 `skills/real-social`，并全局安装到 `skills` CLI 支持的 Agent 目录。安装完成后重新打开一轮 Codex，再使用 `$real-social`。
+
+如果只使用 Codex，建议限定安装目标：
+
+```bash
+npx -y skills add feijiyeye/real-social -g -s real-social -a codex -y
+```
+
+其中 `-g` 表示全局安装，`--all` 表示所有支持的 Agent，`-s real-social` 指定这个 Skill，`-a codex` 指定 Codex。`npx` 会临时下载 `skills` CLI，不需要预先全局安装它。
+
+`skills` CLI 重新安装时可能覆盖目标目录中的同名文件。若你改过本地 Skill，请先备份或确认目标目录后再执行；不要把公开仓库内容直接覆盖到含有个人修改的目录。
+
+### Codex 专用备用方式
+
+如果不想使用 Node.js/npm，也可以使用 Codex 自带的 `skill-installer`：
 
 ```bash
 python3 ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py \
@@ -123,9 +145,7 @@ python3 ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-githu
   --path skills/real-social
 ```
 
-如果你的 Codex 使用自定义 `CODEX_HOME`，将命令中的 `~/.codex` 替换为对应目录。安装器默认把 Skill 放到 Codex 的 `skills` 目录；安装完成后重新打开一轮 Codex，再使用 `$real-social`。
-
-安装器不会覆盖已经存在的同名目标目录。更新前先确认当前目录和版本，必要时保留备份后再按你的环境执行更新；不要把公开仓库的下载结果直接覆盖到含有个人修改的目录。
+如果你的 Codex 使用自定义 `CODEX_HOME`，将命令中的 `~/.codex` 替换为对应目录。这个安装器默认把 Skill 放到 Codex 的 `skills` 目录；目标目录已存在时会停止，不会自动覆盖。安装完成后重新打开一轮 Codex，再使用 `$real-social`。
 
 ## 目录结构
 

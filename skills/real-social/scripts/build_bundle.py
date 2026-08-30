@@ -19,6 +19,10 @@ KNOWLEDGE_ROOT = SKILL_ROOT / "knowledge"
 DEFAULT_DRAGON_ROOT = Path("/Users/company/Documents/Dragon知识库")
 DEFAULT_EXTERNAL_ROOT = Path("/Volumes/PS3001/Jackson案例素材Skill")
 PROJECT_TOPICS = ("男性情感聊天教学", "线上聊天候选", "真实社交")
+EXCLUDED_RAW_FILES = {
+    "2026-08-25_AI找出劲爆片段提示词.txt",
+    "2026-08-25_8.17.srt",
+}
 
 
 def sha256(path: Path) -> str:
@@ -144,6 +148,53 @@ def register_generated_file(path: Path, records: list[dict[str, str]]) -> None:
     )
 
 
+def sanitize_project_snapshot(records: list[dict[str, str]]) -> None:
+    """Remove unrelated short-video clipping entries from copied governance text."""
+    transforms: dict[str, Callable[[str], str]] = {
+        "knowledge/03-动态索引/主题索引.md": lambda text: "\n".join(
+            line
+            for line in text.splitlines()
+            if "短视频内容筛选" not in line and "短视频传播" not in line
+        )
+        + "\n",
+        "knowledge/04-系统/入库日志.md": lambda text: "\n".join(
+            line for line in text.splitlines() if not line.startswith("| 2026-08-25 |")
+        )
+        + "\n",
+        "knowledge/04-系统/系统状态.md": lambda text: text.replace(
+            "- 当前候选知识单元：49", "- 当前候选知识单元：47"
+        ).replace(
+            "- 原始资料文件：82（排除 `01-原始资料/.gitkeep`；本次新增提示词和 8.17.srt 归档副本）",
+            "- 原始资料文件：80（排除 `01-原始资料/.gitkeep`）",
+        ).replace(
+            "- 候选主题：11", "- 候选主题：9"
+        ).replace(
+            "其中男性情感聊天候选 47 个，短视频筛选候选 2 个；",
+            "其中男性情感聊天候选 47 个；",
+        ).replace(
+            "- 2026-08-25 新增短视频筛选候选：`K-20260825-001` 保存用户提供的“AI找出劲爆片段”提示词，`K-20260825-002` 保存基于 `8.17.srt` 的 20 段候选和 Top 5。两者均为 `candidate`，不计入当前有效知识；SRT 的中英文重复段和第 1,902 条时间码回跳已记录。\n",
+            "",
+        ).replace(
+            "短视频筛选报告位于 `02-知识单元/K-20260825-002_8.17直播字幕劲爆片段筛选候选.md`。",
+            "",
+        ),
+    }
+    for relative, transform in transforms.items():
+        path = SKILL_ROOT / relative
+        if not path.is_file():
+            continue
+        original = path.read_text(encoding="utf-8")
+        updated = transform(original)
+        if updated == original:
+            continue
+        path.write_text(updated, encoding="utf-8")
+        for record in records:
+            if record.get("bundle_path") == relative:
+                record["sha256"] = sha256(path)
+                record["size"] = str(path.stat().st_size)
+                break
+
+
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--dragon-root", type=Path, default=DEFAULT_DRAGON_ROOT)
@@ -180,7 +231,11 @@ def main() -> int:
         KNOWLEDGE_ROOT / "01-原始资料",
         records,
         "dragon_raw",
-        include=lambda path: path.name != ".gitkeep" and not path.name.startswith("._"),
+        include=lambda path: (
+            path.name != ".gitkeep"
+            and not path.name.startswith("._")
+            and path.name not in EXCLUDED_RAW_FILES
+        ),
     )
     copy_tree(
         dragon_root / "02-知识单元",
@@ -201,6 +256,7 @@ def main() -> int:
         records,
         "dragon_system",
     )
+    sanitize_project_snapshot(records)
     archive_root = dragon_root / ".trash"
     if archive_root.is_dir():
         copy_tree(

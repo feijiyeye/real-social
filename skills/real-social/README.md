@@ -2,6 +2,24 @@
 
 这是一个可迁移的 Codex Skill 快照，适用于线上聊天分析、阶段判断、案例参考、来源审计和明确要求后的少量回复示例。
 
+## 安装
+
+### 推荐：终端一行安装
+
+前置条件：Node.js 22.20.0 或更高版本（含 npm）。在终端执行：
+
+```bash
+npx -y skills add feijiyeye/real-social -g --all
+```
+
+这会安装公开仓库中的 `real-social` 到 `skills` CLI 支持的 Agent。只使用 Codex 时，可以限定目标：
+
+```bash
+npx -y skills add feijiyeye/real-social -g -s real-social -a codex -y
+```
+
+安装完成后重新打开一轮 Codex。`skills` CLI 重新安装时可能覆盖目标目录中的同名文件；如果你改过本地 Skill，请先备份。
+
 ## 快速调用
 
 安装后重新打开一轮 Codex，使用：

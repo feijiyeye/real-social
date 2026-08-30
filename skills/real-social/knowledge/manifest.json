@@ -16,9 +16,9 @@
     "runtime/runtime-manifest.json"
   ],
   "counts": {
-    "files": 245,
+    "files": 243,
     "knowledge_units": 49,
-    "raw_sources": 82,
+    "raw_sources": 80,
     "external_sources": 62,
     "runtime_files": 16
   },
@@ -724,22 +724,6 @@
       "size": "17006"
     },
     {
-      "source_label": "dragon_raw",
-      "original_path": "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-25_8.17.srt",
-      "bundle_path": "knowledge/01-原始资料/2026-08-25_8.17.srt",
-      "sha256": "7ab1d61e4dcbf81fa33cf345026acab57a7679a593d1f6584997a2bc6d318890",
-      "source_sha256": "7ab1d61e4dcbf81fa33cf345026acab57a7679a593d1f6584997a2bc6d318890",
-      "size": "241688"
-    },
-    {
-      "source_label": "dragon_raw",
-      "original_path": "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-25_AI找出劲爆片段提示词.txt",
-      "bundle_path": "knowledge/01-原始资料/2026-08-25_AI找出劲爆片段提示词.txt",
-      "sha256": "01e05a2b3e9d6a0d90661a1345493b2c553f1cba36bb522d6622663c5540075a",
-      "source_sha256": "01e05a2b3e9d6a0d90661a1345493b2c553f1cba36bb522d6622663c5540075a",
-      "size": "3642"
-    },
-    {
       "source_label": "dragon_real_social_knowledge",
       "original_path": "/Users/company/Documents/Dragon知识库/02-知识单元/K-20260821-001_男性情感聊天教学Skill架构与素材预处理.md",
       "bundle_path": "knowledge/02-知识单元/K-20260821-001_男性情感聊天教学Skill架构与素材预处理.md",
@@ -1135,9 +1119,9 @@
       "source_label": "dragon_index",
       "original_path": "/Users/company/Documents/Dragon知识库/03-动态索引/主题索引.md",
       "bundle_path": "knowledge/03-动态索引/主题索引.md",
-      "sha256": "16851b4cae9908045074c77835c542aefbbf57f414d282be855990efdbe93d1c",
+      "sha256": "f73c751b8d97ad2b45ea04e142a8508de43835fceff65170c2f3c3e5881177e8",
       "source_sha256": "16851b4cae9908045074c77835c542aefbbf57f414d282be855990efdbe93d1c",
-      "size": "14410"
+      "size": "13634"
     },
     {
       "source_label": "dragon_system",
@@ -1239,9 +1223,9 @@
       "source_label": "dragon_system",
       "original_path": "/Users/company/Documents/Dragon知识库/04-系统/入库日志.md",
       "bundle_path": "knowledge/04-系统/入库日志.md",
-      "sha256": "6edde306d1a740f089326a7cc5218da8f5bd32d861360af1294991b64a8dd749",
+      "sha256": "68924e37b446203efe63d2a890c818e6a0a3d1970f756d04eabed2621f49f7d1",
       "source_sha256": "6edde306d1a740f089326a7cc5218da8f5bd32d861360af1294991b64a8dd749",
-      "size": "27198"
+      "size": "26130"
     },
     {
       "source_label": "dragon_system",
@@ -1303,9 +1287,9 @@
       "source_label": "dragon_system",
       "original_path": "/Users/company/Documents/Dragon知识库/04-系统/系统状态.md",
       "bundle_path": "knowledge/04-系统/系统状态.md",
-      "sha256": "98ddc27836d720c3e3ac2d96fa4a6d216c4447f8aa48a0857a7c1fdefe0e667e",
+      "sha256": "d46da2f563e72475a2496b731473739da40ab41811d56e03eb068268a5daf307",
       "source_sha256": "98ddc27836d720c3e3ac2d96fa4a6d216c4447f8aa48a0857a7c1fdefe0e667e",
-      "size": "8182"
+      "size": "7681"
     },
     {
       "source_label": "dragon_real_social_archive",
@@ -2049,8 +2033,6 @@
     "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_话术库_文本提取.txt": "knowledge/01-原始资料/2026-08-23_话术库_文本提取.txt",
     "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_语料集合.docx": "knowledge/01-原始资料/2026-08-23_语料集合.docx",
     "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_语料集合_文本提取.txt": "knowledge/01-原始资料/2026-08-23_语料集合_文本提取.txt",
-    "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-25_8.17.srt": "knowledge/01-原始资料/2026-08-25_8.17.srt",
-    "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-25_AI找出劲爆片段提示词.txt": "knowledge/01-原始资料/2026-08-25_AI找出劲爆片段提示词.txt",
     "/Users/company/Documents/Dragon知识库/02-知识单元/K-20260821-001_男性情感聊天教学Skill架构与素材预处理.md": "knowledge/02-知识单元/K-20260821-001_男性情感聊天教学Skill架构与素材预处理.md",
     "/Users/company/Documents/Dragon知识库/02-知识单元/K-20260821-003_JacksonFlow前提阶段线上候选.md": "knowledge/02-知识单元/K-20260821-003_JacksonFlow前提阶段线上候选.md",
     "/Users/company/Documents/Dragon知识库/02-知识单元/K-20260821-004_JacksonFlow赋格线上信号候选.md": "knowledge/02-知识单元/K-20260821-004_JacksonFlow赋格线上信号候选.md",
