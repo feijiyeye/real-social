@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-08-27T17:32:32+08:00",
+  "package_id": "real-social",
+  "rules": [
+    {
+      "from": "first_use",
+      "when": "用户提交具体聊天或任务",
+      "next": "analyze_chat",
+      "reason": "入口说明完成后只处理当前任务"
+    },
+    {
+      "from": "analyze_chat",
+      "when": "需要可发送示例且目标已说清",
+      "next": "reply_request",
+      "reason": "先完成阶段和边界判断，再进入示例门槛"
+    },
+    {
+      "from": "analyze_chat",
+      "when": "出现低回应或顾虑证据",
+      "next": "low_response_or_concern",
+      "reason": "新反馈优先于原先的兴趣方向"
+    },
+    {
+      "from": "reply_request",
+      "when": "命中回蓝闸门",
+      "next": "recovery",
+      "reason": "恢复状态优先，停止话术检索"
+    },
+    {
+      "from": "reply_request",
+      "when": "对方明确拒绝或停止",
+      "next": "stop_boundary",
+      "reason": "停止边界覆盖所有战术和重启"
+    },
+    {
+      "from": "invite",
+      "when": "双方形成明确意愿与可执行条件",
+      "next": "conversation_complete",
+      "reason": "终点是双向兴趣与可执行见面"
+    },
+    {
+      "from": "invite",
+      "when": "条件未齐或邀约未成功",
+      "next": "analyze_chat",
+      "reason": "回到新证据判断，不按固定话术循环"
+    },
+    {
+      "from": "recovery",
+      "when": "出现新的自愿、可观察互动",
+      "next": "analyze_chat",
+      "reason": "回蓝结束后重新评估，不按固定等待自动重启"
+    }
+  ]
+}
