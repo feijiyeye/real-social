@@ -1,0 +1,2196 @@
+{
+  "schema_version": 1,
+  "package_id": "real-social",
+  "display_name": "真实社交",
+  "snapshot_date": "2026-08-27T17:32:32+08:00",
+  "source_root": "/Users/company/Documents/Dragon知识库",
+  "external_source_root": "/Volumes/PS3001/Jackson案例素材Skill",
+  "scope": "当前 Dragon 知识库中的真实社交/男性情感聊天项目；不含短视频、读书和其他无关项目",
+  "runtime_root": "knowledge",
+  "runtime_entry": "runtime/runtime-entry.md",
+  "runtime_indexes": [
+    "runtime/route-index.json",
+    "runtime/navigation-index.json",
+    "runtime/unit-index.json",
+    "runtime/phrase-route-index.json",
+    "runtime/runtime-manifest.json"
+  ],
+  "counts": {
+    "files": 245,
+    "knowledge_units": 49,
+    "raw_sources": 82,
+    "external_sources": 62,
+    "runtime_files": 16
+  },
+  "files": [
+    {
+      "source_label": "dragon_root_original",
+      "original_path": "/Users/company/Documents/Dragon知识库/SOURCE_OF_TRUTH.md",
+      "bundle_path": "knowledge/_original_dragon_root/SOURCE_OF_TRUTH.md",
+      "sha256": "8594b5a769e9fc2888192f9cab3295f276a2275bed6e328455de59ce62c49b4e",
+      "source_sha256": "8594b5a769e9fc2888192f9cab3295f276a2275bed6e328455de59ce62c49b4e",
+      "size": "6563"
+    },
+    {
+      "source_label": "portable_generated_governance",
+      "original_path": "/Users/company/Documents/Dragon知识库/SOURCE_OF_TRUTH.md",
+      "bundle_path": "knowledge/SOURCE_OF_TRUTH.md",
+      "sha256": "db68d7289745ccc6628708308c125f42c9a4508ff83f4919b8f365b5ae4932a5",
+      "size": "6524"
+    },
+    {
+      "source_label": "dragon_root_original",
+      "original_path": "/Users/company/Documents/Dragon知识库/AGENTS.md",
+      "bundle_path": "knowledge/_original_dragon_root/AGENTS.md",
+      "sha256": "39160f46485c133816fbb752e0337b98934ccdf60a8fbd4b3ee176d8d59d6035",
+      "source_sha256": "39160f46485c133816fbb752e0337b98934ccdf60a8fbd4b3ee176d8d59d6035",
+      "size": "7904"
+    },
+    {
+      "source_label": "portable_generated_governance",
+      "original_path": "/Users/company/Documents/Dragon知识库/AGENTS.md",
+      "bundle_path": "knowledge/AGENTS.md",
+      "sha256": "39160f46485c133816fbb752e0337b98934ccdf60a8fbd4b3ee176d8d59d6035",
+      "size": "7904"
+    },
+    {
+      "source_label": "dragon_root_original",
+      "original_path": "/Users/company/Documents/Dragon知识库/CLAUDE.md",
+      "bundle_path": "knowledge/_original_dragon_root/CLAUDE.md",
+      "sha256": "0022b5ac7b4692585bafed04cb09afc9b0cd73e898dfec3c86beb74c823950a9",
+      "source_sha256": "0022b5ac7b4692585bafed04cb09afc9b0cd73e898dfec3c86beb74c823950a9",
+      "size": "6489"
+    },
+    {
+      "source_label": "portable_generated_governance",
+      "original_path": "/Users/company/Documents/Dragon知识库/CLAUDE.md",
+      "bundle_path": "knowledge/CLAUDE.md",
+      "sha256": "0022b5ac7b4692585bafed04cb09afc9b0cd73e898dfec3c86beb74c823950a9",
+      "size": "6489"
+    },
+    {
+      "source_label": "dragon_root_original",
+      "original_path": "/Users/company/Documents/Dragon知识库/README.md",
+      "bundle_path": "knowledge/_original_dragon_root/README.md",
+      "sha256": "faa3258f6fb4da09b77ad918d25a544f9e91ef5a1a79d35f570319cbbd4ff00d",
+      "source_sha256": "faa3258f6fb4da09b77ad918d25a544f9e91ef5a1a79d35f570319cbbd4ff00d",
+      "size": "2399"
+    },
+    {
+      "source_label": "portable_generated_governance",
+      "original_path": "/Users/company/Documents/Dragon知识库/README.md",
+      "bundle_path": "knowledge/README.md",
+      "sha256": "faa3258f6fb4da09b77ad918d25a544f9e91ef5a1a79d35f570319cbbd4ff00d",
+      "size": "2399"
+    },
+    {
+      "source_label": "dragon_raw",
+      "original_path": "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-21_zhenshi-理论.docx",
+      "bundle_path": "knowledge/01-原始资料/2026-08-21_zhenshi-理论.docx",
+      "sha256": "dfbab9dac220ed9e4261a5b44a158ce1b0123b8fbcd8a4f3a200d29a94d1c51c",
+      "source_sha256": "dfbab9dac220ed9e4261a5b44a158ce1b0123b8fbcd8a4f3a200d29a94d1c51c",
+      "size": "72260"
+    },
+    {
+      "source_label": "dragon_raw",
+      "original_path": "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-21_zhenshi-理论_文本提取.txt",
+      "bundle_path": "knowledge/01-原始资料/2026-08-21_zhenshi-理论_文本提取.txt",
+      "sha256": "9b34d414174cc5e7468e325c275423952c425efc743236a97e5d63cfa67f2444",
+      "source_sha256": "9b34d414174cc5e7468e325c275423952c425efc743236a97e5d63cfa67f2444",
+      "size": "66608"
+    },
+    {
+      "source_label": "dragon_raw",
+      "original_path": "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-21_真实社交专业术语目录_用户原文.md",
+      "bundle_path": "knowledge/01-原始资料/2026-08-21_真实社交专业术语目录_用户原文.md",
+      "sha256": "079b244f4d9e771c17fb0849a7f8061ba3e80e825c08bd461d022aae25814492",
+      "source_sha256": "079b244f4d9e771c17fb0849a7f8061ba3e80e825c08bd461d022aae25814492",
+      "size": "16509"
+    },
+    {
+      "source_label": "dragon_raw",
+      "original_path": "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-22_杰哥2.srt",
+      "bundle_path": "knowledge/01-原始资料/2026-08-22_杰哥2.srt",
+      "sha256": "7fa62cf85a1a7f0fe002abc7bf9f57b7046b1f066bdef0319c929ad3cb0ce03d",
+      "source_sha256": "7fa62cf85a1a7f0fe002abc7bf9f57b7046b1f066bdef0319c929ad3cb0ce03d",
+      "size": "25288"
+    },
+    {
+      "source_label": "dragon_raw",
+      "original_path": "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-22_杰哥3.srt",
+      "bundle_path": "knowledge/01-原始资料/2026-08-22_杰哥3.srt",
+      "sha256": "3f9f69745328611b7905b1d605bc778cf09d59a02e5768b8700091bcbde28acd",
+      "source_sha256": "3f9f69745328611b7905b1d605bc778cf09d59a02e5768b8700091bcbde28acd",
+      "size": "21342"
+    },
+    {
+      "source_label": "dragon_raw",
+      "original_path": "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-22_杰哥4.srt",
+      "bundle_path": "knowledge/01-原始资料/2026-08-22_杰哥4.srt",
+      "sha256": "3cbfbcfcd0ffd56aed551fb70f7c84e0795e088ac01849b95e1c834bd2d78fa1",
+      "source_sha256": "3cbfbcfcd0ffd56aed551fb70f7c84e0795e088ac01849b95e1c834bd2d78fa1",
+      "size": "43426"
+    },
+    {
+      "source_label": "dragon_raw",
+      "original_path": "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-22_杰哥聊天1上.srt",
+      "bundle_path": "knowledge/01-原始资料/2026-08-22_杰哥聊天1上.srt",
+      "sha256": "cb5dc2e6885fb3047847d774372a64343177f726f94a8d43b1433367bc893019",
+      "source_sha256": "cb5dc2e6885fb3047847d774372a64343177f726f94a8d43b1433367bc893019",
+      "size": "28247"
+    },
+    {
+      "source_label": "dragon_raw",
+      "original_path": "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-22_杰哥聊天1下.srt",
+      "bundle_path": "knowledge/01-原始资料/2026-08-22_杰哥聊天1下.srt",
+      "sha256": "b1880a23ca5fe78dbb3b5fbf642e5c67d1cdc639611d06eacbddfc1aeb63b08f",
+      "source_sha256": "b1880a23ca5fe78dbb3b5fbf642e5c67d1cdc639611d06eacbddfc1aeb63b08f",
+      "size": "25648"
+    },
+    {
+      "source_label": "dragon_raw",
+      "original_path": "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-22_杰哥聊天5.srt",
+      "bundle_path": "knowledge/01-原始资料/2026-08-22_杰哥聊天5.srt",
+      "sha256": "783806459d2632c71aaaefcce55e1edf998ba92ed749316e0fbe8dd62de80ed2",
+      "source_sha256": "783806459d2632c71aaaefcce55e1edf998ba92ed749316e0fbe8dd62de80ed2",
+      "size": "35091"
+    },
+    {
+      "source_label": "dragon_raw",
+      "original_path": "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-22_案例分析_千里送_一周目_课程解说.txt",
+      "bundle_path": "knowledge/01-原始资料/2026-08-22_案例分析_千里送_一周目_课程解说.txt",
+      "sha256": "5464e71459fe8cd241d7cc27167d2a8d9095baf4dcc8edf5993d1391dae800b1",
+      "source_sha256": "5464e71459fe8cd241d7cc27167d2a8d9095baf4dcc8edf5993d1391dae800b1",
+      "size": "26199"
+    },
+    {
+      "source_label": "dragon_raw",
+      "original_path": "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-22_案例分析_千里送_三周目_课程解说.txt",
+      "bundle_path": "knowledge/01-原始资料/2026-08-22_案例分析_千里送_三周目_课程解说.txt",
+      "sha256": "c29dcab35973ed64a698d947cc1f3ed9246addf10ca9570a3693ea61f84c8161",
+      "source_sha256": "c29dcab35973ed64a698d947cc1f3ed9246addf10ca9570a3693ea61f84c8161",
+      "size": "30810"
+    },
+    {
+      "source_label": "dragon_raw",
+      "original_path": "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-22_案例分析_千里送_二周目_课程解说.txt",
+      "bundle_path": "knowledge/01-原始资料/2026-08-22_案例分析_千里送_二周目_课程解说.txt",
+      "sha256": "c1aecb2acf826cde6096c153550a9a0f921468d6523af6128c3572b1531d29c7",
+      "source_sha256": "c1aecb2acf826cde6096c153550a9a0f921468d6523af6128c3572b1531d29c7",
+      "size": "27630"
+    },
+    {
+      "source_label": "dragon_raw",
+      "original_path": "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_888内部群杰哥话术（3.3-8.17）.md",
+      "bundle_path": "knowledge/01-原始资料/2026-08-23_888内部群杰哥话术（3.3-8.17）.md",
+      "sha256": "412bc81c81abfdfde0d5091e7e3f3642eb6ecf8f208091bc36aeec89521c3bd1",
+      "source_sha256": "412bc81c81abfdfde0d5091e7e3f3642eb6ecf8f208091bc36aeec89521c3bd1",
+      "size": "4251"
+    },
+    {
+      "source_label": "dragon_raw",
+      "original_path": "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_AppleNotesQuickNotes_001_jackson_top_phrases_seriousness_and_invitation_obstacles.md",
+      "bundle_path": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_001_jackson_top_phrases_seriousness_and_invitation_obstacles.md",
+      "sha256": "7afd30d010ea9e0b58eda3056aaf83a734c2d966476088054f04884ca4d1b94e",
+      "source_sha256": "7afd30d010ea9e0b58eda3056aaf83a734c2d966476088054f04884ca4d1b94e",
+      "size": "2065"
+    },
+    {
+      "source_label": "dragon_raw",
+      "original_path": "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_AppleNotesQuickNotes_002_emotional_tension.md",
+      "bundle_path": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_002_emotional_tension.md",
+      "sha256": "8c6a68af29e6f5efe8b4e32db4541b2be880dea623c8fc3f521d19096df007e9",
+      "source_sha256": "8c6a68af29e6f5efe8b4e32db4541b2be880dea623c8fc3f521d19096df007e9",
+      "size": "506"
+    },
+    {
+      "source_label": "dragon_raw",
+      "original_path": "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_AppleNotesQuickNotes_003_within_five_days.md",
+      "bundle_path": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_003_within_five_days.md",
+      "sha256": "35f18facf474045dbffa68278e1991bd825873b527de3feaf71d99665b8d7a8b",
+      "source_sha256": "35f18facf474045dbffa68278e1991bd825873b527de3feaf71d99665b8d7a8b",
+      "size": "266"
+    },
+    {
+      "source_label": "dragon_raw",
+      "original_path": "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_AppleNotesQuickNotes_004_displaying_aggression.md",
+      "bundle_path": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_004_displaying_aggression.md",
+      "sha256": "da9a990e7503bf29c4b7c40d1b141cb27ebeb66596cbdc5f13e985158af390ad",
+      "source_sha256": "da9a990e7503bf29c4b7c40d1b141cb27ebeb66596cbdc5f13e985158af390ad",
+      "size": "350"
+    },
+    {
+      "source_label": "dragon_raw",
+      "original_path": "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_AppleNotesQuickNotes_005_sticker_and_non_seriousness_obstacles.md",
+      "bundle_path": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_005_sticker_and_non_seriousness_obstacles.md",
+      "sha256": "caf0c7edd590a071ad2f8abbe14261800306f9f7f14a00a16fe9393053fc376e",
+      "source_sha256": "caf0c7edd590a071ad2f8abbe14261800306f9f7f14a00a16fe9393053fc376e",
+      "size": "847"
+    },
+    {
+      "source_label": "dragon_raw",
+      "original_path": "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_AppleNotesQuickNotes_006_closing_or_returning_home_obstacles.md",
+      "bundle_path": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_006_closing_or_returning_home_obstacles.md",
+      "sha256": "a2dfc9b907ba3dfe4bf19b05f8fe57f513cab8222b23292453a9d5b83ef80eed",
+      "source_sha256": "a2dfc9b907ba3dfe4bf19b05f8fe57f513cab8222b23292453a9d5b83ef80eed",
+      "size": "317"
+    },
+    {
+      "source_label": "dragon_raw",
+      "original_path": "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_AppleNotesQuickNotes_007_leading_the_interaction.md",
+      "bundle_path": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_007_leading_the_interaction.md",
+      "sha256": "880cf381a6a5f5b496b2aad152f4cdbc9271a5f773992d0918df5df1b0149d16",
+      "source_sha256": "880cf381a6a5f5b496b2aad152f4cdbc9271a5f773992d0918df5df1b0149d16",
+      "size": "365"
+    },
+    {
+      "source_label": "dragon_raw",
+      "original_path": "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_AppleNotesQuickNotes_008_escalation_by_pulling_back.md",
+      "bundle_path": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_008_escalation_by_pulling_back.md",
+      "sha256": "f107869e5958e199a8531f583b314fa684cbac896f4e55aee4c0a623ccc41487",
+      "source_sha256": "f107869e5958e199a8531f583b314fa684cbac896f4e55aee4c0a623ccc41487",
+      "size": "231"
+    },
+    {
+      "source_label": "dragon_raw",
+      "original_path": "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_AppleNotesQuickNotes_009_asking_for_commitment.md",
+      "bundle_path": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_009_asking_for_commitment.md",
+      "sha256": "ae7df3ff58feb22713291ba74200beb2f35d0c3557b9ea5b5e0eb2b352c30ced",
+      "source_sha256": "ae7df3ff58feb22713291ba74200beb2f35d0c3557b9ea5b5e0eb2b352c30ced",
+      "size": "272"
+    },
+    {
+      "source_label": "dragon_raw",
+      "original_path": "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_AppleNotesQuickNotes_010_teaching_frame.md",
+      "bundle_path": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_010_teaching_frame.md",
+      "sha256": "9a47f54bb99b7f141d9c09b0bae514fa646c4cfb110c1b5486e2b7f419d8412f",
+      "source_sha256": "9a47f54bb99b7f141d9c09b0bae514fa646c4cfb110c1b5486e2b7f419d8412f",
+      "size": "175"
+    },
+    {
+      "source_label": "dragon_raw",
+      "original_path": "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_AppleNotesQuickNotes_011_playful_evaluation_opening.md",
+      "bundle_path": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_011_playful_evaluation_opening.md",
+      "sha256": "48f34d6433fc3eede30d4d636229a43fa95d3f023fd4f4437063d98fa6a01889",
+      "source_sha256": "48f34d6433fc3eede30d4d636229a43fa95d3f023fd4f4437063d98fa6a01889",
+      "size": "250"
+    },
+    {
+      "source_label": "dragon_raw",
+      "original_path": "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_AppleNotesQuickNotes_012_values_and_stance.md",
+      "bundle_path": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_012_values_and_stance.md",
+      "sha256": "cef9de2a4d1077082dcd5c3dc274e6a7579b070976120de010bf6382ff42cbe1",
+      "source_sha256": "cef9de2a4d1077082dcd5c3dc274e6a7579b070976120de010bf6382ff42cbe1",
+      "size": "1122"
+    },
+    {
+      "source_label": "dragon_raw",
+      "original_path": "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_AppleNotesQuickNotes_013_empathic_opening.md",
+      "bundle_path": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_013_empathic_opening.md",
+      "sha256": "658fe104e1dab3c4e1ced4446f02a4fce9e2b8de3870cae4f3f42c5b1395b7d2",
+      "source_sha256": "658fe104e1dab3c4e1ced4446f02a4fce9e2b8de3870cae4f3f42c5b1395b7d2",
+      "size": "763"
+    },
+    {
+      "source_label": "dragon_raw",
+      "original_path": "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_AppleNotesQuickNotes_014_jackson_key_tactics.md",
+      "bundle_path": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_014_jackson_key_tactics.md",
+      "sha256": "9205cc7ef52c251424c55b1913f28e7cdb2710d2b1280b64ad815d45f4828d4b",
+      "source_sha256": "9205cc7ef52c251424c55b1913f28e7cdb2710d2b1280b64ad815d45f4828d4b",
+      "size": "317"
+    },
+    {
+      "source_label": "dragon_raw",
+      "original_path": "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_AppleNotesQuickNotes_015_experience_based_routines.md",
+      "bundle_path": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_015_experience_based_routines.md",
+      "sha256": "8d36c6435fa911e13e113384f911e9c16513a86a147bdeeb998fb69d30dabcf3",
+      "source_sha256": "8d36c6435fa911e13e113384f911e9c16513a86a147bdeeb998fb69d30dabcf3",
+      "size": "867"
+    },
+    {
+      "source_label": "dragon_raw",
+      "original_path": "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_AppleNotesQuickNotes_016_clear_intent_and_premise.md",
+      "bundle_path": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_016_clear_intent_and_premise.md",
+      "sha256": "90d5ef5e131f67a0489812a441168ef0648e63d9f474ec3aa3fc091a3b835c5a",
+      "source_sha256": "90d5ef5e131f67a0489812a441168ef0648e63d9f474ec3aa3fc091a3b835c5a",
+      "size": "409"
+    },
+    {
+      "source_label": "dragon_raw",
+      "original_path": "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_AppleNotesQuickNotes_017_tension_and_visual_imagery.md",
+      "bundle_path": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_017_tension_and_visual_imagery.md",
+      "sha256": "cf9cede2c2f14acf315696f5ef077c70a2f66d88bab35a0d047bb245ea5f77d3",
+      "source_sha256": "cf9cede2c2f14acf315696f5ef077c70a2f66d88bab35a0d047bb245ea5f77d3",
+      "size": "1947"
+    },
+    {
+      "source_label": "dragon_raw",
+      "original_path": "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_AppleNotesQuickNotes_018_gaze_and_direct_answers.md",
+      "bundle_path": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_018_gaze_and_direct_answers.md",
+      "sha256": "0c75d1205a5a919fa7683daed8366808e1e89efea10b8e6a3c3caacc2d9c3668",
+      "source_sha256": "0c75d1205a5a919fa7683daed8366808e1e89efea10b8e6a3c3caacc2d9c3668",
+      "size": "919"
+    },
+    {
+      "source_label": "dragon_raw",
+      "original_path": "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_AppleNotesQuickNotes_019_extending_the_conversation.md",
+      "bundle_path": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_019_extending_the_conversation.md",
+      "sha256": "0cd13d978cb03f0c86b40be6e306eedfd910ec22ba75f10d6cd7142ed2aa45da",
+      "source_sha256": "0cd13d978cb03f0c86b40be6e306eedfd910ec22ba75f10d6cd7142ed2aa45da",
+      "size": "672"
+    },
+    {
+      "source_label": "dragon_raw",
+      "original_path": "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_AppleNotesQuickNotes_020_strong_attraction_persona_examples.md",
+      "bundle_path": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_020_strong_attraction_persona_examples.md",
+      "sha256": "ceb83546791bf8a376e6a603e10382ef6e23708edf3d6de7085ee2b2f93e49c8",
+      "source_sha256": "ceb83546791bf8a376e6a603e10382ef6e23708edf3d6de7085ee2b2f93e49c8",
+      "size": "2069"
+    },
+    {
+      "source_label": "dragon_raw",
+      "original_path": "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_AppleNotesQuickNotes_021_values_and_stance_2.md",
+      "bundle_path": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_021_values_and_stance_2.md",
+      "sha256": "89ab9b9e20c4007034a2f3b22baca4dcd223d957a10c94100e5de7743420bc25",
+      "source_sha256": "89ab9b9e20c4007034a2f3b22baca4dcd223d957a10c94100e5de7743420bc25",
+      "size": "928"
+    },
+    {
+      "source_label": "dragon_raw",
+      "original_path": "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_AppleNotesQuickNotes_022_short_term_and_low_fit.md",
+      "bundle_path": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_022_short_term_and_low_fit.md",
+      "sha256": "0c4f9fc39dcc2ad4fc159f7aa28c0cb5949800f98c03ab4c74c18889f00d5d0f",
+      "source_sha256": "0c4f9fc39dcc2ad4fc159f7aa28c0cb5949800f98c03ab4c74c18889f00d5d0f",
+      "size": "224"
+    },
+    {
+      "source_label": "dragon_raw",
+      "original_path": "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_AppleNotesQuickNotes_023_defusing_tests_and_body_language.md",
+      "bundle_path": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_023_defusing_tests_and_body_language.md",
+      "sha256": "73842ba8e39e929aadc5bd4707eb35666d704d32ebb4d5d3007896eb6714dcc4",
+      "source_sha256": "73842ba8e39e929aadc5bd4707eb35666d704d32ebb4d5d3007896eb6714dcc4",
+      "size": "385"
+    },
+    {
+      "source_label": "dragon_raw",
+      "original_path": "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_AppleNotesQuickNotes_024_building_connection.md",
+      "bundle_path": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_024_building_connection.md",
+      "sha256": "d39b8d9615e7148f0b0371c26f880c8cf325abba0aa76fac40a6f9edc5957b70",
+      "source_sha256": "d39b8d9615e7148f0b0371c26f880c8cf325abba0aa76fac40a6f9edc5957b70",
+      "size": "3198"
+    },
+    {
+      "source_label": "dragon_raw",
+      "original_path": "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_AppleNotesQuickNotes_025_asking_for_commitment_2.md",
+      "bundle_path": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_025_asking_for_commitment_2.md",
+      "sha256": "e228b8f19072b25e723bd13f6353471d91d2f27c87520943f959f5c7ab331359",
+      "source_sha256": "e228b8f19072b25e723bd13f6353471d91d2f27c87520943f959f5c7ab331359",
+      "size": "471"
+    },
+    {
+      "source_label": "dragon_raw",
+      "original_path": "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_AppleNotesQuickNotes_026_long_distance_delivery_flow.md",
+      "bundle_path": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_026_long_distance_delivery_flow.md",
+      "sha256": "22b7f913d764930902e08b86e86c7cd680dbe73ed8a5a4ddd9bd0efef00f2c8a",
+      "source_sha256": "22b7f913d764930902e08b86e86c7cd680dbe73ed8a5a4ddd9bd0efef00f2c8a",
+      "size": "252"
+    },
+    {
+      "source_label": "dragon_raw",
+      "original_path": "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_AppleNotesQuickNotes_027_victim_frame.md",
+      "bundle_path": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_027_victim_frame.md",
+      "sha256": "1976df3d7268b422201a113348cf7ff5a9ca9b63fe43f43c7e5e6c7719e50783",
+      "source_sha256": "1976df3d7268b422201a113348cf7ff5a9ca9b63fe43f43c7e5e6c7719e50783",
+      "size": "494"
+    },
+    {
+      "source_label": "dragon_raw",
+      "original_path": "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_AppleNotesQuickNotes_028_app_contact_exchange.md",
+      "bundle_path": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_028_app_contact_exchange.md",
+      "sha256": "9cab8d5f638b244895569136e2be37776d0586a29878ddbc0cdf2bd164ac298a",
+      "source_sha256": "9cab8d5f638b244895569136e2be37776d0586a29878ddbc0cdf2bd164ac298a",
+      "size": "232"
+    },
+    {
+      "source_label": "dragon_raw",
+      "original_path": "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_AppleNotesQuickNotes_029_woman_initiates_opening.md",
+      "bundle_path": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_029_woman_initiates_opening.md",
+      "sha256": "8b19a90ce8f968a93f9791649d2cb9e5f31bc3df0fd1cccfb53adf00bc839952",
+      "source_sha256": "8b19a90ce8f968a93f9791649d2cb9e5f31bc3df0fd1cccfb53adf00bc839952",
+      "size": "228"
+    },
+    {
+      "source_label": "dragon_raw",
+      "original_path": "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_AppleNotesQuickNotes_030_long_term_relationship_dynamics.md",
+      "bundle_path": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_030_long_term_relationship_dynamics.md",
+      "sha256": "940660c04abca103eabd0843680c34595dda14c171d79046e9fcd406fe0e3e42",
+      "source_sha256": "940660c04abca103eabd0843680c34595dda14c171d79046e9fcd406fe0e3e42",
+      "size": "478"
+    },
+    {
+      "source_label": "dragon_raw",
+      "original_path": "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_AppleNotesQuickNotes_031_male_to_female_framing.md",
+      "bundle_path": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_031_male_to_female_framing.md",
+      "sha256": "5730f95387ad2862c3c38a6c3720f8eca742cea6b7c2e9d9517a40526116f472",
+      "source_sha256": "5730f95387ad2862c3c38a6c3720f8eca742cea6b7c2e9d9517a40526116f472",
+      "size": "1004"
+    },
+    {
+      "source_label": "dragon_raw",
+      "original_path": "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_AppleNotesQuickNotes_032_how_to_continue_replies.md",
+      "bundle_path": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_032_how_to_continue_replies.md",
+      "sha256": "10518e57556db4888b4d79b759c18e3f1880884170220963a5abbdbdf70323ac",
+      "source_sha256": "10518e57556db4888b4d79b759c18e3f1880884170220963a5abbdbdf70323ac",
+      "size": "1713"
+    },
+    {
+      "source_label": "dragon_raw",
+      "original_path": "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_AppleNotesQuickNotes_033_value_feedback_and_flirting.md",
+      "bundle_path": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_033_value_feedback_and_flirting.md",
+      "sha256": "0efd49c9e2156dd84995ad4b624709f662970c71e150f8ec75bee9bed89a097f",
+      "source_sha256": "0efd49c9e2156dd84995ad4b624709f662970c71e150f8ec75bee9bed89a097f",
+      "size": "941"
+    },
+    {
+      "source_label": "dragon_raw",
+      "original_path": "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_AppleNotesQuickNotes_034_pulling_the_conversation.md",
+      "bundle_path": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_034_pulling_the_conversation.md",
+      "sha256": "224fb477dc07d29187f1396edf62fab5ea8d0756b8e5be88dfd00f85d819ec4f",
+      "source_sha256": "224fb477dc07d29187f1396edf62fab5ea8d0756b8e5be88dfd00f85d819ec4f",
+      "size": "1233"
+    },
+    {
+      "source_label": "dragon_raw",
+      "original_path": "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_AppleNotesQuickNotes_035_opening_patterns.md",
+      "bundle_path": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_035_opening_patterns.md",
+      "sha256": "b0e365a74563b3effc7729df4253ccb318002365a5aabca13a91cf2e4d637131",
+      "source_sha256": "b0e365a74563b3effc7729df4253ccb318002365a5aabca13a91cf2e4d637131",
+      "size": "1256"
+    },
+    {
+      "source_label": "dragon_raw",
+      "original_path": "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_AppleNotesQuickNotes_036_SM_attributes_phrases.md",
+      "bundle_path": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_036_SM_attributes_phrases.md",
+      "sha256": "32d6e5669703fc469abd488d2ff8b99234d212bc148821a44b88d976c50f60e7",
+      "source_sha256": "32d6e5669703fc469abd488d2ff8b99234d212bc148821a44b88d976c50f60e7",
+      "size": "685"
+    },
+    {
+      "source_label": "dragon_raw",
+      "original_path": "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_AppleNotesQuickNotes_037_using_their_own_logic.md",
+      "bundle_path": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_037_using_their_own_logic.md",
+      "sha256": "22f321bc1c8906bb4c5b0daec3bb55b4706c4e5ccc319bd00a8dc87c8f25e6e9",
+      "source_sha256": "22f321bc1c8906bb4c5b0daec3bb55b4706c4e5ccc319bd00a8dc87c8f25e6e9",
+      "size": "312"
+    },
+    {
+      "source_label": "dragon_raw",
+      "original_path": "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_AppleNotesQuickNotes_038_cooperation_breakthrough.md",
+      "bundle_path": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_038_cooperation_breakthrough.md",
+      "sha256": "37f599586eb65ffa64fbf00de7db3562e7ab5831bed9297db2af1c61ccfe5555",
+      "source_sha256": "37f599586eb65ffa64fbf00de7db3562e7ab5831bed9297db2af1c61ccfe5555",
+      "size": "132"
+    },
+    {
+      "source_label": "dragon_raw",
+      "original_path": "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_AppleNotesQuickNotes_039_reengagement_phrases.md",
+      "bundle_path": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_039_reengagement_phrases.md",
+      "sha256": "86a811879744bec531cdd3860c09eba2ef291d49271d9eb3a28911ade830bdc8",
+      "source_sha256": "86a811879744bec531cdd3860c09eba2ef291d49271d9eb3a28911ade830bdc8",
+      "size": "2044"
+    },
+    {
+      "source_label": "dragon_raw",
+      "original_path": "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_AppleNotesQuickNotes_040_invitation_phrases.md",
+      "bundle_path": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_040_invitation_phrases.md",
+      "sha256": "3bcb039bc1093438087cabfa11a0a239cd5a7cf6ec2a1ba1aaca27b1cb1091a5",
+      "source_sha256": "3bcb039bc1093438087cabfa11a0a239cd5a7cf6ec2a1ba1aaca27b1cb1091a5",
+      "size": "5955"
+    },
+    {
+      "source_label": "dragon_raw",
+      "original_path": "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_AppleNotesQuickNotes_041_disqualifying_pushback.md",
+      "bundle_path": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_041_disqualifying_pushback.md",
+      "sha256": "8c52a39fb12d4fdea1a71ccdce3d55e5e7e7a50c2ed92decb940cd18db520416",
+      "source_sha256": "8c52a39fb12d4fdea1a71ccdce3d55e5e7e7a50c2ed92decb940cd18db520416",
+      "size": "10645"
+    },
+    {
+      "source_label": "dragon_raw",
+      "original_path": "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_AppleNotesQuickNotes_042_obstacle_and_test_responses.md",
+      "bundle_path": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_042_obstacle_and_test_responses.md",
+      "sha256": "087d2bbfbf2e1b7661d04698b87d60a1838fd8e98a1b1fd8eec01aa620fc6a32",
+      "source_sha256": "087d2bbfbf2e1b7661d04698b87d60a1838fd8e98a1b1fd8eec01aa620fc6a32",
+      "size": "3039"
+    },
+    {
+      "source_label": "dragon_raw",
+      "original_path": "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_AppleNotesQuickNotes_043_screening_and_evaluation.md",
+      "bundle_path": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_043_screening_and_evaluation.md",
+      "sha256": "80a214eca3c7f0c532f45aece1a62e5017e7f7b3592220663ab103faf470b2c4",
+      "source_sha256": "80a214eca3c7f0c532f45aece1a62e5017e7f7b3592220663ab103faf470b2c4",
+      "size": "16366"
+    },
+    {
+      "source_label": "dragon_raw",
+      "original_path": "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_AppleNotesQuickNotes_044_high_value_prize_positioning.md",
+      "bundle_path": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_044_high_value_prize_positioning.md",
+      "sha256": "c03ba191c6c6a4fce2b17115fcb7977c723dcacf352882ce5d9dfc5e6dda8622",
+      "source_sha256": "c03ba191c6c6a4fce2b17115fcb7977c723dcacf352882ce5d9dfc5e6dda8622",
+      "size": "2440"
+    },
+    {
+      "source_label": "dragon_raw",
+      "original_path": "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_AppleNotesQuickNotes_045_emotional_disruption.md",
+      "bundle_path": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_045_emotional_disruption.md",
+      "sha256": "fbeaf6e472c8f8be1b9ff2a867c87a9985bfac1058251557355b31fc72ee61d1",
+      "source_sha256": "fbeaf6e472c8f8be1b9ff2a867c87a9985bfac1058251557355b31fc72ee61d1",
+      "size": "11039"
+    },
+    {
+      "source_label": "dragon_raw",
+      "original_path": "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_AppleNotesQuickNotes_README.md",
+      "bundle_path": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_README.md",
+      "sha256": "55030d22d0256a4d60d0ffa560f19b12a4c9d0d45fb9562b886b57bd755cb2ed",
+      "source_sha256": "55030d22d0256a4d60d0ffa560f19b12a4c9d0d45fb9562b886b57bd755cb2ed",
+      "size": "416"
+    },
+    {
+      "source_label": "dragon_raw",
+      "original_path": "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_AppleNotesQuickNotes候选参考增补清单.json",
+      "bundle_path": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes候选参考增补清单.json",
+      "sha256": "c9902da4ff342543b157761c0fb98c5f0d5374549a7b47173941648a4ed7f6be",
+      "source_sha256": "c9902da4ff342543b157761c0fb98c5f0d5374549a7b47173941648a4ed7f6be",
+      "size": "70239"
+    },
+    {
+      "source_label": "dragon_raw",
+      "original_path": "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_AppleNotesQuickNotes来源清单.json",
+      "bundle_path": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes来源清单.json",
+      "sha256": "71ae0a139d4557c43321cb07e1528f7c92351b603cc3adcd09fc94b6886a3991",
+      "source_sha256": "71ae0a139d4557c43321cb07e1528f7c92351b603cc3adcd09fc94b6886a3991",
+      "size": "35031"
+    },
+    {
+      "source_label": "dragon_raw",
+      "original_path": "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_AppleNotesQuickNotes话术去重审计.json",
+      "bundle_path": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes话术去重审计.json",
+      "sha256": "7963b1839aaf68fa8a3612302c4c4fdbfe35af6da99ae6af8fde0a41ac1bb448",
+      "source_sha256": "7963b1839aaf68fa8a3612302c4c4fdbfe35af6da99ae6af8fde0a41ac1bb448",
+      "size": "12885"
+    },
+    {
+      "source_label": "dragon_raw",
+      "original_path": "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_Jackson体系话术候选参考清单.json",
+      "bundle_path": "knowledge/01-原始资料/2026-08-23_Jackson体系话术候选参考清单.json",
+      "sha256": "29efcadb4f15173a93e6e47101785414ceb3a41101949c2b9a5f360af282254e",
+      "source_sha256": "29efcadb4f15173a93e6e47101785414ceb3a41101949c2b9a5f360af282254e",
+      "size": "32161"
+    },
+    {
+      "source_label": "dragon_raw",
+      "original_path": "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_Jackson体系话术去重索引.json",
+      "bundle_path": "knowledge/01-原始资料/2026-08-23_Jackson体系话术去重索引.json",
+      "sha256": "fbda88fa8f72042ad33519451c56ca06772e810640001cc71c947df7d0eb798f",
+      "source_sha256": "fbda88fa8f72042ad33519451c56ca06772e810640001cc71c947df7d0eb798f",
+      "size": "2855558"
+    },
+    {
+      "source_label": "dragon_raw",
+      "original_path": "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_Jackson体系话术近似重复审计.json",
+      "bundle_path": "knowledge/01-原始资料/2026-08-23_Jackson体系话术近似重复审计.json",
+      "sha256": "01d4f37b3f5476da51c4a1433cf0496f79a83dcc77f28a47ae14ba7655c3c484",
+      "source_sha256": "01d4f37b3f5476da51c4a1433cf0496f79a83dcc77f28a47ae14ba7655c3c484",
+      "size": "2032"
+    },
+    {
+      "source_label": "dragon_raw",
+      "original_path": "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_game.docx",
+      "bundle_path": "knowledge/01-原始资料/2026-08-23_game.docx",
+      "sha256": "d541fb5d6d54e86250ad488d279fec570f8ced7e507c379814e9b0d9251432c2",
+      "source_sha256": "d541fb5d6d54e86250ad488d279fec570f8ced7e507c379814e9b0d9251432c2",
+      "size": "31679"
+    },
+    {
+      "source_label": "dragon_raw",
+      "original_path": "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_game_文本提取.txt",
+      "bundle_path": "knowledge/01-原始资料/2026-08-23_game_文本提取.txt",
+      "sha256": "5478324a0b2761cda6cd572b765c7d96c69a5757273ab36e4f952162654cf8b4",
+      "source_sha256": "5478324a0b2761cda6cd572b765c7d96c69a5757273ab36e4f952162654cf8b4",
+      "size": "24631"
+    },
+    {
+      "source_label": "dragon_raw",
+      "original_path": "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_huashu.docx",
+      "bundle_path": "knowledge/01-原始资料/2026-08-23_huashu.docx",
+      "sha256": "9324192bea86e1eec82ff959cec19fb8f6bc2c8c4c9c30dfbd3ccc9d42c765de",
+      "source_sha256": "9324192bea86e1eec82ff959cec19fb8f6bc2c8c4c9c30dfbd3ccc9d42c765de",
+      "size": "61907"
+    },
+    {
+      "source_label": "dragon_raw",
+      "original_path": "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_huashu_文本提取.txt",
+      "bundle_path": "knowledge/01-原始资料/2026-08-23_huashu_文本提取.txt",
+      "sha256": "e8bb1f3e12ea4eec4ecefcff257cbd7898988060c6317da31c0117e826360889",
+      "source_sha256": "e8bb1f3e12ea4eec4ecefcff257cbd7898988060c6317da31c0117e826360889",
+      "size": "37977"
+    },
+    {
+      "source_label": "dragon_raw",
+      "original_path": "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_杰哥聊天6.srt",
+      "bundle_path": "knowledge/01-原始资料/2026-08-23_杰哥聊天6.srt",
+      "sha256": "a654494932f16649c89ac4395188d755fb545e9ffa1f7a3170e00915ee79708a",
+      "source_sha256": "a654494932f16649c89ac4395188d755fb545e9ffa1f7a3170e00915ee79708a",
+      "size": "41667"
+    },
+    {
+      "source_label": "dragon_raw",
+      "original_path": "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_杰哥聊天7.srt",
+      "bundle_path": "knowledge/01-原始资料/2026-08-23_杰哥聊天7.srt",
+      "sha256": "44796553f16ede078921be5adea27c5d27f95da533585eade499acbed16ba385",
+      "source_sha256": "44796553f16ede078921be5adea27c5d27f95da533585eade499acbed16ba385",
+      "size": "31189"
+    },
+    {
+      "source_label": "dragon_raw",
+      "original_path": "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_杰哥聊天8.srt",
+      "bundle_path": "knowledge/01-原始资料/2026-08-23_杰哥聊天8.srt",
+      "sha256": "f88d95bd67a8474bc39f0402c3119252a425386cee9692e3595ccb18e3d009ff",
+      "source_sha256": "f88d95bd67a8474bc39f0402c3119252a425386cee9692e3595ccb18e3d009ff",
+      "size": "28414"
+    },
+    {
+      "source_label": "dragon_raw",
+      "original_path": "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_杰哥聊天9-1.srt",
+      "bundle_path": "knowledge/01-原始资料/2026-08-23_杰哥聊天9-1.srt",
+      "sha256": "7529709284ed450446eb49f1c9ff5453f4f225fdc156ec20c85bc5f29a1f1c3d",
+      "source_sha256": "7529709284ed450446eb49f1c9ff5453f4f225fdc156ec20c85bc5f29a1f1c3d",
+      "size": "29630"
+    },
+    {
+      "source_label": "dragon_raw",
+      "original_path": "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_杰哥聊天9-2.srt",
+      "bundle_path": "knowledge/01-原始资料/2026-08-23_杰哥聊天9-2.srt",
+      "sha256": "bcd10f1301ef8c7e348bf8a0a5e164166a2f4d5ab7a7f7dac9dac157739abac6",
+      "source_sha256": "bcd10f1301ef8c7e348bf8a0a5e164166a2f4d5ab7a7f7dac9dac157739abac6",
+      "size": "31770"
+    },
+    {
+      "source_label": "dragon_raw",
+      "original_path": "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_真实流话术总结.docx",
+      "bundle_path": "knowledge/01-原始资料/2026-08-23_真实流话术总结.docx",
+      "sha256": "2621288879900e114e31cb517dbd5a5861f4469d10ca2e020585103a1c249684",
+      "source_sha256": "2621288879900e114e31cb517dbd5a5861f4469d10ca2e020585103a1c249684",
+      "size": "24809"
+    },
+    {
+      "source_label": "dragon_raw",
+      "original_path": "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_真实流话术总结_文本提取.txt",
+      "bundle_path": "knowledge/01-原始资料/2026-08-23_真实流话术总结_文本提取.txt",
+      "sha256": "575ce8710cc5900af56a2e8c4268624f1963e10c3553b49abc2a2263e9f674a7",
+      "source_sha256": "575ce8710cc5900af56a2e8c4268624f1963e10c3553b49abc2a2263e9f674a7",
+      "size": "24278"
+    },
+    {
+      "source_label": "dragon_raw",
+      "original_path": "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_话术库.docx",
+      "bundle_path": "knowledge/01-原始资料/2026-08-23_话术库.docx",
+      "sha256": "a7e4196b39bb3140e220bea12703de26387fa303b5971aaf9c709b4391ca5eca",
+      "source_sha256": "a7e4196b39bb3140e220bea12703de26387fa303b5971aaf9c709b4391ca5eca",
+      "size": "24052"
+    },
+    {
+      "source_label": "dragon_raw",
+      "original_path": "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_话术库_文本提取.txt",
+      "bundle_path": "knowledge/01-原始资料/2026-08-23_话术库_文本提取.txt",
+      "sha256": "1bc1314f25f43ec58ba2e63f1c7b5eb39b82e72d023ab3761e6d13daf122b801",
+      "source_sha256": "1bc1314f25f43ec58ba2e63f1c7b5eb39b82e72d023ab3761e6d13daf122b801",
+      "size": "19565"
+    },
+    {
+      "source_label": "dragon_raw",
+      "original_path": "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_语料集合.docx",
+      "bundle_path": "knowledge/01-原始资料/2026-08-23_语料集合.docx",
+      "sha256": "48edddaff74c068255502dbf240bc45ef4c2b0023b2deecfdb1ea95f6acb25d2",
+      "source_sha256": "48edddaff74c068255502dbf240bc45ef4c2b0023b2deecfdb1ea95f6acb25d2",
+      "size": "27218"
+    },
+    {
+      "source_label": "dragon_raw",
+      "original_path": "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_语料集合_文本提取.txt",
+      "bundle_path": "knowledge/01-原始资料/2026-08-23_语料集合_文本提取.txt",
+      "sha256": "1911ad691fa70adffac2e81c0df81ff8afebbabeb7d18beb066a643eb35b9541",
+      "source_sha256": "1911ad691fa70adffac2e81c0df81ff8afebbabeb7d18beb066a643eb35b9541",
+      "size": "17006"
+    },
+    {
+      "source_label": "dragon_raw",
+      "original_path": "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-25_8.17.srt",
+      "bundle_path": "knowledge/01-原始资料/2026-08-25_8.17.srt",
+      "sha256": "7ab1d61e4dcbf81fa33cf345026acab57a7679a593d1f6584997a2bc6d318890",
+      "source_sha256": "7ab1d61e4dcbf81fa33cf345026acab57a7679a593d1f6584997a2bc6d318890",
+      "size": "241688"
+    },
+    {
+      "source_label": "dragon_raw",
+      "original_path": "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-25_AI找出劲爆片段提示词.txt",
+      "bundle_path": "knowledge/01-原始资料/2026-08-25_AI找出劲爆片段提示词.txt",
+      "sha256": "01e05a2b3e9d6a0d90661a1345493b2c553f1cba36bb522d6622663c5540075a",
+      "source_sha256": "01e05a2b3e9d6a0d90661a1345493b2c553f1cba36bb522d6622663c5540075a",
+      "size": "3642"
+    },
+    {
+      "source_label": "dragon_real_social_knowledge",
+      "original_path": "/Users/company/Documents/Dragon知识库/02-知识单元/K-20260821-001_男性情感聊天教学Skill架构与素材预处理.md",
+      "bundle_path": "knowledge/02-知识单元/K-20260821-001_男性情感聊天教学Skill架构与素材预处理.md",
+      "sha256": "d579094385c9abc1e00310226d7964bdd94149afba5e14d596e16ef626cf5bf6",
+      "source_sha256": "d579094385c9abc1e00310226d7964bdd94149afba5e14d596e16ef626cf5bf6",
+      "size": "19294"
+    },
+    {
+      "source_label": "dragon_real_social_knowledge",
+      "original_path": "/Users/company/Documents/Dragon知识库/02-知识单元/K-20260821-003_JacksonFlow前提阶段线上候选.md",
+      "bundle_path": "knowledge/02-知识单元/K-20260821-003_JacksonFlow前提阶段线上候选.md",
+      "sha256": "9a2e11a5faf90ff3443a60a552f672cf325d9e41a6821de6b692cd436b3c0d41",
+      "source_sha256": "9a2e11a5faf90ff3443a60a552f672cf325d9e41a6821de6b692cd436b3c0d41",
+      "size": "6593"
+    },
+    {
+      "source_label": "dragon_real_social_knowledge",
+      "original_path": "/Users/company/Documents/Dragon知识库/02-知识单元/K-20260821-004_JacksonFlow赋格线上信号候选.md",
+      "bundle_path": "knowledge/02-知识单元/K-20260821-004_JacksonFlow赋格线上信号候选.md",
+      "sha256": "74c3fad48244dfdcdd9323e51a87a0ff9abd1d9457b0ac9bac1dfa5227f4f334",
+      "source_sha256": "74c3fad48244dfdcdd9323e51a87a0ff9abd1d9457b0ac9bac1dfa5227f4f334",
+      "size": "6435"
+    },
+    {
+      "source_label": "dragon_real_social_knowledge",
+      "original_path": "/Users/company/Documents/Dragon知识库/02-知识单元/K-20260821-005_JacksonFlow无赋格时的线上观察方向候选.md",
+      "bundle_path": "knowledge/02-知识单元/K-20260821-005_JacksonFlow无赋格时的线上观察方向候选.md",
+      "sha256": "09dd789500d05a02946538871c933707cdbb78f1bc1b38eb6a31f995a01c7c39",
+      "source_sha256": "09dd789500d05a02946538871c933707cdbb78f1bc1b38eb6a31f995a01c7c39",
+      "size": "2918"
+    },
+    {
+      "source_label": "dragon_real_social_knowledge",
+      "original_path": "/Users/company/Documents/Dragon知识库/02-知识单元/K-20260821-009_JacksonFlow前提与铺垫邀约来源观点.md",
+      "bundle_path": "knowledge/02-知识单元/K-20260821-009_JacksonFlow前提与铺垫邀约来源观点.md",
+      "sha256": "6e805c31b7265ead10ca6ca4a88c98c9a7a5e53198cf2957ad8e3d802d8270b5",
+      "source_sha256": "6e805c31b7265ead10ca6ca4a88c98c9a7a5e53198cf2957ad8e3d802d8270b5",
+      "size": "3382"
+    },
+    {
+      "source_label": "dragon_real_social_knowledge",
+      "original_path": "/Users/company/Documents/Dragon知识库/02-知识单元/K-20260821-010_JacksonFlow赋格量化与转换来源观点.md",
+      "bundle_path": "knowledge/02-知识单元/K-20260821-010_JacksonFlow赋格量化与转换来源观点.md",
+      "sha256": "eef7a87b1702a00a2e95b117bee8b9b920ccda19f575331cfe7d3d6d6a767d82",
+      "source_sha256": "eef7a87b1702a00a2e95b117bee8b9b920ccda19f575331cfe7d3d6d6a767d82",
+      "size": "2533"
+    },
+    {
+      "source_label": "dragon_real_social_knowledge",
+      "original_path": "/Users/company/Documents/Dragon知识库/02-知识单元/K-20260821-012_JacksonFlow反对编造和夸大边界候选.md",
+      "bundle_path": "knowledge/02-知识单元/K-20260821-012_JacksonFlow反对编造和夸大边界候选.md",
+      "sha256": "643da47173339d53580e2bf2be01d1ff510a70514001d1c0e72b7218858442b0",
+      "source_sha256": "643da47173339d53580e2bf2be01d1ff510a70514001d1c0e72b7218858442b0",
+      "size": "4707"
+    },
+    {
+      "source_label": "dragon_real_social_knowledge",
+      "original_path": "/Users/company/Documents/Dragon知识库/02-知识单元/K-20260821-013_JacksonFlow赋格自我证明解释来源观点.md",
+      "bundle_path": "knowledge/02-知识单元/K-20260821-013_JacksonFlow赋格自我证明解释来源观点.md",
+      "sha256": "d3dda493dd54abfb6d5234c661af23ed6ad46848fae5ec81882a5346f8134efa",
+      "source_sha256": "d3dda493dd54abfb6d5234c661af23ed6ad46848fae5ec81882a5346f8134efa",
+      "size": "3420"
+    },
+    {
+      "source_label": "dragon_real_social_knowledge",
+      "original_path": "/Users/company/Documents/Dragon知识库/02-知识单元/K-20260821-014_真实社交一级专业术语目录候选.md",
+      "bundle_path": "knowledge/02-知识单元/K-20260821-014_真实社交一级专业术语目录候选.md",
+      "sha256": "b3ef9c6dd2710e514684578b7d36b6b91661515a2962d03872bf029cd759df24",
+      "source_sha256": "b3ef9c6dd2710e514684578b7d36b6b91661515a2962d03872bf029cd759df24",
+      "size": "3856"
+    },
+    {
+      "source_label": "dragon_real_social_knowledge",
+      "original_path": "/Users/company/Documents/Dragon知识库/02-知识单元/K-20260821-015_真实社交二级专业术语目录候选.md",
+      "bundle_path": "knowledge/02-知识单元/K-20260821-015_真实社交二级专业术语目录候选.md",
+      "sha256": "4cdc8d10155c62670aab55ffe659142fcafc999a92bfd3996d3644a3e26330d4",
+      "source_sha256": "4cdc8d10155c62670aab55ffe659142fcafc999a92bfd3996d3644a3e26330d4",
+      "size": "6364"
+    },
+    {
+      "source_label": "dragon_real_social_knowledge",
+      "original_path": "/Users/company/Documents/Dragon知识库/02-知识单元/K-20260821-016_zhenshi废物测试识别与AAA应对来源观点.md",
+      "bundle_path": "knowledge/02-知识单元/K-20260821-016_zhenshi废物测试识别与AAA应对来源观点.md",
+      "sha256": "bf099215a0d1a42c9c1199953f925718e9d97b3a1806351efa22d2dbce6b8d7b",
+      "source_sha256": "bf099215a0d1a42c9c1199953f925718e9d97b3a1806351efa22d2dbce6b8d7b",
+      "size": "3477"
+    },
+    {
+      "source_label": "dragon_real_social_knowledge",
+      "original_path": "/Users/company/Documents/Dragon知识库/02-知识单元/K-20260821-017_zhenshi假性评估类型时机与强度来源观点.md",
+      "bundle_path": "knowledge/02-知识单元/K-20260821-017_zhenshi假性评估类型时机与强度来源观点.md",
+      "sha256": "2c5c0cd720a8f4c0f7dc2826c536afbed3491c2d5f2ad0e7507fe4060e654a09",
+      "source_sha256": "2c5c0cd720a8f4c0f7dc2826c536afbed3491c2d5f2ad0e7507fe4060e654a09",
+      "size": "5188"
+    },
+    {
+      "source_label": "dragon_real_social_knowledge",
+      "original_path": "/Users/company/Documents/Dragon知识库/02-知识单元/K-20260821-018_zhenshi远程社交直觉可观察反馈信号候选.md",
+      "bundle_path": "knowledge/02-知识单元/K-20260821-018_zhenshi远程社交直觉可观察反馈信号候选.md",
+      "sha256": "6013c444836e9fa70f56a77b4bc29e51fa7a3e1fc9251cb62ea44e99f6c3f56e",
+      "source_sha256": "6013c444836e9fa70f56a77b4bc29e51fa7a3e1fc9251cb62ea44e99f6c3f56e",
+      "size": "9746"
+    },
+    {
+      "source_label": "dragon_real_social_knowledge",
+      "original_path": "/Users/company/Documents/Dragon知识库/02-知识单元/K-20260821-019_zhenshi线上聊天三段回合SOP来源观点.md",
+      "bundle_path": "knowledge/02-知识单元/K-20260821-019_zhenshi线上聊天三段回合SOP来源观点.md",
+      "sha256": "aefa6fa212b37a2dad995ec4eeeb932036254d7decf261b778503688f5774b88",
+      "source_sha256": "aefa6fa212b37a2dad995ec4eeeb932036254d7decf261b778503688f5774b88",
+      "size": "3033"
+    },
+    {
+      "source_label": "dragon_real_social_knowledge",
+      "original_path": "/Users/company/Documents/Dragon知识库/02-知识单元/K-20260821-020_zhenshi低回应时减少投入方向候选.md",
+      "bundle_path": "knowledge/02-知识单元/K-20260821-020_zhenshi低回应时减少投入方向候选.md",
+      "sha256": "857a2b1dac6fc3357b5160a3ec39e00e34ed1c79302040f13758c2cae560cc07",
+      "source_sha256": "857a2b1dac6fc3357b5160a3ec39e00e34ed1c79302040f13758c2cae560cc07",
+      "size": "8440"
+    },
+    {
+      "source_label": "dragon_real_social_knowledge",
+      "original_path": "/Users/company/Documents/Dragon知识库/02-知识单元/K-20260821-021_zhenshi明确拒绝与停止时不纠缠边界候选.md",
+      "bundle_path": "knowledge/02-知识单元/K-20260821-021_zhenshi明确拒绝与停止时不纠缠边界候选.md",
+      "sha256": "cc13de674a0249f9929eab3de06b89a7740d98b5a5355137272a5de1b696bc24",
+      "source_sha256": "cc13de674a0249f9929eab3de06b89a7740d98b5a5355137272a5de1b696bc24",
+      "size": "8839"
+    },
+    {
+      "source_label": "dragon_real_social_knowledge",
+      "original_path": "/Users/company/Documents/Dragon知识库/02-知识单元/K-20260821-022_zhenshi文字聊天转语音直接拨打来源观点.md",
+      "bundle_path": "knowledge/02-知识单元/K-20260821-022_zhenshi文字聊天转语音直接拨打来源观点.md",
+      "sha256": "2b4f14cbe47753cf4d9a10aa3861387eee9267c5548055ebb74c83f357b79887",
+      "source_sha256": "2b4f14cbe47753cf4d9a10aa3861387eee9267c5548055ebb74c83f357b79887",
+      "size": "3594"
+    },
+    {
+      "source_label": "dragon_real_social_knowledge",
+      "original_path": "/Users/company/Documents/Dragon知识库/02-知识单元/K-20260821-023_假性评估非真实评价与反编造边界冲突候选.md",
+      "bundle_path": "knowledge/02-知识单元/K-20260821-023_假性评估非真实评价与反编造边界冲突候选.md",
+      "sha256": "7ee14dad02be077c94fac8095d1a9878b0ccef04b8c831414f1dd65961507e3a",
+      "source_sha256": "7ee14dad02be077c94fac8095d1a9878b0ccef04b8c831414f1dd65961507e3a",
+      "size": "3649"
+    },
+    {
+      "source_label": "dragon_real_social_knowledge",
+      "original_path": "/Users/company/Documents/Dragon知识库/02-知识单元/K-20260821-024_zhenshi学术调情来源观点.md",
+      "bundle_path": "knowledge/02-知识单元/K-20260821-024_zhenshi学术调情来源观点.md",
+      "sha256": "d5d828246582d5050468b27ed992efad50d68a0c5379b11c4403ec06b8330902",
+      "source_sha256": "d5d828246582d5050468b27ed992efad50d68a0c5379b11c4403ec06b8330902",
+      "size": "4094"
+    },
+    {
+      "source_label": "dragon_real_social_knowledge",
+      "original_path": "/Users/company/Documents/Dragon知识库/02-知识单元/K-20260822-025_跨城邀约三周目合并经典案例候选.md",
+      "bundle_path": "knowledge/02-知识单元/K-20260822-025_跨城邀约三周目合并经典案例候选.md",
+      "sha256": "b9cc442c0cd449c7ddd1be50c444041d437047cfa9d20ff48aaa4b301e209575",
+      "source_sha256": "b9cc442c0cd449c7ddd1be50c444041d437047cfa9d20ff48aaa4b301e209575",
+      "size": "17604"
+    },
+    {
+      "source_label": "dragon_real_social_knowledge",
+      "original_path": "/Users/company/Documents/Dragon知识库/02-知识单元/K-20260822-026_经典案例适配到签约阶段链候选.md",
+      "bundle_path": "knowledge/02-知识单元/K-20260822-026_经典案例适配到签约阶段链候选.md",
+      "sha256": "56e5e2cbef6bf7d8cb787fe98d408e40f61627d7081f3abb0083626c6aabd7b7",
+      "source_sha256": "56e5e2cbef6bf7d8cb787fe98d408e40f61627d7081f3abb0083626c6aabd7b7",
+      "size": "7378"
+    },
+    {
+      "source_label": "dragon_real_social_knowledge",
+      "original_path": "/Users/company/Documents/Dragon知识库/02-知识单元/K-20260822-027_吸引联系与短长期动态调整规则候选.md",
+      "bundle_path": "knowledge/02-知识单元/K-20260822-027_吸引联系与短长期动态调整规则候选.md",
+      "sha256": "7198ce371b88ff04fbf116c4d81a4e0869dcbb5718bf01dea2612589f8d42c9d",
+      "source_sha256": "7198ce371b88ff04fbf116c4d81a4e0869dcbb5718bf01dea2612589f8d42c9d",
+      "size": "9353"
+    },
+    {
+      "source_label": "dragon_real_social_knowledge",
+      "original_path": "/Users/company/Documents/Dragon知识库/02-知识单元/K-20260822-028_亲密话题强度随反馈调节方向候选.md",
+      "bundle_path": "knowledge/02-知识单元/K-20260822-028_亲密话题强度随反馈调节方向候选.md",
+      "sha256": "ab8e586ecdbf7352d9bbb8efcb9b84b726924a773bf5a26d3fb3e67c038d2d40",
+      "source_sha256": "ab8e586ecdbf7352d9bbb8efcb9b84b726924a773bf5a26d3fb3e67c038d2d40",
+      "size": "5262"
+    },
+    {
+      "source_label": "dragon_real_social_knowledge",
+      "original_path": "/Users/company/Documents/Dragon知识库/02-知识单元/K-20260822-029_不想跟你讲话的边界解释冲突候选.md",
+      "bundle_path": "knowledge/02-知识单元/K-20260822-029_不想跟你讲话的边界解释冲突候选.md",
+      "sha256": "929a6257f9909759f6d6f0f99ef7f24efb910581506feaf13b0efce6e3a96f03",
+      "source_sha256": "929a6257f9909759f6d6f0f99ef7f24efb910581506feaf13b0efce6e3a96f03",
+      "size": "4120"
+    },
+    {
+      "source_label": "dragon_real_social_knowledge",
+      "original_path": "/Users/company/Documents/Dragon知识库/02-知识单元/K-20260822-030_杰哥聊天1上下合并经典案例候选.md",
+      "bundle_path": "knowledge/02-知识单元/K-20260822-030_杰哥聊天1上下合并经典案例候选.md",
+      "sha256": "26279e4e61c355ef0cb64b2c5aa6b97faadeebc844c48406cb9fcc50d97ec022",
+      "source_sha256": "26279e4e61c355ef0cb64b2c5aa6b97faadeebc844c48406cb9fcc50d97ec022",
+      "size": "18813"
+    },
+    {
+      "source_label": "dragon_real_social_knowledge",
+      "original_path": "/Users/company/Documents/Dragon知识库/02-知识单元/K-20260822-031_杰哥案例回撤重启邀约分链候选.md",
+      "bundle_path": "knowledge/02-知识单元/K-20260822-031_杰哥案例回撤重启邀约分链候选.md",
+      "sha256": "0be20adc52d073905b04678cb9ee2a2e9059aab20132caf8073c271b7c4ed370",
+      "source_sha256": "0be20adc52d073905b04678cb9ee2a2e9059aab20132caf8073c271b7c4ed370",
+      "size": "7047"
+    },
+    {
+      "source_label": "dragon_real_social_knowledge",
+      "original_path": "/Users/company/Documents/Dragon知识库/02-知识单元/K-20260822-032_邀约调度中的意图条件与双向共识方向候选.md",
+      "bundle_path": "knowledge/02-知识单元/K-20260822-032_邀约调度中的意图条件与双向共识方向候选.md",
+      "sha256": "6763da4c4407489c343840fd1381def919e555f5e8a4f6b49d5fa1f1fbffbdc3",
+      "source_sha256": "6763da4c4407489c343840fd1381def919e555f5e8a4f6b49d5fa1f1fbffbdc3",
+      "size": "9938"
+    },
+    {
+      "source_label": "dragon_real_social_knowledge",
+      "original_path": "/Users/company/Documents/Dragon知识库/02-知识单元/K-20260822-033_杰哥2长周期邀约调度经典案例候选.md",
+      "bundle_path": "knowledge/02-知识单元/K-20260822-033_杰哥2长周期邀约调度经典案例候选.md",
+      "sha256": "264ccc13042e16ef1ad8b3fd25877af975f77cfcaab31046933522da7cde3f6b",
+      "source_sha256": "264ccc13042e16ef1ad8b3fd25877af975f77cfcaab31046933522da7cde3f6b",
+      "size": "14475"
+    },
+    {
+      "source_label": "dragon_real_social_knowledge",
+      "original_path": "/Users/company/Documents/Dragon知识库/02-知识单元/K-20260822-034_杰哥3即时安全调度经典案例候选.md",
+      "bundle_path": "knowledge/02-知识单元/K-20260822-034_杰哥3即时安全调度经典案例候选.md",
+      "sha256": "ee0786161caac0b1d7276dd78a9b19e9095960679ba6acd38f26cbcb0cc3c8a8",
+      "source_sha256": "ee0786161caac0b1d7276dd78a9b19e9095960679ba6acd38f26cbcb0cc3c8a8",
+      "size": "13708"
+    },
+    {
+      "source_label": "dragon_real_social_knowledge",
+      "original_path": "/Users/company/Documents/Dragon知识库/02-知识单元/K-20260822-035_杰哥2长周期邀约等待重启分链候选.md",
+      "bundle_path": "knowledge/02-知识单元/K-20260822-035_杰哥2长周期邀约等待重启分链候选.md",
+      "sha256": "64ab73a62f8977a7fa47ef142eef1468bb49f76ed9ea8fc965c7ef689a75adc2",
+      "source_sha256": "64ab73a62f8977a7fa47ef142eef1468bb49f76ed9ea8fc965c7ef689a75adc2",
+      "size": "6288"
+    },
+    {
+      "source_label": "dragon_real_social_knowledge",
+      "original_path": "/Users/company/Documents/Dragon知识库/02-知识单元/K-20260822-036_杰哥3即时安全调度分链候选.md",
+      "bundle_path": "knowledge/02-知识单元/K-20260822-036_杰哥3即时安全调度分链候选.md",
+      "sha256": "b9372713148610355bfffe33e4e5818ed45bf0effc0302a989e9a8b7ecec5c45",
+      "source_sha256": "b9372713148610355bfffe33e4e5818ed45bf0effc0302a989e9a8b7ecec5c45",
+      "size": "6429"
+    },
+    {
+      "source_label": "dragon_real_social_knowledge",
+      "original_path": "/Users/company/Documents/Dragon知识库/02-知识单元/K-20260822-037_邀约反馈具体行程与变更说明信号候选.md",
+      "bundle_path": "knowledge/02-知识单元/K-20260822-037_邀约反馈具体行程与变更说明信号候选.md",
+      "sha256": "8f6d716e0c7fa5d97e54549ccc1fede5877fc96d09849622be8cee1e22068228",
+      "source_sha256": "8f6d716e0c7fa5d97e54549ccc1fede5877fc96d09849622be8cee1e22068228",
+      "size": "9253"
+    },
+    {
+      "source_label": "dragon_real_social_knowledge",
+      "original_path": "/Users/company/Documents/Dragon知识库/02-知识单元/K-20260822-038_杰哥4删除后修复与重启经典案例候选.md",
+      "bundle_path": "knowledge/02-知识单元/K-20260822-038_杰哥4删除后修复与重启经典案例候选.md",
+      "sha256": "3e83478b7e343d1faae6245714ef5a8714f1963abb5d64c081cbaeef7b4bde9b",
+      "source_sha256": "3e83478b7e343d1faae6245714ef5a8714f1963abb5d64c081cbaeef7b4bde9b",
+      "size": "15081"
+    },
+    {
+      "source_label": "dragon_real_social_knowledge",
+      "original_path": "/Users/company/Documents/Dragon知识库/02-知识单元/K-20260822-039_杰哥聊天5低吸引顾虑承接与邀约经典案例候选.md",
+      "bundle_path": "knowledge/02-知识单元/K-20260822-039_杰哥聊天5低吸引顾虑承接与邀约经典案例候选.md",
+      "sha256": "3f200d17358b36b26840920b966a3ba8f59880bd2a1bb80fd21360f955c78b5a",
+      "source_sha256": "3f200d17358b36b26840920b966a3ba8f59880bd2a1bb80fd21360f955c78b5a",
+      "size": "14515"
+    },
+    {
+      "source_label": "dragon_real_social_knowledge",
+      "original_path": "/Users/company/Documents/Dragon知识库/02-知识单元/K-20260822-040_杰哥4删除后修复重启分链候选.md",
+      "bundle_path": "knowledge/02-知识单元/K-20260822-040_杰哥4删除后修复重启分链候选.md",
+      "sha256": "a6aabe59bc93ffc533b7a0b7096affc754de9fd87b34d43874639785d34a051d",
+      "source_sha256": "a6aabe59bc93ffc533b7a0b7096affc754de9fd87b34d43874639785d34a051d",
+      "size": "5833"
+    },
+    {
+      "source_label": "dragon_real_social_knowledge",
+      "original_path": "/Users/company/Documents/Dragon知识库/02-知识单元/K-20260822-041_杰哥聊天5低吸引顾虑调度分链候选.md",
+      "bundle_path": "knowledge/02-知识单元/K-20260822-041_杰哥聊天5低吸引顾虑调度分链候选.md",
+      "sha256": "43be0bf2d2c1634dd644f4d192d24eea5396cee61294d7d777e0bccca18d4f54",
+      "source_sha256": "43be0bf2d2c1634dd644f4d192d24eea5396cee61294d7d777e0bccca18d4f54",
+      "size": "6994"
+    },
+    {
+      "source_label": "dragon_real_social_knowledge",
+      "original_path": "/Users/company/Documents/Dragon知识库/02-知识单元/K-20260823-042_杰哥聊天6低窗口铺垫邀约与谨慎调度经典案例候选.md",
+      "bundle_path": "knowledge/02-知识单元/K-20260823-042_杰哥聊天6低窗口铺垫邀约与谨慎调度经典案例候选.md",
+      "sha256": "05d6d81a1b31aa0c8f9f8d0988f5e61de79c9b5ea86cef880c1dc1d3e56b1997",
+      "source_sha256": "05d6d81a1b31aa0c8f9f8d0988f5e61de79c9b5ea86cef880c1dc1d3e56b1997",
+      "size": "10816"
+    },
+    {
+      "source_label": "dragon_real_social_knowledge",
+      "original_path": "/Users/company/Documents/Dragon知识库/02-知识单元/K-20260823-043_杰哥聊天7性话题试探与短期属性经典案例候选.md",
+      "bundle_path": "knowledge/02-知识单元/K-20260823-043_杰哥聊天7性话题试探与短期属性经典案例候选.md",
+      "sha256": "d1bef1e600d5975548c14c1ee0f942a25eec508a146df83caa90ecc5c1e09cd9",
+      "source_sha256": "d1bef1e600d5975548c14c1ee0f942a25eec508a146df83caa90ecc5c1e09cd9",
+      "size": "9600"
+    },
+    {
+      "source_label": "dragon_real_social_knowledge",
+      "original_path": "/Users/company/Documents/Dragon知识库/02-知识单元/K-20260823-044_杰哥聊天8平台迁移与主动邀约经典案例候选.md",
+      "bundle_path": "knowledge/02-知识单元/K-20260823-044_杰哥聊天8平台迁移与主动邀约经典案例候选.md",
+      "sha256": "786215d8470060f61ff16c16676cc01e28031f336983f3d3b65ffd45c6540586",
+      "source_sha256": "786215d8470060f61ff16c16676cc01e28031f336983f3d3b65ffd45c6540586",
+      "size": "9101"
+    },
+    {
+      "source_label": "dragon_real_social_knowledge",
+      "original_path": "/Users/company/Documents/Dragon知识库/02-知识单元/K-20260823-045_杰哥聊天6低回应再激活即时邀约分链候选.md",
+      "bundle_path": "knowledge/02-知识单元/K-20260823-045_杰哥聊天6低回应再激活即时邀约分链候选.md",
+      "sha256": "a00073874992130e83a5a1d559f42c9dbf2b92061829287d808f63fe4770247b",
+      "source_sha256": "a00073874992130e83a5a1d559f42c9dbf2b92061829287d808f63fe4770247b",
+      "size": "4651"
+    },
+    {
+      "source_label": "dragon_real_social_knowledge",
+      "original_path": "/Users/company/Documents/Dragon知识库/02-知识单元/K-20260823-046_杰哥聊天7亲密话题试探与调度分链候选.md",
+      "bundle_path": "knowledge/02-知识单元/K-20260823-046_杰哥聊天7亲密话题试探与调度分链候选.md",
+      "sha256": "b417f61ca75a58ce12463b8498dbe968ddc6478aa07173316ce3674ee84e5a38",
+      "source_sha256": "b417f61ca75a58ce12463b8498dbe968ddc6478aa07173316ce3674ee84e5a38",
+      "size": "4292"
+    },
+    {
+      "source_label": "dragon_real_social_knowledge",
+      "original_path": "/Users/company/Documents/Dragon知识库/02-知识单元/K-20260823-047_杰哥聊天8平台迁移与主动邀约分链候选.md",
+      "bundle_path": "knowledge/02-知识单元/K-20260823-047_杰哥聊天8平台迁移与主动邀约分链候选.md",
+      "sha256": "f8c56b8ccb3b285e1d8ad461d44e00ad545e4f8dcca1fb0a88d48e8021d59ea6",
+      "source_sha256": "f8c56b8ccb3b285e1d8ad461d44e00ad545e4f8dcca1fb0a88d48e8021d59ea6",
+      "size": "4272"
+    },
+    {
+      "source_label": "dragon_real_social_knowledge",
+      "original_path": "/Users/company/Documents/Dragon知识库/02-知识单元/K-20260823-048_杰哥聊天9上下合并低回应邀约与见面后再调度经典案例候选.md",
+      "bundle_path": "knowledge/02-知识单元/K-20260823-048_杰哥聊天9上下合并低回应邀约与见面后再调度经典案例候选.md",
+      "sha256": "7d0e4d99aa86afae160916a0a5a192467f098502ba58eabedb67a5a653a4adef",
+      "source_sha256": "7d0e4d99aa86afae160916a0a5a192467f098502ba58eabedb67a5a653a4adef",
+      "size": "21606"
+    },
+    {
+      "source_label": "dragon_real_social_knowledge",
+      "original_path": "/Users/company/Documents/Dragon知识库/02-知识单元/K-20260823-049_杰哥聊天9低回应再激活与首次邀约分链候选.md",
+      "bundle_path": "knowledge/02-知识单元/K-20260823-049_杰哥聊天9低回应再激活与首次邀约分链候选.md",
+      "sha256": "586f0a3c05098cefaea9d6ec35ca56e3e877606870a9184fdab4105f81422f1a",
+      "source_sha256": "586f0a3c05098cefaea9d6ec35ca56e3e877606870a9184fdab4105f81422f1a",
+      "size": "5981"
+    },
+    {
+      "source_label": "dragon_real_social_knowledge",
+      "original_path": "/Users/company/Documents/Dragon知识库/02-知识单元/K-20260823-050_杰哥聊天9见面后关系升级暂停与再调度分链候选.md",
+      "bundle_path": "knowledge/02-知识单元/K-20260823-050_杰哥聊天9见面后关系升级暂停与再调度分链候选.md",
+      "sha256": "8ca7f6584f48acc8ffcc03733c77719f7c45894b80a2cfff8e59b082044846b3",
+      "source_sha256": "8ca7f6584f48acc8ffcc03733c77719f7c45894b80a2cfff8e59b082044846b3",
+      "size": "7644"
+    },
+    {
+      "source_label": "dragon_real_social_knowledge",
+      "original_path": "/Users/company/Documents/Dragon知识库/02-知识单元/K-20260823-051_体系话术参考调用协议候选.md",
+      "bundle_path": "knowledge/02-知识单元/K-20260823-051_体系话术参考调用协议候选.md",
+      "sha256": "eaf44bf0541451313f40003bd8f205e9a59ae4c06cc3657f4e0416398c70f7c7",
+      "source_sha256": "eaf44bf0541451313f40003bd8f205e9a59ae4c06cc3657f4e0416398c70f7c7",
+      "size": "10714"
+    },
+    {
+      "source_label": "dragon_real_social_knowledge",
+      "original_path": "/Users/company/Documents/Dragon知识库/02-知识单元/K-20260823-052_体系话术阶段与方向检索映射候选.md",
+      "bundle_path": "knowledge/02-知识单元/K-20260823-052_体系话术阶段与方向检索映射候选.md",
+      "sha256": "d3a8dc751b7c969ad7100ade155b1ad48c8d94a36d2c4c4c59d120e2c3e5c29b",
+      "source_sha256": "d3a8dc751b7c969ad7100ade155b1ad48c8d94a36d2c4c4c59d120e2c3e5c29b",
+      "size": "9734"
+    },
+    {
+      "source_label": "dragon_real_social_knowledge",
+      "original_path": "/Users/company/Documents/Dragon知识库/02-知识单元/K-20260823-053_体系话术高风险隔离边界候选.md",
+      "bundle_path": "knowledge/02-知识单元/K-20260823-053_体系话术高风险隔离边界候选.md",
+      "sha256": "f8d97a09f12241ede09840368cceb78a32aa9dafec300d63de345504e1a32a59",
+      "source_sha256": "f8d97a09f12241ede09840368cceb78a32aa9dafec300d63de345504e1a32a59",
+      "size": "10011"
+    },
+    {
+      "source_label": "dragon_real_social_knowledge",
+      "original_path": "/Users/company/Documents/Dragon知识库/02-知识单元/K-20260826-001_真实社交线上流程推拉方向与回蓝闸门.md",
+      "bundle_path": "knowledge/02-知识单元/K-20260826-001_真实社交线上流程推拉方向与回蓝闸门.md",
+      "sha256": "a5304a39b7c378b70b8b4b18c97062ca36f75a1d353db1ff15cd925357077461",
+      "source_sha256": "a5304a39b7c378b70b8b4b18c97062ca36f75a1d353db1ff15cd925357077461",
+      "size": "34142"
+    },
+    {
+      "source_label": "dragon_index",
+      "original_path": "/Users/company/Documents/Dragon知识库/03-动态索引/主题索引.md",
+      "bundle_path": "knowledge/03-动态索引/主题索引.md",
+      "sha256": "16851b4cae9908045074c77835c542aefbbf57f414d282be855990efdbe93d1c",
+      "source_sha256": "16851b4cae9908045074c77835c542aefbbf57f414d282be855990efdbe93d1c",
+      "size": "14410"
+    },
+    {
+      "source_label": "dragon_system",
+      "original_path": "/Users/company/Documents/Dragon知识库/04-系统/2026-08-21_男性情感聊天第二批素材处理报告.md",
+      "bundle_path": "knowledge/04-系统/2026-08-21_男性情感聊天第二批素材处理报告.md",
+      "sha256": "2cba67ba9cfdc07873bc98873c60dabd362e431379cd13fd5a58965e04f7a9ad",
+      "source_sha256": "2cba67ba9cfdc07873bc98873c60dabd362e431379cd13fd5a58965e04f7a9ad",
+      "size": "6382"
+    },
+    {
+      "source_label": "dragon_system",
+      "original_path": "/Users/company/Documents/Dragon知识库/04-系统/2026-08-22_男性情感聊天杰哥2与杰哥3案例处理报告.md",
+      "bundle_path": "knowledge/04-系统/2026-08-22_男性情感聊天杰哥2与杰哥3案例处理报告.md",
+      "sha256": "f06579a241d9ee2fba148dce350d48d5f1b2f2baf5d57cc8f97a2ca2f200d0a7",
+      "source_sha256": "f06579a241d9ee2fba148dce350d48d5f1b2f2baf5d57cc8f97a2ca2f200d0a7",
+      "size": "9955"
+    },
+    {
+      "source_label": "dragon_system",
+      "original_path": "/Users/company/Documents/Dragon知识库/04-系统/2026-08-22_男性情感聊天杰哥4与杰哥聊天5案例处理报告.md",
+      "bundle_path": "knowledge/04-系统/2026-08-22_男性情感聊天杰哥4与杰哥聊天5案例处理报告.md",
+      "sha256": "55f30965ad938a2710c1f5beeaf61921963cd9487c20a14045a4e899cac2b6e8",
+      "source_sha256": "55f30965ad938a2710c1f5beeaf61921963cd9487c20a14045a4e899cac2b6e8",
+      "size": "10265"
+    },
+    {
+      "source_label": "dragon_system",
+      "original_path": "/Users/company/Documents/Dragon知识库/04-系统/2026-08-22_男性情感聊天杰哥案例处理报告.md",
+      "bundle_path": "knowledge/04-系统/2026-08-22_男性情感聊天杰哥案例处理报告.md",
+      "sha256": "f2ae65cbdbe2c3315d059b2e553cdd2eebdaf958b0156008e9f09afcd0d36dda",
+      "source_sha256": "f2ae65cbdbe2c3315d059b2e553cdd2eebdaf958b0156008e9f09afcd0d36dda",
+      "size": "8348"
+    },
+    {
+      "source_label": "dragon_system",
+      "original_path": "/Users/company/Documents/Dragon知识库/04-系统/2026-08-22_男性情感聊天经典案例三周目合并处理报告.md",
+      "bundle_path": "knowledge/04-系统/2026-08-22_男性情感聊天经典案例三周目合并处理报告.md",
+      "sha256": "a7a23cedfd26c52e139d27c533b4dca916a9ae2261b533b858c080a24aa5b5f5",
+      "source_sha256": "a7a23cedfd26c52e139d27c533b4dca916a9ae2261b533b858c080a24aa5b5f5",
+      "size": "8016"
+    },
+    {
+      "source_label": "dragon_system",
+      "original_path": "/Users/company/Documents/Dragon知识库/04-系统/2026-08-23_AppleNotesQuickNotes话术沉淀与去重处理报告.md",
+      "bundle_path": "knowledge/04-系统/2026-08-23_AppleNotesQuickNotes话术沉淀与去重处理报告.md",
+      "sha256": "127b0986aae0a7b77cb6187d04244f4709fcb48e4c21ff57e910c7ef20092015",
+      "source_sha256": "127b0986aae0a7b77cb6187d04244f4709fcb48e4c21ff57e910c7ef20092015",
+      "size": "8050"
+    },
+    {
+      "source_label": "dragon_system",
+      "original_path": "/Users/company/Documents/Dragon知识库/04-系统/2026-08-23_男性情感聊天体系话术去重与调用分层处理报告.md",
+      "bundle_path": "knowledge/04-系统/2026-08-23_男性情感聊天体系话术去重与调用分层处理报告.md",
+      "sha256": "3eccefd64a7b33cfd7a939957bd5eebc687d1a07babb567861479f724cda4435",
+      "source_sha256": "3eccefd64a7b33cfd7a939957bd5eebc687d1a07babb567861479f724cda4435",
+      "size": "8236"
+    },
+    {
+      "source_label": "dragon_system",
+      "original_path": "/Users/company/Documents/Dragon知识库/04-系统/2026-08-23_男性情感聊天杰哥聊天6至8案例处理报告.md",
+      "bundle_path": "knowledge/04-系统/2026-08-23_男性情感聊天杰哥聊天6至8案例处理报告.md",
+      "sha256": "9685afbfa1d8cba6aae7bba9463c0bab3ff4a3731ef7a8b55250680171640e43",
+      "source_sha256": "9685afbfa1d8cba6aae7bba9463c0bab3ff4a3731ef7a8b55250680171640e43",
+      "size": "12757"
+    },
+    {
+      "source_label": "dragon_system",
+      "original_path": "/Users/company/Documents/Dragon知识库/04-系统/2026-08-23_男性情感聊天杰哥聊天9上下合并案例处理报告.md",
+      "bundle_path": "knowledge/04-系统/2026-08-23_男性情感聊天杰哥聊天9上下合并案例处理报告.md",
+      "sha256": "bd355b6b539369253daec3a1a38afc0e1e8ab53417f7f7b7a0f73a6da5ecadda",
+      "source_sha256": "bd355b6b539369253daec3a1a38afc0e1e8ab53417f7f7b7a0f73a6da5ecadda",
+      "size": "10310"
+    },
+    {
+      "source_label": "dragon_system",
+      "original_path": "/Users/company/Documents/Dragon知识库/04-系统/2026-08-23_男性情感聊天项目续接摘要.md",
+      "bundle_path": "knowledge/04-系统/2026-08-23_男性情感聊天项目续接摘要.md",
+      "sha256": "03e2ffc8f0756dfa2357c41883a1f0553feb9862ba4f06eb91e13627dc47a4b0",
+      "source_sha256": "03e2ffc8f0756dfa2357c41883a1f0553feb9862ba4f06eb91e13627dc47a4b0",
+      "size": "23973"
+    },
+    {
+      "source_label": "dragon_system",
+      "original_path": "/Users/company/Documents/Dragon知识库/04-系统/2026-08-23_知识单元元数据兼容处理报告.md",
+      "bundle_path": "knowledge/04-系统/2026-08-23_知识单元元数据兼容处理报告.md",
+      "sha256": "e3beee6a810b60be1e9f3c63966da874d642dba4564e836decc1903f14ee2a96",
+      "source_sha256": "e3beee6a810b60be1e9f3c63966da874d642dba4564e836decc1903f14ee2a96",
+      "size": "3064"
+    },
+    {
+      "source_label": "dragon_system",
+      "original_path": "/Users/company/Documents/Dragon知识库/04-系统/入库与查重规则.md",
+      "bundle_path": "knowledge/04-系统/入库与查重规则.md",
+      "sha256": "3eb82ce0551826719a628fef1aa478b99d67dd9b7ed8f2b50074f99f48773c76",
+      "source_sha256": "3eb82ce0551826719a628fef1aa478b99d67dd9b7ed8f2b50074f99f48773c76",
+      "size": "3949"
+    },
+    {
+      "source_label": "dragon_system",
+      "original_path": "/Users/company/Documents/Dragon知识库/04-系统/入库日志.md",
+      "bundle_path": "knowledge/04-系统/入库日志.md",
+      "sha256": "6edde306d1a740f089326a7cc5218da8f5bd32d861360af1294991b64a8dd749",
+      "source_sha256": "6edde306d1a740f089326a7cc5218da8f5bd32d861360af1294991b64a8dd749",
+      "size": "27198"
+    },
+    {
+      "source_label": "dragon_system",
+      "original_path": "/Users/company/Documents/Dragon知识库/04-系统/合并日志.md",
+      "bundle_path": "knowledge/04-系统/合并日志.md",
+      "sha256": "472ab4be364a758a0af3d1d1bfa4fa6c5ddac563d8cf0fd55ca02662ae55b0e1",
+      "source_sha256": "472ab4be364a758a0af3d1d1bfa4fa6c5ddac563d8cf0fd55ca02662ae55b0e1",
+      "size": "11280"
+    },
+    {
+      "source_label": "dragon_system",
+      "original_path": "/Users/company/Documents/Dragon知识库/04-系统/检索与调用规则.md",
+      "bundle_path": "knowledge/04-系统/检索与调用规则.md",
+      "sha256": "bd1195f141aff4dcdfe3e75f7a3d9456e8d9807c82a2a33635bb75cc5fd58177",
+      "source_sha256": "bd1195f141aff4dcdfe3e75f7a3d9456e8d9807c82a2a33635bb75cc5fd58177",
+      "size": "6418"
+    },
+    {
+      "source_label": "dragon_system",
+      "original_path": "/Users/company/Documents/Dragon知识库/04-系统/男性情感聊天讲解型经典案例处理规则.md",
+      "bundle_path": "knowledge/04-系统/男性情感聊天讲解型经典案例处理规则.md",
+      "sha256": "21e58c6cc6d22ce4dc5a71bb33a675b59375e7b27a752974d86bf6e91ced9c0c",
+      "source_sha256": "21e58c6cc6d22ce4dc5a71bb33a675b59375e7b27a752974d86bf6e91ced9c0c",
+      "size": "4555"
+    },
+    {
+      "source_label": "dragon_system",
+      "original_path": "/Users/company/Documents/Dragon知识库/04-系统/真实社交运行时路由设计.md",
+      "bundle_path": "knowledge/04-系统/真实社交运行时路由设计.md",
+      "sha256": "5ef34e2774a9e343cbe050d3e9b5e0099e418bd132be8a67625b68cbe04efd40",
+      "source_sha256": "5ef34e2774a9e343cbe050d3e9b5e0099e418bd132be8a67625b68cbe04efd40",
+      "size": "14005"
+    },
+    {
+      "source_label": "dragon_system",
+      "original_path": "/Users/company/Documents/Dragon知识库/04-系统/真实社交运行时路由配置.json",
+      "bundle_path": "knowledge/04-系统/真实社交运行时路由配置.json",
+      "sha256": "cfd2d335586b9672012bb7039409b99d8daaf162c7ec83613005ea2f38d07a1a",
+      "source_sha256": "cfd2d335586b9672012bb7039409b99d8daaf162c7ec83613005ea2f38d07a1a",
+      "size": "25713"
+    },
+    {
+      "source_label": "dragon_system",
+      "original_path": "/Users/company/Documents/Dragon知识库/04-系统/知识单元元数据兼容清单.json",
+      "bundle_path": "knowledge/04-系统/知识单元元数据兼容清单.json",
+      "sha256": "17853ae61a646b0e6b377fccbc43543dd3555612093a1f06b607662a46c556ca",
+      "source_sha256": "17853ae61a646b0e6b377fccbc43543dd3555612093a1f06b607662a46c556ca",
+      "size": "1784"
+    },
+    {
+      "source_label": "dragon_system",
+      "original_path": "/Users/company/Documents/Dragon知识库/04-系统/知识单元元数据兼容规则.md",
+      "bundle_path": "knowledge/04-系统/知识单元元数据兼容规则.md",
+      "sha256": "6bdcf8f853bebbb1a318e352cf96ac84f68447350cb7e9cb2f16c80f8ce4bccd",
+      "source_sha256": "6bdcf8f853bebbb1a318e352cf96ac84f68447350cb7e9cb2f16c80f8ce4bccd",
+      "size": "2577"
+    },
+    {
+      "source_label": "dragon_system",
+      "original_path": "/Users/company/Documents/Dragon知识库/04-系统/系统状态.md",
+      "bundle_path": "knowledge/04-系统/系统状态.md",
+      "sha256": "98ddc27836d720c3e3ac2d96fa4a6d216c4447f8aa48a0857a7c1fdefe0e667e",
+      "source_sha256": "98ddc27836d720c3e3ac2d96fa4a6d216c4447f8aa48a0857a7c1fdefe0e667e",
+      "size": "8182"
+    },
+    {
+      "source_label": "dragon_real_social_archive",
+      "original_path": "/Users/company/Documents/Dragon知识库/.trash/2026-08-21_K-20260821-002_JacksonFlow游戏地图三阶段九步骤候选.md",
+      "bundle_path": "knowledge/archive/2026-08-21_K-20260821-002_JacksonFlow游戏地图三阶段九步骤候选.md",
+      "sha256": "002ba2900dc5ea1a5f53681cb7393e93d0dabf2afafa0aa81924017a594c2c9b",
+      "source_sha256": "002ba2900dc5ea1a5f53681cb7393e93d0dabf2afafa0aa81924017a594c2c9b",
+      "size": "2910"
+    },
+    {
+      "source_label": "dragon_real_social_archive",
+      "original_path": "/Users/company/Documents/Dragon知识库/.trash/2026-08-21_K-20260821-006_JacksonFlow自我叙事阶段线上候选.md",
+      "bundle_path": "knowledge/archive/2026-08-21_K-20260821-006_JacksonFlow自我叙事阶段线上候选.md",
+      "sha256": "8eb051229ddc27e0e4fe981111758ade3b1c695aa2f3c48ab8bb6fc40bcffeed",
+      "source_sha256": "8eb051229ddc27e0e4fe981111758ade3b1c695aa2f3c48ab8bb6fc40bcffeed",
+      "size": "3081"
+    },
+    {
+      "source_label": "dragon_real_social_archive",
+      "original_path": "/Users/company/Documents/Dragon知识库/.trash/2026-08-21_K-20260821-007_JacksonFlow自我叙事成功信号候选.md",
+      "bundle_path": "knowledge/archive/2026-08-21_K-20260821-007_JacksonFlow自我叙事成功信号候选.md",
+      "sha256": "973c956f16498c8734169083ce60cbda96da56a760fdb36f47ab1c21b02a66a2",
+      "source_sha256": "973c956f16498c8734169083ce60cbda96da56a760fdb36f47ab1c21b02a66a2",
+      "size": "2603"
+    },
+    {
+      "source_label": "dragon_real_social_archive",
+      "original_path": "/Users/company/Documents/Dragon知识库/.trash/2026-08-21_K-20260821-008_JacksonFlow阶段收尾结构候选.md",
+      "bundle_path": "knowledge/archive/2026-08-21_K-20260821-008_JacksonFlow阶段收尾结构候选.md",
+      "sha256": "36bf1789cbfdd4b43e2a1689dad8d577fcb5c6933098cd5670668ef492fa5858",
+      "source_sha256": "36bf1789cbfdd4b43e2a1689dad8d577fcb5c6933098cd5670668ef492fa5858",
+      "size": "2560"
+    },
+    {
+      "source_label": "dragon_real_social_archive",
+      "original_path": "/Users/company/Documents/Dragon知识库/.trash/2026-08-21_K-20260821-011_JacksonFlow自我叙事因果来源观点.md",
+      "bundle_path": "knowledge/archive/2026-08-21_K-20260821-011_JacksonFlow自我叙事因果来源观点.md",
+      "sha256": "7b8387141eecf57dada5bb47a031facc3ceaf1e84d53ae518b7c5d377a893b8b",
+      "source_sha256": "7b8387141eecf57dada5bb47a031facc3ceaf1e84d53ae518b7c5d377a893b8b",
+      "size": "2449"
+    },
+    {
+      "source_label": "dragon_real_social_archive",
+      "original_path": "/Users/company/Documents/Dragon知识库/.trash/README.md",
+      "bundle_path": "knowledge/archive/README.md",
+      "sha256": "2ed60531b1bcca549832574cee97707712b98e7d604a2168423f6e97c6063ddf",
+      "source_sha256": "2ed60531b1bcca549832574cee97707712b98e7d604a2168423f6e97c6063ddf",
+      "size": "255"
+    },
+    {
+      "source_label": "external:Jackson flow体系/老版体系无广告/体系txt/第三节.txt",
+      "original_path": "/Volumes/PS3001/Jackson案例素材Skill/Jackson flow体系/老版体系无广告/体系txt/第三节.txt",
+      "bundle_path": "knowledge/external-sources/Jackson flow体系/老版体系无广告/体系txt/第三节.txt",
+      "sha256": "8828a6f183d7d0ee2d92bd5033deb6470ba1cf6ebbde631715ea340a1e7c47cc",
+      "source_sha256": "8828a6f183d7d0ee2d92bd5033deb6470ba1cf6ebbde631715ea340a1e7c47cc",
+      "size": "25528"
+    },
+    {
+      "source_label": "external:Jackson flow体系/老版体系无广告/体系txt/第四节.srt",
+      "original_path": "/Volumes/PS3001/Jackson案例素材Skill/Jackson flow体系/老版体系无广告/体系txt/第四节.srt",
+      "bundle_path": "knowledge/external-sources/Jackson flow体系/老版体系无广告/体系txt/第四节.srt",
+      "sha256": "f89c24ba536d7d8eb5d6bcedbc1ec1414cda7dc72be1d7b7a5a1dfd682cbfb6b",
+      "source_sha256": "f89c24ba536d7d8eb5d6bcedbc1ec1414cda7dc72be1d7b7a5a1dfd682cbfb6b",
+      "size": "31505"
+    },
+    {
+      "source_label": "external:Jackson flow体系/老版体系无广告/体系txt/第五节｜假性评估.txt",
+      "original_path": "/Volumes/PS3001/Jackson案例素材Skill/Jackson flow体系/老版体系无广告/体系txt/第五节｜假性评估.txt",
+      "bundle_path": "knowledge/external-sources/Jackson flow体系/老版体系无广告/体系txt/第五节｜假性评估.txt",
+      "sha256": "ea447d0978918e44dd6652d6656c8325a533d990cf8bdd95ab48034a9389bbba",
+      "source_sha256": "ea447d0978918e44dd6652d6656c8325a533d990cf8bdd95ab48034a9389bbba",
+      "size": "22982"
+    },
+    {
+      "source_label": "external:zhenshi-理论.docx",
+      "original_path": "/Volumes/PS3001/Jackson案例素材Skill/zhenshi-理论.docx",
+      "bundle_path": "knowledge/external-sources/zhenshi-理论.docx",
+      "sha256": "dfbab9dac220ed9e4261a5b44a158ce1b0123b8fbcd8a4f3a200d29a94d1c51c",
+      "source_sha256": "dfbab9dac220ed9e4261a5b44a158ce1b0123b8fbcd8a4f3a200d29a94d1c51c",
+      "size": "72260"
+    },
+    {
+      "source_label": "external:杰哥聊天/杰哥2.srt",
+      "original_path": "/Volumes/PS3001/Jackson案例素材Skill/杰哥聊天/杰哥2.srt",
+      "bundle_path": "knowledge/external-sources/杰哥聊天/杰哥2.srt",
+      "sha256": "7fa62cf85a1a7f0fe002abc7bf9f57b7046b1f066bdef0319c929ad3cb0ce03d",
+      "source_sha256": "7fa62cf85a1a7f0fe002abc7bf9f57b7046b1f066bdef0319c929ad3cb0ce03d",
+      "size": "25288"
+    },
+    {
+      "source_label": "external:杰哥聊天/杰哥3.srt",
+      "original_path": "/Volumes/PS3001/Jackson案例素材Skill/杰哥聊天/杰哥3.srt",
+      "bundle_path": "knowledge/external-sources/杰哥聊天/杰哥3.srt",
+      "sha256": "3f9f69745328611b7905b1d605bc778cf09d59a02e5768b8700091bcbde28acd",
+      "source_sha256": "3f9f69745328611b7905b1d605bc778cf09d59a02e5768b8700091bcbde28acd",
+      "size": "21342"
+    },
+    {
+      "source_label": "external:杰哥聊天/杰哥4.srt",
+      "original_path": "/Volumes/PS3001/Jackson案例素材Skill/杰哥聊天/杰哥4.srt",
+      "bundle_path": "knowledge/external-sources/杰哥聊天/杰哥4.srt",
+      "sha256": "3cbfbcfcd0ffd56aed551fb70f7c84e0795e088ac01849b95e1c834bd2d78fa1",
+      "source_sha256": "3cbfbcfcd0ffd56aed551fb70f7c84e0795e088ac01849b95e1c834bd2d78fa1",
+      "size": "43426"
+    },
+    {
+      "source_label": "external:杰哥聊天/杰哥聊天1上.srt",
+      "original_path": "/Volumes/PS3001/Jackson案例素材Skill/杰哥聊天/杰哥聊天1上.srt",
+      "bundle_path": "knowledge/external-sources/杰哥聊天/杰哥聊天1上.srt",
+      "sha256": "cb5dc2e6885fb3047847d774372a64343177f726f94a8d43b1433367bc893019",
+      "source_sha256": "cb5dc2e6885fb3047847d774372a64343177f726f94a8d43b1433367bc893019",
+      "size": "28247"
+    },
+    {
+      "source_label": "external:杰哥聊天/杰哥聊天1下.srt",
+      "original_path": "/Volumes/PS3001/Jackson案例素材Skill/杰哥聊天/杰哥聊天1下.srt",
+      "bundle_path": "knowledge/external-sources/杰哥聊天/杰哥聊天1下.srt",
+      "sha256": "b1880a23ca5fe78dbb3b5fbf642e5c67d1cdc639611d06eacbddfc1aeb63b08f",
+      "source_sha256": "b1880a23ca5fe78dbb3b5fbf642e5c67d1cdc639611d06eacbddfc1aeb63b08f",
+      "size": "25648"
+    },
+    {
+      "source_label": "external:杰哥聊天/杰哥聊天5.srt",
+      "original_path": "/Volumes/PS3001/Jackson案例素材Skill/杰哥聊天/杰哥聊天5.srt",
+      "bundle_path": "knowledge/external-sources/杰哥聊天/杰哥聊天5.srt",
+      "sha256": "783806459d2632c71aaaefcce55e1edf998ba92ed749316e0fbe8dd62de80ed2",
+      "source_sha256": "783806459d2632c71aaaefcce55e1edf998ba92ed749316e0fbe8dd62de80ed2",
+      "size": "35091"
+    },
+    {
+      "source_label": "external:杰哥聊天/杰哥聊天6.srt",
+      "original_path": "/Volumes/PS3001/Jackson案例素材Skill/杰哥聊天/杰哥聊天6.srt",
+      "bundle_path": "knowledge/external-sources/杰哥聊天/杰哥聊天6.srt",
+      "sha256": "a654494932f16649c89ac4395188d755fb545e9ffa1f7a3170e00915ee79708a",
+      "source_sha256": "a654494932f16649c89ac4395188d755fb545e9ffa1f7a3170e00915ee79708a",
+      "size": "41667"
+    },
+    {
+      "source_label": "external:杰哥聊天/杰哥聊天7.srt",
+      "original_path": "/Volumes/PS3001/Jackson案例素材Skill/杰哥聊天/杰哥聊天7.srt",
+      "bundle_path": "knowledge/external-sources/杰哥聊天/杰哥聊天7.srt",
+      "sha256": "44796553f16ede078921be5adea27c5d27f95da533585eade499acbed16ba385",
+      "source_sha256": "44796553f16ede078921be5adea27c5d27f95da533585eade499acbed16ba385",
+      "size": "31189"
+    },
+    {
+      "source_label": "external:杰哥聊天/杰哥聊天8.srt",
+      "original_path": "/Volumes/PS3001/Jackson案例素材Skill/杰哥聊天/杰哥聊天8.srt",
+      "bundle_path": "knowledge/external-sources/杰哥聊天/杰哥聊天8.srt",
+      "sha256": "f88d95bd67a8474bc39f0402c3119252a425386cee9692e3595ccb18e3d009ff",
+      "source_sha256": "f88d95bd67a8474bc39f0402c3119252a425386cee9692e3595ccb18e3d009ff",
+      "size": "28414"
+    },
+    {
+      "source_label": "external:杰哥聊天/杰哥聊天9-1.srt",
+      "original_path": "/Volumes/PS3001/Jackson案例素材Skill/杰哥聊天/杰哥聊天9-1.srt",
+      "bundle_path": "knowledge/external-sources/杰哥聊天/杰哥聊天9-1.srt",
+      "sha256": "7529709284ed450446eb49f1c9ff5453f4f225fdc156ec20c85bc5f29a1f1c3d",
+      "source_sha256": "7529709284ed450446eb49f1c9ff5453f4f225fdc156ec20c85bc5f29a1f1c3d",
+      "size": "29630"
+    },
+    {
+      "source_label": "external:杰哥聊天/杰哥聊天9-2.srt",
+      "original_path": "/Volumes/PS3001/Jackson案例素材Skill/杰哥聊天/杰哥聊天9-2.srt",
+      "bundle_path": "knowledge/external-sources/杰哥聊天/杰哥聊天9-2.srt",
+      "sha256": "bcd10f1301ef8c7e348bf8a0a5e164166a2f4d5ab7a7f7dac9dac157739abac6",
+      "source_sha256": "bcd10f1301ef8c7e348bf8a0a5e164166a2f4d5ab7a7f7dac9dac157739abac6",
+      "size": "31770"
+    },
+    {
+      "source_label": "external:apple_notes_quick_notes_2026_08",
+      "original_path": "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/001_jackson_top_phrases_seriousness_and_invitation_obstacles.md",
+      "bundle_path": "knowledge/external-sources/apple_notes_quick_notes_2026_08/001_jackson_top_phrases_seriousness_and_invitation_obstacles.md",
+      "sha256": "7afd30d010ea9e0b58eda3056aaf83a734c2d966476088054f04884ca4d1b94e",
+      "source_sha256": "7afd30d010ea9e0b58eda3056aaf83a734c2d966476088054f04884ca4d1b94e",
+      "size": "2065"
+    },
+    {
+      "source_label": "external:apple_notes_quick_notes_2026_08",
+      "original_path": "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/002_emotional_tension.md",
+      "bundle_path": "knowledge/external-sources/apple_notes_quick_notes_2026_08/002_emotional_tension.md",
+      "sha256": "8c6a68af29e6f5efe8b4e32db4541b2be880dea623c8fc3f521d19096df007e9",
+      "source_sha256": "8c6a68af29e6f5efe8b4e32db4541b2be880dea623c8fc3f521d19096df007e9",
+      "size": "506"
+    },
+    {
+      "source_label": "external:apple_notes_quick_notes_2026_08",
+      "original_path": "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/003_within_five_days.md",
+      "bundle_path": "knowledge/external-sources/apple_notes_quick_notes_2026_08/003_within_five_days.md",
+      "sha256": "35f18facf474045dbffa68278e1991bd825873b527de3feaf71d99665b8d7a8b",
+      "source_sha256": "35f18facf474045dbffa68278e1991bd825873b527de3feaf71d99665b8d7a8b",
+      "size": "266"
+    },
+    {
+      "source_label": "external:apple_notes_quick_notes_2026_08",
+      "original_path": "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/004_displaying_aggression.md",
+      "bundle_path": "knowledge/external-sources/apple_notes_quick_notes_2026_08/004_displaying_aggression.md",
+      "sha256": "da9a990e7503bf29c4b7c40d1b141cb27ebeb66596cbdc5f13e985158af390ad",
+      "source_sha256": "da9a990e7503bf29c4b7c40d1b141cb27ebeb66596cbdc5f13e985158af390ad",
+      "size": "350"
+    },
+    {
+      "source_label": "external:apple_notes_quick_notes_2026_08",
+      "original_path": "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/005_sticker_and_non_seriousness_obstacles.md",
+      "bundle_path": "knowledge/external-sources/apple_notes_quick_notes_2026_08/005_sticker_and_non_seriousness_obstacles.md",
+      "sha256": "caf0c7edd590a071ad2f8abbe14261800306f9f7f14a00a16fe9393053fc376e",
+      "source_sha256": "caf0c7edd590a071ad2f8abbe14261800306f9f7f14a00a16fe9393053fc376e",
+      "size": "847"
+    },
+    {
+      "source_label": "external:apple_notes_quick_notes_2026_08",
+      "original_path": "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/006_closing_or_returning_home_obstacles.md",
+      "bundle_path": "knowledge/external-sources/apple_notes_quick_notes_2026_08/006_closing_or_returning_home_obstacles.md",
+      "sha256": "a2dfc9b907ba3dfe4bf19b05f8fe57f513cab8222b23292453a9d5b83ef80eed",
+      "source_sha256": "a2dfc9b907ba3dfe4bf19b05f8fe57f513cab8222b23292453a9d5b83ef80eed",
+      "size": "317"
+    },
+    {
+      "source_label": "external:apple_notes_quick_notes_2026_08",
+      "original_path": "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/007_leading_the_interaction.md",
+      "bundle_path": "knowledge/external-sources/apple_notes_quick_notes_2026_08/007_leading_the_interaction.md",
+      "sha256": "880cf381a6a5f5b496b2aad152f4cdbc9271a5f773992d0918df5df1b0149d16",
+      "source_sha256": "880cf381a6a5f5b496b2aad152f4cdbc9271a5f773992d0918df5df1b0149d16",
+      "size": "365"
+    },
+    {
+      "source_label": "external:apple_notes_quick_notes_2026_08",
+      "original_path": "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/008_escalation_by_pulling_back.md",
+      "bundle_path": "knowledge/external-sources/apple_notes_quick_notes_2026_08/008_escalation_by_pulling_back.md",
+      "sha256": "f107869e5958e199a8531f583b314fa684cbac896f4e55aee4c0a623ccc41487",
+      "source_sha256": "f107869e5958e199a8531f583b314fa684cbac896f4e55aee4c0a623ccc41487",
+      "size": "231"
+    },
+    {
+      "source_label": "external:apple_notes_quick_notes_2026_08",
+      "original_path": "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/009_asking_for_commitment.md",
+      "bundle_path": "knowledge/external-sources/apple_notes_quick_notes_2026_08/009_asking_for_commitment.md",
+      "sha256": "ae7df3ff58feb22713291ba74200beb2f35d0c3557b9ea5b5e0eb2b352c30ced",
+      "source_sha256": "ae7df3ff58feb22713291ba74200beb2f35d0c3557b9ea5b5e0eb2b352c30ced",
+      "size": "272"
+    },
+    {
+      "source_label": "external:apple_notes_quick_notes_2026_08",
+      "original_path": "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/010_teaching_frame.md",
+      "bundle_path": "knowledge/external-sources/apple_notes_quick_notes_2026_08/010_teaching_frame.md",
+      "sha256": "9a47f54bb99b7f141d9c09b0bae514fa646c4cfb110c1b5486e2b7f419d8412f",
+      "source_sha256": "9a47f54bb99b7f141d9c09b0bae514fa646c4cfb110c1b5486e2b7f419d8412f",
+      "size": "175"
+    },
+    {
+      "source_label": "external:apple_notes_quick_notes_2026_08",
+      "original_path": "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/011_playful_evaluation_opening.md",
+      "bundle_path": "knowledge/external-sources/apple_notes_quick_notes_2026_08/011_playful_evaluation_opening.md",
+      "sha256": "48f34d6433fc3eede30d4d636229a43fa95d3f023fd4f4437063d98fa6a01889",
+      "source_sha256": "48f34d6433fc3eede30d4d636229a43fa95d3f023fd4f4437063d98fa6a01889",
+      "size": "250"
+    },
+    {
+      "source_label": "external:apple_notes_quick_notes_2026_08",
+      "original_path": "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/012_values_and_stance.md",
+      "bundle_path": "knowledge/external-sources/apple_notes_quick_notes_2026_08/012_values_and_stance.md",
+      "sha256": "cef9de2a4d1077082dcd5c3dc274e6a7579b070976120de010bf6382ff42cbe1",
+      "source_sha256": "cef9de2a4d1077082dcd5c3dc274e6a7579b070976120de010bf6382ff42cbe1",
+      "size": "1122"
+    },
+    {
+      "source_label": "external:apple_notes_quick_notes_2026_08",
+      "original_path": "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/013_empathic_opening.md",
+      "bundle_path": "knowledge/external-sources/apple_notes_quick_notes_2026_08/013_empathic_opening.md",
+      "sha256": "658fe104e1dab3c4e1ced4446f02a4fce9e2b8de3870cae4f3f42c5b1395b7d2",
+      "source_sha256": "658fe104e1dab3c4e1ced4446f02a4fce9e2b8de3870cae4f3f42c5b1395b7d2",
+      "size": "763"
+    },
+    {
+      "source_label": "external:apple_notes_quick_notes_2026_08",
+      "original_path": "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/014_jackson_key_tactics.md",
+      "bundle_path": "knowledge/external-sources/apple_notes_quick_notes_2026_08/014_jackson_key_tactics.md",
+      "sha256": "9205cc7ef52c251424c55b1913f28e7cdb2710d2b1280b64ad815d45f4828d4b",
+      "source_sha256": "9205cc7ef52c251424c55b1913f28e7cdb2710d2b1280b64ad815d45f4828d4b",
+      "size": "317"
+    },
+    {
+      "source_label": "external:apple_notes_quick_notes_2026_08",
+      "original_path": "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/015_experience_based_routines.md",
+      "bundle_path": "knowledge/external-sources/apple_notes_quick_notes_2026_08/015_experience_based_routines.md",
+      "sha256": "8d36c6435fa911e13e113384f911e9c16513a86a147bdeeb998fb69d30dabcf3",
+      "source_sha256": "8d36c6435fa911e13e113384f911e9c16513a86a147bdeeb998fb69d30dabcf3",
+      "size": "867"
+    },
+    {
+      "source_label": "external:apple_notes_quick_notes_2026_08",
+      "original_path": "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/016_clear_intent_and_premise.md",
+      "bundle_path": "knowledge/external-sources/apple_notes_quick_notes_2026_08/016_clear_intent_and_premise.md",
+      "sha256": "90d5ef5e131f67a0489812a441168ef0648e63d9f474ec3aa3fc091a3b835c5a",
+      "source_sha256": "90d5ef5e131f67a0489812a441168ef0648e63d9f474ec3aa3fc091a3b835c5a",
+      "size": "409"
+    },
+    {
+      "source_label": "external:apple_notes_quick_notes_2026_08",
+      "original_path": "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/017_tension_and_visual_imagery.md",
+      "bundle_path": "knowledge/external-sources/apple_notes_quick_notes_2026_08/017_tension_and_visual_imagery.md",
+      "sha256": "cf9cede2c2f14acf315696f5ef077c70a2f66d88bab35a0d047bb245ea5f77d3",
+      "source_sha256": "cf9cede2c2f14acf315696f5ef077c70a2f66d88bab35a0d047bb245ea5f77d3",
+      "size": "1947"
+    },
+    {
+      "source_label": "external:apple_notes_quick_notes_2026_08",
+      "original_path": "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/018_gaze_and_direct_answers.md",
+      "bundle_path": "knowledge/external-sources/apple_notes_quick_notes_2026_08/018_gaze_and_direct_answers.md",
+      "sha256": "0c75d1205a5a919fa7683daed8366808e1e89efea10b8e6a3c3caacc2d9c3668",
+      "source_sha256": "0c75d1205a5a919fa7683daed8366808e1e89efea10b8e6a3c3caacc2d9c3668",
+      "size": "919"
+    },
+    {
+      "source_label": "external:apple_notes_quick_notes_2026_08",
+      "original_path": "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/019_extending_the_conversation.md",
+      "bundle_path": "knowledge/external-sources/apple_notes_quick_notes_2026_08/019_extending_the_conversation.md",
+      "sha256": "0cd13d978cb03f0c86b40be6e306eedfd910ec22ba75f10d6cd7142ed2aa45da",
+      "source_sha256": "0cd13d978cb03f0c86b40be6e306eedfd910ec22ba75f10d6cd7142ed2aa45da",
+      "size": "672"
+    },
+    {
+      "source_label": "external:apple_notes_quick_notes_2026_08",
+      "original_path": "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/020_strong_attraction_persona_examples.md",
+      "bundle_path": "knowledge/external-sources/apple_notes_quick_notes_2026_08/020_strong_attraction_persona_examples.md",
+      "sha256": "ceb83546791bf8a376e6a603e10382ef6e23708edf3d6de7085ee2b2f93e49c8",
+      "source_sha256": "ceb83546791bf8a376e6a603e10382ef6e23708edf3d6de7085ee2b2f93e49c8",
+      "size": "2069"
+    },
+    {
+      "source_label": "external:apple_notes_quick_notes_2026_08",
+      "original_path": "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/021_values_and_stance_2.md",
+      "bundle_path": "knowledge/external-sources/apple_notes_quick_notes_2026_08/021_values_and_stance_2.md",
+      "sha256": "89ab9b9e20c4007034a2f3b22baca4dcd223d957a10c94100e5de7743420bc25",
+      "source_sha256": "89ab9b9e20c4007034a2f3b22baca4dcd223d957a10c94100e5de7743420bc25",
+      "size": "928"
+    },
+    {
+      "source_label": "external:apple_notes_quick_notes_2026_08",
+      "original_path": "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/022_short_term_and_low_fit.md",
+      "bundle_path": "knowledge/external-sources/apple_notes_quick_notes_2026_08/022_short_term_and_low_fit.md",
+      "sha256": "0c4f9fc39dcc2ad4fc159f7aa28c0cb5949800f98c03ab4c74c18889f00d5d0f",
+      "source_sha256": "0c4f9fc39dcc2ad4fc159f7aa28c0cb5949800f98c03ab4c74c18889f00d5d0f",
+      "size": "224"
+    },
+    {
+      "source_label": "external:apple_notes_quick_notes_2026_08",
+      "original_path": "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/023_defusing_tests_and_body_language.md",
+      "bundle_path": "knowledge/external-sources/apple_notes_quick_notes_2026_08/023_defusing_tests_and_body_language.md",
+      "sha256": "73842ba8e39e929aadc5bd4707eb35666d704d32ebb4d5d3007896eb6714dcc4",
+      "source_sha256": "73842ba8e39e929aadc5bd4707eb35666d704d32ebb4d5d3007896eb6714dcc4",
+      "size": "385"
+    },
+    {
+      "source_label": "external:apple_notes_quick_notes_2026_08",
+      "original_path": "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/024_building_connection.md",
+      "bundle_path": "knowledge/external-sources/apple_notes_quick_notes_2026_08/024_building_connection.md",
+      "sha256": "d39b8d9615e7148f0b0371c26f880c8cf325abba0aa76fac40a6f9edc5957b70",
+      "source_sha256": "d39b8d9615e7148f0b0371c26f880c8cf325abba0aa76fac40a6f9edc5957b70",
+      "size": "3198"
+    },
+    {
+      "source_label": "external:apple_notes_quick_notes_2026_08",
+      "original_path": "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/025_asking_for_commitment_2.md",
+      "bundle_path": "knowledge/external-sources/apple_notes_quick_notes_2026_08/025_asking_for_commitment_2.md",
+      "sha256": "e228b8f19072b25e723bd13f6353471d91d2f27c87520943f959f5c7ab331359",
+      "source_sha256": "e228b8f19072b25e723bd13f6353471d91d2f27c87520943f959f5c7ab331359",
+      "size": "471"
+    },
+    {
+      "source_label": "external:apple_notes_quick_notes_2026_08",
+      "original_path": "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/026_long_distance_delivery_flow.md",
+      "bundle_path": "knowledge/external-sources/apple_notes_quick_notes_2026_08/026_long_distance_delivery_flow.md",
+      "sha256": "22b7f913d764930902e08b86e86c7cd680dbe73ed8a5a4ddd9bd0efef00f2c8a",
+      "source_sha256": "22b7f913d764930902e08b86e86c7cd680dbe73ed8a5a4ddd9bd0efef00f2c8a",
+      "size": "252"
+    },
+    {
+      "source_label": "external:apple_notes_quick_notes_2026_08",
+      "original_path": "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/027_victim_frame.md",
+      "bundle_path": "knowledge/external-sources/apple_notes_quick_notes_2026_08/027_victim_frame.md",
+      "sha256": "1976df3d7268b422201a113348cf7ff5a9ca9b63fe43f43c7e5e6c7719e50783",
+      "source_sha256": "1976df3d7268b422201a113348cf7ff5a9ca9b63fe43f43c7e5e6c7719e50783",
+      "size": "494"
+    },
+    {
+      "source_label": "external:apple_notes_quick_notes_2026_08",
+      "original_path": "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/028_app_contact_exchange.md",
+      "bundle_path": "knowledge/external-sources/apple_notes_quick_notes_2026_08/028_app_contact_exchange.md",
+      "sha256": "9cab8d5f638b244895569136e2be37776d0586a29878ddbc0cdf2bd164ac298a",
+      "source_sha256": "9cab8d5f638b244895569136e2be37776d0586a29878ddbc0cdf2bd164ac298a",
+      "size": "232"
+    },
+    {
+      "source_label": "external:apple_notes_quick_notes_2026_08",
+      "original_path": "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/029_woman_initiates_opening.md",
+      "bundle_path": "knowledge/external-sources/apple_notes_quick_notes_2026_08/029_woman_initiates_opening.md",
+      "sha256": "8b19a90ce8f968a93f9791649d2cb9e5f31bc3df0fd1cccfb53adf00bc839952",
+      "source_sha256": "8b19a90ce8f968a93f9791649d2cb9e5f31bc3df0fd1cccfb53adf00bc839952",
+      "size": "228"
+    },
+    {
+      "source_label": "external:apple_notes_quick_notes_2026_08",
+      "original_path": "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/030_long_term_relationship_dynamics.md",
+      "bundle_path": "knowledge/external-sources/apple_notes_quick_notes_2026_08/030_long_term_relationship_dynamics.md",
+      "sha256": "940660c04abca103eabd0843680c34595dda14c171d79046e9fcd406fe0e3e42",
+      "source_sha256": "940660c04abca103eabd0843680c34595dda14c171d79046e9fcd406fe0e3e42",
+      "size": "478"
+    },
+    {
+      "source_label": "external:apple_notes_quick_notes_2026_08",
+      "original_path": "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/031_male_to_female_framing.md",
+      "bundle_path": "knowledge/external-sources/apple_notes_quick_notes_2026_08/031_male_to_female_framing.md",
+      "sha256": "5730f95387ad2862c3c38a6c3720f8eca742cea6b7c2e9d9517a40526116f472",
+      "source_sha256": "5730f95387ad2862c3c38a6c3720f8eca742cea6b7c2e9d9517a40526116f472",
+      "size": "1004"
+    },
+    {
+      "source_label": "external:apple_notes_quick_notes_2026_08",
+      "original_path": "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/032_how_to_continue_replies.md",
+      "bundle_path": "knowledge/external-sources/apple_notes_quick_notes_2026_08/032_how_to_continue_replies.md",
+      "sha256": "10518e57556db4888b4d79b759c18e3f1880884170220963a5abbdbdf70323ac",
+      "source_sha256": "10518e57556db4888b4d79b759c18e3f1880884170220963a5abbdbdf70323ac",
+      "size": "1713"
+    },
+    {
+      "source_label": "external:apple_notes_quick_notes_2026_08",
+      "original_path": "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/033_value_feedback_and_flirting.md",
+      "bundle_path": "knowledge/external-sources/apple_notes_quick_notes_2026_08/033_value_feedback_and_flirting.md",
+      "sha256": "0efd49c9e2156dd84995ad4b624709f662970c71e150f8ec75bee9bed89a097f",
+      "source_sha256": "0efd49c9e2156dd84995ad4b624709f662970c71e150f8ec75bee9bed89a097f",
+      "size": "941"
+    },
+    {
+      "source_label": "external:apple_notes_quick_notes_2026_08",
+      "original_path": "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/034_pulling_the_conversation.md",
+      "bundle_path": "knowledge/external-sources/apple_notes_quick_notes_2026_08/034_pulling_the_conversation.md",
+      "sha256": "224fb477dc07d29187f1396edf62fab5ea8d0756b8e5be88dfd00f85d819ec4f",
+      "source_sha256": "224fb477dc07d29187f1396edf62fab5ea8d0756b8e5be88dfd00f85d819ec4f",
+      "size": "1233"
+    },
+    {
+      "source_label": "external:apple_notes_quick_notes_2026_08",
+      "original_path": "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/035_opening_patterns.md",
+      "bundle_path": "knowledge/external-sources/apple_notes_quick_notes_2026_08/035_opening_patterns.md",
+      "sha256": "b0e365a74563b3effc7729df4253ccb318002365a5aabca13a91cf2e4d637131",
+      "source_sha256": "b0e365a74563b3effc7729df4253ccb318002365a5aabca13a91cf2e4d637131",
+      "size": "1256"
+    },
+    {
+      "source_label": "external:apple_notes_quick_notes_2026_08",
+      "original_path": "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/036_SM_attributes_phrases.md",
+      "bundle_path": "knowledge/external-sources/apple_notes_quick_notes_2026_08/036_SM_attributes_phrases.md",
+      "sha256": "32d6e5669703fc469abd488d2ff8b99234d212bc148821a44b88d976c50f60e7",
+      "source_sha256": "32d6e5669703fc469abd488d2ff8b99234d212bc148821a44b88d976c50f60e7",
+      "size": "685"
+    },
+    {
+      "source_label": "external:apple_notes_quick_notes_2026_08",
+      "original_path": "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/037_using_their_own_logic.md",
+      "bundle_path": "knowledge/external-sources/apple_notes_quick_notes_2026_08/037_using_their_own_logic.md",
+      "sha256": "22f321bc1c8906bb4c5b0daec3bb55b4706c4e5ccc319bd00a8dc87c8f25e6e9",
+      "source_sha256": "22f321bc1c8906bb4c5b0daec3bb55b4706c4e5ccc319bd00a8dc87c8f25e6e9",
+      "size": "312"
+    },
+    {
+      "source_label": "external:apple_notes_quick_notes_2026_08",
+      "original_path": "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/038_cooperation_breakthrough.md",
+      "bundle_path": "knowledge/external-sources/apple_notes_quick_notes_2026_08/038_cooperation_breakthrough.md",
+      "sha256": "37f599586eb65ffa64fbf00de7db3562e7ab5831bed9297db2af1c61ccfe5555",
+      "source_sha256": "37f599586eb65ffa64fbf00de7db3562e7ab5831bed9297db2af1c61ccfe5555",
+      "size": "132"
+    },
+    {
+      "source_label": "external:apple_notes_quick_notes_2026_08",
+      "original_path": "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/039_reengagement_phrases.md",
+      "bundle_path": "knowledge/external-sources/apple_notes_quick_notes_2026_08/039_reengagement_phrases.md",
+      "sha256": "86a811879744bec531cdd3860c09eba2ef291d49271d9eb3a28911ade830bdc8",
+      "source_sha256": "86a811879744bec531cdd3860c09eba2ef291d49271d9eb3a28911ade830bdc8",
+      "size": "2044"
+    },
+    {
+      "source_label": "external:apple_notes_quick_notes_2026_08",
+      "original_path": "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/040_invitation_phrases.md",
+      "bundle_path": "knowledge/external-sources/apple_notes_quick_notes_2026_08/040_invitation_phrases.md",
+      "sha256": "3bcb039bc1093438087cabfa11a0a239cd5a7cf6ec2a1ba1aaca27b1cb1091a5",
+      "source_sha256": "3bcb039bc1093438087cabfa11a0a239cd5a7cf6ec2a1ba1aaca27b1cb1091a5",
+      "size": "5955"
+    },
+    {
+      "source_label": "external:apple_notes_quick_notes_2026_08",
+      "original_path": "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/041_disqualifying_pushback.md",
+      "bundle_path": "knowledge/external-sources/apple_notes_quick_notes_2026_08/041_disqualifying_pushback.md",
+      "sha256": "8c52a39fb12d4fdea1a71ccdce3d55e5e7e7a50c2ed92decb940cd18db520416",
+      "source_sha256": "8c52a39fb12d4fdea1a71ccdce3d55e5e7e7a50c2ed92decb940cd18db520416",
+      "size": "10645"
+    },
+    {
+      "source_label": "external:apple_notes_quick_notes_2026_08",
+      "original_path": "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/042_obstacle_and_test_responses.md",
+      "bundle_path": "knowledge/external-sources/apple_notes_quick_notes_2026_08/042_obstacle_and_test_responses.md",
+      "sha256": "087d2bbfbf2e1b7661d04698b87d60a1838fd8e98a1b1fd8eec01aa620fc6a32",
+      "source_sha256": "087d2bbfbf2e1b7661d04698b87d60a1838fd8e98a1b1fd8eec01aa620fc6a32",
+      "size": "3039"
+    },
+    {
+      "source_label": "external:apple_notes_quick_notes_2026_08",
+      "original_path": "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/043_screening_and_evaluation.md",
+      "bundle_path": "knowledge/external-sources/apple_notes_quick_notes_2026_08/043_screening_and_evaluation.md",
+      "sha256": "80a214eca3c7f0c532f45aece1a62e5017e7f7b3592220663ab103faf470b2c4",
+      "source_sha256": "80a214eca3c7f0c532f45aece1a62e5017e7f7b3592220663ab103faf470b2c4",
+      "size": "16366"
+    },
+    {
+      "source_label": "external:apple_notes_quick_notes_2026_08",
+      "original_path": "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/044_high_value_prize_positioning.md",
+      "bundle_path": "knowledge/external-sources/apple_notes_quick_notes_2026_08/044_high_value_prize_positioning.md",
+      "sha256": "c03ba191c6c6a4fce2b17115fcb7977c723dcacf352882ce5d9dfc5e6dda8622",
+      "source_sha256": "c03ba191c6c6a4fce2b17115fcb7977c723dcacf352882ce5d9dfc5e6dda8622",
+      "size": "2440"
+    },
+    {
+      "source_label": "external:apple_notes_quick_notes_2026_08",
+      "original_path": "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/045_emotional_disruption.md",
+      "bundle_path": "knowledge/external-sources/apple_notes_quick_notes_2026_08/045_emotional_disruption.md",
+      "sha256": "fbeaf6e472c8f8be1b9ff2a867c87a9985bfac1058251557355b31fc72ee61d1",
+      "source_sha256": "fbeaf6e472c8f8be1b9ff2a867c87a9985bfac1058251557355b31fc72ee61d1",
+      "size": "11039"
+    },
+    {
+      "source_label": "external:apple_notes_quick_notes_2026_08",
+      "original_path": "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/README.md",
+      "bundle_path": "knowledge/external-sources/apple_notes_quick_notes_2026_08/README.md",
+      "sha256": "55030d22d0256a4d60d0ffa560f19b12a4c9d0d45fb9562b886b57bd755cb2ed",
+      "source_sha256": "55030d22d0256a4d60d0ffa560f19b12a4c9d0d45fb9562b886b57bd755cb2ed",
+      "size": "416"
+    },
+    {
+      "source_label": "external:legacy_codex_framework",
+      "original_path": "/Users/company/Documents/Codex/2026-08-21/skill/outputs/male-emotion-chat-framework-v0.md",
+      "bundle_path": "knowledge/external-sources/legacy-codex/male-emotion-chat-framework-v0.md",
+      "sha256": "34c208f5ba8532ac83767234c008914367f3946a71657be7ed84079bad39ceed",
+      "source_sha256": "34c208f5ba8532ac83767234c008914367f3946a71657be7ed84079bad39ceed",
+      "size": "5754"
+    },
+    {
+      "source_label": "runtime_generated",
+      "original_path": "04-系统/真实社交运行时路由配置.json",
+      "bundle_path": "runtime/navigation-index.json",
+      "sha256": "8e36f71ee335a9470bd051daa12eb46e8e7991e7aca269ebf8bd0c5886509a18",
+      "size": "1617"
+    },
+    {
+      "source_label": "runtime_generated",
+      "original_path": "04-系统/真实社交运行时路由配置.json",
+      "bundle_path": "runtime/phrase-route-index.json",
+      "sha256": "688427434756a380c4b093ea066f5351b78c3cf4d70c8c015dbb5c2d1d9d789a",
+      "size": "9600"
+    },
+    {
+      "source_label": "runtime_generated",
+      "original_path": "04-系统/真实社交运行时路由配置.json",
+      "bundle_path": "runtime/phrase-routes/boundary_channel.json",
+      "sha256": "32d0bb6c034ca9faa38d45233f6f35abc3bc9a322b879ae9addd716b693da501",
+      "size": "10957"
+    },
+    {
+      "source_label": "runtime_generated",
+      "original_path": "04-系统/真实社交运行时路由配置.json",
+      "bundle_path": "runtime/phrase-routes/clarify_open.json",
+      "sha256": "02ef38ffb39cdbd145850537a81654bf390463204981e96ba5f0a871b0ef6007",
+      "size": "12625"
+    },
+    {
+      "source_label": "runtime_generated",
+      "original_path": "04-系统/真实社交运行时路由配置.json",
+      "bundle_path": "runtime/phrase-routes/concern_test.json",
+      "sha256": "fe86d67765b62de9954ddd4de74719bd42b83bb6d1df7cee2998ca4db77e11f1",
+      "size": "10953"
+    },
+    {
+      "source_label": "runtime_generated",
+      "original_path": "04-系统/真实社交运行时路由配置.json",
+      "bundle_path": "runtime/phrase-routes/connection_repair.json",
+      "sha256": "dec789002094b6a83c1ca19ee1e9ccda35fec144ac22a7632531079a84345dcc",
+      "size": "10989"
+    },
+    {
+      "source_label": "runtime_generated",
+      "original_path": "04-系统/真实社交运行时路由配置.json",
+      "bundle_path": "runtime/phrase-routes/intimacy_conditional.json",
+      "sha256": "da6987f472a6e427c2730acfded1c58631961192de60ecebc13b8498e9697435",
+      "size": "6591"
+    },
+    {
+      "source_label": "runtime_generated",
+      "original_path": "04-系统/真实社交运行时路由配置.json",
+      "bundle_path": "runtime/phrase-routes/invite_schedule.json",
+      "sha256": "637f9f9b2eb6dd4cbfb2009a7d1d2428431f2af13874147348f363a2e6427426",
+      "size": "14754"
+    },
+    {
+      "source_label": "runtime_generated",
+      "original_path": "04-系统/真实社交运行时路由配置.json",
+      "bundle_path": "runtime/phrase-routes/low_response_recovery.json",
+      "sha256": "e2f2ec3e08933f825f9fec16c890503e3f91ce6769b1c7718fb94762a9b7f0f5",
+      "size": "8666"
+    },
+    {
+      "source_label": "runtime_generated",
+      "original_path": "04-系统/真实社交运行时路由配置.json",
+      "bundle_path": "runtime/phrase-routes/stop_boundary.json",
+      "sha256": "9914687c2def2bbbf4dc0b6f4938155a24e6df23690451067d0fc122a4faa56c",
+      "size": "4270"
+    },
+    {
+      "source_label": "runtime_generated",
+      "original_path": "04-系统/真实社交运行时路由配置.json",
+      "bundle_path": "runtime/phrase-routes/teasing_push_pull.json",
+      "sha256": "b6b1f877327e0d5b723e7e51d493b0681f9978f9f43ee2f3255906e14b3f2bcf",
+      "size": "10858"
+    },
+    {
+      "source_label": "runtime_generated",
+      "original_path": "04-系统/真实社交运行时路由配置.json",
+      "bundle_path": "runtime/phrase-routes/true_feedback.json",
+      "sha256": "4b3567d2c1fa7b608cd39b69c74495297b6633229ce654c2572ce9a69b54389c",
+      "size": "7429"
+    },
+    {
+      "source_label": "runtime_generated",
+      "original_path": "04-系统/真实社交运行时路由配置.json",
+      "bundle_path": "runtime/route-index.json",
+      "sha256": "d798f555494f56825fc9a65acfead95cb350c7adac9b49f578987ddd921e6888",
+      "size": "25290"
+    },
+    {
+      "source_label": "runtime_generated",
+      "original_path": "04-系统/真实社交运行时路由配置.json",
+      "bundle_path": "runtime/runtime-entry.md",
+      "sha256": "cde4e8ff1bc68804f8dabf1b92e189fb20cdff0b9a95f0cc79e518d883002389",
+      "size": "5073"
+    },
+    {
+      "source_label": "runtime_generated",
+      "original_path": "04-系统/真实社交运行时路由配置.json",
+      "bundle_path": "runtime/runtime-manifest.json",
+      "sha256": "4d8ce530aea46f907a2460f2f6dc712edd1d6e5bf553774eec62740e135f28af",
+      "size": "3597"
+    },
+    {
+      "source_label": "runtime_generated",
+      "original_path": "04-系统/真实社交运行时路由配置.json",
+      "bundle_path": "runtime/unit-index.json",
+      "sha256": "15654feaf6acd42d9952698422e2115ff1c801180b0d8dad39ec992f6c4b0764",
+      "size": "141007"
+    }
+  ],
+  "source_path_map": {
+    "/Users/company/Documents/Dragon知识库/SOURCE_OF_TRUTH.md": "knowledge/SOURCE_OF_TRUTH.md",
+    "/Users/company/Documents/Dragon知识库/AGENTS.md": "knowledge/AGENTS.md",
+    "/Users/company/Documents/Dragon知识库/CLAUDE.md": "knowledge/CLAUDE.md",
+    "/Users/company/Documents/Dragon知识库/README.md": "knowledge/README.md",
+    "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-21_zhenshi-理论.docx": "knowledge/01-原始资料/2026-08-21_zhenshi-理论.docx",
+    "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-21_zhenshi-理论_文本提取.txt": "knowledge/01-原始资料/2026-08-21_zhenshi-理论_文本提取.txt",
+    "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-21_真实社交专业术语目录_用户原文.md": "knowledge/01-原始资料/2026-08-21_真实社交专业术语目录_用户原文.md",
+    "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-22_杰哥2.srt": "knowledge/01-原始资料/2026-08-22_杰哥2.srt",
+    "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-22_杰哥3.srt": "knowledge/01-原始资料/2026-08-22_杰哥3.srt",
+    "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-22_杰哥4.srt": "knowledge/01-原始资料/2026-08-22_杰哥4.srt",
+    "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-22_杰哥聊天1上.srt": "knowledge/01-原始资料/2026-08-22_杰哥聊天1上.srt",
+    "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-22_杰哥聊天1下.srt": "knowledge/01-原始资料/2026-08-22_杰哥聊天1下.srt",
+    "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-22_杰哥聊天5.srt": "knowledge/01-原始资料/2026-08-22_杰哥聊天5.srt",
+    "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-22_案例分析_千里送_一周目_课程解说.txt": "knowledge/01-原始资料/2026-08-22_案例分析_千里送_一周目_课程解说.txt",
+    "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-22_案例分析_千里送_三周目_课程解说.txt": "knowledge/01-原始资料/2026-08-22_案例分析_千里送_三周目_课程解说.txt",
+    "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-22_案例分析_千里送_二周目_课程解说.txt": "knowledge/01-原始资料/2026-08-22_案例分析_千里送_二周目_课程解说.txt",
+    "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_888内部群杰哥话术（3.3-8.17）.md": "knowledge/01-原始资料/2026-08-23_888内部群杰哥话术（3.3-8.17）.md",
+    "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_AppleNotesQuickNotes_001_jackson_top_phrases_seriousness_and_invitation_obstacles.md": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_001_jackson_top_phrases_seriousness_and_invitation_obstacles.md",
+    "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_AppleNotesQuickNotes_002_emotional_tension.md": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_002_emotional_tension.md",
+    "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_AppleNotesQuickNotes_003_within_five_days.md": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_003_within_five_days.md",
+    "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_AppleNotesQuickNotes_004_displaying_aggression.md": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_004_displaying_aggression.md",
+    "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_AppleNotesQuickNotes_005_sticker_and_non_seriousness_obstacles.md": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_005_sticker_and_non_seriousness_obstacles.md",
+    "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_AppleNotesQuickNotes_006_closing_or_returning_home_obstacles.md": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_006_closing_or_returning_home_obstacles.md",
+    "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_AppleNotesQuickNotes_007_leading_the_interaction.md": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_007_leading_the_interaction.md",
+    "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_AppleNotesQuickNotes_008_escalation_by_pulling_back.md": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_008_escalation_by_pulling_back.md",
+    "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_AppleNotesQuickNotes_009_asking_for_commitment.md": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_009_asking_for_commitment.md",
+    "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_AppleNotesQuickNotes_010_teaching_frame.md": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_010_teaching_frame.md",
+    "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_AppleNotesQuickNotes_011_playful_evaluation_opening.md": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_011_playful_evaluation_opening.md",
+    "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_AppleNotesQuickNotes_012_values_and_stance.md": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_012_values_and_stance.md",
+    "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_AppleNotesQuickNotes_013_empathic_opening.md": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_013_empathic_opening.md",
+    "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_AppleNotesQuickNotes_014_jackson_key_tactics.md": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_014_jackson_key_tactics.md",
+    "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_AppleNotesQuickNotes_015_experience_based_routines.md": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_015_experience_based_routines.md",
+    "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_AppleNotesQuickNotes_016_clear_intent_and_premise.md": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_016_clear_intent_and_premise.md",
+    "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_AppleNotesQuickNotes_017_tension_and_visual_imagery.md": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_017_tension_and_visual_imagery.md",
+    "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_AppleNotesQuickNotes_018_gaze_and_direct_answers.md": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_018_gaze_and_direct_answers.md",
+    "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_AppleNotesQuickNotes_019_extending_the_conversation.md": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_019_extending_the_conversation.md",
+    "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_AppleNotesQuickNotes_020_strong_attraction_persona_examples.md": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_020_strong_attraction_persona_examples.md",
+    "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_AppleNotesQuickNotes_021_values_and_stance_2.md": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_021_values_and_stance_2.md",
+    "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_AppleNotesQuickNotes_022_short_term_and_low_fit.md": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_022_short_term_and_low_fit.md",
+    "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_AppleNotesQuickNotes_023_defusing_tests_and_body_language.md": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_023_defusing_tests_and_body_language.md",
+    "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_AppleNotesQuickNotes_024_building_connection.md": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_024_building_connection.md",
+    "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_AppleNotesQuickNotes_025_asking_for_commitment_2.md": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_025_asking_for_commitment_2.md",
+    "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_AppleNotesQuickNotes_026_long_distance_delivery_flow.md": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_026_long_distance_delivery_flow.md",
+    "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_AppleNotesQuickNotes_027_victim_frame.md": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_027_victim_frame.md",
+    "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_AppleNotesQuickNotes_028_app_contact_exchange.md": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_028_app_contact_exchange.md",
+    "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_AppleNotesQuickNotes_029_woman_initiates_opening.md": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_029_woman_initiates_opening.md",
+    "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_AppleNotesQuickNotes_030_long_term_relationship_dynamics.md": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_030_long_term_relationship_dynamics.md",
+    "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_AppleNotesQuickNotes_031_male_to_female_framing.md": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_031_male_to_female_framing.md",
+    "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_AppleNotesQuickNotes_032_how_to_continue_replies.md": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_032_how_to_continue_replies.md",
+    "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_AppleNotesQuickNotes_033_value_feedback_and_flirting.md": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_033_value_feedback_and_flirting.md",
+    "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_AppleNotesQuickNotes_034_pulling_the_conversation.md": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_034_pulling_the_conversation.md",
+    "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_AppleNotesQuickNotes_035_opening_patterns.md": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_035_opening_patterns.md",
+    "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_AppleNotesQuickNotes_036_SM_attributes_phrases.md": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_036_SM_attributes_phrases.md",
+    "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_AppleNotesQuickNotes_037_using_their_own_logic.md": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_037_using_their_own_logic.md",
+    "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_AppleNotesQuickNotes_038_cooperation_breakthrough.md": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_038_cooperation_breakthrough.md",
+    "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_AppleNotesQuickNotes_039_reengagement_phrases.md": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_039_reengagement_phrases.md",
+    "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_AppleNotesQuickNotes_040_invitation_phrases.md": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_040_invitation_phrases.md",
+    "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_AppleNotesQuickNotes_041_disqualifying_pushback.md": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_041_disqualifying_pushback.md",
+    "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_AppleNotesQuickNotes_042_obstacle_and_test_responses.md": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_042_obstacle_and_test_responses.md",
+    "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_AppleNotesQuickNotes_043_screening_and_evaluation.md": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_043_screening_and_evaluation.md",
+    "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_AppleNotesQuickNotes_044_high_value_prize_positioning.md": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_044_high_value_prize_positioning.md",
+    "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_AppleNotesQuickNotes_045_emotional_disruption.md": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_045_emotional_disruption.md",
+    "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_AppleNotesQuickNotes_README.md": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_README.md",
+    "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_AppleNotesQuickNotes候选参考增补清单.json": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes候选参考增补清单.json",
+    "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_AppleNotesQuickNotes来源清单.json": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes来源清单.json",
+    "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_AppleNotesQuickNotes话术去重审计.json": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes话术去重审计.json",
+    "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_Jackson体系话术候选参考清单.json": "knowledge/01-原始资料/2026-08-23_Jackson体系话术候选参考清单.json",
+    "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_Jackson体系话术去重索引.json": "knowledge/01-原始资料/2026-08-23_Jackson体系话术去重索引.json",
+    "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_Jackson体系话术近似重复审计.json": "knowledge/01-原始资料/2026-08-23_Jackson体系话术近似重复审计.json",
+    "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_game.docx": "knowledge/01-原始资料/2026-08-23_game.docx",
+    "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_game_文本提取.txt": "knowledge/01-原始资料/2026-08-23_game_文本提取.txt",
+    "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_huashu.docx": "knowledge/01-原始资料/2026-08-23_huashu.docx",
+    "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_huashu_文本提取.txt": "knowledge/01-原始资料/2026-08-23_huashu_文本提取.txt",
+    "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_杰哥聊天6.srt": "knowledge/01-原始资料/2026-08-23_杰哥聊天6.srt",
+    "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_杰哥聊天7.srt": "knowledge/01-原始资料/2026-08-23_杰哥聊天7.srt",
+    "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_杰哥聊天8.srt": "knowledge/01-原始资料/2026-08-23_杰哥聊天8.srt",
+    "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_杰哥聊天9-1.srt": "knowledge/01-原始资料/2026-08-23_杰哥聊天9-1.srt",
+    "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_杰哥聊天9-2.srt": "knowledge/01-原始资料/2026-08-23_杰哥聊天9-2.srt",
+    "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_真实流话术总结.docx": "knowledge/01-原始资料/2026-08-23_真实流话术总结.docx",
+    "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_真实流话术总结_文本提取.txt": "knowledge/01-原始资料/2026-08-23_真实流话术总结_文本提取.txt",
+    "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_话术库.docx": "knowledge/01-原始资料/2026-08-23_话术库.docx",
+    "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_话术库_文本提取.txt": "knowledge/01-原始资料/2026-08-23_话术库_文本提取.txt",
+    "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_语料集合.docx": "knowledge/01-原始资料/2026-08-23_语料集合.docx",
+    "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-23_语料集合_文本提取.txt": "knowledge/01-原始资料/2026-08-23_语料集合_文本提取.txt",
+    "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-25_8.17.srt": "knowledge/01-原始资料/2026-08-25_8.17.srt",
+    "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-25_AI找出劲爆片段提示词.txt": "knowledge/01-原始资料/2026-08-25_AI找出劲爆片段提示词.txt",
+    "/Users/company/Documents/Dragon知识库/02-知识单元/K-20260821-001_男性情感聊天教学Skill架构与素材预处理.md": "knowledge/02-知识单元/K-20260821-001_男性情感聊天教学Skill架构与素材预处理.md",
+    "/Users/company/Documents/Dragon知识库/02-知识单元/K-20260821-003_JacksonFlow前提阶段线上候选.md": "knowledge/02-知识单元/K-20260821-003_JacksonFlow前提阶段线上候选.md",
+    "/Users/company/Documents/Dragon知识库/02-知识单元/K-20260821-004_JacksonFlow赋格线上信号候选.md": "knowledge/02-知识单元/K-20260821-004_JacksonFlow赋格线上信号候选.md",
+    "/Users/company/Documents/Dragon知识库/02-知识单元/K-20260821-005_JacksonFlow无赋格时的线上观察方向候选.md": "knowledge/02-知识单元/K-20260821-005_JacksonFlow无赋格时的线上观察方向候选.md",
+    "/Users/company/Documents/Dragon知识库/02-知识单元/K-20260821-009_JacksonFlow前提与铺垫邀约来源观点.md": "knowledge/02-知识单元/K-20260821-009_JacksonFlow前提与铺垫邀约来源观点.md",
+    "/Users/company/Documents/Dragon知识库/02-知识单元/K-20260821-010_JacksonFlow赋格量化与转换来源观点.md": "knowledge/02-知识单元/K-20260821-010_JacksonFlow赋格量化与转换来源观点.md",
+    "/Users/company/Documents/Dragon知识库/02-知识单元/K-20260821-012_JacksonFlow反对编造和夸大边界候选.md": "knowledge/02-知识单元/K-20260821-012_JacksonFlow反对编造和夸大边界候选.md",
+    "/Users/company/Documents/Dragon知识库/02-知识单元/K-20260821-013_JacksonFlow赋格自我证明解释来源观点.md": "knowledge/02-知识单元/K-20260821-013_JacksonFlow赋格自我证明解释来源观点.md",
+    "/Users/company/Documents/Dragon知识库/02-知识单元/K-20260821-014_真实社交一级专业术语目录候选.md": "knowledge/02-知识单元/K-20260821-014_真实社交一级专业术语目录候选.md",
+    "/Users/company/Documents/Dragon知识库/02-知识单元/K-20260821-015_真实社交二级专业术语目录候选.md": "knowledge/02-知识单元/K-20260821-015_真实社交二级专业术语目录候选.md",
+    "/Users/company/Documents/Dragon知识库/02-知识单元/K-20260821-016_zhenshi废物测试识别与AAA应对来源观点.md": "knowledge/02-知识单元/K-20260821-016_zhenshi废物测试识别与AAA应对来源观点.md",
+    "/Users/company/Documents/Dragon知识库/02-知识单元/K-20260821-017_zhenshi假性评估类型时机与强度来源观点.md": "knowledge/02-知识单元/K-20260821-017_zhenshi假性评估类型时机与强度来源观点.md",
+    "/Users/company/Documents/Dragon知识库/02-知识单元/K-20260821-018_zhenshi远程社交直觉可观察反馈信号候选.md": "knowledge/02-知识单元/K-20260821-018_zhenshi远程社交直觉可观察反馈信号候选.md",
+    "/Users/company/Documents/Dragon知识库/02-知识单元/K-20260821-019_zhenshi线上聊天三段回合SOP来源观点.md": "knowledge/02-知识单元/K-20260821-019_zhenshi线上聊天三段回合SOP来源观点.md",
+    "/Users/company/Documents/Dragon知识库/02-知识单元/K-20260821-020_zhenshi低回应时减少投入方向候选.md": "knowledge/02-知识单元/K-20260821-020_zhenshi低回应时减少投入方向候选.md",
+    "/Users/company/Documents/Dragon知识库/02-知识单元/K-20260821-021_zhenshi明确拒绝与停止时不纠缠边界候选.md": "knowledge/02-知识单元/K-20260821-021_zhenshi明确拒绝与停止时不纠缠边界候选.md",
+    "/Users/company/Documents/Dragon知识库/02-知识单元/K-20260821-022_zhenshi文字聊天转语音直接拨打来源观点.md": "knowledge/02-知识单元/K-20260821-022_zhenshi文字聊天转语音直接拨打来源观点.md",
+    "/Users/company/Documents/Dragon知识库/02-知识单元/K-20260821-023_假性评估非真实评价与反编造边界冲突候选.md": "knowledge/02-知识单元/K-20260821-023_假性评估非真实评价与反编造边界冲突候选.md",
+    "/Users/company/Documents/Dragon知识库/02-知识单元/K-20260821-024_zhenshi学术调情来源观点.md": "knowledge/02-知识单元/K-20260821-024_zhenshi学术调情来源观点.md",
+    "/Users/company/Documents/Dragon知识库/02-知识单元/K-20260822-025_跨城邀约三周目合并经典案例候选.md": "knowledge/02-知识单元/K-20260822-025_跨城邀约三周目合并经典案例候选.md",
+    "/Users/company/Documents/Dragon知识库/02-知识单元/K-20260822-026_经典案例适配到签约阶段链候选.md": "knowledge/02-知识单元/K-20260822-026_经典案例适配到签约阶段链候选.md",
+    "/Users/company/Documents/Dragon知识库/02-知识单元/K-20260822-027_吸引联系与短长期动态调整规则候选.md": "knowledge/02-知识单元/K-20260822-027_吸引联系与短长期动态调整规则候选.md",
+    "/Users/company/Documents/Dragon知识库/02-知识单元/K-20260822-028_亲密话题强度随反馈调节方向候选.md": "knowledge/02-知识单元/K-20260822-028_亲密话题强度随反馈调节方向候选.md",
+    "/Users/company/Documents/Dragon知识库/02-知识单元/K-20260822-029_不想跟你讲话的边界解释冲突候选.md": "knowledge/02-知识单元/K-20260822-029_不想跟你讲话的边界解释冲突候选.md",
+    "/Users/company/Documents/Dragon知识库/02-知识单元/K-20260822-030_杰哥聊天1上下合并经典案例候选.md": "knowledge/02-知识单元/K-20260822-030_杰哥聊天1上下合并经典案例候选.md",
+    "/Users/company/Documents/Dragon知识库/02-知识单元/K-20260822-031_杰哥案例回撤重启邀约分链候选.md": "knowledge/02-知识单元/K-20260822-031_杰哥案例回撤重启邀约分链候选.md",
+    "/Users/company/Documents/Dragon知识库/02-知识单元/K-20260822-032_邀约调度中的意图条件与双向共识方向候选.md": "knowledge/02-知识单元/K-20260822-032_邀约调度中的意图条件与双向共识方向候选.md",
+    "/Users/company/Documents/Dragon知识库/02-知识单元/K-20260822-033_杰哥2长周期邀约调度经典案例候选.md": "knowledge/02-知识单元/K-20260822-033_杰哥2长周期邀约调度经典案例候选.md",
+    "/Users/company/Documents/Dragon知识库/02-知识单元/K-20260822-034_杰哥3即时安全调度经典案例候选.md": "knowledge/02-知识单元/K-20260822-034_杰哥3即时安全调度经典案例候选.md",
+    "/Users/company/Documents/Dragon知识库/02-知识单元/K-20260822-035_杰哥2长周期邀约等待重启分链候选.md": "knowledge/02-知识单元/K-20260822-035_杰哥2长周期邀约等待重启分链候选.md",
+    "/Users/company/Documents/Dragon知识库/02-知识单元/K-20260822-036_杰哥3即时安全调度分链候选.md": "knowledge/02-知识单元/K-20260822-036_杰哥3即时安全调度分链候选.md",
+    "/Users/company/Documents/Dragon知识库/02-知识单元/K-20260822-037_邀约反馈具体行程与变更说明信号候选.md": "knowledge/02-知识单元/K-20260822-037_邀约反馈具体行程与变更说明信号候选.md",
+    "/Users/company/Documents/Dragon知识库/02-知识单元/K-20260822-038_杰哥4删除后修复与重启经典案例候选.md": "knowledge/02-知识单元/K-20260822-038_杰哥4删除后修复与重启经典案例候选.md",
+    "/Users/company/Documents/Dragon知识库/02-知识单元/K-20260822-039_杰哥聊天5低吸引顾虑承接与邀约经典案例候选.md": "knowledge/02-知识单元/K-20260822-039_杰哥聊天5低吸引顾虑承接与邀约经典案例候选.md",
+    "/Users/company/Documents/Dragon知识库/02-知识单元/K-20260822-040_杰哥4删除后修复重启分链候选.md": "knowledge/02-知识单元/K-20260822-040_杰哥4删除后修复重启分链候选.md",
+    "/Users/company/Documents/Dragon知识库/02-知识单元/K-20260822-041_杰哥聊天5低吸引顾虑调度分链候选.md": "knowledge/02-知识单元/K-20260822-041_杰哥聊天5低吸引顾虑调度分链候选.md",
+    "/Users/company/Documents/Dragon知识库/02-知识单元/K-20260823-042_杰哥聊天6低窗口铺垫邀约与谨慎调度经典案例候选.md": "knowledge/02-知识单元/K-20260823-042_杰哥聊天6低窗口铺垫邀约与谨慎调度经典案例候选.md",
+    "/Users/company/Documents/Dragon知识库/02-知识单元/K-20260823-043_杰哥聊天7性话题试探与短期属性经典案例候选.md": "knowledge/02-知识单元/K-20260823-043_杰哥聊天7性话题试探与短期属性经典案例候选.md",
+    "/Users/company/Documents/Dragon知识库/02-知识单元/K-20260823-044_杰哥聊天8平台迁移与主动邀约经典案例候选.md": "knowledge/02-知识单元/K-20260823-044_杰哥聊天8平台迁移与主动邀约经典案例候选.md",
+    "/Users/company/Documents/Dragon知识库/02-知识单元/K-20260823-045_杰哥聊天6低回应再激活即时邀约分链候选.md": "knowledge/02-知识单元/K-20260823-045_杰哥聊天6低回应再激活即时邀约分链候选.md",
+    "/Users/company/Documents/Dragon知识库/02-知识单元/K-20260823-046_杰哥聊天7亲密话题试探与调度分链候选.md": "knowledge/02-知识单元/K-20260823-046_杰哥聊天7亲密话题试探与调度分链候选.md",
+    "/Users/company/Documents/Dragon知识库/02-知识单元/K-20260823-047_杰哥聊天8平台迁移与主动邀约分链候选.md": "knowledge/02-知识单元/K-20260823-047_杰哥聊天8平台迁移与主动邀约分链候选.md",
+    "/Users/company/Documents/Dragon知识库/02-知识单元/K-20260823-048_杰哥聊天9上下合并低回应邀约与见面后再调度经典案例候选.md": "knowledge/02-知识单元/K-20260823-048_杰哥聊天9上下合并低回应邀约与见面后再调度经典案例候选.md",
+    "/Users/company/Documents/Dragon知识库/02-知识单元/K-20260823-049_杰哥聊天9低回应再激活与首次邀约分链候选.md": "knowledge/02-知识单元/K-20260823-049_杰哥聊天9低回应再激活与首次邀约分链候选.md",
+    "/Users/company/Documents/Dragon知识库/02-知识单元/K-20260823-050_杰哥聊天9见面后关系升级暂停与再调度分链候选.md": "knowledge/02-知识单元/K-20260823-050_杰哥聊天9见面后关系升级暂停与再调度分链候选.md",
+    "/Users/company/Documents/Dragon知识库/02-知识单元/K-20260823-051_体系话术参考调用协议候选.md": "knowledge/02-知识单元/K-20260823-051_体系话术参考调用协议候选.md",
+    "/Users/company/Documents/Dragon知识库/02-知识单元/K-20260823-052_体系话术阶段与方向检索映射候选.md": "knowledge/02-知识单元/K-20260823-052_体系话术阶段与方向检索映射候选.md",
+    "/Users/company/Documents/Dragon知识库/02-知识单元/K-20260823-053_体系话术高风险隔离边界候选.md": "knowledge/02-知识单元/K-20260823-053_体系话术高风险隔离边界候选.md",
+    "/Users/company/Documents/Dragon知识库/02-知识单元/K-20260826-001_真实社交线上流程推拉方向与回蓝闸门.md": "knowledge/02-知识单元/K-20260826-001_真实社交线上流程推拉方向与回蓝闸门.md",
+    "/Users/company/Documents/Dragon知识库/03-动态索引/主题索引.md": "knowledge/03-动态索引/主题索引.md",
+    "/Users/company/Documents/Dragon知识库/04-系统/2026-08-21_男性情感聊天第二批素材处理报告.md": "knowledge/04-系统/2026-08-21_男性情感聊天第二批素材处理报告.md",
+    "/Users/company/Documents/Dragon知识库/04-系统/2026-08-22_男性情感聊天杰哥2与杰哥3案例处理报告.md": "knowledge/04-系统/2026-08-22_男性情感聊天杰哥2与杰哥3案例处理报告.md",
+    "/Users/company/Documents/Dragon知识库/04-系统/2026-08-22_男性情感聊天杰哥4与杰哥聊天5案例处理报告.md": "knowledge/04-系统/2026-08-22_男性情感聊天杰哥4与杰哥聊天5案例处理报告.md",
+    "/Users/company/Documents/Dragon知识库/04-系统/2026-08-22_男性情感聊天杰哥案例处理报告.md": "knowledge/04-系统/2026-08-22_男性情感聊天杰哥案例处理报告.md",
+    "/Users/company/Documents/Dragon知识库/04-系统/2026-08-22_男性情感聊天经典案例三周目合并处理报告.md": "knowledge/04-系统/2026-08-22_男性情感聊天经典案例三周目合并处理报告.md",
+    "/Users/company/Documents/Dragon知识库/04-系统/2026-08-23_AppleNotesQuickNotes话术沉淀与去重处理报告.md": "knowledge/04-系统/2026-08-23_AppleNotesQuickNotes话术沉淀与去重处理报告.md",
+    "/Users/company/Documents/Dragon知识库/04-系统/2026-08-23_男性情感聊天体系话术去重与调用分层处理报告.md": "knowledge/04-系统/2026-08-23_男性情感聊天体系话术去重与调用分层处理报告.md",
+    "/Users/company/Documents/Dragon知识库/04-系统/2026-08-23_男性情感聊天杰哥聊天6至8案例处理报告.md": "knowledge/04-系统/2026-08-23_男性情感聊天杰哥聊天6至8案例处理报告.md",
+    "/Users/company/Documents/Dragon知识库/04-系统/2026-08-23_男性情感聊天杰哥聊天9上下合并案例处理报告.md": "knowledge/04-系统/2026-08-23_男性情感聊天杰哥聊天9上下合并案例处理报告.md",
+    "/Users/company/Documents/Dragon知识库/04-系统/2026-08-23_男性情感聊天项目续接摘要.md": "knowledge/04-系统/2026-08-23_男性情感聊天项目续接摘要.md",
+    "/Users/company/Documents/Dragon知识库/04-系统/2026-08-23_知识单元元数据兼容处理报告.md": "knowledge/04-系统/2026-08-23_知识单元元数据兼容处理报告.md",
+    "/Users/company/Documents/Dragon知识库/04-系统/入库与查重规则.md": "knowledge/04-系统/入库与查重规则.md",
+    "/Users/company/Documents/Dragon知识库/04-系统/入库日志.md": "knowledge/04-系统/入库日志.md",
+    "/Users/company/Documents/Dragon知识库/04-系统/合并日志.md": "knowledge/04-系统/合并日志.md",
+    "/Users/company/Documents/Dragon知识库/04-系统/检索与调用规则.md": "knowledge/04-系统/检索与调用规则.md",
+    "/Users/company/Documents/Dragon知识库/04-系统/男性情感聊天讲解型经典案例处理规则.md": "knowledge/04-系统/男性情感聊天讲解型经典案例处理规则.md",
+    "/Users/company/Documents/Dragon知识库/04-系统/真实社交运行时路由设计.md": "knowledge/04-系统/真实社交运行时路由设计.md",
+    "/Users/company/Documents/Dragon知识库/04-系统/真实社交运行时路由配置.json": "knowledge/04-系统/真实社交运行时路由配置.json",
+    "/Users/company/Documents/Dragon知识库/04-系统/知识单元元数据兼容清单.json": "knowledge/04-系统/知识单元元数据兼容清单.json",
+    "/Users/company/Documents/Dragon知识库/04-系统/知识单元元数据兼容规则.md": "knowledge/04-系统/知识单元元数据兼容规则.md",
+    "/Users/company/Documents/Dragon知识库/04-系统/系统状态.md": "knowledge/04-系统/系统状态.md",
+    "/Users/company/Documents/Dragon知识库/.trash/2026-08-21_K-20260821-002_JacksonFlow游戏地图三阶段九步骤候选.md": "knowledge/archive/2026-08-21_K-20260821-002_JacksonFlow游戏地图三阶段九步骤候选.md",
+    "/Users/company/Documents/Dragon知识库/.trash/2026-08-21_K-20260821-006_JacksonFlow自我叙事阶段线上候选.md": "knowledge/archive/2026-08-21_K-20260821-006_JacksonFlow自我叙事阶段线上候选.md",
+    "/Users/company/Documents/Dragon知识库/.trash/2026-08-21_K-20260821-007_JacksonFlow自我叙事成功信号候选.md": "knowledge/archive/2026-08-21_K-20260821-007_JacksonFlow自我叙事成功信号候选.md",
+    "/Users/company/Documents/Dragon知识库/.trash/2026-08-21_K-20260821-008_JacksonFlow阶段收尾结构候选.md": "knowledge/archive/2026-08-21_K-20260821-008_JacksonFlow阶段收尾结构候选.md",
+    "/Users/company/Documents/Dragon知识库/.trash/2026-08-21_K-20260821-011_JacksonFlow自我叙事因果来源观点.md": "knowledge/archive/2026-08-21_K-20260821-011_JacksonFlow自我叙事因果来源观点.md",
+    "/Users/company/Documents/Dragon知识库/.trash/README.md": "knowledge/archive/README.md",
+    "/Volumes/PS3001/Jackson案例素材Skill/Jackson flow体系/老版体系无广告/体系txt/第三节.txt": "knowledge/external-sources/Jackson flow体系/老版体系无广告/体系txt/第三节.txt",
+    "/Volumes/PS3001/Jackson案例素材Skill/Jackson flow体系/老版体系无广告/体系txt/第四节.srt": "knowledge/external-sources/Jackson flow体系/老版体系无广告/体系txt/第四节.srt",
+    "/Volumes/PS3001/Jackson案例素材Skill/Jackson flow体系/老版体系无广告/体系txt/第五节｜假性评估.txt": "knowledge/external-sources/Jackson flow体系/老版体系无广告/体系txt/第五节｜假性评估.txt",
+    "/Volumes/PS3001/Jackson案例素材Skill/zhenshi-理论.docx": "knowledge/external-sources/zhenshi-理论.docx",
+    "/Volumes/PS3001/Jackson案例素材Skill/杰哥聊天/杰哥2.srt": "knowledge/external-sources/杰哥聊天/杰哥2.srt",
+    "/Volumes/PS3001/Jackson案例素材Skill/杰哥聊天/杰哥3.srt": "knowledge/external-sources/杰哥聊天/杰哥3.srt",
+    "/Volumes/PS3001/Jackson案例素材Skill/杰哥聊天/杰哥4.srt": "knowledge/external-sources/杰哥聊天/杰哥4.srt",
+    "/Volumes/PS3001/Jackson案例素材Skill/杰哥聊天/杰哥聊天1上.srt": "knowledge/external-sources/杰哥聊天/杰哥聊天1上.srt",
+    "/Volumes/PS3001/Jackson案例素材Skill/杰哥聊天/杰哥聊天1下.srt": "knowledge/external-sources/杰哥聊天/杰哥聊天1下.srt",
+    "/Volumes/PS3001/Jackson案例素材Skill/杰哥聊天/杰哥聊天5.srt": "knowledge/external-sources/杰哥聊天/杰哥聊天5.srt",
+    "/Volumes/PS3001/Jackson案例素材Skill/杰哥聊天/杰哥聊天6.srt": "knowledge/external-sources/杰哥聊天/杰哥聊天6.srt",
+    "/Volumes/PS3001/Jackson案例素材Skill/杰哥聊天/杰哥聊天7.srt": "knowledge/external-sources/杰哥聊天/杰哥聊天7.srt",
+    "/Volumes/PS3001/Jackson案例素材Skill/杰哥聊天/杰哥聊天8.srt": "knowledge/external-sources/杰哥聊天/杰哥聊天8.srt",
+    "/Volumes/PS3001/Jackson案例素材Skill/杰哥聊天/杰哥聊天9-1.srt": "knowledge/external-sources/杰哥聊天/杰哥聊天9-1.srt",
+    "/Volumes/PS3001/Jackson案例素材Skill/杰哥聊天/杰哥聊天9-2.srt": "knowledge/external-sources/杰哥聊天/杰哥聊天9-2.srt",
+    "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/001_jackson_top_phrases_seriousness_and_invitation_obstacles.md": "knowledge/external-sources/apple_notes_quick_notes_2026_08/001_jackson_top_phrases_seriousness_and_invitation_obstacles.md",
+    "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/002_emotional_tension.md": "knowledge/external-sources/apple_notes_quick_notes_2026_08/002_emotional_tension.md",
+    "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/003_within_five_days.md": "knowledge/external-sources/apple_notes_quick_notes_2026_08/003_within_five_days.md",
+    "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/004_displaying_aggression.md": "knowledge/external-sources/apple_notes_quick_notes_2026_08/004_displaying_aggression.md",
+    "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/005_sticker_and_non_seriousness_obstacles.md": "knowledge/external-sources/apple_notes_quick_notes_2026_08/005_sticker_and_non_seriousness_obstacles.md",
+    "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/006_closing_or_returning_home_obstacles.md": "knowledge/external-sources/apple_notes_quick_notes_2026_08/006_closing_or_returning_home_obstacles.md",
+    "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/007_leading_the_interaction.md": "knowledge/external-sources/apple_notes_quick_notes_2026_08/007_leading_the_interaction.md",
+    "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/008_escalation_by_pulling_back.md": "knowledge/external-sources/apple_notes_quick_notes_2026_08/008_escalation_by_pulling_back.md",
+    "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/009_asking_for_commitment.md": "knowledge/external-sources/apple_notes_quick_notes_2026_08/009_asking_for_commitment.md",
+    "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/010_teaching_frame.md": "knowledge/external-sources/apple_notes_quick_notes_2026_08/010_teaching_frame.md",
+    "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/011_playful_evaluation_opening.md": "knowledge/external-sources/apple_notes_quick_notes_2026_08/011_playful_evaluation_opening.md",
+    "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/012_values_and_stance.md": "knowledge/external-sources/apple_notes_quick_notes_2026_08/012_values_and_stance.md",
+    "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/013_empathic_opening.md": "knowledge/external-sources/apple_notes_quick_notes_2026_08/013_empathic_opening.md",
+    "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/014_jackson_key_tactics.md": "knowledge/external-sources/apple_notes_quick_notes_2026_08/014_jackson_key_tactics.md",
+    "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/015_experience_based_routines.md": "knowledge/external-sources/apple_notes_quick_notes_2026_08/015_experience_based_routines.md",
+    "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/016_clear_intent_and_premise.md": "knowledge/external-sources/apple_notes_quick_notes_2026_08/016_clear_intent_and_premise.md",
+    "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/017_tension_and_visual_imagery.md": "knowledge/external-sources/apple_notes_quick_notes_2026_08/017_tension_and_visual_imagery.md",
+    "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/018_gaze_and_direct_answers.md": "knowledge/external-sources/apple_notes_quick_notes_2026_08/018_gaze_and_direct_answers.md",
+    "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/019_extending_the_conversation.md": "knowledge/external-sources/apple_notes_quick_notes_2026_08/019_extending_the_conversation.md",
+    "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/020_strong_attraction_persona_examples.md": "knowledge/external-sources/apple_notes_quick_notes_2026_08/020_strong_attraction_persona_examples.md",
+    "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/021_values_and_stance_2.md": "knowledge/external-sources/apple_notes_quick_notes_2026_08/021_values_and_stance_2.md",
+    "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/022_short_term_and_low_fit.md": "knowledge/external-sources/apple_notes_quick_notes_2026_08/022_short_term_and_low_fit.md",
+    "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/023_defusing_tests_and_body_language.md": "knowledge/external-sources/apple_notes_quick_notes_2026_08/023_defusing_tests_and_body_language.md",
+    "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/024_building_connection.md": "knowledge/external-sources/apple_notes_quick_notes_2026_08/024_building_connection.md",
+    "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/025_asking_for_commitment_2.md": "knowledge/external-sources/apple_notes_quick_notes_2026_08/025_asking_for_commitment_2.md",
+    "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/026_long_distance_delivery_flow.md": "knowledge/external-sources/apple_notes_quick_notes_2026_08/026_long_distance_delivery_flow.md",
+    "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/027_victim_frame.md": "knowledge/external-sources/apple_notes_quick_notes_2026_08/027_victim_frame.md",
+    "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/028_app_contact_exchange.md": "knowledge/external-sources/apple_notes_quick_notes_2026_08/028_app_contact_exchange.md",
+    "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/029_woman_initiates_opening.md": "knowledge/external-sources/apple_notes_quick_notes_2026_08/029_woman_initiates_opening.md",
+    "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/030_long_term_relationship_dynamics.md": "knowledge/external-sources/apple_notes_quick_notes_2026_08/030_long_term_relationship_dynamics.md",
+    "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/031_male_to_female_framing.md": "knowledge/external-sources/apple_notes_quick_notes_2026_08/031_male_to_female_framing.md",
+    "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/032_how_to_continue_replies.md": "knowledge/external-sources/apple_notes_quick_notes_2026_08/032_how_to_continue_replies.md",
+    "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/033_value_feedback_and_flirting.md": "knowledge/external-sources/apple_notes_quick_notes_2026_08/033_value_feedback_and_flirting.md",
+    "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/034_pulling_the_conversation.md": "knowledge/external-sources/apple_notes_quick_notes_2026_08/034_pulling_the_conversation.md",
+    "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/035_opening_patterns.md": "knowledge/external-sources/apple_notes_quick_notes_2026_08/035_opening_patterns.md",
+    "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/036_SM_attributes_phrases.md": "knowledge/external-sources/apple_notes_quick_notes_2026_08/036_SM_attributes_phrases.md",
+    "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/037_using_their_own_logic.md": "knowledge/external-sources/apple_notes_quick_notes_2026_08/037_using_their_own_logic.md",
+    "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/038_cooperation_breakthrough.md": "knowledge/external-sources/apple_notes_quick_notes_2026_08/038_cooperation_breakthrough.md",
+    "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/039_reengagement_phrases.md": "knowledge/external-sources/apple_notes_quick_notes_2026_08/039_reengagement_phrases.md",
+    "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/040_invitation_phrases.md": "knowledge/external-sources/apple_notes_quick_notes_2026_08/040_invitation_phrases.md",
+    "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/041_disqualifying_pushback.md": "knowledge/external-sources/apple_notes_quick_notes_2026_08/041_disqualifying_pushback.md",
+    "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/042_obstacle_and_test_responses.md": "knowledge/external-sources/apple_notes_quick_notes_2026_08/042_obstacle_and_test_responses.md",
+    "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/043_screening_and_evaluation.md": "knowledge/external-sources/apple_notes_quick_notes_2026_08/043_screening_and_evaluation.md",
+    "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/044_high_value_prize_positioning.md": "knowledge/external-sources/apple_notes_quick_notes_2026_08/044_high_value_prize_positioning.md",
+    "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/045_emotional_disruption.md": "knowledge/external-sources/apple_notes_quick_notes_2026_08/045_emotional_disruption.md",
+    "/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/README.md": "knowledge/external-sources/apple_notes_quick_notes_2026_08/README.md",
+    "/Users/company/Documents/Codex/2026-08-21/skill/outputs/male-emotion-chat-framework-v0.md": "knowledge/external-sources/legacy-codex/male-emotion-chat-framework-v0.md",
+    "04-系统/真实社交运行时路由配置.json": "runtime/unit-index.json"
+  },
+  "missing_external_sources": []
+}
