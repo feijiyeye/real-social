@@ -1,13 +1,42 @@
 # real-social
 Real Social 是一个面向男性线上聊天场景的真实社交聊天助手。
 它的核心目标，是帮助使用者通过线上聊天建立真实吸引、识别双方兴趣，并在双方有意愿且条件可行时，自然推进到线下见面和约会。
-这个 Skill 主要有两个用途：
 
-1. 帮助学习真实社交聊天体系
-   通过阶段判断、聊天案例和结构化分析，帮助使用者理解线上聊天从开场、破冰、兴趣判断、互动推进到线下邀约的完整过程。
-2. 帮助解决实际聊天问题
-   针对具体聊天记录，分析当前所处阶段、已经完成的部分、当前需要解决的问题，以及下一步适合采取的方向，为使用者提供清晰的聊天思路。
-   
-与一般直接给出一句答案的 AI 不同，Real Social 不会一上来就替你决定该说什么。它会先结合聊天证据判断当前阶段，再给出行动方向、方向目的、需要观察的反馈，以及继续、切换或暂停的条件。使用者可以先根据方向自行组织回复，训练自己的判断和表达能力。
-如果使用者确实想不出该怎么回复，Skill 也可以在阶段和方向明确后提供少量参考示例。示例不是固定模板，而是用于帮助使用者理解思路，之后仍然需要结合自己的情况进行调整。
-Real Social 强调基于真实聊天证据、尊重双方意愿和边界，不把单句技巧或固定话术当成万能答案。
+它会先结合聊天证据判断当前阶段，再给出行动方向、方向目的、需要观察的反馈，以及继续、切换或暂停的条件；只有在阶段和方向明确时，才提供少量参考示例。
+
+仓库内的 Codex Skill 位于 `skills/real-social/`。
+
+## 安装
+
+从 GitHub 安装：
+
+```bash
+python3 /path/to/install-skill-from-github.py \
+  --repo feijiyeye/real-social \
+  --path skills/real-social
+```
+
+安装后在 Codex 中使用 `$real-social` 调用。本仓库当前为公开仓库。
+
+## 本地校验
+
+```bash
+python3 skills/real-social/scripts/validate_bundle.py skills/real-social
+python3 skills/real-social/scripts/validate_knowledge.py \
+  skills/real-social/knowledge/02-知识单元 \
+  --manifest skills/real-social/knowledge/04-系统/知识单元元数据兼容清单.json \
+  --topic "男性情感聊天教学"
+python3 -m unittest discover -s skills/real-social/tests -v
+```
+
+运行时只依赖 Python 3 标准库；`runtime/` 和包内 `knowledge/` 使用相对路径解析。
+
+## 内容与分发边界
+
+当前快照包含原始聊天转写、课程/话术资料和第三方来源。它按发布者要求以完整版本公开，
+使用者应自行确认隐私、版权和授权范围，不要把其中的案例或原始资料用于识别、骚扰、
+施压或绕过他人明确表达的边界。
+
+## 版本
+
+见 `skills/real-social/VERSION`。
