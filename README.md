@@ -11,10 +11,12 @@ Real Social 是一个面向男性线上聊天场景的真实社交聊天助手�
 从 GitHub 安装：
 
 ```bash
-python3 /path/to/install-skill-from-github.py \
+python3 ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py \
   --repo feijiyeye/real-social \
   --path skills/real-social
 ```
+
+如果你的 Codex 使用了自定义 `CODEX_HOME`，将命令中的 `~/.codex` 替换为对应目录。
 
 安装后在 Codex 中使用 `$real-social` 调用。本仓库当前为公开仓库。
 
