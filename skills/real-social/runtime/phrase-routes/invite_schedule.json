@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-27T17:32:32+08:00",
+  "generated_at": "2026-09-07T19:34:28+08:00",
   "package_id": "real-social",
   "route": "invite_schedule",
   "label": "邀约与条件调度",
@@ -19,9 +19,9 @@
       "callability": "candidate_callable_after_context_review",
       "source_refs": [
         {
-          "file": "knowledge/01-原始资料/2026-08-23_huashu.docx",
           "locator": "paragraph:236",
-          "section": "四、废测破解与框架控制（Shit Test Handling & Frame Control） / 4.3 阻碍废测解决（Jackson）"
+          "section": "四、废测破解与框架控制（Shit Test Handling & Frame Control） / 4.3 阻碍废测解决（Jackson）",
+          "scope": "local_only"
         }
       ]
     },
@@ -39,9 +39,9 @@
       "callability": "candidate_callable_after_context_review",
       "source_refs": [
         {
-          "file": "knowledge/01-原始资料/2026-08-23_huashu.docx",
           "locator": "paragraph:461",
-          "section": "七、引导投资与邀约（Leading Investment & Date Invitation） / 7.4 待机/邀约跟进（Jackson）"
+          "section": "七、引导投资与邀约（Leading Investment & Date Invitation） / 7.4 待机/邀约跟进（Jackson）",
+          "scope": "local_only"
         }
       ]
     },
@@ -59,9 +59,9 @@
       "callability": "candidate_callable_after_context_review",
       "source_refs": [
         {
-          "file": "knowledge/01-原始资料/2026-08-23_huashu.docx",
           "locator": "paragraph:413",
-          "section": "七、引导投资与邀约（Leading Investment & Date Invitation） / 7.3 邀约语句（Jackson）"
+          "section": "七、引导投资与邀约（Leading Investment & Date Invitation） / 7.3 邀约语句（Jackson）",
+          "scope": "local_only"
         }
       ]
     },
@@ -79,9 +79,9 @@
       "callability": "candidate_callable_after_context_review",
       "source_refs": [
         {
-          "file": "knowledge/01-原始资料/2026-08-23_huashu.docx",
           "locator": "paragraph:425",
-          "section": "七、引导投资与邀约（Leading Investment & Date Invitation） / 7.3 邀约语句（Jackson）"
+          "section": "七、引导投资与邀约（Leading Investment & Date Invitation） / 7.3 邀约语句（Jackson）",
+          "scope": "local_only"
         }
       ]
     },
@@ -99,9 +99,9 @@
       "callability": "candidate_callable_after_context_review",
       "source_refs": [
         {
-          "file": "knowledge/01-原始资料/2026-08-23_huashu.docx",
           "locator": "paragraph:427",
-          "section": "七、引导投资与邀约（Leading Investment & Date Invitation） / 7.3 邀约语句（Jackson）"
+          "section": "七、引导投资与邀约（Leading Investment & Date Invitation） / 7.3 邀约语句（Jackson）",
+          "scope": "local_only"
         }
       ]
     },
@@ -120,14 +120,14 @@
       "callability": "candidate_callable_after_context_review",
       "source_refs": [
         {
-          "file": "knowledge/01-原始资料/2026-08-23_huashu.docx",
           "locator": "paragraph:460",
-          "section": "七、引导投资与邀约（Leading Investment & Date Invitation） / 7.4 待机/邀约跟进（Jackson）"
+          "section": "七、引导投资与邀约（Leading Investment & Date Invitation） / 7.4 待机/邀约跟进（Jackson）",
+          "scope": "local_only"
         },
         {
-          "file": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_040_invitation_phrases.md",
           "locator": "line:56",
-          "section": "邀约部分："
+          "section": "邀约部分：",
+          "scope": "local_only"
         }
       ]
     },
@@ -146,14 +146,14 @@
       "callability": "candidate_callable_after_context_review",
       "source_refs": [
         {
-          "file": "knowledge/01-原始资料/2026-08-23_huashu.docx",
           "locator": "paragraph:439",
-          "section": "七、引导投资与邀约（Leading Investment & Date Invitation） / 7.3 邀约语句（Jackson）"
+          "section": "七、引导投资与邀约（Leading Investment & Date Invitation） / 7.3 邀约语句（Jackson）",
+          "scope": "local_only"
         },
         {
-          "file": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_040_invitation_phrases.md",
           "locator": "line:34",
-          "section": "邀约部分："
+          "section": "邀约部分：",
+          "scope": "local_only"
         }
       ]
     },
@@ -171,9 +171,9 @@
       "callability": "candidate_callable_after_context_review",
       "source_refs": [
         {
-          "file": "knowledge/01-原始资料/2026-08-23_huashu.docx",
           "locator": "paragraph:466",
-          "section": "七、引导投资与邀约（Leading Investment & Date Invitation） / 7.4 待机/邀约跟进（Jackson）"
+          "section": "七、引导投资与邀约（Leading Investment & Date Invitation） / 7.4 待机/邀约跟进（Jackson）",
+          "scope": "local_only"
         }
       ]
     },
@@ -191,9 +191,9 @@
       "callability": "candidate_callable_after_context_review",
       "source_refs": [
         {
-          "file": "knowledge/01-原始资料/2026-08-23_huashu.docx",
           "locator": "paragraph:437",
-          "section": "七、引导投资与邀约（Leading Investment & Date Invitation） / 7.3 邀约语句（Jackson）"
+          "section": "七、引导投资与邀约（Leading Investment & Date Invitation） / 7.3 邀约语句（Jackson）",
+          "scope": "local_only"
         }
       ]
     },
@@ -210,9 +210,9 @@
       "callability": "candidate_callable_after_context_review",
       "source_refs": [
         {
-          "file": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_001_jackson_top_phrases_seriousness_and_invitation_obstacles.md",
           "locator": "line:87",
-          "section": "遇到邀约女生社恐等阻碍"
+          "section": "遇到邀约女生社恐等阻碍",
+          "scope": "local_only"
         }
       ]
     },
@@ -229,9 +229,9 @@
       "callability": "candidate_callable_after_context_review",
       "source_refs": [
         {
-          "file": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_001_jackson_top_phrases_seriousness_and_invitation_obstacles.md",
           "locator": "line:97",
-          "section": "遇到邀约女生社恐等阻碍"
+          "section": "遇到邀约女生社恐等阻碍",
+          "scope": "local_only"
         }
       ]
     },
@@ -248,9 +248,9 @@
       "callability": "candidate_callable_after_context_review",
       "source_refs": [
         {
-          "file": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_001_jackson_top_phrases_seriousness_and_invitation_obstacles.md",
           "locator": "line:101",
-          "section": "遇到邀约女生社恐等阻碍"
+          "section": "遇到邀约女生社恐等阻碍",
+          "scope": "local_only"
         }
       ]
     },
@@ -267,9 +267,9 @@
       "callability": "candidate_callable_after_context_review",
       "source_refs": [
         {
-          "file": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_026_long_distance_delivery_flow.md",
           "locator": "line:11",
-          "section": "外卖百里千里送流程话术"
+          "section": "外卖百里千里送流程话术",
+          "scope": "local_only"
         }
       ]
     },
@@ -286,9 +286,9 @@
       "callability": "candidate_callable_after_context_review",
       "source_refs": [
         {
-          "file": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_028_app_contact_exchange.md",
           "locator": "line:15",
-          "section": "软件收号"
+          "section": "软件收号",
+          "scope": "local_only"
         }
       ]
     },
@@ -305,9 +305,9 @@
       "callability": "candidate_callable_after_context_review",
       "source_refs": [
         {
-          "file": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_028_app_contact_exchange.md",
           "locator": "line:17",
-          "section": "软件收号"
+          "section": "软件收号",
+          "scope": "local_only"
         }
       ]
     },
@@ -325,9 +325,9 @@
       "callability": "candidate_callable_after_context_review",
       "source_refs": [
         {
-          "file": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_029_woman_initiates_opening.md",
           "locator": "line:13",
-          "section": "女人主动开"
+          "section": "女人主动开",
+          "scope": "local_only"
         }
       ]
     },
@@ -345,9 +345,9 @@
       "callability": "candidate_callable_after_context_review",
       "source_refs": [
         {
-          "file": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_040_invitation_phrases.md",
           "locator": "line:7",
-          "section": "邀约部分："
+          "section": "邀约部分：",
+          "scope": "local_only"
         }
       ]
     },
@@ -365,9 +365,9 @@
       "callability": "candidate_callable_after_context_review",
       "source_refs": [
         {
-          "file": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_040_invitation_phrases.md",
           "locator": "line:10",
-          "section": "邀约部分："
+          "section": "邀约部分：",
+          "scope": "local_only"
         }
       ]
     },
@@ -385,9 +385,9 @@
       "callability": "candidate_callable_after_context_review",
       "source_refs": [
         {
-          "file": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_040_invitation_phrases.md",
           "locator": "line:14",
-          "section": "邀约部分："
+          "section": "邀约部分：",
+          "scope": "local_only"
         }
       ]
     },
@@ -405,9 +405,9 @@
       "callability": "candidate_callable_after_context_review",
       "source_refs": [
         {
-          "file": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_040_invitation_phrases.md",
           "locator": "line:17",
-          "section": "邀约部分："
+          "section": "邀约部分：",
+          "scope": "local_only"
         }
       ]
     },
@@ -424,9 +424,9 @@
       "callability": "candidate_callable_after_context_review",
       "source_refs": [
         {
-          "file": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_040_invitation_phrases.md",
           "locator": "line:80",
-          "section": "邀约部分："
+          "section": "邀约部分：",
+          "scope": "local_only"
         }
       ]
     },
@@ -443,9 +443,9 @@
       "callability": "candidate_callable_after_context_review",
       "source_refs": [
         {
-          "file": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_040_invitation_phrases.md",
           "locator": "line:102",
-          "section": "邀约部分："
+          "section": "邀约部分：",
+          "scope": "local_only"
         }
       ]
     }

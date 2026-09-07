@@ -1,10 +1,11 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-27T17:32:32+08:00",
+  "generated_at": "2026-09-07T19:34:28+08:00",
   "package_id": "real-social",
   "retrieval_policy": {
     "candidate_first": true,
-    "full_index": "on_demand",
+    "full_index": "local_only",
+    "source_audit": "local_only",
     "context_readback_required": true,
     "recovery": "disabled",
     "sexual_route_requires": [
@@ -38,8 +39,10 @@
       "preferred_entry_count": 20,
       "shard": "runtime/phrase-routes/clarify_open.json",
       "full_index": {
-        "path": "knowledge/01-原始资料/2026-08-23_Jackson体系话术去重索引.json",
-        "lookup": "on_demand",
+        "path": null,
+        "available": false,
+        "scope": "local_only",
+        "lookup": "local_only",
         "section_terms": [
           "开场同理心",
           "情景加话术",
@@ -72,8 +75,10 @@
       "preferred_entry_count": 16,
       "shard": "runtime/phrase-routes/boundary_channel.json",
       "full_index": {
-        "path": "knowledge/01-原始资料/2026-08-23_Jackson体系话术去重索引.json",
-        "lookup": "on_demand",
+        "path": null,
+        "available": false,
+        "scope": "local_only",
+        "lookup": "local_only",
         "section_terms": [
           "边界",
           "沟通",
@@ -106,8 +111,10 @@
       "preferred_entry_count": 12,
       "shard": "runtime/phrase-routes/true_feedback.json",
       "full_index": {
-        "path": "knowledge/01-原始资料/2026-08-23_Jackson体系话术去重索引.json",
-        "lookup": "on_demand",
+        "path": null,
+        "available": false,
+        "scope": "local_only",
+        "lookup": "local_only",
         "section_terms": [
           "真评",
           "联系感",
@@ -141,8 +148,10 @@
       "preferred_entry_count": 17,
       "shard": "runtime/phrase-routes/teasing_push_pull.json",
       "full_index": {
-        "path": "knowledge/01-原始资料/2026-08-23_Jackson体系话术去重索引.json",
-        "lookup": "on_demand",
+        "path": null,
+        "available": false,
+        "scope": "local_only",
+        "lookup": "local_only",
         "section_terms": [
           "开场假评",
           "聊天假评",
@@ -177,8 +186,10 @@
       "preferred_entry_count": 16,
       "shard": "runtime/phrase-routes/concern_test.json",
       "full_index": {
-        "path": "knowledge/01-原始资料/2026-08-23_Jackson体系话术去重索引.json",
-        "lookup": "on_demand",
+        "path": null,
+        "available": false,
+        "scope": "local_only",
+        "lookup": "local_only",
         "section_terms": [
           "破费测",
           "废测集合",
@@ -213,8 +224,10 @@
       "preferred_entry_count": 14,
       "shard": "runtime/phrase-routes/low_response_recovery.json",
       "full_index": {
-        "path": "knowledge/01-原始资料/2026-08-23_Jackson体系话术去重索引.json",
-        "lookup": "on_demand",
+        "path": null,
+        "available": false,
+        "scope": "local_only",
+        "lookup": "local_only",
         "section_terms": [
           "面对冷暴力",
           "忽冷忽热",
@@ -250,8 +263,10 @@
       "preferred_entry_count": 22,
       "shard": "runtime/phrase-routes/invite_schedule.json",
       "full_index": {
-        "path": "knowledge/01-原始资料/2026-08-23_Jackson体系话术去重索引.json",
-        "lookup": "on_demand",
+        "path": null,
+        "available": false,
+        "scope": "local_only",
+        "lookup": "local_only",
         "section_terms": [
           "铺垫邀约",
           "邀约语句",
@@ -286,8 +301,10 @@
       "preferred_entry_count": 17,
       "shard": "runtime/phrase-routes/connection_repair.json",
       "full_index": {
-        "path": "knowledge/01-原始资料/2026-08-23_Jackson体系话术去重索引.json",
-        "lookup": "on_demand",
+        "path": null,
+        "available": false,
+        "scope": "local_only",
+        "lookup": "local_only",
         "section_terms": [
           "作联系感",
           "日常维护",
@@ -325,8 +342,10 @@
       "preferred_entry_count": 9,
       "shard": "runtime/phrase-routes/intimacy_conditional.json",
       "full_index": {
-        "path": "knowledge/01-原始资料/2026-08-23_Jackson体系话术去重索引.json",
-        "lookup": "on_demand",
+        "path": null,
+        "available": false,
+        "scope": "local_only",
+        "lookup": "local_only",
         "section_terms": [
           "性张力",
           "调情",
@@ -356,8 +375,10 @@
       "preferred_entry_count": 6,
       "shard": "runtime/phrase-routes/stop_boundary.json",
       "full_index": {
-        "path": "knowledge/01-原始资料/2026-08-23_Jackson体系话术去重索引.json",
-        "lookup": "on_demand",
+        "path": null,
+        "available": false,
+        "scope": "local_only",
+        "lookup": "local_only",
         "section_terms": [
           "停止",
           "拒绝",

@@ -14,13 +14,13 @@ description: 真实社交聊天助手。用于分析与女性的文字聊天、�
 1. 普通调用先读 `runtime/runtime-entry.md`、`runtime/route-index.json` 和 `runtime/unit-index.json`。
 2. 运行 `python3 scripts/route_request.py --text "用户当前输入"`，识别一个任务路由和一个状态路由；每次只选择一个 `primary_module`，辅助模块最多两个。
 3. 普通聊天默认只回读正式流程单元 `knowledge/02-知识单元/K-20260826-001_真实社交线上流程推拉方向与回蓝闸门.md` 及命中状态所需的少量单元。
-4. 只有需要任务后导航、案例或话术时，才加载 `runtime/navigation-index.json`、`runtime/phrase-route-index.json` 和对应知识单元；命中后再回读原始资料相邻上下文。
-5. `knowledge/manifest.json`、主题索引、系统状态、续接摘要、完整话术索引和外部来源只在来源审计、入库、维护或明确要求深度检索时读取。若运行时索引不可用，才退回 `knowledge/SOURCE_OF_TRUTH.md`、`knowledge/AGENTS.md` 和既有治理文件的按需读取。
+4. 只有需要任务后导航、案例或话术时，才加载 `runtime/navigation-index.json`、`runtime/phrase-route-index.json` 和对应知识单元；公开包中的候选入口已经是结构化派生资产，不依赖原始文件回读。
+5. `knowledge/manifest.json`、主题索引、系统状态、续接摘要和本地完整版来源只在维护或明确要求深度审计时读取。公开包没有原始资料、外部原件或完整话术索引；来源审计需回到本地完整版。
 6. 运行协议和字段规则分别参考 `references/policy.md`、`references/runtime-contract.md`、`references/processing-pipeline.md`、`references/knowledge-schema.md` 和 `references/portable-runtime.md`。
 
 知识单元的权限顺序是：系统/开发者边界 -> `canonical` 且适用的正式单元 -> 标明状态的候选单元和候选案例 -> 来源观点 -> 模型常识。当前真实社交有两个正式单元：历史兼容架构 `K-20260821-001` 与正式线上流程 `K-20260826-001`；其余相关单元保持 `candidate`。候选内容不能伪装成正式规则，来源报告结果不是保证。
 
-包内原始资料按用户确认原样收录。回答时仍只引用当前问题所需内容，不主动扩散聊天对象的身份、联系方式或其他不必要的第三方信息。
+公开发布包只包含整理后的知识单元、运行时路由和候选话术分片；SRT、DOCX、截图、完整原始资料、外部原件和完整话术索引仅保留在本地完整版。回答时仍只引用当前问题所需内容，不主动扩散聊天对象的身份、联系方式或其他不必要的第三方信息。
 
 ## 聊天运行顺序
 
@@ -85,10 +85,9 @@ description: 真实社交聊天助手。用于分析与女性的文字聊天、�
 
 满足示例门槛后，优先按以下层级检索：
 
-1. `knowledge/01-原始资料/2026-08-23_Jackson体系话术候选参考清单.json`
-2. `knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes候选参考增补清单.json`
-3. `knowledge/01-原始资料/2026-08-23_Jackson体系话术去重索引.json`
-4. 对命中条目回到对应 Markdown、DOCX 文本提取、SRT 或 `external-sources/` 原件核对相邻上下文、说话人和调用状态。
+1. `runtime/phrase-route-index.json` 和对应 `runtime/phrase-routes/*.json` 中的公开候选分片
+2. 命中后依据当前聊天证据、阶段、方向和边界重新判断，不把候选句视为白名单
+3. 需要完整来源审计时，在本地完整版读取原始候选清单、去重索引和相邻原件；公开包不执行该回读
 
 重复次数、章节名和来源方的效果主张都不是白名单。近似表达不得只凭关键词合并；来源中的争议操作可以保留用于研究或反例，但不能因此成为默认方向。回蓝章节仅可作为状态审计线索，禁止进入话术召回。
 
@@ -111,7 +110,7 @@ description: 真实社交聊天助手。用于分析与女性的文字聊天、�
 发布包提供三个轻量辅助入口：
 
 - `scripts/route_request.py`：根据任务文本、风险标记、阶段和方向返回主路由及最小读取计划；
-- `scripts/search_phrases.py`：先查路由候选，再按需读取完整话术索引；回蓝路由始终返回禁用；
+- `scripts/search_phrases.py`：先查公开候选分片；公开包请求 `--full-index` 时明确提示完整索引仅在本地完整版可用；回蓝路由始终返回禁用；
 - `scripts/build_runtime_indexes.py`：从当前知识快照重新生成运行时入口和派生索引。
 
 脚本输出只提供检索范围和证据线索，不能替代模型对聊天上下文、说话人、边界和候选状态的判断。

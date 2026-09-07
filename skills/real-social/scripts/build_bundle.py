@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
-"""Build a portable real-social Skill snapshot from the current Dragon sources."""
+"""Build the public runtime-only real-social Skill snapshot."""
 
 from __future__ import annotations
 
 import argparse
 import hashlib
 import json
+import re
 import shutil
 import subprocess
 import sys
@@ -73,17 +74,35 @@ def copy_tree(
         if include and not include(source):
             continue
         relative = source.relative_to(source_root)
-        copy_one(
-            source,
-            destination_root / relative,
-            records,
-            source_label,
-            original_path=str(source),
-        )
+        destination = destination_root / relative
+        if source.suffix.lower() in {".md", ".txt", ".json", ".srt"}:
+            destination.parent.mkdir(parents=True, exist_ok=True)
+            destination.write_text(sanitize_public_text(read_text(source)), encoding="utf-8")
+            records.append(
+                {
+                    "source_label": source_label,
+                    "original_path": str(source),
+                    "bundle_path": destination.relative_to(SKILL_ROOT).as_posix(),
+                    "sha256": sha256(destination),
+                    "size": str(destination.stat().st_size),
+                }
+            )
+        else:
+            copy_one(source, destination, records, source_label, original_path=str(source))
 
 
 def read_text(path: Path) -> str:
     return path.read_text(encoding="utf-8")
+
+
+def sanitize_public_text(text: str) -> str:
+    """Remove raw/external source paths from public structured artifacts."""
+    text = re.sub(
+        r"/Users/company/Documents/Dragon知识库/(?:01-原始资料|external-sources)/[^\"`\n )]+",
+        "local_only",
+        text,
+    )
+    return re.sub(r"(?<![\w`])(?:01-原始资料|external-sources)/[^\"`\n )]+", "local_only", text)
 
 
 def is_real_social_unit(path: Path) -> bool:
@@ -102,6 +121,7 @@ def write_generated(
     text = read_text(source)
     text = text.replace(str(dragon_root), ".")
     text = text.replace("/Users/company/.codex/skills/male-emotion-chat-coach", ".")
+    text = sanitize_public_text(text)
     destination.parent.mkdir(parents=True, exist_ok=True)
     destination.write_text(text, encoding="utf-8")
     records.append(
@@ -213,30 +233,15 @@ def main() -> int:
     records: list[dict[str, str]] = []
     missing: list[str] = []
 
-    # Preserve exact governance originals, then expose portable copies at the bundle root.
+    # Expose portable governance copies at the bundle root. Exact governance
+    # originals stay in the local Dragon repository and are never copied.
     for name in ("SOURCE_OF_TRUTH.md", "AGENTS.md", "CLAUDE.md", "README.md"):
         source = dragon_root / name
         if source.is_file():
-            copy_one(
-                source,
-                KNOWLEDGE_ROOT / "_original_dragon_root" / name,
-                records,
-                "dragon_root_original",
-            )
             write_generated(source, KNOWLEDGE_ROOT / name, records, dragon_root)
 
-    # Current project snapshot. Raw files are kept exactly as archived in Dragon.
-    copy_tree(
-        dragon_root / "01-原始资料",
-        KNOWLEDGE_ROOT / "01-原始资料",
-        records,
-        "dragon_raw",
-        include=lambda path: (
-            path.name != ".gitkeep"
-            and not path.name.startswith("._")
-            and path.name not in EXCLUDED_RAW_FILES
-        ),
-    )
+    # Raw source files and external originals are intentionally excluded from
+    # this public snapshot. They remain available in the local Dragon source.
     copy_tree(
         dragon_root / "02-知识单元",
         KNOWLEDGE_ROOT / "02-知识单元",
@@ -271,64 +276,6 @@ def main() -> int:
             ),
         )
 
-    # External originals still referenced by current knowledge units.
-    external_files = [
-        "Jackson flow体系/老版体系无广告/体系txt/第三节.txt",
-        "Jackson flow体系/老版体系无广告/体系txt/第四节.srt",
-        "Jackson flow体系/老版体系无广告/体系txt/第五节｜假性评估.txt",
-        "zhenshi-理论.docx",
-    ]
-    external_files.extend(
-        f"杰哥聊天/{name}"
-        for name in (
-            "杰哥2.srt",
-            "杰哥3.srt",
-            "杰哥4.srt",
-            "杰哥聊天1上.srt",
-            "杰哥聊天1下.srt",
-            "杰哥聊天5.srt",
-            "杰哥聊天6.srt",
-            "杰哥聊天7.srt",
-            "杰哥聊天8.srt",
-            "杰哥聊天9-1.srt",
-            "杰哥聊天9-2.srt",
-        )
-    )
-    for relative in external_files:
-        source, label = external_file(external_root, relative)
-        if source.is_file():
-            copy_one(
-                source,
-                KNOWLEDGE_ROOT / "external-sources" / relative,
-                records,
-                label,
-            )
-        else:
-            missing.append(str(source))
-
-    notes_root = external_root / "apple_notes_quick_notes_2026_08"
-    if notes_root.is_dir():
-        copy_tree(
-            notes_root,
-            KNOWLEDGE_ROOT / "external-sources" / "apple_notes_quick_notes_2026_08",
-            records,
-            "external:apple_notes_quick_notes_2026_08",
-            include=lambda path: not path.name.startswith("._"),
-        )
-    else:
-        missing.append(str(notes_root))
-
-    framework = Path("/Users/company/Documents/Codex/2026-08-21/skill/outputs/male-emotion-chat-framework-v0.md")
-    if framework.is_file():
-        copy_one(
-            framework,
-            KNOWLEDGE_ROOT / "external-sources" / "legacy-codex" / framework.name,
-            records,
-            "external:legacy_codex_framework",
-        )
-    else:
-        missing.append(str(framework))
-
     # Build the small runtime entry and derived route indexes only after the
     # copied knowledge snapshot is complete.  The full manifest and phrase
     # index remain available for audits but are not part of the default load.
@@ -340,8 +287,13 @@ def main() -> int:
         "package_id": "real-social",
         "display_name": "真实社交",
         "snapshot_date": datetime.now(timezone.utc).astimezone().isoformat(timespec="seconds"),
-        "source_root": str(dragon_root),
-        "external_source_root": str(external_root),
+        "publication": "public_runtime_only",
+        "source_audit": "local_only",
+        "excluded_paths": [
+            "knowledge/01-原始资料/",
+            "knowledge/external-sources/",
+            "knowledge/_original_dragon_root/",
+        ],
         "scope": "当前 Dragon 知识库中的真实社交/男性情感聊天项目；不含短视频、读书和其他无关项目",
         "runtime_root": "knowledge",
         "runtime_entry": "runtime/runtime-entry.md",
@@ -375,13 +327,11 @@ def main() -> int:
                 if record["bundle_path"].startswith("runtime/")
             ),
         },
-        "files": records,
-        "source_path_map": {
-            record["original_path"]: record["bundle_path"]
+        "files": [
+            {key: value for key, value in record.items() if key not in {"original_path", "source_sha256"}}
             for record in records
-            if record.get("original_path")
-        },
-        "missing_external_sources": missing,
+        ],
+        "local_only_sources": True,
     }
     manifest_path = KNOWLEDGE_ROOT / "manifest.json"
     manifest_path.write_text(

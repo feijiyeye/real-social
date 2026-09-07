@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-27T17:32:32+08:00",
+  "generated_at": "2026-09-07T19:34:28+08:00",
   "package_id": "real-social",
   "entry": "runtime/runtime-entry.md",
   "indexes": [
@@ -23,82 +23,84 @@
   "canonical_count": 2,
   "candidate_count": 47,
   "phrase_route_count": 10,
-  "full_phrase_index": "knowledge/01-原始资料/2026-08-23_Jackson体系话术去重索引.json",
+  "full_phrase_index": null,
+  "full_phrase_index_scope": "local_only",
+  "source_audit": "local_only",
   "files": [
     {
       "path": "runtime/runtime-entry.md",
-      "sha256": "cde4e8ff1bc68804f8dabf1b92e189fb20cdff0b9a95f0cc79e518d883002389",
-      "size": 5073
+      "sha256": "fd7772d5ab21fa6e4c85b2a58150f4eb2a3a0e0d31316807fe39dd504fbedd56",
+      "size": 5133
     },
     {
       "path": "runtime/route-index.json",
-      "sha256": "d798f555494f56825fc9a65acfead95cb350c7adac9b49f578987ddd921e6888",
-      "size": 25290
+      "sha256": "ea31e4604a257631d63c26c7044753be22df6949e2b6945d07eae2d71ca5d83b",
+      "size": 24523
     },
     {
       "path": "runtime/navigation-index.json",
-      "sha256": "8e36f71ee335a9470bd051daa12eb46e8e7991e7aca269ebf8bd0c5886509a18",
+      "sha256": "e91c782de36f1e777181f2ec36031643eeeb912f4298b6bc896b1022f69c7810",
       "size": 1617
     },
     {
       "path": "runtime/unit-index.json",
-      "sha256": "15654feaf6acd42d9952698422e2115ff1c801180b0d8dad39ec992f6c4b0764",
-      "size": 141007
+      "sha256": "65a036a268a59197f3cc131ecddccdb2eb9a8eb635ddf2492c17d888b3d105a5",
+      "size": 133525
     },
     {
       "path": "runtime/phrase-route-index.json",
-      "sha256": "688427434756a380c4b093ea066f5351b78c3cf4d70c8c015dbb5c2d1d9d789a",
-      "size": 9600
+      "sha256": "58558e243ae35cb40a4b59e130b22b62eb387445e1da557d5ac9332fc80e3cc4",
+      "size": 9525
     },
     {
       "path": "runtime/phrase-routes/boundary_channel.json",
-      "sha256": "32d0bb6c034ca9faa38d45233f6f35abc3bc9a322b879ae9addd716b693da501",
-      "size": 10957
+      "sha256": "c575cc159e3cc7ecb66fa4d5266303c301ac4842ec4b3658cbf2daeacb02b060",
+      "size": 9739
     },
     {
       "path": "runtime/phrase-routes/clarify_open.json",
-      "sha256": "02ef38ffb39cdbd145850537a81654bf390463204981e96ba5f0a871b0ef6007",
-      "size": 12625
+      "sha256": "7fa9dab09eecec3c03b59db7379cacae79599eebbee5da3ce74e524850b4276e",
+      "size": 11185
     },
     {
       "path": "runtime/phrase-routes/concern_test.json",
-      "sha256": "fe86d67765b62de9954ddd4de74719bd42b83bb6d1df7cee2998ca4db77e11f1",
-      "size": 10953
+      "sha256": "a4c6a9d32e86f7007f4916e6dd4615f2351427b77392ad9c9c6a2e7023757661",
+      "size": 9735
     },
     {
       "path": "runtime/phrase-routes/connection_repair.json",
-      "sha256": "dec789002094b6a83c1ca19ee1e9ccda35fec144ac22a7632531079a84345dcc",
-      "size": 10989
+      "sha256": "7d6684ffc6cf870e8ebd88f6ab96cd7dc7aa1f2f58d7a843f7c20d2b99af8429",
+      "size": 9843
     },
     {
       "path": "runtime/phrase-routes/intimacy_conditional.json",
-      "sha256": "da6987f472a6e427c2730acfded1c58631961192de60ecebc13b8498e9697435",
-      "size": 6591
+      "sha256": "036ab59a2e71b9f4348ee2ef136d4da51f23f4439e818033ab99761316e48e06",
+      "size": 5908
     },
     {
       "path": "runtime/phrase-routes/invite_schedule.json",
-      "sha256": "637f9f9b2eb6dd4cbfb2009a7d1d2428431f2af13874147348f363a2e6427426",
-      "size": 14754
+      "sha256": "fd07ce1a069482b11e854c6f857ee71e0f603282f5c2a8777eccb5075be120cf",
+      "size": 13209
     },
     {
       "path": "runtime/phrase-routes/low_response_recovery.json",
-      "sha256": "e2f2ec3e08933f825f9fec16c890503e3f91ce6769b1c7718fb94762a9b7f0f5",
-      "size": 8666
+      "sha256": "515583c4bcdd916c6dcd34b7115248edf9c7ecf09dedb50ea80b484af76d7e2e",
+      "size": 7812
     },
     {
       "path": "runtime/phrase-routes/stop_boundary.json",
-      "sha256": "9914687c2def2bbbf4dc0b6f4938155a24e6df23690451067d0fc122a4faa56c",
-      "size": 4270
+      "sha256": "4afc38fbd24a0232a0ca7f72955f24714c636c58893709e87908509f0be888bb",
+      "size": 4018
     },
     {
       "path": "runtime/phrase-routes/teasing_push_pull.json",
-      "sha256": "b6b1f877327e0d5b723e7e51d493b0681f9978f9f43ee2f3255906e14b3f2bcf",
-      "size": 10858
+      "sha256": "0252438a8365971cf1229c8d7e4629a1d413fd33c5ce47813849f8dcd3f56cad",
+      "size": 9853
     },
     {
       "path": "runtime/phrase-routes/true_feedback.json",
-      "sha256": "4b3567d2c1fa7b608cd39b69c74495297b6633229ce654c2572ce9a69b54389c",
-      "size": 7429
+      "sha256": "64d51e00b656426e031ecffd1226cc604ef50a6dd2d986783e05c12ba55110b9",
+      "size": 6647
     }
   ]
 }

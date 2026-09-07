@@ -43,7 +43,7 @@
       "primary_units": ["K-20260821-001"],
       "output_mode": "onboarding",
       "load": ["runtime/runtime-entry.md", "runtime/route-index.json"],
-      "defer": ["knowledge/manifest.json", "knowledge/01-原始资料/2026-08-23_Jackson体系话术去重索引.json"]
+      "defer": ["knowledge/manifest.json", "local_only/full_phrase_index"]
     },
     {
       "id": "analyze_chat",
@@ -52,7 +52,7 @@
       "primary_units": ["K-20260826-001", "K-20260821-018"],
       "output_mode": "analysis",
       "load": ["runtime/runtime-entry.md", "runtime/route-index.json", "runtime/unit-index.json", "knowledge/02-知识单元/K-20260826-001_真实社交线上流程推拉方向与回蓝闸门.md"],
-      "defer": ["knowledge/manifest.json", "knowledge/04-系统/2026-08-23_男性情感聊天项目续接摘要.md", "knowledge/01-原始资料/2026-08-23_Jackson体系话术去重索引.json"]
+      "defer": ["knowledge/manifest.json", "knowledge/04-系统/2026-08-23_男性情感聊天项目续接摘要.md", "local_only/full_phrase_index"]
     },
     {
       "id": "reply_request",
@@ -61,7 +61,7 @@
       "primary_units": ["K-20260826-001", "K-20260823-051", "K-20260823-052", "K-20260823-053"],
       "output_mode": "reply_guidance",
       "load": ["runtime/runtime-entry.md", "runtime/route-index.json", "runtime/unit-index.json", "knowledge/02-知识单元/K-20260826-001_真实社交线上流程推拉方向与回蓝闸门.md"],
-      "defer": ["knowledge/01-原始资料/2026-08-23_Jackson体系话术去重索引.json", "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes候选参考增补清单.json"]
+      "defer": ["local_only/full_phrase_index", "local_only/candidate_source"]
     },
     {
       "id": "case_lookup",
@@ -70,7 +70,7 @@
       "primary_units": ["K-20260826-001"],
       "output_mode": "case_reference",
       "load": ["runtime/runtime-entry.md", "runtime/route-index.json", "runtime/unit-index.json"],
-      "defer": ["knowledge/01-原始资料/", "knowledge/external-sources/"]
+      "defer": ["local_only/source_audit", "local_only/source_audit"]
     },
     {
       "id": "source_audit",
@@ -88,7 +88,7 @@
       "primary_units": ["K-20260821-001"],
       "output_mode": "ingest",
       "load": ["runtime/runtime-entry.md", "runtime/route-index.json", "knowledge/04-系统/入库与查重规则.md", "knowledge/04-系统/检索与调用规则.md"],
-      "defer": ["knowledge/01-原始资料/2026-08-23_Jackson体系话术去重索引.json"]
+      "defer": ["local_only/full_phrase_index"]
     },
     {
       "id": "architecture_maintenance",
@@ -97,7 +97,7 @@
       "primary_units": ["K-20260821-001"],
       "output_mode": "architecture",
       "load": ["runtime/runtime-entry.md", "runtime/route-index.json", "runtime/navigation-index.json", "knowledge/04-系统/真实社交运行时路由设计.md", "knowledge/04-系统/真实社交运行时路由配置.json"],
-      "defer": ["knowledge/01-原始资料/", "knowledge/external-sources/"]
+      "defer": ["local_only/source_audit", "local_only/source_audit"]
     }
   ],
   "state_routes": [
@@ -110,7 +110,7 @@
       "exception_route": "overall_stop",
       "phrase_retrieval": "enabled_boundary_only",
       "required_reads": ["knowledge/02-知识单元/K-20260826-001_真实社交线上流程推拉方向与回蓝闸门.md", "knowledge/02-知识单元/K-20260821-021_zhenshi明确拒绝与停止时不纠缠边界候选.md"],
-      "defer": ["knowledge/01-原始资料/2026-08-23_Jackson体系话术去重索引.json"]
+      "defer": ["local_only/full_phrase_index"]
     },
     {
       "id": "privacy_safety_age_consent",
@@ -121,7 +121,7 @@
       "exception_route": "concern",
       "phrase_retrieval": "disabled_until_verified",
       "required_reads": ["knowledge/02-知识单元/K-20260823-053_体系话术高风险隔离边界候选.md", "knowledge/02-知识单元/K-20260826-001_真实社交线上流程推拉方向与回蓝闸门.md"],
-      "defer": ["knowledge/01-原始资料/2026-08-23_Jackson体系话术去重索引.json"]
+      "defer": ["local_only/full_phrase_index"]
     },
     {
       "id": "recovery",
@@ -132,7 +132,7 @@
       "exception_route": "recovery",
       "phrase_retrieval": "disabled",
       "required_reads": ["knowledge/02-知识单元/K-20260826-001_真实社交线上流程推拉方向与回蓝闸门.md"],
-      "defer": ["knowledge/01-原始资料/2026-08-23_Jackson体系话术去重索引.json", "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes候选参考增补清单.json"]
+      "defer": ["local_only/full_phrase_index", "local_only/candidate_source"]
     },
     {
       "id": "clarify",
@@ -143,7 +143,7 @@
       "exception_route": "clarify",
       "phrase_retrieval": "enabled_after_context_review",
       "required_reads": ["knowledge/02-知识单元/K-20260826-001_真实社交线上流程推拉方向与回蓝闸门.md"],
-      "defer": ["knowledge/01-原始资料/2026-08-23_Jackson体系话术去重索引.json"]
+      "defer": ["local_only/full_phrase_index"]
     },
     {
       "id": "concern_condition",
@@ -154,7 +154,7 @@
       "exception_route": "concern",
       "phrase_retrieval": "enabled_after_context_review",
       "required_reads": ["knowledge/02-知识单元/K-20260826-001_真实社交线上流程推拉方向与回蓝闸门.md", "runtime/phrase-route-index.json"],
-      "defer": ["knowledge/01-原始资料/2026-08-23_Jackson体系话术去重索引.json"]
+      "defer": ["local_only/full_phrase_index"]
     },
     {
       "id": "low_response",
@@ -165,7 +165,7 @@
       "exception_route": "low_response",
       "phrase_retrieval": "enabled_after_context_review",
       "required_reads": ["knowledge/02-知识单元/K-20260826-001_真实社交线上流程推拉方向与回蓝闸门.md", "knowledge/02-知识单元/K-20260821-020_zhenshi低回应时减少投入方向候选.md"],
-      "defer": ["knowledge/01-原始资料/2026-08-23_Jackson体系话术去重索引.json"]
+      "defer": ["local_only/full_phrase_index"]
     },
     {
       "id": "invite",
@@ -176,7 +176,7 @@
       "exception_route": "direct_window",
       "phrase_retrieval": "enabled_after_context_review",
       "required_reads": ["knowledge/02-知识单元/K-20260826-001_真实社交线上流程推拉方向与回蓝闸门.md", "runtime/phrase-route-index.json"],
-      "defer": ["knowledge/01-原始资料/2026-08-23_Jackson体系话术去重索引.json"]
+      "defer": ["local_only/full_phrase_index"]
     },
     {
       "id": "interest_push_pull",
@@ -255,7 +255,7 @@
         "negative_feedback_action": "stop_push_and_choose_pull_clarify_pause_or_boundary_by_evidence"
       },
       "required_reads": ["knowledge/02-知识单元/K-20260826-001_真实社交线上流程推拉方向与回蓝闸门.md", "runtime/phrase-route-index.json"],
-      "defer": ["knowledge/01-原始资料/2026-08-23_Jackson体系话术去重索引.json"]
+      "defer": ["local_only/full_phrase_index"]
     },
     {
       "id": "unknown_stage",
@@ -266,7 +266,7 @@
       "exception_route": "clarify",
       "phrase_retrieval": "disabled_until_context",
       "required_reads": ["knowledge/02-知识单元/K-20260826-001_真实社交线上流程推拉方向与回蓝闸门.md"],
-      "defer": ["knowledge/01-原始资料/2026-08-23_Jackson体系话术去重索引.json"]
+      "defer": ["local_only/full_phrase_index"]
     }
   ],
   "phrase_routes": [
@@ -473,7 +473,7 @@
     "always": ["runtime/runtime-entry.md", "runtime/route-index.json"],
     "chat_default": ["runtime/unit-index.json", "knowledge/02-知识单元/K-20260826-001_真实社交线上流程推拉方向与回蓝闸门.md"],
     "on_demand": ["runtime/navigation-index.json", "runtime/phrase-route-index.json", "knowledge/02-知识单元/"],
-    "maintenance_only": ["knowledge/manifest.json", "knowledge/04-系统/2026-08-23_男性情感聊天项目续接摘要.md", "knowledge/01-原始资料/2026-08-23_Jackson体系话术去重索引.json", "knowledge/external-sources/"],
-    "never_default": ["knowledge/_original_dragon_root/", "knowledge/archive/"]
+    "maintenance_only": ["knowledge/manifest.json", "knowledge/04-系统/2026-08-23_男性情感聊天项目续接摘要.md", "local_only/full_phrase_index", "local_only/source_audit"],
+    "never_default": ["local_only/governance_originals", "knowledge/archive/"]
   }
 }

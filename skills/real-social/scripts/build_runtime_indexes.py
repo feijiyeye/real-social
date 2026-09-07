@@ -169,6 +169,16 @@ def extract_source_refs(block: str) -> list[str]:
 def package_path_for_source(source: str, knowledge_root: Path) -> str:
     """Return a portable label without leaking an installation-specific path."""
     source_path = Path(source)
+    normalized = source.replace("\\", "/")
+    local_only_markers = (
+        "01-原始资料/",
+        "external-sources/",
+        "/Jackson案例素材Skill/",
+        "/Documents/Dragon知识库/01-原始资料/",
+        "/Documents/Dragon知识库/external-sources/",
+    )
+    if any(marker in normalized for marker in local_only_markers):
+        return "local_only"
     if not source_path.is_absolute():
         candidate = knowledge_root / source_path
         if candidate.is_file():
@@ -336,9 +346,10 @@ def entry_from_candidate(entry: dict[str, Any], group_callability: str = "candid
     for ref in entry.get("source_refs", []) if isinstance(entry.get("source_refs"), list) else []:
         if not isinstance(ref, dict):
             continue
-        copy = {key: ref[key] for key in ("file", "locator", "section") if key in ref}
-        if "file" in copy:
-            copy["file"] = normalize_source_ref(str(copy["file"]))
+        copy = {key: ref[key] for key in ("locator", "section") if key in ref}
+        # The public package keeps candidate text but never publishes the
+        # source filename or a path that would imply the raw file is bundled.
+        copy["scope"] = "local_only"
         refs.append(copy)
     entry_callability = str(entry.get("callability") or "")
     # A source-group restriction is a lower bound on safety.  An entry may be
@@ -364,10 +375,12 @@ def entry_from_candidate(entry: dict[str, Any], group_callability: str = "candid
 def build_phrase_index(skill_root: Path, config: dict[str, Any]) -> dict[str, Any]:
     knowledge_root = skill_root / "knowledge"
     source_root = knowledge_root / "01-原始资料"
-    jackson = read_json(source_root / "2026-08-23_Jackson体系话术候选参考清单.json", {})
-    apple = read_json(source_root / "2026-08-23_AppleNotesQuickNotes候选参考增补清单.json", {})
+    source_documents = [
+        read_json(source_root / "2026-08-23_Jackson体系话术候选参考清单.json", {}),
+        read_json(source_root / "2026-08-23_AppleNotesQuickNotes候选参考增补清单.json", {}),
+    ]
     sources_by_group: dict[str, list[dict[str, Any]]] = {}
-    for document in (jackson, apple):
+    for document in source_documents:
         for group in document.get("groups", []) if isinstance(document, dict) else []:
             if not isinstance(group, dict):
                 continue
@@ -398,12 +411,33 @@ def build_phrase_index(skill_root: Path, config: dict[str, Any]) -> dict[str, An
                 current["occurrence_count"] = max(current.get("occurrence_count", 0), entry.get("occurrence_count", 0))
                 if CALLABILITY_RANK.get(str(entry.get("callability")), 0) > CALLABILITY_RANK.get(str(current.get("callability")), 0):
                     current["callability"] = entry.get("callability")
+        # A public snapshot may not contain the raw candidate lists. Reuse the
+        # already-derived shard so normal phrase retrieval still works after a
+        # rebuild, while marking all source references as local-only.
+        if not merged:
+            existing = read_json(skill_root / "runtime" / "phrase-routes" / f"{route.get('id', 'unknown')}.json", {})
+            for entry in existing.get("entries", []) if isinstance(existing, dict) else []:
+                if not isinstance(entry, dict):
+                    continue
+                copy = dict(entry)
+                refs = []
+                for ref in copy.get("source_refs", []) if isinstance(copy.get("source_refs"), list) else []:
+                    if isinstance(ref, dict):
+                        safe_ref = {key: ref[key] for key in ("locator", "section") if key in ref}
+                        safe_ref["scope"] = "local_only"
+                        refs.append(safe_ref)
+                copy["source_refs"] = refs
+                key = str(copy.get("phrase_key") or copy.get("phrase_id") or copy.get("text"))
+                if key:
+                    merged[key] = copy
         route_copy = dict(route)
         route_copy["preferred_entry_count"] = len(merged)
         route_copy["shard"] = f"runtime/phrase-routes/{route_copy.get('id', 'unknown')}.json"
         route_copy["full_index"] = {
-            "path": "knowledge/01-原始资料/2026-08-23_Jackson体系话术去重索引.json",
-            "lookup": "on_demand",
+            "path": None,
+            "available": False,
+            "scope": "local_only",
+            "lookup": "local_only",
             "section_terms": [str(item) for item in route.get("section_terms", [])],
         }
         routes.append(route_copy)
@@ -422,7 +456,8 @@ def build_phrase_index(skill_root: Path, config: dict[str, Any]) -> dict[str, An
         "package_id": "real-social",
         "retrieval_policy": {
             "candidate_first": True,
-            "full_index": "on_demand",
+            "full_index": "local_only",
+            "source_audit": "local_only",
             "context_readback_required": True,
             "recovery": "disabled",
             "sexual_route_requires": ["explicit_same_topic", "age_identity_basis", "mutual_feedback", "no_refusal_or_discomfort"],
@@ -490,8 +525,8 @@ def render_runtime_entry(config: dict[str, Any]) -> str:
 - `runtime/navigation-index.json`：任务完成或收到新反馈时；
 - `runtime/phrase-route-index.json`：方向已确定且满足示例门槛时；
 - `knowledge/02-知识单元/`：只打开命中路由的少量单元；
-- `knowledge/01-原始资料/`、`knowledge/external-sources/`：只回读命中条目的相邻上下文；
-- `knowledge/manifest.json`、续接摘要和完整索引：仅来源审计、入库、维护或构建校验时。
+- `runtime/phrase-routes/*.json`：只在方向已确定且满足示例门槛时读取公开候选；候选来源回读仅在本地完整版进行；
+- `knowledge/manifest.json`、续接摘要和完整索引：仅维护或构建校验时；完整原始来源不随公开包发布。
 
 ## 硬边界
 
@@ -575,7 +610,9 @@ def build_indexes(skill_root: Path, config_path: Path | None = None) -> list[Pat
         "canonical_count": unit_index["canonical_count"],
         "candidate_count": unit_index["candidate_count"],
         "phrase_route_count": len(phrase_index["routes"]),
-        "full_phrase_index": "knowledge/01-原始资料/2026-08-23_Jackson体系话术去重索引.json",
+        "full_phrase_index": None,
+        "full_phrase_index_scope": "local_only",
+        "source_audit": "local_only",
         "files": [
             {
                 "path": path.relative_to(skill_root).as_posix(),

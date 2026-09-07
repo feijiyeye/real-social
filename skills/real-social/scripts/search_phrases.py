@@ -120,6 +120,8 @@ def load_shard(route: dict[str, Any]) -> list[dict[str, Any]]:
 
 def load_full_entries(route: dict[str, Any]) -> list[dict[str, Any]]:
     full = route.get("full_index", {})
+    if isinstance(full, dict) and full.get("scope") == "local_only":
+        return []
     path_value = full.get("path") if isinstance(full, dict) else None
     if not isinstance(path_value, str):
         raise SystemExit("phrase route has no full-index path")
@@ -189,9 +191,13 @@ def search(route_id: str, query: str, limit: int = 3, stage: str | None = None, 
             }
     candidates: list[tuple[dict[str, Any], str]] = [(entry, "candidate_index") for entry in load_shard(route)]
     source = "candidate_index"
+    full_index_unavailable = False
     if full_index:
-        candidates.extend((entry, "source_only_audit") for entry in load_full_entries(route))
-        source = "candidate_index_plus_full_index_source_only_audit"
+        full_meta = route.get("full_index", {})
+        full_index_unavailable = isinstance(full_meta, dict) and full_meta.get("scope") == "local_only"
+        if not full_index_unavailable:
+            candidates.extend((entry, "source_only_audit") for entry in load_full_entries(route))
+            source = "candidate_index_plus_full_index_source_only_audit"
 
     seen: set[str] = set()
     ranked: list[tuple[float, dict[str, Any]]] = []
@@ -226,7 +232,9 @@ def search(route_id: str, query: str, limit: int = 3, stage: str | None = None, 
 
     warnings: list[str] = []
     if not full_index and len(matches) < limit:
-        warnings.append("候选入口不足时可显式加 --full-index；完整索引只在按需查询时读取")
+        warnings.append("候选入口不足时可显式加 --full-index；完整索引只在本地完整版按需查询")
+    if full_index_unavailable:
+        warnings.append("完整话术索引未随公开包发布；请在本地完整版执行 --full-index")
     if any("unknown" in {str(role) for role in item.get("speaker_roles", [])} for item in matches):
         warnings.append("\u90e8\u5206\u6761\u76ee\u7684\u8bf4\u8bdd\u4eba\u4ecd\u4e3a unknown\uff0c\u53d1\u9001\u524d\u5fc5\u987b\u56de\u8bfb\u539f\u59cb\u4e0a\u4e0b\u6587")
     if full_index:
@@ -234,7 +242,7 @@ def search(route_id: str, query: str, limit: int = 3, stage: str | None = None, 
     return {
         "schema_version": 1,
         "route": route_id,
-        "retrieval_status": "candidate_reference_with_source_audit" if full_index else "candidate_reference_after_context_review",
+        "retrieval_status": "candidate_reference_with_source_audit" if full_index and not full_index_unavailable else "candidate_reference_after_context_review",
         "source": source,
         "query": query,
         "matches": matches,

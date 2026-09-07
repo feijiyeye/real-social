@@ -25,13 +25,13 @@ forbidden_moves:
 case_refs: [K-20260822-025]
 related: [K-20260822-026]
 source_refs:
-  - file: "/Volumes/PS3001/Jackson案例素材Skill/Jackson flow体系/老版体系无广告/体系txt/第三节.txt"
+  - file: "local_only"
     locator: "第683-733行、第818-833行"
     quote: "来源将聊天/电话的信息不足、对话频段和邀约铺垫串成一个流程解释。"
-  - file: "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-21_zhenshi-理论_文本提取.txt"
+  - file: "local_only"
     locator: "第330-344行"
     quote: "第二批汇编再次把信息获取、假性评估和邀约铺垫描述为标准流程。"
-  - file: "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-22_案例分析_千里送_三周目_课程解说.txt"
+  - file: "local_only"
     locator: "第331-440行、第811-880行、第1158-1174行"
     quote: "经典案例展示了从当面见面的铺垫、可用时间出现到具体日期签约的连续来源逻辑。"
 authority: source_only

@@ -49,8 +49,8 @@
 - `runtime/navigation-index.json`：任务完成或收到新反馈时；
 - `runtime/phrase-route-index.json`：方向已确定且满足示例门槛时；
 - `knowledge/02-知识单元/`：只打开命中路由的少量单元；
-- `knowledge/01-原始资料/`、`knowledge/external-sources/`：只回读命中条目的相邻上下文；
-- `knowledge/manifest.json`、续接摘要和完整索引：仅来源审计、入库、维护或构建校验时。
+- `runtime/phrase-routes/*.json`：只在方向已确定且满足示例门槛时读取公开候选；候选来源回读仅在本地完整版进行；
+- `knowledge/manifest.json`、续接摘要和完整索引：仅维护或构建校验时；完整原始来源不随公开包发布。
 
 ## 硬边界
 

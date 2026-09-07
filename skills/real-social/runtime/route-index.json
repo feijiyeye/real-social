@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-27T17:32:32+08:00",
+  "generated_at": "2026-09-07T19:34:28+08:00",
   "package_id": "real-social",
   "default_task_route": "analyze_chat",
   "default_state_route": "unknown_stage",
@@ -75,7 +75,7 @@
       ],
       "defer": [
         "knowledge/manifest.json",
-        "knowledge/01-原始资料/2026-08-23_Jackson体系话术去重索引.json"
+        "local_only/full_phrase_index"
       ],
       "kind": "task",
       "missing_primary_units": []
@@ -107,7 +107,7 @@
       "defer": [
         "knowledge/manifest.json",
         "knowledge/04-系统/2026-08-23_男性情感聊天项目续接摘要.md",
-        "knowledge/01-原始资料/2026-08-23_Jackson体系话术去重索引.json"
+        "local_only/full_phrase_index"
       ],
       "kind": "task",
       "missing_primary_units": []
@@ -143,8 +143,8 @@
         "knowledge/02-知识单元/K-20260826-001_真实社交线上流程推拉方向与回蓝闸门.md"
       ],
       "defer": [
-        "knowledge/01-原始资料/2026-08-23_Jackson体系话术去重索引.json",
-        "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes候选参考增补清单.json"
+        "local_only/full_phrase_index",
+        "local_only/candidate_source"
       ],
       "kind": "task",
       "missing_primary_units": []
@@ -170,8 +170,8 @@
         "runtime/unit-index.json"
       ],
       "defer": [
-        "knowledge/01-原始资料/",
-        "knowledge/external-sources/"
+        "local_only/source_audit",
+        "local_only/source_audit"
       ],
       "kind": "task",
       "missing_primary_units": []
@@ -225,7 +225,7 @@
         "knowledge/04-系统/检索与调用规则.md"
       ],
       "defer": [
-        "knowledge/01-原始资料/2026-08-23_Jackson体系话术去重索引.json"
+        "local_only/full_phrase_index"
       ],
       "kind": "task",
       "missing_primary_units": []
@@ -258,8 +258,8 @@
         "knowledge/04-系统/真实社交运行时路由配置.json"
       ],
       "defer": [
-        "knowledge/01-原始资料/",
-        "knowledge/external-sources/"
+        "local_only/source_audit",
+        "local_only/source_audit"
       ],
       "kind": "task",
       "missing_primary_units": []
@@ -320,7 +320,7 @@
         "knowledge/02-知识单元/K-20260821-021_zhenshi明确拒绝与停止时不纠缠边界候选.md"
       ],
       "defer": [
-        "knowledge/01-原始资料/2026-08-23_Jackson体系话术去重索引.json"
+        "local_only/full_phrase_index"
       ],
       "kind": "state",
       "missing_primary_units": []
@@ -361,7 +361,7 @@
         "knowledge/02-知识单元/K-20260826-001_真实社交线上流程推拉方向与回蓝闸门.md"
       ],
       "defer": [
-        "knowledge/01-原始资料/2026-08-23_Jackson体系话术去重索引.json"
+        "local_only/full_phrase_index"
       ],
       "kind": "state",
       "missing_primary_units": []
@@ -390,8 +390,8 @@
         "knowledge/02-知识单元/K-20260826-001_真实社交线上流程推拉方向与回蓝闸门.md"
       ],
       "defer": [
-        "knowledge/01-原始资料/2026-08-23_Jackson体系话术去重索引.json",
-        "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes候选参考增补清单.json"
+        "local_only/full_phrase_index",
+        "local_only/candidate_source"
       ],
       "kind": "state",
       "missing_primary_units": []
@@ -430,7 +430,7 @@
         "knowledge/02-知识单元/K-20260826-001_真实社交线上流程推拉方向与回蓝闸门.md"
       ],
       "defer": [
-        "knowledge/01-原始资料/2026-08-23_Jackson体系话术去重索引.json"
+        "local_only/full_phrase_index"
       ],
       "kind": "state",
       "missing_primary_units": []
@@ -466,7 +466,7 @@
         "runtime/phrase-route-index.json"
       ],
       "defer": [
-        "knowledge/01-原始资料/2026-08-23_Jackson体系话术去重索引.json"
+        "local_only/full_phrase_index"
       ],
       "kind": "state",
       "missing_primary_units": []
@@ -502,7 +502,7 @@
         "knowledge/02-知识单元/K-20260821-020_zhenshi低回应时减少投入方向候选.md"
       ],
       "defer": [
-        "knowledge/01-原始资料/2026-08-23_Jackson体系话术去重索引.json"
+        "local_only/full_phrase_index"
       ],
       "kind": "state",
       "missing_primary_units": []
@@ -534,7 +534,7 @@
         "runtime/phrase-route-index.json"
       ],
       "defer": [
-        "knowledge/01-原始资料/2026-08-23_Jackson体系话术去重索引.json"
+        "local_only/full_phrase_index"
       ],
       "kind": "state",
       "missing_primary_units": []
@@ -707,7 +707,7 @@
         "runtime/phrase-route-index.json"
       ],
       "defer": [
-        "knowledge/01-原始资料/2026-08-23_Jackson体系话术去重索引.json"
+        "local_only/full_phrase_index"
       ],
       "kind": "state",
       "missing_primary_units": []
@@ -726,7 +726,7 @@
         "knowledge/02-知识单元/K-20260826-001_真实社交线上流程推拉方向与回蓝闸门.md"
       ],
       "defer": [
-        "knowledge/01-原始资料/2026-08-23_Jackson体系话术去重索引.json"
+        "local_only/full_phrase_index"
       ],
       "kind": "state",
       "missing_primary_units": []
@@ -854,11 +854,11 @@
     "maintenance_only": [
       "knowledge/manifest.json",
       "knowledge/04-系统/2026-08-23_男性情感聊天项目续接摘要.md",
-      "knowledge/01-原始资料/2026-08-23_Jackson体系话术去重索引.json",
-      "knowledge/external-sources/"
+      "local_only/full_phrase_index",
+      "local_only/source_audit"
     ],
     "never_default": [
-      "knowledge/_original_dragon_root/",
+      "local_only/governance_originals",
       "knowledge/archive/"
     ]
   }

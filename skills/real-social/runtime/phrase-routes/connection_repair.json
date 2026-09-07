@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-27T17:32:32+08:00",
+  "generated_at": "2026-09-07T19:34:28+08:00",
   "package_id": "real-social",
   "route": "connection_repair",
   "label": "联系感、修复与关系边界",
@@ -19,9 +19,9 @@
       "callability": "candidate_callable_after_context_review",
       "source_refs": [
         {
-          "file": "knowledge/01-原始资料/2026-08-23_huashu.docx",
           "locator": "paragraph:134",
-          "section": "三、真性评估与筛选（Genuine Assessment & Screening） / 3.3 真评/Genuine Evaluation"
+          "section": "三、真性评估与筛选（Genuine Assessment & Screening） / 3.3 真评/Genuine Evaluation",
+          "scope": "local_only"
         }
       ]
     },
@@ -39,9 +39,9 @@
       "callability": "candidate_callable_after_context_review",
       "source_refs": [
         {
-          "file": "knowledge/01-原始资料/2026-08-23_huashu.docx",
           "locator": "paragraph:133",
-          "section": "三、真性评估与筛选（Genuine Assessment & Screening） / 3.3 真评/Genuine Evaluation"
+          "section": "三、真性评估与筛选（Genuine Assessment & Screening） / 3.3 真评/Genuine Evaluation",
+          "scope": "local_only"
         }
       ]
     },
@@ -59,9 +59,9 @@
       "callability": "candidate_callable_after_context_review",
       "source_refs": [
         {
-          "file": "knowledge/01-原始资料/2026-08-23_huashu.docx",
           "locator": "paragraph:132",
-          "section": "三、真性评估与筛选（Genuine Assessment & Screening） / 3.3 真评/Genuine Evaluation"
+          "section": "三、真性评估与筛选（Genuine Assessment & Screening） / 3.3 真评/Genuine Evaluation",
+          "scope": "local_only"
         }
       ]
     },
@@ -79,9 +79,9 @@
       "callability": "candidate_callable_after_context_review",
       "source_refs": [
         {
-          "file": "knowledge/01-原始资料/2026-08-23_huashu.docx",
           "locator": "paragraph:482",
-          "section": "八、ASD处理与关系定位（ASD Handling & Relationship Positioning） / 8.1 消除评判"
+          "section": "八、ASD处理与关系定位（ASD Handling & Relationship Positioning） / 8.1 消除评判",
+          "scope": "local_only"
         }
       ]
     },
@@ -99,9 +99,9 @@
       "callability": "candidate_callable_after_context_review",
       "source_refs": [
         {
-          "file": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_005_sticker_and_non_seriousness_obstacles.md",
           "locator": "line:13",
-          "section": "表情包阻碍 不认真无张力阻碍"
+          "section": "表情包阻碍 不认真无张力阻碍",
+          "scope": "local_only"
         }
       ]
     },
@@ -119,9 +119,9 @@
       "callability": "candidate_callable_after_context_review",
       "source_refs": [
         {
-          "file": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_005_sticker_and_non_seriousness_obstacles.md",
           "locator": "line:19",
-          "section": "表情包阻碍 不认真无张力阻碍"
+          "section": "表情包阻碍 不认真无张力阻碍",
+          "scope": "local_only"
         }
       ]
     },
@@ -139,9 +139,9 @@
       "callability": "candidate_callable_after_context_review",
       "source_refs": [
         {
-          "file": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_013_empathic_opening.md",
           "locator": "line:11",
-          "section": "开场同理心环节"
+          "section": "开场同理心环节",
+          "scope": "local_only"
         }
       ]
     },
@@ -160,9 +160,9 @@
       "callability": "candidate_callable_after_context_review",
       "source_refs": [
         {
-          "file": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_013_empathic_opening.md",
           "locator": "line:17",
-          "section": "开场同理心环节"
+          "section": "开场同理心环节",
+          "scope": "local_only"
         }
       ]
     },
@@ -180,9 +180,9 @@
       "callability": "candidate_callable_after_context_review",
       "source_refs": [
         {
-          "file": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_013_empathic_opening.md",
           "locator": "line:33",
-          "section": "开场同理心环节"
+          "section": "开场同理心环节",
+          "scope": "local_only"
         }
       ]
     },
@@ -200,9 +200,9 @@
       "callability": "candidate_callable_after_context_review",
       "source_refs": [
         {
-          "file": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_016_clear_intent_and_premise.md",
           "locator": "line:11",
-          "section": "明确意图与前提"
+          "section": "明确意图与前提",
+          "scope": "local_only"
         }
       ]
     },
@@ -219,9 +219,9 @@
       "callability": "candidate_callable_after_context_review",
       "source_refs": [
         {
-          "file": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_016_clear_intent_and_premise.md",
           "locator": "line:21",
-          "section": "明确意图与前提"
+          "section": "明确意图与前提",
+          "scope": "local_only"
         }
       ]
     },
@@ -238,9 +238,9 @@
       "callability": "candidate_callable_after_context_review",
       "source_refs": [
         {
-          "file": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_019_extending_the_conversation.md",
           "locator": "line:11",
-          "section": "延续话题"
+          "section": "延续话题",
+          "scope": "local_only"
         }
       ]
     },
@@ -257,9 +257,9 @@
       "callability": "candidate_callable_after_context_review",
       "source_refs": [
         {
-          "file": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_019_extending_the_conversation.md",
           "locator": "line:25",
-          "section": "延续话题"
+          "section": "延续话题",
+          "scope": "local_only"
         }
       ]
     },
@@ -276,9 +276,9 @@
       "callability": "candidate_callable_after_context_review",
       "source_refs": [
         {
-          "file": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_024_building_connection.md",
           "locator": "line:73",
-          "section": "做联系感"
+          "section": "做联系感",
+          "scope": "local_only"
         }
       ]
     },
@@ -295,9 +295,9 @@
       "callability": "candidate_callable_after_context_review",
       "source_refs": [
         {
-          "file": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_024_building_connection.md",
           "locator": "line:95",
-          "section": "做联系感"
+          "section": "做联系感",
+          "scope": "local_only"
         }
       ]
     },
@@ -315,9 +315,9 @@
       "callability": "candidate_callable_after_context_review",
       "source_refs": [
         {
-          "file": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_040_invitation_phrases.md",
           "locator": "line:49",
-          "section": "邀约部分："
+          "section": "邀约部分：",
+          "scope": "local_only"
         }
       ]
     },
@@ -334,9 +334,9 @@
       "callability": "candidate_callable_after_context_review",
       "source_refs": [
         {
-          "file": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_040_invitation_phrases.md",
           "locator": "line:123",
-          "section": "邀约部分："
+          "section": "邀约部分：",
+          "scope": "local_only"
         }
       ]
     }

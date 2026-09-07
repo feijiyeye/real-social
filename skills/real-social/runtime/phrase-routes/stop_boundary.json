@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-27T17:32:32+08:00",
+  "generated_at": "2026-09-07T19:34:28+08:00",
   "package_id": "real-social",
   "route": "stop_boundary",
   "label": "停止与边界审计",
@@ -19,9 +19,9 @@
       "callability": "boundary_only",
       "source_refs": [
         {
-          "file": "knowledge/01-原始资料/2026-08-23_huashu.docx",
           "locator": "paragraph:538",
-          "section": "十、作联系感与日常维护（Connection & Maintenance） / 10.1 作联系感语句（Jackson）"
+          "section": "十、作联系感与日常维护（Connection & Maintenance） / 10.1 作联系感语句（Jackson）",
+          "scope": "local_only"
         }
       ]
     },
@@ -39,9 +39,9 @@
       "callability": "boundary_only",
       "source_refs": [
         {
-          "file": "knowledge/01-原始资料/2026-08-23_888内部群杰哥话术（3.3-8.17）.md",
           "locator": "line:63",
-          "section": "情景加话术"
+          "section": "情景加话术",
+          "scope": "local_only"
         }
       ]
     },
@@ -59,9 +59,9 @@
       "callability": "boundary_only",
       "source_refs": [
         {
-          "file": "knowledge/01-原始资料/2026-08-23_huashu.docx",
           "locator": "paragraph:228",
-          "section": "四、废测破解与框架控制（Shit Test Handling & Frame Control） / 4.3 阻碍废测解决（Jackson）"
+          "section": "四、废测破解与框架控制（Shit Test Handling & Frame Control） / 4.3 阻碍废测解决（Jackson）",
+          "scope": "local_only"
         }
       ]
     },
@@ -79,9 +79,9 @@
       "callability": "boundary_only",
       "source_refs": [
         {
-          "file": "knowledge/01-原始资料/2026-08-23_huashu.docx",
           "locator": "paragraph:451",
-          "section": "七、引导投资与邀约（Leading Investment & Date Invitation） / 7.4 待机/邀约跟进（Jackson）"
+          "section": "七、引导投资与邀约（Leading Investment & Date Invitation） / 7.4 待机/邀约跟进（Jackson）",
+          "scope": "local_only"
         }
       ]
     },
@@ -99,9 +99,9 @@
       "callability": "boundary_only",
       "source_refs": [
         {
-          "file": "knowledge/01-原始资料/2026-08-23_huashu.docx",
           "locator": "paragraph:231",
-          "section": "四、废测破解与框架控制（Shit Test Handling & Frame Control） / 4.3 阻碍废测解决（Jackson）"
+          "section": "四、废测破解与框架控制（Shit Test Handling & Frame Control） / 4.3 阻碍废测解决（Jackson）",
+          "scope": "local_only"
         }
       ]
     },
@@ -119,9 +119,9 @@
       "callability": "boundary_only",
       "source_refs": [
         {
-          "file": "knowledge/01-原始资料/2026-08-23_huashu.docx",
           "locator": "paragraph:235",
-          "section": "四、废测破解与框架控制（Shit Test Handling & Frame Control） / 4.3 阻碍废测解决（Jackson）"
+          "section": "四、废测破解与框架控制（Shit Test Handling & Frame Control） / 4.3 阻碍废测解决（Jackson）",
+          "scope": "local_only"
         }
       ]
     }

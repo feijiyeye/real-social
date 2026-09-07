@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-27T17:32:32+08:00",
+  "generated_at": "2026-09-07T19:34:28+08:00",
   "package_id": "real-social",
   "route": "low_response_recovery",
   "label": "低回应、暂停与重启",
@@ -19,9 +19,9 @@
       "callability": "candidate_callable_after_context_review",
       "source_refs": [
         {
-          "file": "knowledge/01-原始资料/2026-08-23_huashu.docx",
           "locator": "paragraph:244",
-          "section": "四、废测破解与框架控制（Shit Test Handling & Frame Control） / 4.3 阻碍废测解决（Jackson）"
+          "section": "四、废测破解与框架控制（Shit Test Handling & Frame Control） / 4.3 阻碍废测解决（Jackson）",
+          "scope": "local_only"
         }
       ]
     },
@@ -39,9 +39,9 @@
       "callability": "candidate_callable_after_context_review",
       "source_refs": [
         {
-          "file": "knowledge/01-原始资料/2026-08-23_game.docx",
           "locator": "paragraph:313",
-          "section": "铺垫邀约"
+          "section": "铺垫邀约",
+          "scope": "local_only"
         }
       ]
     },
@@ -59,9 +59,9 @@
       "callability": "candidate_callable_after_context_review",
       "source_refs": [
         {
-          "file": "knowledge/01-原始资料/2026-08-23_huashu.docx",
           "locator": "paragraph:241",
-          "section": "四、废测破解与框架控制（Shit Test Handling & Frame Control） / 4.3 阻碍废测解决（Jackson）"
+          "section": "四、废测破解与框架控制（Shit Test Handling & Frame Control） / 4.3 阻碍废测解决（Jackson）",
+          "scope": "local_only"
         }
       ]
     },
@@ -79,9 +79,9 @@
       "callability": "candidate_callable_after_context_review",
       "source_refs": [
         {
-          "file": "knowledge/01-原始资料/2026-08-23_huashu.docx",
           "locator": "paragraph:537",
-          "section": "十、作联系感与日常维护（Connection & Maintenance） / 10.1 作联系感语句（Jackson）"
+          "section": "十、作联系感与日常维护（Connection & Maintenance） / 10.1 作联系感语句（Jackson）",
+          "scope": "local_only"
         }
       ]
     },
@@ -99,9 +99,9 @@
       "callability": "candidate_callable_after_context_review",
       "source_refs": [
         {
-          "file": "knowledge/01-原始资料/2026-08-23_huashu.docx",
           "locator": "paragraph:541",
-          "section": "十、作联系感与日常维护（Connection & Maintenance） / 10.1 作联系感语句（Jackson）"
+          "section": "十、作联系感与日常维护（Connection & Maintenance） / 10.1 作联系感语句（Jackson）",
+          "scope": "local_only"
         }
       ]
     },
@@ -119,9 +119,9 @@
       "callability": "candidate_callable_after_context_review",
       "source_refs": [
         {
-          "file": "knowledge/01-原始资料/2026-08-23_huashu.docx",
           "locator": "paragraph:14",
-          "section": "一、开场与搭讪（Openers & Approaches） / 1.3 开场同理心与破冰"
+          "section": "一、开场与搭讪（Openers & Approaches） / 1.3 开场同理心与破冰",
+          "scope": "local_only"
         }
       ]
     },
@@ -138,9 +138,9 @@
       "callability": "context_required",
       "source_refs": [
         {
-          "file": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_024_building_connection.md",
           "locator": "line:39",
-          "section": "做联系感"
+          "section": "做联系感",
+          "scope": "local_only"
         }
       ]
     },
@@ -157,9 +157,9 @@
       "callability": "context_required",
       "source_refs": [
         {
-          "file": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_024_building_connection.md",
           "locator": "line:99",
-          "section": "做联系感"
+          "section": "做联系感",
+          "scope": "local_only"
         }
       ]
     },
@@ -177,9 +177,9 @@
       "callability": "context_required",
       "source_refs": [
         {
-          "file": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_033_value_feedback_and_flirting.md",
           "locator": "line:11",
-          "section": "给价值反馈，撩的部分："
+          "section": "给价值反馈，撩的部分：",
+          "scope": "local_only"
         }
       ]
     },
@@ -196,9 +196,9 @@
       "callability": "context_required",
       "source_refs": [
         {
-          "file": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_033_value_feedback_and_flirting.md",
           "locator": "line:29",
-          "section": "给价值反馈，撩的部分："
+          "section": "给价值反馈，撩的部分：",
+          "scope": "local_only"
         }
       ]
     },
@@ -215,9 +215,9 @@
       "callability": "context_required",
       "source_refs": [
         {
-          "file": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_033_value_feedback_and_flirting.md",
           "locator": "line:31",
-          "section": "给价值反馈，撩的部分："
+          "section": "给价值反馈，撩的部分：",
+          "scope": "local_only"
         }
       ]
     },
@@ -234,9 +234,9 @@
       "callability": "context_required",
       "source_refs": [
         {
-          "file": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_033_value_feedback_and_flirting.md",
           "locator": "line:45",
-          "section": "给价值反馈，撩的部分："
+          "section": "给价值反馈，撩的部分：",
+          "scope": "local_only"
         }
       ]
     },
@@ -253,9 +253,9 @@
       "callability": "context_required",
       "source_refs": [
         {
-          "file": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_044_high_value_prize_positioning.md",
           "locator": "line:26",
-          "section": "高位奖品性塑造"
+          "section": "高位奖品性塑造",
+          "scope": "local_only"
         }
       ]
     },
@@ -272,9 +272,9 @@
       "callability": "context_required",
       "source_refs": [
         {
-          "file": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_044_high_value_prize_positioning.md",
           "locator": "line:35",
-          "section": "高位奖品性塑造"
+          "section": "高位奖品性塑造",
+          "scope": "local_only"
         }
       ]
     }

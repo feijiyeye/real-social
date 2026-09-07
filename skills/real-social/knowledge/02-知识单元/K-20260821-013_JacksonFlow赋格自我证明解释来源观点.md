@@ -25,7 +25,7 @@ forbidden_moves:
 case_refs: []
 related: [K-20260821-004, K-20260821-014, K-20260821-015, K-20260822-025]
 source_refs:
-  - file: "/Volumes/PS3001/Jackson案例素材Skill/Jackson flow体系/老版体系无广告/体系txt/第五节｜假性评估.txt"
+  - file: "local_only"
     locator: "第234-247行"
     quote: "来源把赋格描述为女性面对评估时的自我证明和自我解释。"
   - file: "2026-08-21 用户术语裁决"

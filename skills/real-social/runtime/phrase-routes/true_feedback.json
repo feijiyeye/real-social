@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-27T17:32:32+08:00",
+  "generated_at": "2026-09-07T19:34:28+08:00",
   "package_id": "real-social",
   "route": "true_feedback",
   "label": "基于可观察信息的认可",
@@ -19,9 +19,9 @@
       "callability": "candidate_callable_after_context_review",
       "source_refs": [
         {
-          "file": "knowledge/01-原始资料/2026-08-23_huashu.docx",
           "locator": "paragraph:134",
-          "section": "三、真性评估与筛选（Genuine Assessment & Screening） / 3.3 真评/Genuine Evaluation"
+          "section": "三、真性评估与筛选（Genuine Assessment & Screening） / 3.3 真评/Genuine Evaluation",
+          "scope": "local_only"
         }
       ]
     },
@@ -39,9 +39,9 @@
       "callability": "candidate_callable_after_context_review",
       "source_refs": [
         {
-          "file": "knowledge/01-原始资料/2026-08-23_huashu.docx",
           "locator": "paragraph:133",
-          "section": "三、真性评估与筛选（Genuine Assessment & Screening） / 3.3 真评/Genuine Evaluation"
+          "section": "三、真性评估与筛选（Genuine Assessment & Screening） / 3.3 真评/Genuine Evaluation",
+          "scope": "local_only"
         }
       ]
     },
@@ -59,9 +59,9 @@
       "callability": "candidate_callable_after_context_review",
       "source_refs": [
         {
-          "file": "knowledge/01-原始资料/2026-08-23_huashu.docx",
           "locator": "paragraph:132",
-          "section": "三、真性评估与筛选（Genuine Assessment & Screening） / 3.3 真评/Genuine Evaluation"
+          "section": "三、真性评估与筛选（Genuine Assessment & Screening） / 3.3 真评/Genuine Evaluation",
+          "scope": "local_only"
         }
       ]
     },
@@ -79,9 +79,9 @@
       "callability": "candidate_callable_after_context_review",
       "source_refs": [
         {
-          "file": "knowledge/01-原始资料/2026-08-23_huashu.docx",
           "locator": "paragraph:482",
-          "section": "八、ASD处理与关系定位（ASD Handling & Relationship Positioning） / 8.1 消除评判"
+          "section": "八、ASD处理与关系定位（ASD Handling & Relationship Positioning） / 8.1 消除评判",
+          "scope": "local_only"
         }
       ]
     },
@@ -98,9 +98,9 @@
       "callability": "context_required",
       "source_refs": [
         {
-          "file": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_024_building_connection.md",
           "locator": "line:39",
-          "section": "做联系感"
+          "section": "做联系感",
+          "scope": "local_only"
         }
       ]
     },
@@ -117,9 +117,9 @@
       "callability": "context_required",
       "source_refs": [
         {
-          "file": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_024_building_connection.md",
           "locator": "line:99",
-          "section": "做联系感"
+          "section": "做联系感",
+          "scope": "local_only"
         }
       ]
     },
@@ -137,9 +137,9 @@
       "callability": "context_required",
       "source_refs": [
         {
-          "file": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_033_value_feedback_and_flirting.md",
           "locator": "line:11",
-          "section": "给价值反馈，撩的部分："
+          "section": "给价值反馈，撩的部分：",
+          "scope": "local_only"
         }
       ]
     },
@@ -156,9 +156,9 @@
       "callability": "context_required",
       "source_refs": [
         {
-          "file": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_033_value_feedback_and_flirting.md",
           "locator": "line:29",
-          "section": "给价值反馈，撩的部分："
+          "section": "给价值反馈，撩的部分：",
+          "scope": "local_only"
         }
       ]
     },
@@ -175,9 +175,9 @@
       "callability": "context_required",
       "source_refs": [
         {
-          "file": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_033_value_feedback_and_flirting.md",
           "locator": "line:31",
-          "section": "给价值反馈，撩的部分："
+          "section": "给价值反馈，撩的部分：",
+          "scope": "local_only"
         }
       ]
     },
@@ -194,9 +194,9 @@
       "callability": "context_required",
       "source_refs": [
         {
-          "file": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_033_value_feedback_and_flirting.md",
           "locator": "line:45",
-          "section": "给价值反馈，撩的部分："
+          "section": "给价值反馈，撩的部分：",
+          "scope": "local_only"
         }
       ]
     },
@@ -213,9 +213,9 @@
       "callability": "context_required",
       "source_refs": [
         {
-          "file": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_044_high_value_prize_positioning.md",
           "locator": "line:26",
-          "section": "高位奖品性塑造"
+          "section": "高位奖品性塑造",
+          "scope": "local_only"
         }
       ]
     },
@@ -232,9 +232,9 @@
       "callability": "context_required",
       "source_refs": [
         {
-          "file": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_044_high_value_prize_positioning.md",
           "locator": "line:35",
-          "section": "高位奖品性塑造"
+          "section": "高位奖品性塑造",
+          "scope": "local_only"
         }
       ]
     }

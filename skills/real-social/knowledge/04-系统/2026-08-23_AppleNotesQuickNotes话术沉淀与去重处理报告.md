@@ -7,16 +7,16 @@
 
 用户提供的来源目录：
 
-`/Volumes/PS3001/Jackson案例素材Skill/apple_notes_quick_notes_2026_08/`
+`local_only`
 
 本批包含 45 份编号 Markdown 笔记及同目录 `README.md`。归档入口：
 
-- 45 份笔记逐份保存至 `01-原始资料/2026-08-23_AppleNotesQuickNotes_001...045_*.md`；
-- 原目录说明保存至 `01-原始资料/2026-08-23_AppleNotesQuickNotes_README.md`；
+- 45 份笔记逐份保存至 `local_only`；
+- 原目录说明保存至 `local_only`；
 - 来源清单、去重审计和候选增补清单分别保存为：
-  - `01-原始资料/2026-08-23_AppleNotesQuickNotes来源清单.json`
-  - `01-原始资料/2026-08-23_AppleNotesQuickNotes话术去重审计.json`
-  - `01-原始资料/2026-08-23_AppleNotesQuickNotes候选参考增补清单.json`
+  - `local_only`
+  - `local_only`
+  - `local_only`
 
 来源清单保留每份笔记的原始路径、标题、修改时间、字节数、行数、SHA-256、附件说明、归档路径和抽取计数。最终逐份核对结果：45/45 来源文件可读，归档副本与来源 SHA-256 全部一致；README 来源与归档副本 SHA-256 也一致。
 
@@ -57,11 +57,11 @@
 
 完整索引：
 
-`01-原始资料/2026-08-23_Jackson体系话术去重索引.json`
+`local_only`
 
 本批审计：
 
-`01-原始资料/2026-08-23_AppleNotesQuickNotes话术去重审计.json`
+`local_only`
 
 近似表达不自动合并，避免把不同说话人、对象或适用场景误当成同一句。
 
@@ -87,7 +87,7 @@
 
 候选增补清单：
 
-`01-原始资料/2026-08-23_AppleNotesQuickNotes候选参考增补清单.json`
+`local_only`
 
 45 条代表性候选不是白名单。章节标题只缩小检索范围，不证明某句安全、有效、属于男方回复或适合当前阶段；所有命中都必须按 `phrase_key` 回到归档原文，核对说话人和相邻上下文。
 

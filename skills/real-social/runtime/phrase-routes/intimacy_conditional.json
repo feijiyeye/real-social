@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-27T17:32:32+08:00",
+  "generated_at": "2026-09-07T19:34:28+08:00",
   "package_id": "real-social",
   "route": "intimacy_conditional",
   "label": "亲密与性话题条件性参考",
@@ -19,9 +19,9 @@
       "callability": "candidate_callable_after_context_review",
       "source_refs": [
         {
-          "file": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_002_emotional_tension.md",
           "locator": "line:13",
-          "section": "情绪拉伸"
+          "section": "情绪拉伸",
+          "scope": "local_only"
         }
       ]
     },
@@ -42,9 +42,9 @@
       "callability": "candidate_callable_after_context_review",
       "source_refs": [
         {
-          "file": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_002_emotional_tension.md",
           "locator": "line:15",
-          "section": "情绪拉伸"
+          "section": "情绪拉伸",
+          "scope": "local_only"
         }
       ]
     },
@@ -65,9 +65,9 @@
       "callability": "candidate_callable_after_context_review",
       "source_refs": [
         {
-          "file": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_002_emotional_tension.md",
           "locator": "line:27",
-          "section": "情绪拉伸"
+          "section": "情绪拉伸",
+          "scope": "local_only"
         }
       ]
     },
@@ -85,9 +85,9 @@
       "callability": "candidate_callable_after_context_review",
       "source_refs": [
         {
-          "file": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_017_tension_and_visual_imagery.md",
           "locator": "line:17",
-          "section": "张力与画面感"
+          "section": "张力与画面感",
+          "scope": "local_only"
         }
       ]
     },
@@ -107,9 +107,9 @@
       "callability": "candidate_callable_after_context_review",
       "source_refs": [
         {
-          "file": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_017_tension_and_visual_imagery.md",
           "locator": "line:25",
-          "section": "张力与画面感"
+          "section": "张力与画面感",
+          "scope": "local_only"
         }
       ]
     },
@@ -127,9 +127,9 @@
       "callability": "candidate_callable_after_context_review",
       "source_refs": [
         {
-          "file": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_017_tension_and_visual_imagery.md",
           "locator": "line:31",
-          "section": "张力与画面感"
+          "section": "张力与画面感",
+          "scope": "local_only"
         }
       ]
     },
@@ -149,9 +149,9 @@
       "callability": "candidate_callable_after_context_review",
       "source_refs": [
         {
-          "file": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_017_tension_and_visual_imagery.md",
           "locator": "line:33",
-          "section": "张力与画面感"
+          "section": "张力与画面感",
+          "scope": "local_only"
         }
       ]
     },
@@ -168,9 +168,9 @@
       "callability": "candidate_callable_after_context_review",
       "source_refs": [
         {
-          "file": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_036_SM_attributes_phrases.md",
           "locator": "line:6",
-          "section": "S M 属性话术"
+          "section": "S M 属性话术",
+          "scope": "local_only"
         }
       ]
     },
@@ -188,9 +188,9 @@
       "callability": "candidate_callable_after_context_review",
       "source_refs": [
         {
-          "file": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_036_SM_attributes_phrases.md",
           "locator": "line:8",
-          "section": "S M 属性话术"
+          "section": "S M 属性话术",
+          "scope": "local_only"
         }
       ]
     }

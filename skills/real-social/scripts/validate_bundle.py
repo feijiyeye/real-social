@@ -178,7 +178,11 @@ def validate_runtime(root: Path, errors: list[str]) -> None:
                         )
         full = route.get("full_index", {})
         full_path = full.get("path") if isinstance(full, dict) else None
-        if not isinstance(full_path, str):
+        full_scope = full.get("scope") if isinstance(full, dict) else None
+        if full_scope == "local_only":
+            if full_path not in (None, ""):
+                errors.append(f"phrase route {route_id} local-only full index must not declare a bundle path")
+        elif not isinstance(full_path, str):
             errors.append(f"phrase route {route_id} missing full index path")
         elif not (root / full_path).is_file():
             errors.append(f"phrase route {route_id} full index missing: {full_path}")
@@ -198,7 +202,10 @@ def validate_runtime(root: Path, errors: list[str]) -> None:
     if runtime_manifest.get("phrase_route_count") != len(phrase_routes):
         errors.append("runtime-manifest phrase_route_count does not match phrase-route-index")
     full_phrase_index = runtime_manifest.get("full_phrase_index")
-    if not isinstance(full_phrase_index, str) or not (root / full_phrase_index).is_file():
+    if runtime_manifest.get("full_phrase_index_scope") == "local_only":
+        if full_phrase_index not in (None, ""):
+            errors.append("runtime-manifest local-only full_phrase_index must not declare a bundle path")
+    elif not isinstance(full_phrase_index, str) or not (root / full_phrase_index).is_file():
         errors.append("runtime-manifest full_phrase_index is missing")
 
     runtime_files = runtime_manifest.get("files", [])
@@ -315,6 +322,12 @@ def main() -> int:
         errors.append("manifest package_id must be real-social")
     if manifest.get("display_name") != "真实社交":
         errors.append("manifest display_name must be 真实社交")
+    if manifest.get("publication") == "public_runtime_only":
+        counts = manifest.get("counts", {})
+        if isinstance(counts, dict) and (counts.get("raw_sources") or counts.get("external_sources")):
+            errors.append("public manifest must not count raw or external sources")
+        if "source_path_map" in manifest:
+            errors.append("public manifest must not publish source_path_map")
 
     validate_runtime(root, errors)
 

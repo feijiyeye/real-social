@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-27T17:32:32+08:00",
+  "generated_at": "2026-09-07T19:34:28+08:00",
   "package_id": "real-social",
   "unit_count": 49,
   "canonical_count": 2,
@@ -124,14 +124,14 @@
         "K-20260822-034"
       ],
       "source_ref_files": [
-        "knowledge/external-sources/Jackson flow体系/老版体系无广告/体系txt/第三节.txt",
-        "knowledge/external-sources/Jackson flow体系/老版体系无广告/体系txt/第四节.srt",
-        "knowledge/01-原始资料/2026-08-21_zhenshi-理论_文本提取.txt",
-        "knowledge/01-原始资料/2026-08-22_案例分析_千里送_二周目_课程解说.txt",
-        "knowledge/01-原始资料/2026-08-22_杰哥聊天1上.srt",
-        "knowledge/01-原始资料/2026-08-22_杰哥聊天1下.srt",
-        "knowledge/01-原始资料/2026-08-22_杰哥2.srt",
-        "knowledge/01-原始资料/2026-08-22_杰哥3.srt"
+        "local_only",
+        "local_only",
+        "local_only",
+        "local_only",
+        "local_only",
+        "local_only",
+        "local_only",
+        "local_only"
       ]
     },
     {
@@ -190,10 +190,10 @@
       ],
       "source_ref_files": [
         "2026-08-21 用户术语裁决",
-        "knowledge/external-sources/Jackson flow体系/老版体系无广告/体系txt/第五节｜假性评估.txt",
-        "knowledge/01-原始资料/2026-08-21_zhenshi-理论_文本提取.txt",
+        "local_only",
+        "local_only",
         "2026-08-22 用户裁决",
-        "knowledge/01-原始资料/2026-08-22_杰哥聊天1上.srt"
+        "local_only"
       ],
       "route_ids": [
         "interest_push_pull"
@@ -240,7 +240,7 @@
       "confidence": "0.78",
       "callability": "",
       "source_ref_files": [
-        "knowledge/external-sources/Jackson flow体系/老版体系无广告/体系txt/第五节｜假性评估.txt"
+        "local_only"
       ]
     },
     {
@@ -280,9 +280,9 @@
         "K-20260822-025"
       ],
       "source_ref_files": [
-        "knowledge/external-sources/Jackson flow体系/老版体系无广告/体系txt/第三节.txt",
-        "knowledge/01-原始资料/2026-08-21_zhenshi-理论_文本提取.txt",
-        "knowledge/01-原始资料/2026-08-22_案例分析_千里送_三周目_课程解说.txt"
+        "local_only",
+        "local_only",
+        "local_only"
       ]
     },
     {
@@ -317,7 +317,7 @@
       "confidence": "0.5",
       "callability": "",
       "source_ref_files": [
-        "knowledge/external-sources/Jackson flow体系/老版体系无广告/体系txt/第五节｜假性评估.txt"
+        "local_only"
       ]
     },
     {
@@ -366,9 +366,9 @@
       "confidence": "0.86",
       "callability": "",
       "source_ref_files": [
-        "knowledge/external-sources/Jackson flow体系/老版体系无广告/体系txt/第五节｜假性评估.txt",
-        "knowledge/external-sources/Jackson flow体系/老版体系无广告/体系txt/第三节.txt",
-        "knowledge/01-原始资料/2026-08-21_zhenshi-理论_文本提取.txt",
+        "local_only",
+        "local_only",
+        "local_only",
         "2026-08-22 用户裁决"
       ]
     },
@@ -409,7 +409,7 @@
       "confidence": "0.9",
       "callability": "",
       "source_ref_files": [
-        "knowledge/external-sources/Jackson flow体系/老版体系无广告/体系txt/第五节｜假性评估.txt",
+        "local_only",
         "2026-08-21 用户术语裁决"
       ]
     },
@@ -451,7 +451,7 @@
       "confidence": "1.0",
       "callability": "",
       "source_ref_files": [
-        "knowledge/01-原始资料/2026-08-21_真实社交专业术语目录_用户原文.md",
+        "local_only",
         "2026-08-21 用户术语使用指令"
       ]
     },
@@ -493,7 +493,7 @@
       "confidence": "1.0",
       "callability": "",
       "source_ref_files": [
-        "knowledge/01-原始资料/2026-08-21_真实社交专业术语目录_用户原文.md",
+        "local_only",
         "2026-08-21 用户术语使用指令"
       ]
     },
@@ -539,8 +539,8 @@
         "K-20260822-030"
       ],
       "source_ref_files": [
-        "knowledge/01-原始资料/2026-08-21_zhenshi-理论_文本提取.txt",
-        "knowledge/01-原始资料/2026-08-22_杰哥聊天1上.srt"
+        "local_only",
+        "local_only"
       ]
     },
     {
@@ -592,10 +592,10 @@
         "K-20260822-030"
       ],
       "source_ref_files": [
-        "knowledge/01-原始资料/2026-08-21_zhenshi-理论_文本提取.txt",
-        "knowledge/external-sources/Jackson flow体系/老版体系无广告/体系txt/第五节｜假性评估.txt",
+        "local_only",
+        "local_only",
         "2026-08-22 用户裁决",
-        "knowledge/01-原始资料/2026-08-22_杰哥聊天1上.srt"
+        "local_only"
       ],
       "route_ids": [
         "interest_push_pull"
@@ -692,14 +692,14 @@
         "K-20260823-048"
       ],
       "source_ref_files": [
-        "knowledge/01-原始资料/2026-08-21_zhenshi-理论_文本提取.txt",
-        "knowledge/01-原始资料/2026-08-21_真实社交专业术语目录_用户原文.md",
-        "knowledge/01-原始资料/2026-08-22_案例分析_千里送_一周目_课程解说.txt",
-        "knowledge/01-原始资料/2026-08-22_案例分析_千里送_二周目_课程解说.txt",
-        "knowledge/01-原始资料/2026-08-22_杰哥聊天1上.srt",
-        "knowledge/01-原始资料/2026-08-22_杰哥聊天1下.srt",
-        "knowledge/01-原始资料/2026-08-22_杰哥2.srt",
-        "knowledge/01-原始资料/2026-08-22_杰哥3.srt"
+        "local_only",
+        "local_only",
+        "local_only",
+        "local_only",
+        "local_only",
+        "local_only",
+        "local_only",
+        "local_only"
       ],
       "route_ids": [
         "analyze_chat",
@@ -747,7 +747,7 @@
       "confidence": "0.56",
       "callability": "",
       "source_ref_files": [
-        "knowledge/01-原始资料/2026-08-21_zhenshi-理论_文本提取.txt"
+        "local_only"
       ]
     },
     {
@@ -832,14 +832,14 @@
         "K-20260823-048"
       ],
       "source_ref_files": [
-        "knowledge/01-原始资料/2026-08-21_zhenshi-理论_文本提取.txt",
-        "knowledge/01-原始资料/2026-08-22_案例分析_千里送_二周目_课程解说.txt",
-        "knowledge/01-原始资料/2026-08-22_案例分析_千里送_三周目_课程解说.txt",
-        "knowledge/01-原始资料/2026-08-22_杰哥聊天1上.srt",
-        "knowledge/01-原始资料/2026-08-22_杰哥聊天1下.srt",
-        "knowledge/01-原始资料/2026-08-22_杰哥2.srt",
-        "knowledge/01-原始资料/2026-08-22_杰哥3.srt",
-        "knowledge/01-原始资料/2026-08-22_杰哥4.srt"
+        "local_only",
+        "local_only",
+        "local_only",
+        "local_only",
+        "local_only",
+        "local_only",
+        "local_only",
+        "local_only"
       ],
       "route_ids": [
         "low_response"
@@ -926,14 +926,14 @@
         "K-20260823-048"
       ],
       "source_ref_files": [
-        "knowledge/01-原始资料/2026-08-21_zhenshi-理论_文本提取.txt",
+        "local_only",
         "2026-08-21 用户 B4/B9 边界裁决",
         "2026-08-22 用户裁决",
-        "knowledge/01-原始资料/2026-08-22_杰哥聊天1上.srt",
-        "knowledge/01-原始资料/2026-08-22_杰哥聊天1下.srt",
-        "knowledge/01-原始资料/2026-08-22_杰哥2.srt",
-        "knowledge/01-原始资料/2026-08-22_杰哥3.srt",
-        "knowledge/01-原始资料/2026-08-22_杰哥4.srt"
+        "local_only",
+        "local_only",
+        "local_only",
+        "local_only",
+        "local_only"
       ],
       "route_ids": [
         "stop_boundary"
@@ -990,7 +990,7 @@
       "confidence": "0.48",
       "callability": "",
       "source_ref_files": [
-        "knowledge/01-原始资料/2026-08-21_zhenshi-理论_文本提取.txt",
+        "local_only",
         "2026-08-22 用户裁决"
       ],
       "route_ids": [
@@ -1033,7 +1033,7 @@
       "callability": "",
       "source_ref_files": [
         "knowledge/02-知识单元/K-20260821-012_JacksonFlow反对编造和夸大边界候选.md",
-        "knowledge/01-原始资料/2026-08-21_zhenshi-理论_文本提取.txt",
+        "local_only",
         "2026-08-22 用户裁决"
       ]
     },
@@ -1085,8 +1085,8 @@
       "confidence": "0.55",
       "callability": "",
       "source_ref_files": [
-        "knowledge/01-原始资料/2026-08-21_zhenshi-理论_文本提取.txt",
-        "knowledge/01-原始资料/2026-08-21_真实社交专业术语目录_用户原文.md",
+        "local_only",
+        "local_only",
         "2026-08-22 用户裁决"
       ]
     },
@@ -1166,9 +1166,9 @@
         "K-20260822-026"
       ],
       "source_ref_files": [
-        "knowledge/01-原始资料/2026-08-22_案例分析_千里送_一周目_课程解说.txt",
-        "knowledge/01-原始资料/2026-08-22_案例分析_千里送_二周目_课程解说.txt",
-        "knowledge/01-原始资料/2026-08-22_案例分析_千里送_三周目_课程解说.txt",
+        "local_only",
+        "local_only",
+        "local_only",
         "2026-08-22 用户裁决"
       ]
     },
@@ -1238,12 +1238,12 @@
         "K-20260822-030"
       ],
       "source_ref_files": [
-        "knowledge/01-原始资料/2026-08-21_真实社交专业术语目录_用户原文.md",
-        "knowledge/01-原始资料/2026-08-22_案例分析_千里送_二周目_课程解说.txt",
-        "knowledge/01-原始资料/2026-08-22_案例分析_千里送_三周目_课程解说.txt",
+        "local_only",
+        "local_only",
+        "local_only",
         "2026-08-22 用户裁决",
-        "knowledge/01-原始资料/2026-08-22_杰哥聊天1上.srt",
-        "knowledge/01-原始资料/2026-08-22_杰哥聊天1下.srt"
+        "local_only",
+        "local_only"
       ]
     },
     {
@@ -1330,14 +1330,14 @@
         "K-20260823-048"
       ],
       "source_ref_files": [
-        "knowledge/01-原始资料/2026-08-22_案例分析_千里送_二周目_课程解说.txt",
-        "knowledge/01-原始资料/2026-08-22_案例分析_千里送_三周目_课程解说.txt",
-        "knowledge/01-原始资料/2026-08-22_杰哥聊天1上.srt",
-        "knowledge/01-原始资料/2026-08-22_杰哥聊天1下.srt",
-        "knowledge/01-原始资料/2026-08-22_杰哥2.srt",
-        "knowledge/01-原始资料/2026-08-22_杰哥3.srt",
-        "knowledge/01-原始资料/2026-08-22_杰哥4.srt",
-        "knowledge/01-原始资料/2026-08-22_杰哥聊天5.srt"
+        "local_only",
+        "local_only",
+        "local_only",
+        "local_only",
+        "local_only",
+        "local_only",
+        "local_only",
+        "local_only"
       ]
     },
     {
@@ -1399,11 +1399,11 @@
         "K-20260823-048"
       ],
       "source_ref_files": [
-        "knowledge/01-原始资料/2026-08-22_案例分析_千里送_一周目_课程解说.txt",
-        "knowledge/01-原始资料/2026-08-22_案例分析_千里送_二周目_课程解说.txt",
-        "knowledge/01-原始资料/2026-08-22_案例分析_千里送_三周目_课程解说.txt",
-        "knowledge/01-原始资料/2026-08-23_杰哥聊天7.srt",
-        "knowledge/01-原始资料/2026-08-23_杰哥聊天9-2.srt"
+        "local_only",
+        "local_only",
+        "local_only",
+        "local_only",
+        "local_only"
       ]
     },
     {
@@ -1452,7 +1452,7 @@
       ],
       "source_ref_files": [
         "knowledge/02-知识单元/K-20260821-021_zhenshi明确拒绝与停止时不纠缠边界候选.md",
-        "knowledge/01-原始资料/2026-08-22_案例分析_千里送_三周目_课程解说.txt",
+        "local_only",
         "2026-08-22 用户裁决"
       ]
     },
@@ -1524,8 +1524,8 @@
         "K-20260822-031"
       ],
       "source_ref_files": [
-        "knowledge/01-原始资料/2026-08-22_杰哥聊天1上.srt",
-        "knowledge/01-原始资料/2026-08-22_杰哥聊天1下.srt"
+        "local_only",
+        "local_only"
       ]
     },
     {
@@ -1594,9 +1594,9 @@
         "K-20260823-048"
       ],
       "source_ref_files": [
-        "knowledge/01-原始资料/2026-08-22_杰哥聊天1上.srt",
-        "knowledge/01-原始资料/2026-08-22_杰哥聊天1下.srt",
-        "knowledge/01-原始资料/2026-08-23_杰哥聊天9-2.srt"
+        "local_only",
+        "local_only",
+        "local_only"
       ]
     },
     {
@@ -1687,14 +1687,14 @@
         "K-20260823-048"
       ],
       "source_ref_files": [
-        "knowledge/01-原始资料/2026-08-22_杰哥聊天1上.srt",
-        "knowledge/01-原始资料/2026-08-22_杰哥聊天1下.srt",
-        "knowledge/01-原始资料/2026-08-22_杰哥2.srt",
-        "knowledge/01-原始资料/2026-08-22_杰哥3.srt",
-        "knowledge/01-原始资料/2026-08-22_杰哥4.srt",
-        "knowledge/01-原始资料/2026-08-22_杰哥聊天5.srt",
-        "knowledge/01-原始资料/2026-08-23_杰哥聊天6.srt",
-        "knowledge/01-原始资料/2026-08-23_杰哥聊天7.srt"
+        "local_only",
+        "local_only",
+        "local_only",
+        "local_only",
+        "local_only",
+        "local_only",
+        "local_only",
+        "local_only"
       ],
       "route_ids": [
         "concern_condition",
@@ -1770,7 +1770,7 @@
         "K-20260822-035"
       ],
       "source_ref_files": [
-        "knowledge/01-原始资料/2026-08-22_杰哥2.srt"
+        "local_only"
       ]
     },
     {
@@ -1844,7 +1844,7 @@
         "K-20260822-036"
       ],
       "source_ref_files": [
-        "knowledge/01-原始资料/2026-08-22_杰哥3.srt"
+        "local_only"
       ]
     },
     {
@@ -1911,7 +1911,7 @@
         "K-20260822-033"
       ],
       "source_ref_files": [
-        "knowledge/01-原始资料/2026-08-22_杰哥2.srt"
+        "local_only"
       ]
     },
     {
@@ -1980,7 +1980,7 @@
         "K-20260822-034"
       ],
       "source_ref_files": [
-        "knowledge/01-原始资料/2026-08-22_杰哥3.srt"
+        "local_only"
       ]
     },
     {
@@ -2066,14 +2066,14 @@
         "K-20260823-048"
       ],
       "source_ref_files": [
-        "knowledge/01-原始资料/2026-08-22_杰哥聊天1上.srt",
-        "knowledge/01-原始资料/2026-08-22_杰哥2.srt",
-        "knowledge/01-原始资料/2026-08-22_杰哥3.srt",
-        "knowledge/01-原始资料/2026-08-22_杰哥4.srt",
-        "knowledge/01-原始资料/2026-08-22_杰哥聊天5.srt",
-        "knowledge/01-原始资料/2026-08-23_杰哥聊天6.srt",
-        "knowledge/01-原始资料/2026-08-23_杰哥聊天7.srt",
-        "knowledge/01-原始资料/2026-08-23_杰哥聊天8.srt"
+        "local_only",
+        "local_only",
+        "local_only",
+        "local_only",
+        "local_only",
+        "local_only",
+        "local_only",
+        "local_only"
       ],
       "route_ids": [
         "concern_condition",
@@ -2145,7 +2145,7 @@
         "K-20260822-040"
       ],
       "source_ref_files": [
-        "knowledge/01-原始资料/2026-08-22_杰哥4.srt"
+        "local_only"
       ]
     },
     {
@@ -2213,7 +2213,7 @@
         "K-20260822-041"
       ],
       "source_ref_files": [
-        "knowledge/01-原始资料/2026-08-22_杰哥聊天5.srt"
+        "local_only"
       ]
     },
     {
@@ -2278,7 +2278,7 @@
         "K-20260822-038"
       ],
       "source_ref_files": [
-        "knowledge/01-原始资料/2026-08-22_杰哥4.srt"
+        "local_only"
       ]
     },
     {
@@ -2347,7 +2347,7 @@
         "K-20260822-039"
       ],
       "source_ref_files": [
-        "knowledge/01-原始资料/2026-08-22_杰哥聊天5.srt"
+        "local_only"
       ]
     },
     {
@@ -2414,7 +2414,7 @@
         "K-20260823-045"
       ],
       "source_ref_files": [
-        "knowledge/01-原始资料/2026-08-23_杰哥聊天6.srt"
+        "local_only"
       ]
     },
     {
@@ -2476,7 +2476,7 @@
         "K-20260823-046"
       ],
       "source_ref_files": [
-        "knowledge/01-原始资料/2026-08-23_杰哥聊天7.srt"
+        "local_only"
       ]
     },
     {
@@ -2540,7 +2540,7 @@
         "K-20260823-047"
       ],
       "source_ref_files": [
-        "knowledge/01-原始资料/2026-08-23_杰哥聊天8.srt"
+        "local_only"
       ]
     },
     {
@@ -2606,7 +2606,7 @@
         "K-20260823-042"
       ],
       "source_ref_files": [
-        "knowledge/01-原始资料/2026-08-23_杰哥聊天6.srt"
+        "local_only"
       ]
     },
     {
@@ -2667,7 +2667,7 @@
         "K-20260823-043"
       ],
       "source_ref_files": [
-        "knowledge/01-原始资料/2026-08-23_杰哥聊天7.srt"
+        "local_only"
       ]
     },
     {
@@ -2730,7 +2730,7 @@
         "K-20260823-044"
       ],
       "source_ref_files": [
-        "knowledge/01-原始资料/2026-08-23_杰哥聊天8.srt"
+        "local_only"
       ]
     },
     {
@@ -2809,8 +2809,8 @@
         "K-20260823-050"
       ],
       "source_ref_files": [
-        "knowledge/01-原始资料/2026-08-23_杰哥聊天9-1.srt",
-        "knowledge/01-原始资料/2026-08-23_杰哥聊天9-2.srt"
+        "local_only",
+        "local_only"
       ]
     },
     {
@@ -2874,7 +2874,7 @@
         "K-20260823-048"
       ],
       "source_ref_files": [
-        "knowledge/01-原始资料/2026-08-23_杰哥聊天9-1.srt"
+        "local_only"
       ]
     },
     {
@@ -2947,7 +2947,7 @@
         "K-20260823-048"
       ],
       "source_ref_files": [
-        "knowledge/01-原始资料/2026-08-23_杰哥聊天9-2.srt"
+        "local_only"
       ]
     },
     {
@@ -3015,14 +3015,14 @@
       "confidence": "0.96",
       "callability": "",
       "source_ref_files": [
-        "knowledge/01-原始资料/2026-08-23_Jackson体系话术候选参考清单.json",
-        "knowledge/01-原始资料/2026-08-23_Jackson体系话术去重索引.json",
-        "knowledge/01-原始资料/2026-08-23_888内部群杰哥话术（3.3-8.17）.md",
-        "knowledge/01-原始资料/2026-08-23_话术库.docx",
-        "knowledge/01-原始资料/2026-08-23_语料集合.docx",
-        "knowledge/01-原始资料/2026-08-23_huashu.docx",
-        "knowledge/01-原始资料/2026-08-23_真实流话术总结.docx",
-        "knowledge/01-原始资料/2026-08-23_game.docx"
+        "local_only",
+        "local_only",
+        "local_only",
+        "local_only",
+        "local_only",
+        "local_only",
+        "local_only",
+        "local_only"
       ],
       "route_ids": [
         "reply_request"
@@ -3088,11 +3088,11 @@
       "confidence": "0.83",
       "callability": "",
       "source_ref_files": [
-        "knowledge/01-原始资料/2026-08-23_Jackson体系话术候选参考清单.json",
-        "knowledge/01-原始资料/2026-08-23_Jackson体系话术去重索引.json",
-        "knowledge/01-原始资料/2026-08-23_huashu_文本提取.txt",
-        "knowledge/01-原始资料/2026-08-23_game_文本提取.txt",
-        "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes候选参考增补清单.json"
+        "local_only",
+        "local_only",
+        "local_only",
+        "local_only",
+        "local_only"
       ],
       "route_ids": [
         "reply_request"
@@ -3160,12 +3160,12 @@
       "confidence": "0.94",
       "callability": "",
       "source_ref_files": [
-        "knowledge/01-原始资料/2026-08-23_huashu_文本提取.txt",
-        "knowledge/01-原始资料/2026-08-23_game_文本提取.txt",
-        "knowledge/01-原始资料/2026-08-23_真实流话术总结_文本提取.txt",
-        "knowledge/01-原始资料/2026-08-23_Jackson体系话术去重索引.json",
-        "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes话术去重审计.json",
-        "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes候选参考增补清单.json"
+        "local_only",
+        "local_only",
+        "local_only",
+        "local_only",
+        "local_only",
+        "local_only"
       ],
       "route_ids": [
         "privacy_safety_age_consent",
@@ -3241,7 +3241,7 @@
         "knowledge/02-知识单元/K-20260821-017_zhenshi假性评估类型时机与强度来源观点.md",
         "knowledge/02-知识单元/K-20260821-020_zhenshi低回应时减少投入方向候选.md",
         "knowledge/02-知识单元/K-20260821-021_zhenshi明确拒绝与停止时不纠缠边界候选.md",
-        "knowledge/01-原始资料/2026-08-21_真实社交专业术语目录_用户原文.md",
+        "local_only",
         "2026-08-26 用户明确裁决",
         "2026-08-27 用户明确补充",
         "knowledge/02-知识单元/K-20260821-003_JacksonFlow前提阶段线上候选.md"

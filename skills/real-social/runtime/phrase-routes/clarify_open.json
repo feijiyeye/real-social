@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-27T17:32:32+08:00",
+  "generated_at": "2026-09-07T19:34:28+08:00",
   "package_id": "real-social",
   "route": "clarify_open",
   "label": "澄清与开放问题",
@@ -19,9 +19,9 @@
       "callability": "candidate_callable_after_context_review",
       "source_refs": [
         {
-          "file": "knowledge/01-原始资料/2026-08-23_888内部群杰哥话术（3.3-8.17）.md",
           "locator": "line:9",
-          "section": "情景加话术"
+          "section": "情景加话术",
+          "scope": "local_only"
         }
       ]
     },
@@ -39,9 +39,9 @@
       "callability": "candidate_callable_after_context_review",
       "source_refs": [
         {
-          "file": "knowledge/01-原始资料/2026-08-23_888内部群杰哥话术（3.3-8.17）.md",
           "locator": "line:21",
-          "section": "情景加话术"
+          "section": "情景加话术",
+          "scope": "local_only"
         }
       ]
     },
@@ -61,14 +61,14 @@
       "callability": "candidate_callable_after_context_review",
       "source_refs": [
         {
-          "file": "knowledge/01-原始资料/2026-08-23_888内部群杰哥话术（3.3-8.17）.md",
           "locator": "line:39",
-          "section": "情景加话术"
+          "section": "情景加话术",
+          "scope": "local_only"
         },
         {
-          "file": "knowledge/01-原始资料/2026-08-23_真实流话术总结.docx",
           "locator": "paragraph:23",
-          "section": "未分段"
+          "section": "未分段",
+          "scope": "local_only"
         }
       ]
     },
@@ -86,14 +86,14 @@
       "callability": "candidate_callable_after_context_review",
       "source_refs": [
         {
-          "file": "knowledge/01-原始资料/2026-08-23_话术库.docx",
           "locator": "paragraph:45",
-          "section": "聊天假评"
+          "section": "聊天假评",
+          "scope": "local_only"
         },
         {
-          "file": "knowledge/01-原始资料/2026-08-23_game.docx",
           "locator": "paragraph:48",
-          "section": "聊天假评"
+          "section": "聊天假评",
+          "scope": "local_only"
         }
       ]
     },
@@ -111,9 +111,9 @@
       "callability": "candidate_callable_after_context_review",
       "source_refs": [
         {
-          "file": "knowledge/01-原始资料/2026-08-23_话术库.docx",
           "locator": "paragraph:198",
-          "section": "真评"
+          "section": "真评",
+          "scope": "local_only"
         }
       ]
     },
@@ -131,9 +131,9 @@
       "callability": "candidate_callable_after_context_review",
       "source_refs": [
         {
-          "file": "knowledge/01-原始资料/2026-08-23_huashu.docx",
           "locator": "paragraph:124",
-          "section": "三、真性评估与筛选（Genuine Assessment & Screening） / 3.1 感情状态/习惯评估"
+          "section": "三、真性评估与筛选（Genuine Assessment & Screening） / 3.1 感情状态/习惯评估",
+          "scope": "local_only"
         }
       ]
     },
@@ -151,9 +151,9 @@
       "callability": "candidate_callable_after_context_review",
       "source_refs": [
         {
-          "file": "knowledge/01-原始资料/2026-08-23_huashu.docx",
           "locator": "paragraph:547",
-          "section": "十、作联系感与日常维护（Connection & Maintenance） / 10.1 作联系感语句（Jackson）"
+          "section": "十、作联系感与日常维护（Connection & Maintenance） / 10.1 作联系感语句（Jackson）",
+          "scope": "local_only"
         }
       ]
     },
@@ -171,9 +171,9 @@
       "callability": "candidate_callable_after_context_review",
       "source_refs": [
         {
-          "file": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_005_sticker_and_non_seriousness_obstacles.md",
           "locator": "line:13",
-          "section": "表情包阻碍 不认真无张力阻碍"
+          "section": "表情包阻碍 不认真无张力阻碍",
+          "scope": "local_only"
         }
       ]
     },
@@ -191,9 +191,9 @@
       "callability": "candidate_callable_after_context_review",
       "source_refs": [
         {
-          "file": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_005_sticker_and_non_seriousness_obstacles.md",
           "locator": "line:19",
-          "section": "表情包阻碍 不认真无张力阻碍"
+          "section": "表情包阻碍 不认真无张力阻碍",
+          "scope": "local_only"
         }
       ]
     },
@@ -211,9 +211,9 @@
       "callability": "candidate_callable_after_context_review",
       "source_refs": [
         {
-          "file": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_013_empathic_opening.md",
           "locator": "line:11",
-          "section": "开场同理心环节"
+          "section": "开场同理心环节",
+          "scope": "local_only"
         }
       ]
     },
@@ -232,9 +232,9 @@
       "callability": "candidate_callable_after_context_review",
       "source_refs": [
         {
-          "file": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_013_empathic_opening.md",
           "locator": "line:17",
-          "section": "开场同理心环节"
+          "section": "开场同理心环节",
+          "scope": "local_only"
         }
       ]
     },
@@ -252,9 +252,9 @@
       "callability": "candidate_callable_after_context_review",
       "source_refs": [
         {
-          "file": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_013_empathic_opening.md",
           "locator": "line:33",
-          "section": "开场同理心环节"
+          "section": "开场同理心环节",
+          "scope": "local_only"
         }
       ]
     },
@@ -272,9 +272,9 @@
       "callability": "candidate_callable_after_context_review",
       "source_refs": [
         {
-          "file": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_016_clear_intent_and_premise.md",
           "locator": "line:11",
-          "section": "明确意图与前提"
+          "section": "明确意图与前提",
+          "scope": "local_only"
         }
       ]
     },
@@ -291,9 +291,9 @@
       "callability": "candidate_callable_after_context_review",
       "source_refs": [
         {
-          "file": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_016_clear_intent_and_premise.md",
           "locator": "line:21",
-          "section": "明确意图与前提"
+          "section": "明确意图与前提",
+          "scope": "local_only"
         }
       ]
     },
@@ -310,9 +310,9 @@
       "callability": "candidate_callable_after_context_review",
       "source_refs": [
         {
-          "file": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_019_extending_the_conversation.md",
           "locator": "line:11",
-          "section": "延续话题"
+          "section": "延续话题",
+          "scope": "local_only"
         }
       ]
     },
@@ -329,9 +329,9 @@
       "callability": "candidate_callable_after_context_review",
       "source_refs": [
         {
-          "file": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_019_extending_the_conversation.md",
           "locator": "line:25",
-          "section": "延续话题"
+          "section": "延续话题",
+          "scope": "local_only"
         }
       ]
     },
@@ -348,9 +348,9 @@
       "callability": "candidate_callable_after_context_review",
       "source_refs": [
         {
-          "file": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_024_building_connection.md",
           "locator": "line:73",
-          "section": "做联系感"
+          "section": "做联系感",
+          "scope": "local_only"
         }
       ]
     },
@@ -367,9 +367,9 @@
       "callability": "candidate_callable_after_context_review",
       "source_refs": [
         {
-          "file": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_024_building_connection.md",
           "locator": "line:95",
-          "section": "做联系感"
+          "section": "做联系感",
+          "scope": "local_only"
         }
       ]
     },
@@ -387,9 +387,9 @@
       "callability": "candidate_callable_after_context_review",
       "source_refs": [
         {
-          "file": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_040_invitation_phrases.md",
           "locator": "line:49",
-          "section": "邀约部分："
+          "section": "邀约部分：",
+          "scope": "local_only"
         }
       ]
     },
@@ -406,9 +406,9 @@
       "callability": "candidate_callable_after_context_review",
       "source_refs": [
         {
-          "file": "knowledge/01-原始资料/2026-08-23_AppleNotesQuickNotes_040_invitation_phrases.md",
           "locator": "line:123",
-          "section": "邀约部分："
+          "section": "邀约部分：",
+          "scope": "local_only"
         }
       ]
     }

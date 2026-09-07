@@ -30,16 +30,16 @@ forbidden_moves:
 case_refs: []
 related: [K-20260821-017, K-20260821-023, K-20260821-021]
 source_refs:
-  - file: "/Volumes/PS3001/Jackson案例素材Skill/Jackson flow体系/老版体系无广告/体系txt/第五节｜假性评估.txt"
+  - file: "local_only"
     locator: "第201-230行"
     quote: "来源要求评价符合逻辑、遵循事实，并警告不能凭空乱说。"
-  - file: "/Volumes/PS3001/Jackson案例素材Skill/Jackson flow体系/老版体系无广告/体系txt/第三节.txt"
+  - file: "local_only"
     locator: "第864-880行"
     quote: "来源同时说不要依赖固定套路或长期伪装；该段仅作为边界背景，不扩展为体系规则。"
-  - file: "/Users/company/Documents/Dragon知识库/01-原始资料/2026-08-21_zhenshi-理论_文本提取.txt"
+  - file: "local_only"
     locator: "第361-365行"
     quote: "第二批汇编把假性评估定义为并非真实相信的评价。"
-  - file: "/Volumes/PS3001/Jackson案例素材Skill/Jackson flow体系/老版体系无广告/体系txt/第五节｜假性评估.txt"
+  - file: "local_only"
     locator: "第192-223行"
     quote: "准确的假性评估定义把评估作为技巧呈现，并说明逻辑、事实和表达方式。"
   - file: "2026-08-22 用户裁决"

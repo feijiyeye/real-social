@@ -30,7 +30,7 @@ forbidden_moves:
 case_refs: []
 related: []
 source_refs:
-  - file: "/Volumes/PS3001/Jackson案例素材Skill/Jackson flow体系/老版体系无广告/体系txt/第五节｜假性评估.txt"
+  - file: "local_only"
     locator: "第519-548行"
     quote: "来源提出“不赋格”时先转开、继续聊其他内容，互动较久仍无相关信号时可以放掉。"
 authority: source_only

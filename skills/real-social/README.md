@@ -58,9 +58,9 @@ $real-social
 - `runtime/navigation-index.json`：任务完成或收到新反馈时；
 - `runtime/phrase-route-index.json`：方向明确且通过示例门槛后；
 - `knowledge/02-知识单元/`：命中路由所需的少量知识单元；
-- `knowledge/01-原始资料/` 和 `knowledge/external-sources/`：来源审计或上下文复核时。
+- `runtime/phrase-routes/*.json`：公开候选话术分片；原始来源审计只在本地完整版进行。
 
-包内路径均为相对路径。知识单元中的 `/Users/...`、`/Volumes/...` 是历史来源定位，不是安装机器的运行依赖。
+包内路径均为相对路径。公开包不包含 SRT、DOCX、截图、完整原始资料、外部原件或完整话术索引；`knowledge/manifest.json` 只记录公开运行时清单，来源映射和原始路径留在本地完整版。
 
 ## 包内脚本
 
@@ -80,13 +80,13 @@ python3 scripts/search_phrases.py --route <route_id> --query "对方原消息" -
 - `SKILL.md`：完整行为规则和输出契约
 - `agents/openai.yaml`：Codex 界面元数据
 - `runtime/`：轻量启动层、路由和派生索引
-- `knowledge/`：可迁移知识快照、原始资料和来源映射
+- `knowledge/`：可迁移知识单元和公开治理快照；原始资料与外部来源不随公开包发布
 - `references/`：运行协议、处理流程和迁移说明
 - `tests/`：路由和元数据回归测试
 
 ## 内容边界
 
-当前快照包含原始聊天、课程/话术资料、Apple Notes 和第三方来源，可能含可识别上下文。使用前请确认隐私、版权和授权；不要据此识别、骚扰、施压或绕过他人的拒绝、不适、安全和同意边界。
+当前公开快照只包含结构化知识、候选入口和运行时规则；完整原始聊天、课程/话术资料、Apple Notes 和第三方来源保留在本地完整版。使用前请确认隐私、版权和授权；不要据此识别、骚扰、施压或绕过他人的拒绝、不适、安全和同意边界。
 
 当前版本没有独立 `LICENSE` 文件。公开可见不等于默认授予复制、再分发或商业使用许可，具体边界见仓库的 [NOTICE.md](https://github.com/feijiyeye/real-social/blob/main/NOTICE.md) 和 [README.md](https://github.com/feijiyeye/real-social/blob/main/README.md)。
 

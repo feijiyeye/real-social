@@ -35,7 +35,7 @@
 
 对经典案例，优先抽取完整的推理链：`背景/阶段 -> 触发信息 -> 来源解释 -> 使用动作 -> 对方反馈 -> 下一步调整 -> 来源结论`，再与已保存的专业术语、阶段和方向对齐。不要只摘聊天原句，也不要只做风险审计。
 
-案例中的激烈表达、争议操作、性话题、反复联系、心理归因和结果宣称都保留在原始资料和案例逻辑中，不因不适合默认推荐而删除。另设“调用状态”区分：`source_preserved`、`candidate_callable`、`boundary_only`、`not_default_direction`。保留内容与推荐内容是两个判断。
+案例中的激烈表达、争议操作、性话题、反复联系、心理归因和结果宣称在本地原始资料与案例逻辑中保留，不因不适合默认推荐而改写。公开发布包只保留已经结构化的知识单元和候选分片。另设“调用状态”区分：`source_preserved`、`candidate_callable`、`boundary_only`、`not_default_direction`。保留内容与推荐内容是两个判断。
 
 `candidate_callable` 对讲解型案例表示“可以在相似场景中作为候选案例参考召回”，不表示其中的操作已经成为正式规则；运行时必须同时显示候选状态、来源性质和结果状态，并继续用 canonical 边界过滤默认方向。
 
@@ -57,11 +57,11 @@
 
 ## 7. 运行时索引派生
 
-知识单元和原始资料完成查重、候选化与校验后，才运行 `scripts/build_runtime_indexes.py`。索引派生过程只读取 frontmatter、`K-20260823-052` 的阶段/方向映射以及 Jackson/Apple Notes 的候选入口：
+本地知识单元完成查重、候选化与校验后，才运行 `scripts/build_runtime_indexes.py`。公开构建只发布由本地来源派生的安全候选入口，不把原始资料复制进发布包：
 
 - `unit-index.json` 只保存身份、状态、主题、触发词和包内路径；
 - `route-index.json` 保存任务前路由、状态优先级和最小读取计划；
 - `navigation-index.json` 保存任务后单步导航；
-- `phrase-route-index.json` 保存候选入口和完整索引的延迟路径，不复制完整话术正文。
+- `phrase-route-index.json` 保存候选入口和本地-only 完整索引标记，不复制完整话术正文。
 
 生成索引不会改变任何单元的 `status`、`canonical`、`authority` 或 `version`。构建和校验阶段可以读取完整 `manifest.json`，普通聊天首轮不得因索引存在而加载它。

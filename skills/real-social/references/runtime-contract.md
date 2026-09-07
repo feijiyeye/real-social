@@ -1,6 +1,6 @@
 # 运行时输出契约
 
-运行时先把当前 Skill 目录下的 `knowledge/` 设为唯一知识根目录，并读取 `runtime/runtime-entry.md`、`runtime/route-index.json` 和 `runtime/unit-index.json`。普通聊天不读取完整 `knowledge/manifest.json`；只有来源审计、构建或校验时才读取它。不得依赖构建机器的绝对路径；历史绝对来源路径在需要回读时通过 manifest 的 `source_path_map` 解析到包内文件。
+运行时先把当前 Skill 目录下的 `knowledge/` 设为唯一知识根目录，并读取 `runtime/runtime-entry.md`、`runtime/route-index.json` 和 `runtime/unit-index.json`。普通聊天不读取完整 `knowledge/manifest.json`；只有维护或校验时才读取它。公开包不发布原始来源映射；`source_refs.scope=local_only` 的条目必须回到本地完整版审计，不得把公开包路径当作原件路径。
 
 ## 两级路由契约
 
@@ -22,7 +22,7 @@
 
 状态优先级固定为：`stop_boundary` -> `privacy_safety_age_consent` -> `recovery` -> `clarify` -> `concern_condition` -> `low_response` -> `invite` -> `interest_push_pull` -> `unknown_stage`。完整匹配词和读取计划见 `runtime/route-index.json`。
 
-普通聊天的最小读取集是运行时入口、路由索引、单元索引和正式流程单元 `K-20260826-001`。完整话术索引、续接摘要、原始资料和外部来源均为按需资源。
+普通聊天的最小读取集是运行时入口、路由索引、单元索引和正式流程单元 `K-20260826-001`。公开候选分片和续接摘要按需读取；完整话术索引、原始资料和外部来源只在本地完整版可用。
 
 ## 输入最低要求
 
@@ -88,7 +88,7 @@
 - `conflicting_rules`：体系内冲突未裁决，报告冲突编号。
 - `unconfigured_framework`：阶段或价值观尚未配置，只做素材审计。
 - `privacy_redaction_needed`：材料包含可识别第三方信息，先要求脱敏。
-- `source_unavailable`：manifest 和包内来源目录都无法解析历史来源路径，明确说明不可回读，不以相似文件替代。
+- `source_unavailable`：公开包没有原始来源，或本地完整版也无法解析历史来源路径，明确说明不可回读，不以相似文件替代。
 
 ## 正式流程运行字段
 
