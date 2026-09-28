@@ -92,6 +92,8 @@ python3 scripts/search_phrases.py --route <route_id> --query "对方原消息" -
 
 ## 版本
 
-当前版本：[`0.1.0`](VERSION)。
+当前版本：[`0.2.0`](VERSION)。
+
+本版本新增三阶段九步骤每轮重新识别、窗口连续性账本、赋格与真性评估计数器，以及每轮知识库锚定回执。缺少知识库回执、部分命中、失败或无命中时，不允许仅凭模型能力补出推进方向。完整变更见仓库根目录的 [CHANGELOG.md](../../CHANGELOG.md)。
 
 完整行为规则见 [`SKILL.md`](SKILL.md)，运行协议见 [`references/portable-runtime.md`](references/portable-runtime.md) 和 [`references/policy.md`](references/policy.md)。

@@ -38,7 +38,7 @@ source_refs:
   - file: "2026-08-21 用户术语裁决"
     locator: "当前会话"
     quote: "赋格需保留‘夸赞男性的言语或意图’与来源方‘自我证明/自我解释’两条并行解释。"
-  - file: "local_only"
+  - file: "local_only flow体系/老版体系无广告/体系txt/第五节｜假性评估.txt"
     locator: "第234-247行、第514-518行"
     quote: "来源使用“赋格”一词，并将其描述为对评估的自我证明/解释及窗口反馈。"
   - file: "local_only"

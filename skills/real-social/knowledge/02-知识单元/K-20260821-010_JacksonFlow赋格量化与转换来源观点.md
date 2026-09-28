@@ -25,7 +25,7 @@ forbidden_moves:
 case_refs: []
 related: []
 source_refs:
-  - file: "local_only"
+  - file: "local_only flow体系/老版体系无广告/体系txt/第五节｜假性评估.txt"
     locator: "第274-287行、第428-440行、第779-793行"
     quote: "来源使用进度条、百分比和数量估计来说明阶段转换。"
 authority: source_only

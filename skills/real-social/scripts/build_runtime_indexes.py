@@ -311,7 +311,9 @@ def build_route_index(config: dict[str, Any], unit_index: dict[str, Any]) -> dic
         "default_task_route": config.get("default_task_route", "analyze_chat"),
         "default_state_route": config.get("default_state_route", "unknown_stage"),
         "limits": config.get("limits", {}),
+        "primary_flow": config.get("primary_flow", {}),
         "stage_navigation": config.get("stage_navigation", {}),
+        "knowledge_grounding": config.get("knowledge_grounding", {}),
         "priority_order": [item["id"] for item in state_routes],
         "task_routes": task_routes,
         "state_routes": state_routes,
@@ -483,11 +485,18 @@ def render_runtime_entry(config: dict[str, Any]) -> str:
     )
     stage_navigation = config.get("stage_navigation", {})
     required_outputs = stage_navigation.get("required_outputs", []) if isinstance(stage_navigation, dict) else []
-    examples_require = stage_navigation.get("examples_require", []) if isinstance(stage_navigation, dict) else []
+    phrase_library_require = stage_navigation.get("phrase_library_require", []) if isinstance(stage_navigation, dict) else []
     evidence_layers = stage_navigation.get("evidence_layers", []) if isinstance(stage_navigation, dict) else []
     required_output_text = "、".join(f"`{item}`" for item in required_outputs)
-    examples_require_text = "、".join(f"`{item}`" for item in examples_require)
+    phrase_library_require_text = "、".join(f"`{item}`" for item in phrase_library_require)
     evidence_layers_text = "、".join(f"`{item}`" for item in evidence_layers)
+    knowledge_grounding = config.get("knowledge_grounding", {})
+    grounding_tasks = knowledge_grounding.get("required_tasks", []) if isinstance(knowledge_grounding, dict) else []
+    grounding_tasks_text = "、".join(f"`{item}`" for item in grounding_tasks)
+    grounding_receipt = knowledge_grounding.get("required_receipt", "knowledge_trace") if isinstance(knowledge_grounding, dict) else "knowledge_trace"
+    primary_flow = config.get("primary_flow", {})
+    flow_steps = primary_flow.get("steps", []) if isinstance(primary_flow, dict) else []
+    flow_text = " → ".join(str(item.get("label", "")) for item in flow_steps if isinstance(item, dict))
     return f"""# 真实社交运行时入口
 
 这是 `real-social` 的轻量启动层。先读本文件和 `route-index.json`，再根据当前输入只选择一个主模块；不要在普通聊天首轮加载完整 `manifest`、续接摘要或 2867 条话术索引。
@@ -502,7 +511,15 @@ def render_runtime_entry(config: dict[str, Any]) -> str:
 
 ## 阶段导航优先
 
-聊天分析和回复任务默认先做阶段导航，再决定是否给示例。新聊天证据先区分 {evidence_layers_text}，并输出 {required_output_text}；术语必须受证据约束，不能直接当话术模板。只有阶段和方向明确、用户明确要求可发送内容且边界满足（{examples_require_text}）时才进入少量示例。收到新反馈后重新判断阶段、方向、反馈门控和下一步，不机械延续上一条建议。
+聊天分析和回复任务默认先做阶段导航，再决定是否展示话术库原句。新聊天证据先区分 {evidence_layers_text}，并输出 {required_output_text}；术语必须受证据约束，不能直接当话术模板。只有阶段、方向和边界明确（{phrase_library_require_text}）时，才按需展示最多 1-2 条逐字保留的“话术库原句”，不由 AI 生成或改写具体回复。收到新反馈后重新判断阶段、方向、反馈门控和下一步，不机械延续上一轮原句。
+
+唯一主流程：{flow_text}。先由模型根据聊天判断；判断不出时列出九步并直接询问用户自认为在哪一步。假性评估维护赋格计数器，标准参考 5–6、最低线 5；真性评估维护女方真性评估计数器，标准参考 4–5、最低线 4。达到下限只表示可以建议转段，用户选择激进或稳妥节奏时按其节奏调整，安全与停止边界始终优先。
+
+自我叙事的本轮目的仅有 `value_display`（展示真实价值）或 `logistics_negotiation`（商量见面的时间和地点）。目的不明时先问清楚；物流可以从核对双方见面意愿开始，时间地点讨论不等于已经约好。
+
+## 知识库锚定
+
+以下任务每一轮都必须重新检索知识库并生成 `{grounding_receipt}`：{grounding_tasks_text}。上一轮的会话状态、滚动摘要或模型记忆不算本轮检索回执。缺少回执、只命中部分必读单元、检索失败、明确无命中或没有记录实际采用的知识库主张时，`knowledge_grounding.answer_permission` 必须阻断自由发挥，不得仅凭模型能力给出阶段方向或行动建议；只能说明缺口、请求补充检索结果，或处理更高优先级的停止、安全、拒绝和真实顾虑。知识库主张与本轮 `model_inference` 必须分开标注，不能伪造命中或引用。
 
 任务路由：
 
@@ -518,15 +535,20 @@ def render_runtime_entry(config: dict[str, Any]) -> str:
 
 - `runtime/route-index.json`
 - `runtime/unit-index.json`
+- `knowledge/02-知识单元/K-20260821-002_JacksonFlow三阶段九步骤正式主流程.md`
 - `knowledge/02-知识单元/K-20260826-001_真实社交线上流程推拉方向与回蓝闸门.md`
 
 ## 条件读取
 
 - `runtime/navigation-index.json`：任务完成或收到新反馈时；
-- `runtime/phrase-route-index.json`：方向已确定且满足示例门槛时；
+- `runtime/phrase-route-index.json`：方向已确定且满足话术库原句展示门槛时；
 - `knowledge/02-知识单元/`：只打开命中路由的少量单元；
-- `runtime/phrase-routes/*.json`：只在方向已确定且满足示例门槛时读取公开候选；候选来源回读仅在本地完整版进行；
-- `knowledge/manifest.json`、续接摘要和完整索引：仅维护或构建校验时；完整原始来源不随公开包发布。
+- `runtime/phrase-routes/*.json`：只在方向已确定且满足话术库原句展示门槛时读取公开候选；原始来源回读仅在本地完整版进行；
+- `knowledge/manifest.json`、续接摘要和完整索引：仅来源审计、入库、维护或构建校验时。
+
+## 话术库原句展示
+
+话术库原句来自真实社交知识库的原版材料，逐字保留，并附来源、定位、场景、说话人和不适用条件。它们不是 AI 代写回复、建议发送内容、效果保证或 canonical 规则；找不到合适条目时不自行补写。
 
 ## 硬边界
 

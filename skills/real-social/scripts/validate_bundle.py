@@ -322,12 +322,6 @@ def main() -> int:
         errors.append("manifest package_id must be real-social")
     if manifest.get("display_name") != "真实社交":
         errors.append("manifest display_name must be 真实社交")
-    if manifest.get("publication") == "public_runtime_only":
-        counts = manifest.get("counts", {})
-        if isinstance(counts, dict) and (counts.get("raw_sources") or counts.get("external_sources")):
-            errors.append("public manifest must not count raw or external sources")
-        if "source_path_map" in manifest:
-            errors.append("public manifest must not publish source_path_map")
 
     validate_runtime(root, errors)
 

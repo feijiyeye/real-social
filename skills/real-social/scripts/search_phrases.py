@@ -158,6 +158,7 @@ def search(route_id: str, query: str, limit: int = 3, stage: str | None = None, 
                 "schema_version": 1,
                 "route": route_id,
                 "retrieval_status": "boundary_only",
+                "display_label": "话术库原句",
                 "source": "boundary_shard",
                 "matches": matches[: max(0, limit)],
                 "context_readback_required": True,
@@ -167,6 +168,7 @@ def search(route_id: str, query: str, limit: int = 3, stage: str | None = None, 
             "schema_version": 1,
             "route": route_id,
             "retrieval_status": state_result["retrieval_status"],
+            "display_label": "话术库原句",
             "matches": [],
             "reason": state_result["reason"],
         }
@@ -228,11 +230,13 @@ def search(route_id: str, query: str, limit: int = 3, stage: str | None = None, 
     for score, entry in ranked[: max(0, limit)]:
         item = dict(entry)
         item["score"] = round(score, 2)
+        item["display_label"] = "话术库原句"
+        item["display_policy"] = "逐字保留、附来源和场景；不由 AI 改写，不授予直接发送许可"
         matches.append(item)
 
     warnings: list[str] = []
     if not full_index and len(matches) < limit:
-        warnings.append("候选入口不足时可显式加 --full-index；完整索引只在本地完整版按需查询")
+        warnings.append("候选入口不足时可显式加 --full-index；完整索引只在按需查询时读取")
     if full_index_unavailable:
         warnings.append("完整话术索引未随公开包发布；请在本地完整版执行 --full-index")
     if any("unknown" in {str(role) for role in item.get("speaker_roles", [])} for item in matches):
@@ -243,13 +247,14 @@ def search(route_id: str, query: str, limit: int = 3, stage: str | None = None, 
         "schema_version": 1,
         "route": route_id,
         "retrieval_status": "candidate_reference_with_source_audit" if full_index and not full_index_unavailable else "candidate_reference_after_context_review",
+        "display_label": "话术库原句",
         "source": source,
         "query": query,
         "matches": matches,
         "filtered": filtered,
         "warnings": warnings,
         "context_readback_required": True,
-        "sendability": "not_granted" if full_index else "requires_context_review",
+        "sendability": "not_granted" if full_index and not full_index_unavailable else "requires_context_review",
     }
 
 

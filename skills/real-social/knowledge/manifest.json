@@ -2,7 +2,14 @@
   "schema_version": 1,
   "package_id": "real-social",
   "display_name": "真实社交",
-  "snapshot_date": "2026-08-27T17:32:32+08:00",
+  "snapshot_date": "2026-09-28T12:03:42+08:00",
+  "publication": "public_runtime_only",
+  "source_audit": "local_only",
+  "excluded_paths": [
+    "knowledge/01-原始资料/",
+    "knowledge/external-sources/",
+    "knowledge/_original_dragon_root/"
+  ],
   "scope": "当前 Dragon 知识库中的真实社交/男性情感聊天项目；不含短视频、读书和其他无关项目",
   "runtime_root": "knowledge",
   "runtime_entry": "runtime/runtime-entry.md",
@@ -14,8 +21,8 @@
     "runtime/runtime-manifest.json"
   ],
   "counts": {
-    "files": 97,
-    "knowledge_units": 49,
+    "files": 99,
+    "knowledge_units": 50,
     "raw_sources": 0,
     "external_sources": 0,
     "runtime_files": 16
@@ -24,592 +31,597 @@
     {
       "source_label": "portable_generated_governance",
       "bundle_path": "knowledge/SOURCE_OF_TRUTH.md",
-      "sha256": "091574ba5e6cc5cdde1cf8fc0b979b75dd7e3e5ee565a64472b435b478043ba7",
-      "size": 6312
+      "sha256": "9337645f4a842bd454722885ad7e20001c2f79e8378a39db58bb11e0fe183103",
+      "size": "8378"
     },
     {
       "source_label": "portable_generated_governance",
       "bundle_path": "knowledge/AGENTS.md",
-      "sha256": "dfdcd87dff82e82029d3e579c0f104a44403537eb490a3c3311226f93d902bcb",
-      "size": 7948
+      "sha256": "eff17adb830047681baaf7b5363fb1d0972d0286b737e5723622df61f20cf2a8",
+      "size": "9298"
     },
     {
       "source_label": "portable_generated_governance",
       "bundle_path": "knowledge/CLAUDE.md",
-      "sha256": "2533a1c6576426cbb30e18e3e4f9f3ddcad05d4390da22734c20766ff93ea011",
-      "size": 6533
+      "sha256": "02b05b54f7383ebf76486ed217b38710624be0bd529e985e047b4fcc087f10a5",
+      "size": "6472"
     },
     {
       "source_label": "portable_generated_governance",
       "bundle_path": "knowledge/README.md",
-      "sha256": "e9d1cdf5507c454a253271c0660c79d465405b04605d505cb86eddf533c95587",
-      "size": 2519
+      "sha256": "eddd940e98bd00a1fb32f0c74be95645dce6ed409cca6f86ed76b222074c82c8",
+      "size": "2382"
     },
     {
       "source_label": "dragon_real_social_knowledge",
       "bundle_path": "knowledge/02-知识单元/K-20260821-001_男性情感聊天教学Skill架构与素材预处理.md",
-      "sha256": "857cecbbebb4ce6a598d299868d83a90784c9f805cb6fe547e5e68f28fbb7da1",
-      "size": 19131
+      "sha256": "4a97cc27add9e45326bf3366c4d36d98db04d25c511e17614243fc4260f56992",
+      "size": "19285"
+    },
+    {
+      "source_label": "dragon_real_social_knowledge",
+      "bundle_path": "knowledge/02-知识单元/K-20260821-002_JacksonFlow三阶段九步骤正式主流程.md",
+      "sha256": "38bb01df41dfdc921dceef9f484b57e3de17def1335508c2a18fbee59eb52752",
+      "size": "13834"
     },
     {
       "source_label": "dragon_real_social_knowledge",
       "bundle_path": "knowledge/02-知识单元/K-20260821-003_JacksonFlow前提阶段线上候选.md",
-      "sha256": "fa71f44b525cba91d779693cfa0031bc5ea0554c34e6c133f58c1211333fa2d0",
-      "size": 5913
+      "sha256": "c7460a5cb5e17ef255c682b63e8b9cd096fb62a4819a0565feff550181f2c64e",
+      "size": "6027"
     },
     {
       "source_label": "dragon_real_social_knowledge",
       "bundle_path": "knowledge/02-知识单元/K-20260821-004_JacksonFlow赋格线上信号候选.md",
-      "sha256": "13fad1c962b81799398e09eb9a19e340f43f1779cbc6345d3832121821814885",
-      "size": 6158
+      "sha256": "1436e30451f4ed2fbdc87b56147c83c7918c7030d0995f1c77b0273eb0a43582",
+      "size": "6230"
     },
     {
       "source_label": "dragon_real_social_knowledge",
       "bundle_path": "knowledge/02-知识单元/K-20260821-005_JacksonFlow无赋格时的线上观察方向候选.md",
-      "sha256": "d09e79d71b701723ef25909320284145634db1c77f819bf3905059f0bf2b14bc",
-      "size": 2808
+      "sha256": "e051d33a2604b2cbbd8cbf26c80c49c1de294d8ae334d42fef36bcae3880f80d",
+      "size": "2880"
     },
     {
       "source_label": "dragon_real_social_knowledge",
       "bundle_path": "knowledge/02-知识单元/K-20260821-009_JacksonFlow前提与铺垫邀约来源观点.md",
-      "sha256": "140cd1f4bbd6f4445c4945839a2c5cb2e355cf8a68b35758453d657617d4fe30",
-      "size": 3091
+      "sha256": "bf05d4d860c173409f678d5763ccab485420020333ab3b7a9b43f64fe145bef7",
+      "size": "3148"
     },
     {
       "source_label": "dragon_real_social_knowledge",
       "bundle_path": "knowledge/02-知识单元/K-20260821-010_JacksonFlow赋格量化与转换来源观点.md",
-      "sha256": "d496a9bbd93049a7fd80419f92e7231f9b195073364b0528c8108c81e4f8818b",
-      "size": 2423
+      "sha256": "01f174a4fdd2b234a647ccb75faaf25815753574bb3a70ee6d6455e12273ccbb",
+      "size": "2495"
     },
     {
       "source_label": "dragon_real_social_knowledge",
       "bundle_path": "knowledge/02-知识单元/K-20260821-012_JacksonFlow反对编造和夸大边界候选.md",
-      "sha256": "21751532c85366b000988405eb2bb619d981da53382f38236c71565d8bacdc53",
-      "size": 4303
+      "sha256": "e8f6d6f208fc90059bb243d86d65ee214cd259f3b3aaf00f31fda76c224f6ca5",
+      "size": "4504"
     },
     {
       "source_label": "dragon_real_social_knowledge",
       "bundle_path": "knowledge/02-知识单元/K-20260821-013_JacksonFlow赋格自我证明解释来源观点.md",
-      "sha256": "021affb3ac6c1964e723d223b125063e7b9d84bebab6e99e30ebf4396941ea87",
-      "size": 3310
+      "sha256": "3b68353da358a0b657a79173e61d9bd34e97ca0f41909e1dc252abed67b6687f",
+      "size": "3382"
     },
     {
       "source_label": "dragon_real_social_knowledge",
       "bundle_path": "knowledge/02-知识单元/K-20260821-014_真实社交一级专业术语目录候选.md",
       "sha256": "68bf494204d62de99be2752b8843cf8c08a033b20912b6661c394fe8cef7b2f5",
-      "size": 3752
+      "size": "3752"
     },
     {
       "source_label": "dragon_real_social_knowledge",
       "bundle_path": "knowledge/02-知识单元/K-20260821-015_真实社交二级专业术语目录候选.md",
       "sha256": "5b687cdbba0b52b70ff0543a8766f637b2843c821a6851ce4aab49c17342a1d9",
-      "size": 6260
+      "size": "6260"
     },
     {
       "source_label": "dragon_real_social_knowledge",
       "bundle_path": "knowledge/02-知识单元/K-20260821-016_zhenshi废物测试识别与AAA应对来源观点.md",
       "sha256": "117dfa97430ddf0e321c1cef8b895013f8f4f750313c15d02d099283de77ba1c",
-      "size": 3310
+      "size": "3310"
     },
     {
       "source_label": "dragon_real_social_knowledge",
       "bundle_path": "knowledge/02-知识单元/K-20260821-017_zhenshi假性评估类型时机与强度来源观点.md",
-      "sha256": "9565ec299c402dccdd2875bff4f8782b516e57a1d087cf9230d49b7f9e1e9b4f",
-      "size": 4911
+      "sha256": "65464c88b17ea926e8d269438fdc39ea21b4686ea0afedec86077bf077144dbf",
+      "size": "4983"
     },
     {
       "source_label": "dragon_real_social_knowledge",
       "bundle_path": "knowledge/02-知识单元/K-20260821-018_zhenshi远程社交直觉可观察反馈信号候选.md",
       "sha256": "bb5125cd81d39908e3a9a5c59f06839cf25f754baa43f06ea133a47f2b83afd3",
-      "size": 8522
+      "size": "8522"
     },
     {
       "source_label": "dragon_real_social_knowledge",
       "bundle_path": "knowledge/02-知识单元/K-20260821-019_zhenshi线上聊天三段回合SOP来源观点.md",
       "sha256": "e8b4de501bc9fba7884eb0cdb7cd6d82f062ba83acb31cbc771f5c3bce9be9bb",
-      "size": 2944
+      "size": "2944"
     },
     {
       "source_label": "dragon_real_social_knowledge",
       "bundle_path": "knowledge/02-知识单元/K-20260821-020_zhenshi低回应时减少投入方向候选.md",
       "sha256": "227157cb60e73cebf336123b9b7159dba2417e85292002586cdbbf5500192d86",
-      "size": 7395
+      "size": "7395"
     },
     {
       "source_label": "dragon_real_social_knowledge",
       "bundle_path": "knowledge/02-知识单元/K-20260821-021_zhenshi明确拒绝与停止时不纠缠边界候选.md",
       "sha256": "623defca91c0bbb6ff8dcbc3a4f8691ad5498473768f31e7699b24446a184308",
-      "size": 8085
+      "size": "8085"
     },
     {
       "source_label": "dragon_real_social_knowledge",
       "bundle_path": "knowledge/02-知识单元/K-20260821-022_zhenshi文字聊天转语音直接拨打来源观点.md",
       "sha256": "a7a76696fca48331c78ee3a59c3c74e838132fd4e519b4275d1f50de02f1f408",
-      "size": 3505
+      "size": "3505"
     },
     {
       "source_label": "dragon_real_social_knowledge",
       "bundle_path": "knowledge/02-知识单元/K-20260821-023_假性评估非真实评价与反编造边界冲突候选.md",
-      "sha256": "af0bc5d0301fa68ba8ff9d5897a8d5401b79f508f779be219d1bf79bf2dbb9be",
-      "size": 3560
+      "sha256": "cc79149ae2f06c934113fcf3c03a0ab6c6bf75e7677d97882d936ac17a1b8096",
+      "size": "3451"
     },
     {
       "source_label": "dragon_real_social_knowledge",
       "bundle_path": "knowledge/02-知识单元/K-20260821-024_zhenshi学术调情来源观点.md",
       "sha256": "b0fda7af3468ea6982845952af41f3947fa26fcad9f903ab812daa9e0e94bb00",
-      "size": 3901
+      "size": "3901"
     },
     {
       "source_label": "dragon_real_social_knowledge",
       "bundle_path": "knowledge/02-知识单元/K-20260822-025_跨城邀约三周目合并经典案例候选.md",
-      "sha256": "a534268b9f7e183cbb752a35badf9a1d8cd8833fa8f94432991bfa5fc5a19533",
-      "size": 16657
+      "sha256": "d09297a3ad823df5a772df1a0387ddf37a1cb1f85bd7e47da64fbeade8e995c4",
+      "size": "16855"
     },
     {
       "source_label": "dragon_real_social_knowledge",
       "bundle_path": "knowledge/02-知识单元/K-20260822-026_经典案例适配到签约阶段链候选.md",
       "sha256": "7aabbcc173f667a32b95fa109468986da5ef5be311e77401d45d34946bb6072c",
-      "size": 6904
+      "size": "6904"
     },
     {
       "source_label": "dragon_real_social_knowledge",
       "bundle_path": "knowledge/02-知识单元/K-20260822-027_吸引联系与短长期动态调整规则候选.md",
       "sha256": "ef5e518ae7f01f92c9b256d4893fe4e131cc607a4142f34f57d08e71ce3bfcec",
-      "size": 8215
+      "size": "8215"
     },
     {
       "source_label": "dragon_real_social_knowledge",
       "bundle_path": "knowledge/02-知识单元/K-20260822-028_亲密话题强度随反馈调节方向候选.md",
       "sha256": "c98148e86b695417ab7f0b865626bacc4e7301175f8e32bb5db4af855e280076",
-      "size": 4789
+      "size": "4789"
     },
     {
       "source_label": "dragon_real_social_knowledge",
       "bundle_path": "knowledge/02-知识单元/K-20260822-029_不想跟你讲话的边界解释冲突候选.md",
-      "sha256": "78dd97917159a7a9caa9c137cd5f7886b81d086f6934ce732b8d20816fedfa94",
-      "size": 4013
+      "sha256": "c8cc92b7d0969f2557da813c50c40afd0a40dc3212b0f225fd8996dbe8a34570",
+      "size": "3896"
     },
     {
       "source_label": "dragon_real_social_knowledge",
       "bundle_path": "knowledge/02-知识单元/K-20260822-030_杰哥聊天1上下合并经典案例候选.md",
-      "sha256": "ef85013dbbfc6ef871283335d7c4fd859be1fcd93ea28b293b26ea00ad8bf2f8",
-      "size": 18583
+      "sha256": "a65642619bebc735846a5a3db46b5efae521849d7708831dc80dbc6cf3ce382c",
+      "size": "18657"
     },
     {
       "source_label": "dragon_real_social_knowledge",
       "bundle_path": "knowledge/02-知识单元/K-20260822-031_杰哥案例回撤重启邀约分链候选.md",
       "sha256": "69d1f250328d24a3d9105ba48a551b89ca3d642f6b78c7f56a0d7f11d764ec45",
-      "size": 6814
+      "size": "6814"
     },
     {
       "source_label": "dragon_real_social_knowledge",
       "bundle_path": "knowledge/02-知识单元/K-20260822-032_邀约调度中的意图条件与双向共识方向候选.md",
       "sha256": "ad9ebbe719f3bcaa8fe5d29b659137d1005daea31d0ac4781e1a2e35dbd6a26d",
-      "size": 9121
+      "size": "9121"
     },
     {
       "source_label": "dragon_real_social_knowledge",
       "bundle_path": "knowledge/02-知识单元/K-20260822-033_杰哥2长周期邀约调度经典案例候选.md",
-      "sha256": "12dbbd395811a0269cb163305e25f09520e59f8c0ee041374443882826c4faec",
-      "size": 14240
+      "sha256": "09e34dfb90643f12327e3fa6b34875a15992722bd2b02c1ea6466a4d89631c01",
+      "size": "14268"
     },
     {
       "source_label": "dragon_real_social_knowledge",
       "bundle_path": "knowledge/02-知识单元/K-20260822-034_杰哥3即时安全调度经典案例候选.md",
-      "sha256": "5dba1a3969a480995bf0ec9b897319fefe689b8c5094b1d1ff32d1ee8616974f",
-      "size": 13473
+      "sha256": "3999991590861f479b9a78899a530d4c7d06491ee23f779281e2d6b616c300a2",
+      "size": "13501"
     },
     {
       "source_label": "dragon_real_social_knowledge",
       "bundle_path": "knowledge/02-知识单元/K-20260822-035_杰哥2长周期邀约等待重启分链候选.md",
       "sha256": "e7cb77e9183eae994ed1c5e5c8d502e90e43f7d1efdc4766245058c33111c11a",
-      "size": 6081
+      "size": "6081"
     },
     {
       "source_label": "dragon_real_social_knowledge",
       "bundle_path": "knowledge/02-知识单元/K-20260822-036_杰哥3即时安全调度分链候选.md",
       "sha256": "820f38f136ab85865da221f1ae48da01c389bc4c314ee34011b4eaea9a1b1562",
-      "size": 6222
+      "size": "6222"
     },
     {
       "source_label": "dragon_real_social_knowledge",
       "bundle_path": "knowledge/02-知识单元/K-20260822-037_邀约反馈具体行程与变更说明信号候选.md",
       "sha256": "66618a4df63bdb2c568eed2ba1b67485bd1f295564fdebd49f55543f069c7ca4",
-      "size": 8514
+      "size": "8514"
     },
     {
       "source_label": "dragon_real_social_knowledge",
       "bundle_path": "knowledge/02-知识单元/K-20260822-038_杰哥4删除后修复与重启经典案例候选.md",
-      "sha256": "d5832df21dff22c54d3793658bd179886b729d5839c14a71f842ba4cfda9e093",
-      "size": 14777
+      "sha256": "7ce81d3194b68b5593325bf1555152755aebbd4748084769d413bcb4edf54d11",
+      "size": "14805"
     },
     {
       "source_label": "dragon_real_social_knowledge",
       "bundle_path": "knowledge/02-知识单元/K-20260822-039_杰哥聊天5低吸引顾虑承接与邀约经典案例候选.md",
-      "sha256": "71cc85ca017d4866a862c8c95f0acdcb7de13a095d9846951805916b817c1ada",
-      "size": 14106
+      "sha256": "4fe6ae98887b48897b5f2f5e7a5a263544bc1a9d2c1dd4c166f16c2e22063804",
+      "size": "14140"
     },
     {
       "source_label": "dragon_real_social_knowledge",
       "bundle_path": "knowledge/02-知识单元/K-20260822-040_杰哥4删除后修复重启分链候选.md",
       "sha256": "690f365206724067f72080040e33504f7004da566497d59c312719406547d81a",
-      "size": 5764
+      "size": "5764"
     },
     {
       "source_label": "dragon_real_social_knowledge",
       "bundle_path": "knowledge/02-知识单元/K-20260822-041_杰哥聊天5低吸引顾虑调度分链候选.md",
       "sha256": "d7080c6c6254265ca6feb1689978290a9c9f2f85cb1f6402571ffeaad4fb1feb",
-      "size": 6769
+      "size": "6769"
     },
     {
       "source_label": "dragon_real_social_knowledge",
       "bundle_path": "knowledge/02-知识单元/K-20260823-042_杰哥聊天6低窗口铺垫邀约与谨慎调度经典案例候选.md",
-      "sha256": "341491b5324654b5c4d1f9faf5fdbdce7a88932f6438f357b079391964a79cbc",
-      "size": 10407
+      "sha256": "c6e2a16463a052afc4ca044212dd74b8814e8712ed7658dca35dd32fccde884b",
+      "size": "10441"
     },
     {
       "source_label": "dragon_real_social_knowledge",
       "bundle_path": "knowledge/02-知识单元/K-20260823-043_杰哥聊天7性话题试探与短期属性经典案例候选.md",
-      "sha256": "301e8c9136d6d3361e0da8482a2950de6ac66c5a1b345bc3ec9749801e938200",
-      "size": 9191
+      "sha256": "d272f13f526be80356a078a6d8fa8a79ed7e1ff91f3d8b531744070643ef5b94",
+      "size": "9225"
     },
     {
       "source_label": "dragon_real_social_knowledge",
       "bundle_path": "knowledge/02-知识单元/K-20260823-044_杰哥聊天8平台迁移与主动邀约经典案例候选.md",
-      "sha256": "c6da3fb7b19ccae95ef73c36975b9cba576693aa4ab4e5cee8f531a432e3748d",
-      "size": 8692
+      "sha256": "bd227e6622b7600627a81f02139f7060c0cc40fd1aebf645fcf96bf2bb526601",
+      "size": "8726"
     },
     {
       "source_label": "dragon_real_social_knowledge",
       "bundle_path": "knowledge/02-知识单元/K-20260823-045_杰哥聊天6低回应再激活即时邀约分链候选.md",
       "sha256": "f048135a55093db519b5c97e96b4a612e1ee47b26ec728bb09014db9108c8593",
-      "size": 4426
+      "size": "4426"
     },
     {
       "source_label": "dragon_real_social_knowledge",
       "bundle_path": "knowledge/02-知识单元/K-20260823-046_杰哥聊天7亲密话题试探与调度分链候选.md",
       "sha256": "f57ac706e391cee3ba97296c8e4f8e493089af7ecde4c7ca69d73c146ff1888b",
-      "size": 4067
+      "size": "4067"
     },
     {
       "source_label": "dragon_real_social_knowledge",
       "bundle_path": "knowledge/02-知识单元/K-20260823-047_杰哥聊天8平台迁移与主动邀约分链候选.md",
       "sha256": "bd00a634048adb9b3f315fd053c44174d9d622b550334dbcda184baab14e94e8",
-      "size": 4047
+      "size": "4047"
     },
     {
       "source_label": "dragon_real_social_knowledge",
       "bundle_path": "knowledge/02-知识单元/K-20260823-048_杰哥聊天9上下合并低回应邀约与见面后再调度经典案例候选.md",
-      "sha256": "8ce1ba2fd9a0bbd28ee003e431b8a70ba037de91cc7bfe31a047d474b79eea4e",
-      "size": 20533
+      "sha256": "33b8d4b7d8892d8b773a1e030434d91942fa6be965d6404849b7bf88f738e944",
+      "size": "20605"
     },
     {
       "source_label": "dragon_real_social_knowledge",
       "bundle_path": "knowledge/02-知识单元/K-20260823-049_杰哥聊天9低回应再激活与首次邀约分链候选.md",
       "sha256": "4c1031d29b6d6aa37ee8b30a846436ef00cb85c49d6b7c9a9a83a423a6f33c09",
-      "size": 5750
+      "size": "5750"
     },
     {
       "source_label": "dragon_real_social_knowledge",
       "bundle_path": "knowledge/02-知识单元/K-20260823-050_杰哥聊天9见面后关系升级暂停与再调度分链候选.md",
       "sha256": "57c345853e80764f386ff9e4879bb2e9b6e1c471b2621ed282e9633d8057c507",
-      "size": 7259
+      "size": "7259"
     },
     {
       "source_label": "dragon_real_social_knowledge",
       "bundle_path": "knowledge/02-知识单元/K-20260823-051_体系话术参考调用协议候选.md",
-      "sha256": "cd9c5ae9b9e74b03f714e06e75982eae3cba9d98cacbb6a6199f7552c38c6b23",
-      "size": 9852
+      "sha256": "43a8703e8037beee2ad61d9d2a921d95a4068202df19444afec20801160117ce",
+      "size": "10792"
     },
     {
       "source_label": "dragon_real_social_knowledge",
       "bundle_path": "knowledge/02-知识单元/K-20260823-052_体系话术阶段与方向检索映射候选.md",
-      "sha256": "ee528c7706a8dc6ccc54c14db162b0dd891b25e3cd5813f4c41489246508667c",
-      "size": 9207
+      "sha256": "da30a36ca096e6e34e86002e7567faeeb64813ef0f701cc175da72af358b6c88",
+      "size": "9638"
     },
     {
       "source_label": "dragon_real_social_knowledge",
       "bundle_path": "knowledge/02-知识单元/K-20260823-053_体系话术高风险隔离边界候选.md",
       "sha256": "56d067b86730545f2f878f32303648e7638310e64cafb836514b80036ac565d0",
-      "size": 9453
+      "size": "9453"
     },
     {
       "source_label": "dragon_real_social_knowledge",
       "bundle_path": "knowledge/02-知识单元/K-20260826-001_真实社交线上流程推拉方向与回蓝闸门.md",
-      "sha256": "efd9c318ade1625ad299792330371095ef1cf476e61e47e841b5229704ea1468",
-      "size": 34038
+      "sha256": "6d0beb38338b29f68cdc630b23e363946be5da49cc6505f69b951efa4a322d59",
+      "size": "35485"
     },
     {
       "source_label": "dragon_index",
       "bundle_path": "knowledge/03-动态索引/主题索引.md",
-      "sha256": "0f081b50c5f01316fefa79284b4431cea82c1c41ca2e89c2adf59f9c0dd093af",
-      "size": 13391
+      "sha256": "2221d9fd0c21a00a7298885d076a7c07a996fe33ad069ad55f488021b7001d8f",
+      "size": "14929"
+    },
+    {
+      "source_label": "dragon_index",
+      "bundle_path": "knowledge/03-动态索引/男性聊天助手板块.md",
+      "sha256": "5c00d85411c15a3fafeaf227d699e06bc80d526d96c967e40c62b482de5b8f13",
+      "size": "1447"
     },
     {
       "source_label": "dragon_system",
       "bundle_path": "knowledge/04-系统/2026-08-21_男性情感聊天第二批素材处理报告.md",
-      "sha256": "259e0808fee44cdec054e19e9ab037354e1d25ba3ed3e4047908909545745311",
-      "size": 6248
+      "sha256": "2c811bc4f58bd983c2e348ca378cc7fd865a06fe12e6f5c65b983b62502e687a",
+      "size": "6332"
     },
     {
       "source_label": "dragon_system",
       "bundle_path": "knowledge/04-系统/2026-08-22_男性情感聊天杰哥2与杰哥3案例处理报告.md",
-      "sha256": "ec64bb9f8bff89360f276f1820a044b41bff7224a0ed15d012c20d09e755ec51",
-      "size": 9733
+      "sha256": "8f872c4585b83c08b814eb36fca832a5e9c380bcc0ad482ce177c4d9d628805f",
+      "size": "9845"
     },
     {
       "source_label": "dragon_system",
       "bundle_path": "knowledge/04-系统/2026-08-22_男性情感聊天杰哥4与杰哥聊天5案例处理报告.md",
-      "sha256": "450d7214b71232f9dc084f95b114f048ea34ac949e3d78b419cfb0a255c313aa",
-      "size": 10025
+      "sha256": "32f7604d16a4247d3c7543320fa56725721ca4702ce93549a79c07293215346f",
+      "size": "10149"
     },
     {
       "source_label": "dragon_system",
       "bundle_path": "knowledge/04-系统/2026-08-22_男性情感聊天杰哥案例处理报告.md",
-      "sha256": "15ed172ff37331d22da038b0184a6a763c0b6dc118d220a4b791ea83809a00b7",
-      "size": 8146
+      "sha256": "3d2400d43e7a354e953bc0fda319540490b0e17ddf514879580be1277d26f552",
+      "size": "8220"
     },
     {
       "source_label": "dragon_system",
       "bundle_path": "knowledge/04-系统/2026-08-22_男性情感聊天经典案例三周目合并处理报告.md",
-      "sha256": "d109bfd2c17d2b6af937138bdf128f5f839cbf3de41b558a7ced48e82dd19ca3",
-      "size": 7818
+      "sha256": "a7a23cedfd26c52e139d27c533b4dca916a9ae2261b533b858c080a24aa5b5f5",
+      "size": "8016"
     },
     {
       "source_label": "dragon_system",
       "bundle_path": "knowledge/04-系统/2026-08-23_AppleNotesQuickNotes话术沉淀与去重处理报告.md",
-      "sha256": "fb03c8e1bb374fe3fce011f081193394141fbb79027556b322b1821fbb08b709",
-      "size": 7529
+      "sha256": "b247682ca516eb0578b397a9d19ae357c4f5b74bf025f6f60068a1d0ff618768",
+      "size": "7987"
     },
     {
       "source_label": "dragon_system",
       "bundle_path": "knowledge/04-系统/2026-08-23_男性情感聊天体系话术去重与调用分层处理报告.md",
-      "sha256": "638cd86ebcf1e060f0f92c9f32ba2adecf4d9d87da668b3ee30fecc6458cd1c0",
-      "size": 7623
+      "sha256": "3eccefd64a7b33cfd7a939957bd5eebc687d1a07babb567861479f724cda4435",
+      "size": "8236"
     },
     {
       "source_label": "dragon_system",
       "bundle_path": "knowledge/04-系统/2026-08-23_男性情感聊天杰哥聊天6至8案例处理报告.md",
-      "sha256": "12b9f9c507f1640ae069e929cea40a51e657d539ae100afaad08e4f0f12f737a",
-      "size": 12370
+      "sha256": "bb9266e07e784e0a63b9d22787c122571c4d64ed2e7939eba699d6af8588354f",
+      "size": "12514"
     },
     {
       "source_label": "dragon_system",
       "bundle_path": "knowledge/04-系统/2026-08-23_男性情感聊天杰哥聊天9上下合并案例处理报告.md",
-      "sha256": "dd961904471ff753b24d6a4764f9db67b524289eda92db956bd0fcb710adf305",
-      "size": 10040
+      "sha256": "ccc5f81c2309ec1b6d6c4dd9ef91d335532230b0edda930e4ad4ed3e27754660",
+      "size": "10124"
     },
     {
       "source_label": "dragon_system",
       "bundle_path": "knowledge/04-系统/2026-08-23_男性情感聊天项目续接摘要.md",
-      "sha256": "fcb68c87b88a12be0f5d58e8e78cbe2a8db80791c20c48bf549e153a463544aa",
-      "size": 23312
+      "sha256": "afa66a21f273e401d65460ae22ab931306bdf51817114c52321bf239ccfb2df1",
+      "size": "22887"
     },
     {
       "source_label": "dragon_system",
       "bundle_path": "knowledge/04-系统/2026-08-23_知识单元元数据兼容处理报告.md",
-      "sha256": "e3beee6a810b60be1e9f3c63966da874d642dba4564e836decc1903f14ee2a96",
-      "size": 3064
+      "sha256": "d1b4367d83026e1bb4aa78f3c461bcc15a5e9c0f449489382c7015260efb01aa",
+      "size": "2881"
     },
     {
       "source_label": "dragon_system",
       "bundle_path": "knowledge/04-系统/入库与查重规则.md",
-      "sha256": "18facb3f8650e4a1b59829f6df9989f0fedc9a0839ee2c2f1e0ff72a80305c9e",
-      "size": 3944
+      "sha256": "bb0814de61a1a02ac5f32220998f6bc6fe0a782eaa97a16ddbc46f2a64b855ef",
+      "size": "3932"
     },
     {
       "source_label": "dragon_system",
       "bundle_path": "knowledge/04-系统/入库日志.md",
-      "sha256": "c60cf8320876e37bc2f45b36f4bd633d640c8e91361e72cfa35488c00c33a067",
-      "size": 25571
+      "sha256": "dbc15859b60e25b5781832013604e7703d5be6443e1be4c3f6a6318796401612",
+      "size": "32263"
     },
     {
       "source_label": "dragon_system",
       "bundle_path": "knowledge/04-系统/合并日志.md",
-      "sha256": "2ba3bf1bb9f89d6d33dc3dd6f1dde97ff845e6d349dd55ff2e4583a76db94f79",
-      "size": 10985
+      "sha256": "9cb723e82f400e38a81aa42a8407c83b410959785d4c6a12c58784fcb57324bf",
+      "size": "13697"
     },
     {
       "source_label": "dragon_system",
       "bundle_path": "knowledge/04-系统/检索与调用规则.md",
-      "sha256": "4d5bd85db552a105880a791c1347544b3357d669638990b9f43ffc5940e3c474",
-      "size": 6235
+      "sha256": "2f4497d196ac9248e65d240cf73f0ccdbdf40570b69a8dff3bb6429b20210498",
+      "size": "7270"
     },
     {
       "source_label": "dragon_system",
       "bundle_path": "knowledge/04-系统/男性情感聊天讲解型经典案例处理规则.md",
       "sha256": "21e58c6cc6d22ce4dc5a71bb33a675b59375e7b27a752974d86bf6e91ced9c0c",
-      "size": 4555
+      "size": "4555"
     },
     {
       "source_label": "dragon_system",
       "bundle_path": "knowledge/04-系统/真实社交运行时路由设计.md",
-      "sha256": "f8f83df52cf1cd307b8e8247a3e437077c7e33d13af91323ddda92a94cd697cf",
-      "size": 14074
+      "sha256": "7920736ae4c532571f2906393305ff0ba188d142f026cfc0533df4cb0b00dfb5",
+      "size": "15445"
     },
     {
       "source_label": "dragon_system",
       "bundle_path": "knowledge/04-系统/真实社交运行时路由配置.json",
-      "sha256": "b9edd1a140d36e2cb185e0561aefd7c7434504d70810bf8c48c4876ae5026f89",
-      "size": 24946
+      "sha256": "5727588cc4a0853b45ed493e70e13edbae04933ff4d3ee60398c33ef28164574",
+      "size": "29158"
     },
     {
       "source_label": "dragon_system",
       "bundle_path": "knowledge/04-系统/知识单元元数据兼容清单.json",
-      "sha256": "17853ae61a646b0e6b377fccbc43543dd3555612093a1f06b607662a46c556ca",
-      "size": 1784
+      "sha256": "749e50169085d30fc2021af205f2df1608dde48e735d4ebda7830e5389bf98f0",
+      "size": "724"
     },
     {
       "source_label": "dragon_system",
       "bundle_path": "knowledge/04-系统/知识单元元数据兼容规则.md",
-      "sha256": "6bdcf8f853bebbb1a318e352cf96ac84f68447350cb7e9cb2f16c80f8ce4bccd",
-      "size": 2577
+      "sha256": "bb2c036af39ac19b84c9308187912f46f800932bbe802ecce37c8c84b0700f81",
+      "size": "2397"
     },
     {
       "source_label": "dragon_system",
       "bundle_path": "knowledge/04-系统/系统状态.md",
-      "sha256": "e545985afa8e089b4f08e6b74b93b019120f09c504eec5e2577aaa1eb703e205",
-      "size": 7667
+      "sha256": "ba18655d3251d46ecda22ebf7aa5a94693a2242a3d943e0a47d28bed0e9a1176",
+      "size": "9047"
     },
     {
       "source_label": "dragon_real_social_archive",
       "bundle_path": "knowledge/archive/2026-08-21_K-20260821-002_JacksonFlow游戏地图三阶段九步骤候选.md",
-      "sha256": "77dc860f558ab3c743b87a9d02eec9459676aa91dcf98cf092d846a2a30268b0",
-      "size": 2785
+      "sha256": "03633ec043e445be22986ba8fb50f378f94a024333bbb9df23db479a46e7e4c3",
+      "size": "2872"
     },
     {
       "source_label": "dragon_real_social_archive",
       "bundle_path": "knowledge/archive/2026-08-21_K-20260821-006_JacksonFlow自我叙事阶段线上候选.md",
-      "sha256": "4aef223c834b4043f785e6b7ecd97ad560e6cd6f86af068c34e93958aabd87a3",
-      "size": 2964
+      "sha256": "ad1d94080a6cbce91c35a945df96828325986979328ac4fca0815a61452081ab",
+      "size": "3043"
     },
     {
       "source_label": "dragon_real_social_archive",
       "bundle_path": "knowledge/archive/2026-08-21_K-20260821-007_JacksonFlow自我叙事成功信号候选.md",
-      "sha256": "c02c08a3c9a8954ebfd61b3ab683512df6eb0825ce5010aaf2e41f2a2ab29dfe",
-      "size": 2486
+      "sha256": "baf2834cf6eefeea03dd614a941937e32cfbe42d28f0e07d6873231077964e0b",
+      "size": "2565"
     },
     {
       "source_label": "dragon_real_social_archive",
       "bundle_path": "knowledge/archive/2026-08-21_K-20260821-008_JacksonFlow阶段收尾结构候选.md",
-      "sha256": "78ee5caae463ff7d37df6ca4a807de79c2296b9556332cfc2ec02ae8a4b18bd3",
-      "size": 2450
+      "sha256": "d1e20139d4d6b35ec2a11c72b4f38b72f0ff0d79b62841f339e3339a717f0b37",
+      "size": "2522"
     },
     {
       "source_label": "dragon_real_social_archive",
       "bundle_path": "knowledge/archive/2026-08-21_K-20260821-011_JacksonFlow自我叙事因果来源观点.md",
-      "sha256": "e3f4c1b5c6dd6cf13fbf76c500c0a939b44f083d733f808e47b1249e0c4db323",
-      "size": 2332
+      "sha256": "29cf7eaf662e409499fbdb0eab57ba587d47cd28806363738cff083d075482b1",
+      "size": "2411"
     },
     {
       "source_label": "dragon_real_social_archive",
       "bundle_path": "knowledge/archive/README.md",
       "sha256": "2ed60531b1bcca549832574cee97707712b98e7d604a2168423f6e97c6063ddf",
-      "size": 255
+      "size": "255"
     },
     {
       "source_label": "runtime_generated",
       "bundle_path": "runtime/navigation-index.json",
-      "sha256": "e91c782de36f1e777181f2ec36031643eeeb912f4298b6bc896b1022f69c7810",
-      "size": 1617
+      "sha256": "5391490a6f6e4c84266afed80d7c8614a063c403f74542a2aa0a1bab7aaa36af",
+      "size": "1675"
     },
     {
       "source_label": "runtime_generated",
       "bundle_path": "runtime/phrase-route-index.json",
-      "sha256": "58558e243ae35cb40a4b59e130b22b62eb387445e1da557d5ac9332fc80e3cc4",
-      "size": 9525
+      "sha256": "8fcb3a4f0698d67ffbd29e158c24a7059dd8f1ff801bbedc6b2b0b899afbd4e7",
+      "size": "9525"
     },
     {
       "source_label": "runtime_generated",
       "bundle_path": "runtime/phrase-routes/boundary_channel.json",
-      "sha256": "c575cc159e3cc7ecb66fa4d5266303c301ac4842ec4b3658cbf2daeacb02b060",
-      "size": 9739
+      "sha256": "e35e703ccf99f234a968e60e6e6aea4765fdcc659ea731d440f5fc794220f824",
+      "size": "9739"
     },
     {
       "source_label": "runtime_generated",
       "bundle_path": "runtime/phrase-routes/clarify_open.json",
-      "sha256": "7fa9dab09eecec3c03b59db7379cacae79599eebbee5da3ce74e524850b4276e",
-      "size": 11185
+      "sha256": "336ae070d4424d7ae1363f5f6038609c173f35f836baba1649af12e741357d17",
+      "size": "11185"
     },
     {
       "source_label": "runtime_generated",
       "bundle_path": "runtime/phrase-routes/concern_test.json",
-      "sha256": "a4c6a9d32e86f7007f4916e6dd4615f2351427b77392ad9c9c6a2e7023757661",
-      "size": 9735
+      "sha256": "3378431bedba106fc27c20728c3a422514f26ebfc273512e36183b56769baeb6",
+      "size": "9735"
     },
     {
       "source_label": "runtime_generated",
       "bundle_path": "runtime/phrase-routes/connection_repair.json",
-      "sha256": "7d6684ffc6cf870e8ebd88f6ab96cd7dc7aa1f2f58d7a843f7c20d2b99af8429",
-      "size": 9843
+      "sha256": "40fb6ad3160862c492ec7017af5cf7f684fb781e49a9192c990470c6839c2eb7",
+      "size": "9843"
     },
     {
       "source_label": "runtime_generated",
       "bundle_path": "runtime/phrase-routes/intimacy_conditional.json",
-      "sha256": "036ab59a2e71b9f4348ee2ef136d4da51f23f4439e818033ab99761316e48e06",
-      "size": 5908
+      "sha256": "1b65629514291582e8eb57c3080f29aa4ea62d140c6e5f16d12fd26554843529",
+      "size": "5908"
     },
     {
       "source_label": "runtime_generated",
       "bundle_path": "runtime/phrase-routes/invite_schedule.json",
-      "sha256": "fd07ce1a069482b11e854c6f857ee71e0f603282f5c2a8777eccb5075be120cf",
-      "size": 13209
+      "sha256": "5c02bd6c8d456013c7aaf23a5569c1e7ff3c600ee00b605ded8667fb28448999",
+      "size": "13209"
     },
     {
       "source_label": "runtime_generated",
       "bundle_path": "runtime/phrase-routes/low_response_recovery.json",
-      "sha256": "515583c4bcdd916c6dcd34b7115248edf9c7ecf09dedb50ea80b484af76d7e2e",
-      "size": 7812
+      "sha256": "7ad9577687f64d1e00ce5064cbcc63705bb34433418db77a5c02305ec1a56731",
+      "size": "7812"
     },
     {
       "source_label": "runtime_generated",
       "bundle_path": "runtime/phrase-routes/stop_boundary.json",
-      "sha256": "4afc38fbd24a0232a0ca7f72955f24714c636c58893709e87908509f0be888bb",
-      "size": 4018
+      "sha256": "e5dfffaaba182871e4e4be951d4ba9f963d2a1fd0a4f20edbc5e29d763a410a8",
+      "size": "4018"
     },
     {
       "source_label": "runtime_generated",
       "bundle_path": "runtime/phrase-routes/teasing_push_pull.json",
-      "sha256": "0252438a8365971cf1229c8d7e4629a1d413fd33c5ce47813849f8dcd3f56cad",
-      "size": 9853
+      "sha256": "aa31e566958b7f9ce8b98c055a1a49b9fc46c617b80cf3dfc7ab9a64e8977a23",
+      "size": "9853"
     },
     {
       "source_label": "runtime_generated",
       "bundle_path": "runtime/phrase-routes/true_feedback.json",
-      "sha256": "64d51e00b656426e031ecffd1226cc604ef50a6dd2d986783e05c12ba55110b9",
-      "size": 6647
+      "sha256": "1c5025d541218975815f30c8f57882523d79a09c8b08ffc1e89e4343814205ea",
+      "size": "6647"
     },
     {
       "source_label": "runtime_generated",
       "bundle_path": "runtime/route-index.json",
-      "sha256": "ea31e4604a257631d63c26c7044753be22df6949e2b6945d07eae2d71ca5d83b",
-      "size": 24523
+      "sha256": "4c82223f2d10c7ec26c6a3c662405019b39148d99eb5350fdbb9f67c5cea5721",
+      "size": "29473"
     },
     {
       "source_label": "runtime_generated",
       "bundle_path": "runtime/runtime-entry.md",
-      "sha256": "fd7772d5ab21fa6e4c85b2a58150f4eb2a3a0e0d31316807fe39dd504fbedd56",
-      "size": 5133
+      "sha256": "1e7c40abc5f438b41a7cbf4dac8834ca12447d0b6ce2d4b06d0063c1f9e1000d",
+      "size": "7424"
     },
     {
       "source_label": "runtime_generated",
       "bundle_path": "runtime/runtime-manifest.json",
-      "sha256": "d512ada8ada71bfb62ad3502eab69b55a69fffe4a0e3abdee560b14f7ddd09c5",
-      "size": 3597
+      "sha256": "8b47ea1418e33d58c1929f7377764a795f37c1cdba103b42fa79dd5bbe615ab2",
+      "size": "3597"
     },
     {
       "source_label": "runtime_generated",
       "bundle_path": "runtime/unit-index.json",
-      "sha256": "65a036a268a59197f3cc131ecddccdb2eb9a8eb635ddf2492c17d888b3d105a5",
-      "size": 133525
+      "sha256": "d402ad1aee666fbb46c5d4aa3f8615d73b16ad61591c948906363d2ab59ca5b2",
+      "size": "136509"
     }
-  ],
-  "publication": "public_runtime_only",
-  "source_audit": "local_only",
-  "excluded_paths": [
-    "knowledge/01-原始资料/",
-    "knowledge/external-sources/",
-    "knowledge/_original_dragon_root/"
   ],
   "local_only_sources": true
 }

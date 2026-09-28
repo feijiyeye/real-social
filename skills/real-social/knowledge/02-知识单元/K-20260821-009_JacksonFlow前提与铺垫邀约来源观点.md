@@ -25,7 +25,7 @@ forbidden_moves:
 case_refs: [K-20260822-025]
 related: [K-20260822-026]
 source_refs:
-  - file: "local_only"
+  - file: "local_only flow体系/老版体系无广告/体系txt/第三节.txt"
     locator: "第683-733行、第818-833行"
     quote: "来源将聊天/电话的信息不足、对话频段和邀约铺垫串成一个流程解释。"
   - file: "local_only"

@@ -45,15 +45,16 @@ class RuntimeRoutingTests(unittest.TestCase):
             "observed",
             "reported",
             "inferred",
-            "当前阶段节点",
-            "候选分链",
+            "当前步骤",
+            "用户自报",
+            "计数器",
             "状态路由",
             "反馈",
             "机械延续",
         ):
             self.assertIn(term, skill_text)
 
-    def test_reply_examples_require_context_before_phrase_retrieval(self) -> None:
+    def test_phrase_library_originals_require_context_before_retrieval(self) -> None:
         no_request = run_json(ROUTE_SCRIPT, "--text", "分析这段聊天")
         self.assertEqual(no_request["task_route"]["id"], "analyze_chat")
         self.assertEqual(
@@ -88,6 +89,8 @@ class RuntimeRoutingTests(unittest.TestCase):
             "reciprocal",
             "--comfort",
             "comfortable",
+            "--stage",
+            "假性评估",
         )
         self.assertEqual(ready_for_review["state_route"]["id"], "interest_push_pull")
         self.assertEqual(
@@ -140,6 +143,165 @@ class RuntimeRoutingTests(unittest.TestCase):
             result["runtime_fields"]["phrase_retrieval"],
             "disabled_until_reply_request",
         )
+
+    def test_substantive_chat_requires_fresh_knowledge_grounding(self) -> None:
+        ungrounded = run_json(ROUTE_SCRIPT, "--text", "分析这段聊天")
+        self.assertEqual(
+            ungrounded["knowledge_grounding"]["retrieval_status"],
+            "not_provided",
+        )
+        self.assertEqual(
+            ungrounded["knowledge_grounding"]["answer_permission"],
+            "blocked_until_knowledge_trace",
+        )
+        self.assertTrue(ungrounded["knowledge_grounding"]["ai_only_answer_forbidden"])
+
+        grounded = run_json(
+            ROUTE_SCRIPT,
+            "--text", "分析这段聊天",
+            "--knowledge-trace-json",
+            json.dumps(
+                {
+                    "retrieval_status": "hit",
+                    "consulted_units": ["K-20260821-002", "K-20260826-001"],
+                    "claims_used": ["九步骤主流程", "新反馈重新判断"],
+                    "model_inference": ["当前阶段暂定未知"],
+                },
+                ensure_ascii=False,
+            ),
+        )
+        self.assertEqual(
+            grounded["knowledge_grounding"]["retrieval_status"],
+            "grounded",
+        )
+        self.assertEqual(
+            grounded["knowledge_grounding"]["answer_permission"],
+            "allowed_after_grounding",
+        )
+        self.assertEqual(
+            grounded["knowledge_grounding"]["source_refs"],
+            [
+                "knowledge/02-知识单元/K-20260821-002_JacksonFlow三阶段九步骤正式主流程.md",
+                "knowledge/02-知识单元/K-20260826-001_真实社交线上流程推拉方向与回蓝闸门.md",
+            ],
+        )
+
+    def test_grounding_policy_is_published_in_runtime_index(self) -> None:
+        route_index = json.loads(ROUTE_INDEX.read_text(encoding="utf-8"))
+        policy = route_index["knowledge_grounding"]
+        self.assertTrue(policy["fresh_retrieval_each_turn"])
+        self.assertTrue(policy["block_on_missing_or_insufficient"])
+        self.assertEqual(policy["required_receipt"], "knowledge_trace")
+
+    def test_partial_knowledge_grounding_blocks_freeform_guidance(self) -> None:
+        result = run_json(
+            ROUTE_SCRIPT,
+            "--text", "分析这段聊天",
+            "--knowledge-trace-json",
+            json.dumps(
+                {
+                    "retrieval_status": "hit",
+                    "consulted_units": ["K-20260826-001"],
+                    "claims_used": ["反馈后重新判断"],
+                },
+                ensure_ascii=False,
+            ),
+        )
+        self.assertEqual(result["knowledge_grounding"]["retrieval_status"], "insufficient")
+        self.assertEqual(result["knowledge_grounding"]["answer_permission"], "blocked_until_grounded")
+        self.assertIn(
+            "knowledge/02-知识单元/K-20260821-002_JacksonFlow三阶段九步骤正式主流程.md",
+            result["knowledge_grounding"]["missing_reads"],
+        )
+
+    def test_window_continuity_carries_state_and_emits_block(self) -> None:
+        first = run_json(
+            ROUTE_SCRIPT,
+            "--text", "第一张聊天截图",
+            "--input-kind", "image",
+            "--subject-key", "same-chat",
+            "--evidence-id", "img-1",
+            "--qualification-count", "3",
+            "--direction", "push",
+        )
+        self.assertEqual(first["continuity"]["turn_label"], "第 1 轮，新窗口")
+        self.assertEqual(first["conversation_session"]["turn_index"], 1)
+
+        second = run_json(
+            ROUTE_SCRIPT,
+            "--text", "第二张截图，接在上一张之后",
+            "--input-kind", "image",
+            "--subject-key", "same-chat",
+            "--evidence-id", "img-2",
+            "--session-state-json", json.dumps(first["session_state"], ensure_ascii=False),
+            "--qualification-count", "4",
+        )
+        self.assertEqual(second["continuity"]["turn_label"], "第 2 轮，已连续关联")
+        self.assertEqual(second["conversation_session"]["session_id"], first["conversation_session"]["session_id"])
+        self.assertEqual(second["conversation_session"]["turn_index"], 2)
+        self.assertEqual(second["conversation_ledger"]["last_direction"], "push")
+        self.assertEqual(len(second["conversation_ledger"]["turns"]), 2)
+        self.assertEqual(second["counters"]["qualification"]["count"], 4)
+
+    def test_window_continuity_flags_subject_conflict_and_reset(self) -> None:
+        first = run_json(ROUTE_SCRIPT, "--text", "第一位聊天对象", "--subject-key", "alice")
+        conflict = run_json(
+            ROUTE_SCRIPT,
+            "--text", "这可能是另一位聊天对象",
+            "--subject-key", "bob",
+            "--session-state-json", json.dumps(first["session_state"], ensure_ascii=False),
+        )
+        self.assertEqual(conflict["continuity"]["status"], "ambiguous_subject")
+        self.assertEqual(conflict["conversation_session"]["status"], "ambiguous")
+        reset = run_json(
+            ROUTE_SCRIPT,
+            "--text", "新开一段聊天",
+            "--subject-key", "bob",
+            "--reset-session",
+            "--session-state-json", json.dumps(first["session_state"], ensure_ascii=False),
+        )
+        self.assertEqual(reset["continuity"]["status"], "reset")
+        self.assertEqual(reset["conversation_session"]["turn_index"], 1)
+
+    def test_window_continuity_compacts_old_turns_in_batches_of_six(self) -> None:
+        state = None
+        result = None
+        for turn in range(1, 14):
+            args = [
+                "--text", f"聊天证据第 {turn} 轮",
+                "--subject-key", "same-chat",
+                "--evidence-id", f"e-{turn}",
+            ]
+            if state is not None:
+                args.extend(["--session-state-json", json.dumps(state, ensure_ascii=False)])
+            result = run_json(ROUTE_SCRIPT, *args)
+            state = result["session_state"]
+        assert result is not None
+        self.assertTrue(result["continuity"]["summary"]["compacted_this_turn"])
+        self.assertEqual(result["continuity"]["summary"]["covered_turn_start"], 1)
+        self.assertEqual(result["continuity"]["summary"]["covered_turn_end"], 6)
+        self.assertEqual(result["continuity"]["summary"]["turn_count"], 6)
+        self.assertEqual(result["continuity"]["summary"]["recent_detail_start"], 7)
+        self.assertEqual(result["continuity"]["summary"]["recent_detail_end"], 13)
+        self.assertEqual(len(result["conversation_ledger"]["turns"]), 7)
+
+        for turn in range(14, 20):
+            result = run_json(
+                ROUTE_SCRIPT,
+                "--text", f"聊天证据第 {turn} 轮",
+                "--subject-key", "same-chat",
+                "--evidence-id", f"e-{turn}",
+                "--session-state-json", json.dumps(state, ensure_ascii=False),
+            )
+            state = result["session_state"]
+        assert result is not None
+        self.assertTrue(result["continuity"]["summary"]["compacted_this_turn"])
+        self.assertEqual(result["continuity"]["summary"]["covered_turn_start"], 1)
+        self.assertEqual(result["continuity"]["summary"]["covered_turn_end"], 12)
+        self.assertEqual(result["continuity"]["summary"]["turn_count"], 12)
+        self.assertEqual(result["continuity"]["summary"]["recent_detail_start"], 13)
+        self.assertEqual(result["continuity"]["summary"]["recent_detail_end"], 19)
+        self.assertEqual(len(result["conversation_ledger"]["turns"]), 7)
 
     def test_stop_boundary_overrides_explicit_interest_route(self) -> None:
         result = run_json(
@@ -861,14 +1023,11 @@ class RuntimeRoutingTests(unittest.TestCase):
         )
         self.assertEqual(
             result["retrieval_status"],
-            "candidate_reference_with_source_audit",
+            "candidate_reference_after_context_review",
         )
-        self.assertEqual(
-            result["source"],
-            "candidate_index_plus_full_index_source_only_audit",
-        )
-        self.assertEqual(result["sendability"], "not_granted")
-        self.assertTrue(any("source-only" in warning for warning in result["warnings"]))
+        self.assertEqual(result["source"], "candidate_index")
+        self.assertEqual(result["sendability"], "requires_context_review")
+        self.assertTrue(any("公开包" in warning for warning in result["warnings"]))
 
     def test_all_shards_and_counts_are_consistent(self) -> None:
         phrase_index = json.loads(
@@ -887,13 +1046,18 @@ class RuntimeRoutingTests(unittest.TestCase):
         )
         self.assertEqual(
             (units["unit_count"], units["canonical_count"], units["candidate_count"]),
-            (49, 2, 47),
+            (50, 3, 47),
         )
 
     def test_generated_routes_match_bundled_configuration(self) -> None:
         config = json.loads(ROUTE_CONFIG.read_text(encoding="utf-8"))
         runtime = json.loads(ROUTE_INDEX.read_text(encoding="utf-8"))
         self.assertEqual(runtime["stage_navigation"], config["stage_navigation"])
+        self.assertEqual(runtime["primary_flow"], config["primary_flow"])
+        self.assertEqual(
+            runtime["primary_flow"]["self_narrative"]["allowed_purposes"],
+            ["value_display", "logistics_negotiation"],
+        )
         self.assertEqual(
             runtime["stage_navigation"]["evidence_layers"],
             ["observed", "reported", "inferred"],
@@ -920,7 +1084,7 @@ class RuntimeRoutingTests(unittest.TestCase):
         self.assertIn("首次假评", entry)
         self.assertIn("push_then_feedback_gated_pull", entry)
 
-    def test_example_gate_stays_closed_until_stage_and_direction_are_clear(self) -> None:
+    def test_phrase_library_gate_stays_closed_until_stage_and_direction_are_clear(self) -> None:
         no_context = run_json(
             ROUTE_SCRIPT,
             "--text",
@@ -928,9 +1092,9 @@ class RuntimeRoutingTests(unittest.TestCase):
             "--task-route",
             "reply_request",
         )
-        self.assertFalse(no_context["example_gate"]["allowed"])
-        self.assertFalse(no_context["example_gate"]["stage_clear"])
-        self.assertFalse(no_context["example_gate"]["direction_clear"])
+        self.assertFalse(no_context["phrase_library_gate"]["allowed"])
+        self.assertFalse(no_context["phrase_library_gate"]["stage_clear"])
+        self.assertFalse(no_context["phrase_library_gate"]["direction_clear"])
 
         no_direction = run_json(
             ROUTE_SCRIPT,
@@ -944,10 +1108,129 @@ class RuntimeRoutingTests(unittest.TestCase):
             "reciprocal",
             "--comfort",
             "comfortable",
+            "--stage",
+            "假性评估",
         )
-        self.assertFalse(no_direction["example_gate"]["allowed"])
-        self.assertTrue(no_direction["example_gate"]["stage_clear"])
-        self.assertFalse(no_direction["example_gate"]["direction_clear"])
+        self.assertFalse(no_direction["phrase_library_gate"]["allowed"])
+        self.assertTrue(no_direction["phrase_library_gate"]["stage_clear"])
+        self.assertFalse(no_direction["phrase_library_gate"]["direction_clear"])
+
+    def test_nine_step_stage_falls_back_to_user_report(self) -> None:
+        unresolved = run_json(ROUTE_SCRIPT, "--text", "帮我分析这段聊天")
+        self.assertEqual(unresolved["main_flow"]["status"], "unresolved")
+        self.assertIn("打开、前提、假性评估", unresolved["main_flow"]["ask_user"])
+
+        reported = run_json(
+            ROUTE_SCRIPT,
+            "--text",
+            "聊天证据暂时不完整",
+            "--user-stage",
+            "真性评估",
+        )
+        self.assertEqual(reported["main_flow"]["status"], "user_reported")
+        self.assertEqual(reported["main_flow"]["current_stage"], "true_evaluation")
+
+        conflict = run_json(
+            ROUTE_SCRIPT,
+            "--text",
+            "模型和用户判断不一致",
+            "--stage",
+            "假性评估",
+            "--user-stage",
+            "真性评估",
+        )
+        self.assertEqual(conflict["main_flow"]["status"], "conflicted")
+        self.assertIsNone(conflict["main_flow"]["current_stage"])
+
+    def test_stage_counters_apply_minimums_and_user_pace(self) -> None:
+        three = run_json(
+            ROUTE_SCRIPT,
+            "--text",
+            "已有三条赋格",
+            "--stage",
+            "假性评估",
+            "--qualification-count",
+            "3",
+        )
+        self.assertEqual(three["counters"]["qualification"]["status"], "below_minimum")
+        self.assertEqual(three["counters"]["qualification"]["effective_target"], 5)
+
+        eight = run_json(
+            ROUTE_SCRIPT,
+            "--text",
+            "已有八条赋格",
+            "--stage",
+            "假性评估",
+            "--qualification-count",
+            "8",
+        )
+        self.assertEqual(eight["counters"]["qualification"]["status"], "above_reference")
+        self.assertIn("可以建议进入", eight["counters"]["qualification"]["recommendation"])
+
+        cautious = run_json(
+            ROUTE_SCRIPT,
+            "--text",
+            "已有四个女方真性评估",
+            "--stage",
+            "真性评估",
+            "--female-true-evaluation-count",
+            "4",
+            "--pace",
+            "cautious",
+        )
+        self.assertEqual(cautious["counters"]["female_true_evaluation"]["status"], "below_minimum")
+        self.assertEqual(cautious["counters"]["female_true_evaluation"]["effective_target"], 5)
+
+        aggressive = run_json(
+            ROUTE_SCRIPT,
+            "--text",
+            "想更激进推进",
+            "--stage",
+            "真性评估",
+            "--female-true-evaluation-count",
+            "2",
+            "--pace",
+            "aggressive",
+        )
+        self.assertEqual(aggressive["counters"]["female_true_evaluation"]["status"], "below_default_minimum")
+        self.assertIn("提前建议", aggressive["counters"]["female_true_evaluation"]["recommendation"])
+
+    def test_self_narrative_requires_one_of_two_purposes(self) -> None:
+        unclear = run_json(
+            ROUTE_SCRIPT,
+            "--text", "帮我回复她",
+            "--task-route", "reply_request",
+            "--stage", "自我叙事",
+            "--state-route", "invite",
+        )
+        self.assertEqual(unclear["narrative_purpose"]["status"], "unclear")
+        self.assertIn("展示自己的真实价值", unclear["narrative_purpose"]["ask_user"])
+        self.assertFalse(unclear["phrase_library_gate"]["allowed"])
+        self.assertEqual(unclear["read_plan"]["phrase_retrieval"], "disabled_until_narrative_purpose")
+
+        for purpose in ("value_display", "logistics_negotiation"):
+            with self.subTest(purpose=purpose):
+                selected = run_json(
+                    ROUTE_SCRIPT,
+                    "--text", "帮我回复她",
+                    "--task-route", "reply_request",
+                    "--stage", "自我叙事",
+                    "--state-route", "invite",
+                    "--narrative-purpose", purpose,
+                )
+                self.assertEqual(selected["narrative_purpose"]["purpose"], purpose)
+                self.assertTrue(selected["phrase_library_gate"]["narrative_purpose_clear"])
+                self.assertFalse(selected["phrase_library_gate"]["ai_composed_reply"])
+
+        stop = run_json(
+            ROUTE_SCRIPT,
+            "--text", "她说不要再联系",
+            "--task-route", "reply_request",
+            "--stage", "自我叙事",
+            "--narrative-purpose", "logistics_negotiation",
+        )
+        self.assertEqual(stop["state_route"]["id"], "stop_boundary")
+        self.assertFalse(stop["phrase_library_gate"]["allowed"])
 
 
 if __name__ == "__main__":

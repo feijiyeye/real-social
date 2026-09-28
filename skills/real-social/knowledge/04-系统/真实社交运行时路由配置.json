@@ -11,6 +11,53 @@
     "max_case_results": 3,
     "max_phrase_results": 3
   },
+  "primary_flow": {
+    "id": "jackson_three_phases_nine_steps",
+    "label": "Jackson Flow 三阶段九步骤",
+    "policy_unit": "K-20260821-002",
+    "applies_to": ["analyze_chat", "reply_request"],
+    "stage_source_order": ["model_from_chat", "user_reported_if_model_unclear"],
+    "on_unclear": "list_all_nine_steps_and_ask_user_current_stage",
+    "on_conflict": "preserve_model_and_user_stage_then_ask_one_decisive_question",
+    "steps": [
+      {"id": "opening", "number": 1, "phase": "attraction", "label": "打开", "next": "premise"},
+      {"id": "premise", "number": 2, "phase": "attraction", "label": "前提", "next": "false_evaluation"},
+      {"id": "false_evaluation", "number": 3, "phase": "attraction", "label": "假性评估", "next": "true_evaluation"},
+      {"id": "true_evaluation", "number": 4, "phase": "connection", "label": "真性评估", "next": "self_narrative"},
+      {"id": "self_narrative", "number": 5, "phase": "connection", "label": "自我叙事", "next": "shared_narrative"},
+      {"id": "shared_narrative", "number": 6, "phase": "connection", "label": "共同叙事", "next": "girlfriend"},
+      {"id": "girlfriend", "number": 7, "phase": "continuity", "label": "女朋友", "next": "stage_close"},
+      {"id": "stage_close", "number": 8, "phase": "continuity", "label": "阶段收尾", "next": "game_rules"},
+      {"id": "game_rules", "number": 9, "phase": "continuity", "label": "游戏规则", "next": null}
+    ],
+    "counters": {
+      "qualification": {
+        "applies_at": "false_evaluation",
+        "recommended_band": [5, 6],
+        "standard_minimum": 5,
+        "cautious_target": 6,
+        "next_stage": "true_evaluation",
+        "threshold_role": "minimum_reference_for_recommendation_not_guarantee"
+      },
+      "female_true_evaluation": {
+        "applies_at": "true_evaluation",
+        "recommended_band": [4, 5],
+        "standard_minimum": 4,
+        "cautious_target": 5,
+        "next_stage": "self_narrative",
+        "threshold_role": "minimum_reference_for_recommendation_not_guarantee"
+      }
+    },
+    "pace_modes": ["standard", "aggressive", "cautious"],
+    "self_narrative": {
+      "purpose_required": true,
+      "allowed_purposes": ["value_display", "logistics_negotiation"],
+      "on_unclear": "ask_for_purpose_before_narrative_guidance",
+      "value_display": "truthful_relevant_self_disclosure_not_invented_status",
+      "logistics_negotiation": "check_mutual_willingness_then_negotiate_time_place_convenience_safety_not_assumed_agreement"
+    },
+    "boundary_override": ["stop_boundary", "privacy_safety_age_consent", "recovery", "clarify", "concern_condition", "low_response"]
+  },
   "stage_navigation": {
     "priority": "before_reply",
     "scope": ["analyze_chat", "reply_request"],
@@ -19,64 +66,91 @@
     "required_outputs": [
       "completed",
       "current_problem",
+      "model_assessed_stage",
+      "user_reported_stage",
+      "stage_resolution",
+      "previous_current_next_step",
+      "qualification_counter",
+      "female_true_evaluation_counter",
+      "pace_mode",
+      "narrative_purpose_if_self_narrative",
       "state_route",
       "allowed_next",
       "direction_purpose",
       "feedback_gate",
-      "continue_switch_pause"
+      "continue_switch_pause",
+      "phrase_library_originals_if_relevant"
     ],
-    "examples_require": [
+    "phrase_library_require": [
       "stage_clear",
       "direction_clear",
-      "explicit_sendable_request",
+      "narrative_purpose_clear",
       "boundaries_satisfied"
     ],
-    "on_new_feedback": "reassess_stage_direction_feedback_gate_next_step",
+    "output_policy": "direction_first_no_ai_composed_reply; optionally_show_1_to_2_phrase_library_originals_after_context_review",
+    "on_new_feedback": "reassess_nine_step_stage_counters_direction_feedback_gate_next_step",
     "terminology_policy": "evidence_bound_not_template",
-    "mechanical_continuation": "forbidden"
+    "mechanical_continuation": "forbidden",
+    "conversation_continuity": {
+      "scope": "current_window_only",
+      "state_transport": "caller_passes_previous_session_state",
+      "detailed_turn_window": 12,
+      "compaction_batch": 6,
+      "summary_fields": ["stage_path", "counter_snapshots", "direction_feedback", "evidence_refs"],
+      "required_output": "continuity_block",
+      "reset_on": ["explicit_reset", "subject_conflict"],
+      "cross_session_persistence": "forbidden_without_user_request"
+    }
+  },
+  "knowledge_grounding": {
+    "required_tasks": ["analyze_chat", "reply_request", "case_lookup", "source_audit", "ingest_material", "architecture_maintenance"],
+    "fresh_retrieval_each_turn": true,
+    "required_receipt": "knowledge_trace",
+    "block_on_missing_or_insufficient": true,
+    "ai_only_answer_forbidden": true
   },
   "task_routes": [
     {
       "id": "first_use",
       "label": "首次使用与入口说明",
       "match_any": ["第一次使用", "首次使用", "新手入门", "怎么用这个skill", "如何调用这个skill", "怎么调用这个skill"],
-      "primary_units": ["K-20260821-001"],
+      "primary_units": ["K-20260821-001", "K-20260821-002"],
       "output_mode": "onboarding",
       "load": ["runtime/runtime-entry.md", "runtime/route-index.json"],
-      "defer": ["knowledge/manifest.json", "local_only/full_phrase_index"]
+      "defer": ["knowledge/manifest.json", "knowledge/local_only"]
     },
     {
       "id": "analyze_chat",
       "label": "聊天分析与阶段判断",
       "match_any": ["分析聊天", "聊天分析", "截图", "聊天记录", "她说", "女生回复", "这句话怎么理解", "阶段判断"],
-      "primary_units": ["K-20260826-001", "K-20260821-018"],
+      "primary_units": ["K-20260821-002", "K-20260826-001", "K-20260821-018"],
       "output_mode": "analysis",
-      "load": ["runtime/runtime-entry.md", "runtime/route-index.json", "runtime/unit-index.json", "knowledge/02-知识单元/K-20260826-001_真实社交线上流程推拉方向与回蓝闸门.md"],
-      "defer": ["knowledge/manifest.json", "knowledge/04-系统/2026-08-23_男性情感聊天项目续接摘要.md", "local_only/full_phrase_index"]
+      "load": ["runtime/runtime-entry.md", "runtime/route-index.json", "runtime/unit-index.json", "knowledge/02-知识单元/K-20260821-002_JacksonFlow三阶段九步骤正式主流程.md", "knowledge/02-知识单元/K-20260826-001_真实社交线上流程推拉方向与回蓝闸门.md"],
+      "defer": ["knowledge/manifest.json", "knowledge/04-系统/2026-08-23_男性情感聊天项目续接摘要.md", "knowledge/local_only"]
     },
     {
       "id": "reply_request",
-      "label": "回复方向与少量示例",
+      "label": "回复方向与话术库原句",
       "match_any": ["直接帮我回复", "帮我回复", "怎么回", "回复她", "回什么", "给我一句", "给我几句", "可发送", "帮我道歉", "怎么道歉", "道歉怎么说", "澄清怎么说"],
-      "primary_units": ["K-20260826-001", "K-20260823-051", "K-20260823-052", "K-20260823-053"],
+      "primary_units": ["K-20260821-002", "K-20260826-001", "K-20260823-051", "K-20260823-052", "K-20260823-053"],
       "output_mode": "reply_guidance",
-      "load": ["runtime/runtime-entry.md", "runtime/route-index.json", "runtime/unit-index.json", "knowledge/02-知识单元/K-20260826-001_真实社交线上流程推拉方向与回蓝闸门.md"],
-      "defer": ["local_only/full_phrase_index", "local_only/candidate_source"]
+      "load": ["runtime/runtime-entry.md", "runtime/route-index.json", "runtime/unit-index.json", "knowledge/02-知识单元/K-20260821-002_JacksonFlow三阶段九步骤正式主流程.md", "knowledge/02-知识单元/K-20260826-001_真实社交线上流程推拉方向与回蓝闸门.md"],
+      "defer": ["knowledge/local_only", "knowledge/local_only"]
     },
     {
       "id": "case_lookup",
       "label": "相似案例检索",
       "match_any": ["相似案例", "找案例", "有没有案例", "经典案例", "案例参考", "类似聊天"],
-      "primary_units": ["K-20260826-001"],
+      "primary_units": ["K-20260821-002", "K-20260826-001"],
       "output_mode": "case_reference",
       "load": ["runtime/runtime-entry.md", "runtime/route-index.json", "runtime/unit-index.json"],
-      "defer": ["local_only/source_audit", "local_only/source_audit"]
+      "defer": ["knowledge/01-原始资料/", "knowledge/external-sources/"]
     },
     {
       "id": "source_audit",
       "label": "素材与来源审计",
       "match_any": ["素材审计", "来源审计", "核对原文", "查原文", "来源在哪里", "证据核对", "原始资料"],
-      "primary_units": ["K-20260821-001"],
+      "primary_units": ["K-20260821-001", "K-20260821-002"],
       "output_mode": "source_audit",
       "load": ["runtime/runtime-entry.md", "runtime/route-index.json", "runtime/unit-index.json", "knowledge/manifest.json"],
       "defer": []
@@ -85,19 +159,19 @@
       "id": "ingest_material",
       "label": "素材入库与查重",
       "match_any": ["入库", "存起来", "记录一下", "归档", "以后要用", "保存这段", "收录素材"],
-      "primary_units": ["K-20260821-001"],
+      "primary_units": ["K-20260821-001", "K-20260821-002"],
       "output_mode": "ingest",
       "load": ["runtime/runtime-entry.md", "runtime/route-index.json", "knowledge/04-系统/入库与查重规则.md", "knowledge/04-系统/检索与调用规则.md"],
-      "defer": ["local_only/full_phrase_index"]
+      "defer": ["knowledge/local_only"]
     },
     {
       "id": "architecture_maintenance",
       "label": "架构、路由与维护",
       "match_any": ["整体架构", "路由体系", "路由系统", "响应速度", "速度慢", "延迟", "性能", "构建发布包", "维护skill", "更新索引", "架构怎么做"],
-      "primary_units": ["K-20260821-001"],
+      "primary_units": ["K-20260821-001", "K-20260821-002"],
       "output_mode": "architecture",
       "load": ["runtime/runtime-entry.md", "runtime/route-index.json", "runtime/navigation-index.json", "knowledge/04-系统/真实社交运行时路由设计.md", "knowledge/04-系统/真实社交运行时路由配置.json"],
-      "defer": ["local_only/source_audit", "local_only/source_audit"]
+      "defer": ["knowledge/01-原始资料/", "knowledge/external-sources/"]
     }
   ],
   "state_routes": [
@@ -110,7 +184,7 @@
       "exception_route": "overall_stop",
       "phrase_retrieval": "enabled_boundary_only",
       "required_reads": ["knowledge/02-知识单元/K-20260826-001_真实社交线上流程推拉方向与回蓝闸门.md", "knowledge/02-知识单元/K-20260821-021_zhenshi明确拒绝与停止时不纠缠边界候选.md"],
-      "defer": ["local_only/full_phrase_index"]
+      "defer": ["knowledge/local_only"]
     },
     {
       "id": "privacy_safety_age_consent",
@@ -121,7 +195,7 @@
       "exception_route": "concern",
       "phrase_retrieval": "disabled_until_verified",
       "required_reads": ["knowledge/02-知识单元/K-20260823-053_体系话术高风险隔离边界候选.md", "knowledge/02-知识单元/K-20260826-001_真实社交线上流程推拉方向与回蓝闸门.md"],
-      "defer": ["local_only/full_phrase_index"]
+      "defer": ["knowledge/local_only"]
     },
     {
       "id": "recovery",
@@ -132,7 +206,7 @@
       "exception_route": "recovery",
       "phrase_retrieval": "disabled",
       "required_reads": ["knowledge/02-知识单元/K-20260826-001_真实社交线上流程推拉方向与回蓝闸门.md"],
-      "defer": ["local_only/full_phrase_index", "local_only/candidate_source"]
+      "defer": ["knowledge/local_only", "knowledge/local_only"]
     },
     {
       "id": "clarify",
@@ -143,7 +217,7 @@
       "exception_route": "clarify",
       "phrase_retrieval": "enabled_after_context_review",
       "required_reads": ["knowledge/02-知识单元/K-20260826-001_真实社交线上流程推拉方向与回蓝闸门.md"],
-      "defer": ["local_only/full_phrase_index"]
+      "defer": ["knowledge/local_only"]
     },
     {
       "id": "concern_condition",
@@ -154,7 +228,7 @@
       "exception_route": "concern",
       "phrase_retrieval": "enabled_after_context_review",
       "required_reads": ["knowledge/02-知识单元/K-20260826-001_真实社交线上流程推拉方向与回蓝闸门.md", "runtime/phrase-route-index.json"],
-      "defer": ["local_only/full_phrase_index"]
+      "defer": ["knowledge/local_only"]
     },
     {
       "id": "low_response",
@@ -165,7 +239,7 @@
       "exception_route": "low_response",
       "phrase_retrieval": "enabled_after_context_review",
       "required_reads": ["knowledge/02-知识单元/K-20260826-001_真实社交线上流程推拉方向与回蓝闸门.md", "knowledge/02-知识单元/K-20260821-020_zhenshi低回应时减少投入方向候选.md"],
-      "defer": ["local_only/full_phrase_index"]
+      "defer": ["knowledge/local_only"]
     },
     {
       "id": "invite",
@@ -176,7 +250,7 @@
       "exception_route": "direct_window",
       "phrase_retrieval": "enabled_after_context_review",
       "required_reads": ["knowledge/02-知识单元/K-20260826-001_真实社交线上流程推拉方向与回蓝闸门.md", "runtime/phrase-route-index.json"],
-      "defer": ["local_only/full_phrase_index"]
+      "defer": ["knowledge/local_only"]
     },
     {
       "id": "interest_push_pull",
@@ -255,7 +329,7 @@
         "negative_feedback_action": "stop_push_and_choose_pull_clarify_pause_or_boundary_by_evidence"
       },
       "required_reads": ["knowledge/02-知识单元/K-20260826-001_真实社交线上流程推拉方向与回蓝闸门.md", "runtime/phrase-route-index.json"],
-      "defer": ["local_only/full_phrase_index"]
+      "defer": ["knowledge/local_only"]
     },
     {
       "id": "unknown_stage",
@@ -266,7 +340,7 @@
       "exception_route": "clarify",
       "phrase_retrieval": "disabled_until_context",
       "required_reads": ["knowledge/02-知识单元/K-20260826-001_真实社交线上流程推拉方向与回蓝闸门.md"],
-      "defer": ["local_only/full_phrase_index"]
+      "defer": ["knowledge/local_only"]
     }
   ],
   "phrase_routes": [
@@ -361,9 +435,9 @@
     },
     {
       "from": "analyze_chat",
-      "when": "需要可发送示例且目标已说清",
+      "when": "需要查看话术库原句且方向已说清",
       "next": "reply_request",
-      "reason": "先完成阶段和边界判断，再进入示例门槛"
+      "reason": "先完成阶段、方向和边界判断，再展示带出处的话术库原句；不生成 AI 改写回复"
     },
     {
       "from": "analyze_chat",
@@ -473,7 +547,7 @@
     "always": ["runtime/runtime-entry.md", "runtime/route-index.json"],
     "chat_default": ["runtime/unit-index.json", "knowledge/02-知识单元/K-20260826-001_真实社交线上流程推拉方向与回蓝闸门.md"],
     "on_demand": ["runtime/navigation-index.json", "runtime/phrase-route-index.json", "knowledge/02-知识单元/"],
-    "maintenance_only": ["knowledge/manifest.json", "knowledge/04-系统/2026-08-23_男性情感聊天项目续接摘要.md", "local_only/full_phrase_index", "local_only/source_audit"],
-    "never_default": ["local_only/governance_originals", "knowledge/archive/"]
+    "maintenance_only": ["knowledge/manifest.json", "knowledge/04-系统/2026-08-23_男性情感聊天项目续接摘要.md", "knowledge/local_only", "knowledge/external-sources/"],
+    "never_default": ["knowledge/_original_dragon_root/", "knowledge/archive/"]
   }
 }

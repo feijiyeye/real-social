@@ -2,11 +2,11 @@
 
 > 面向 Codex 的真实社交聊天 Skill：把聊天文字、截图、SRT 或课程素材交给 Agent，先核对证据和边界，再判断阶段、候选分链与状态路由，最后决定下一步是 `push`、`pull` 还是独立分流。
 
-[![Version](https://img.shields.io/badge/version-0.1.0-2563EB.svg?style=flat-square)](skills/real-social/VERSION)
+[![Version](https://img.shields.io/badge/version-0.2.0-2563EB.svg?style=flat-square)](skills/real-social/VERSION)
 [![Codex Skill](https://img.shields.io/badge/platform-Codex-111827.svg?style=flat-square)](skills/real-social/SKILL.md)
 [![Public snapshot](https://img.shields.io/badge/release-public%20snapshot-16A34A.svg?style=flat-square)](NOTICE.md)
 
-已验证：`skills` CLI 从公开 GitHub 仓库发现并隔离安装 `real-social`，以及 Codex 自带的 `skill-installer` 安装与运行。其他支持 Skills 的 Agent 尚未逐一验证。
+当前公开版本为 `0.2.0`。已验证：`skills` CLI 从公开 GitHub 仓库发现并隔离安装 `real-social`，以及 Codex 自带的 `skill-installer` 安装与运行。其他支持 Skills 的 Agent 尚未逐一验证。
 
 [快速开始](#快速开始) · [能力一览](#能力一览) · [工作方式](#工作方式) · [安装](#安装) · [目录结构](#目录结构) · [校验](#校验) · [数据与边界](#数据与边界) · [贡献与反馈](#贡献与反馈)
 
@@ -106,6 +106,9 @@ $real-social
 核心约束：
 
 - 聊天分析和回复默认先做阶段导航，再决定是否给句子；收到新反馈后重新判断，不机械延续上一条建议。
+- 每一轮实质任务都要重新检索知识库并提交 `knowledge_trace`；缺少回执、部分命中、失败或无命中时，阻断仅凭模型能力生成的推进方向。
+- 同一窗口维护连续性账本：继承阶段、计数器、方向和反馈，最近 12 轮保留详细记录，较早内容滚动压缩成摘要。
+- 阶段固定为三阶段九步骤；假性评估和真性评估分别维护赋格、女方真性评估计数器。
 - 兴趣证据收集阶段对外只展示 `push` / `pull`；真实顾虑、低回应、邀约、停止和安全问题走独立分流。
 - `push` 的目标是轻度张力和获得可观察反馈，不以焦虑、嫉妒或情绪失衡为目标；不设固定推拉比例，也不授权连续加推。
 - 对方明确只做朋友、没有恋爱意向、拒绝或不舒服时，不用技巧强行回锚或重启。
@@ -184,18 +187,18 @@ python3 skills/real-social/scripts/route_request.py \
   --text "请分析这段聊天并判断下一步"
 ```
 
-`0.1.0` 发布快照的验收结果：
+`0.2.0` 发布快照的验收结果：
 
-- `validate_bundle.py`：`checked=245 errors=0`
-- `validate_knowledge.py`：`checked=49 errors=0 warnings=2`；两条警告是已登记的旧元数据兼容项
-- 回归测试：42 项全部通过
-- Skill Installer 冷启动下载：263 个文件，安装后与发布包逐文件哈希一致
+- `validate_bundle.py`：以当前公开快照实际输出为准
+- `validate_knowledge.py`：公开结构化知识单元无错误；旧元数据兼容项保留为警告
+- 回归测试：包含阶段导航、窗口连续性和知识库锚定检查
+- 公开包不包含原始资料和外部来源，避免把本地私有材料随版本发布
 
 脚本只使用 Python 3 标准库；脚本用于构建、路由、检索和校验，不是聊天运行时的额外服务依赖。
 
 ## 数据与边界
 
-> **公开完整快照提醒**：本仓库包含原始聊天转写、课程和话术资料、Apple Notes 来源、第三方素材及可能可识别的聊天上下文。公开后已经被下载的副本无法撤回。使用前请自行确认隐私、版权和授权范围。
+> **公开快照提醒**：本仓库只包含结构化知识、运行时规则和公开候选入口，不包含本地原始聊天、课程转写、截图、外部来源或完整话术索引。使用前仍请自行确认隐私、版权和授权范围。
 
 请勿使用仓库内容识别、骚扰、施压、诱导或绕过他人明确表达的拒绝、不适、安全和同意边界。Skill 不连接聊天平台，不代表用户发送消息，也不保证任何关系或沟通结果。
 
@@ -216,7 +219,7 @@ python3 skills/real-social/scripts/route_request.py \
 
 ## 版本
 
-当前版本：[`0.1.0`](skills/real-social/VERSION)。版本文件记录包版本；路由索引和知识快照属于该版本的发布内容。仓库暂未维护独立 CHANGELOG，具体变更以 [提交记录](https://github.com/feijiyeye/real-social/commits/main) 为准。
+当前版本：[`0.2.0`](skills/real-social/VERSION)。版本文件记录包版本；路由索引和知识快照属于该版本的发布内容。具体变更见 [CHANGELOG.md](CHANGELOG.md) 和 [提交记录](https://github.com/feijiyeye/real-social/commits/main)。微信群公告草稿见 [UPDATE_ANNOUNCEMENT.md](UPDATE_ANNOUNCEMENT.md)。
 
 ## 作者与使用许可
 

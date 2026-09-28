@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-07T19:34:28+08:00",
+  "generated_at": "2026-09-28T12:03:42+08:00",
   "package_id": "real-social",
   "entry": "runtime/runtime-entry.md",
   "indexes": [
@@ -19,8 +19,8 @@
     "runtime/phrase-routes/teasing_push_pull.json",
     "runtime/phrase-routes/true_feedback.json"
   ],
-  "unit_count": 49,
-  "canonical_count": 2,
+  "unit_count": 50,
+  "canonical_count": 3,
   "candidate_count": 47,
   "phrase_route_count": 10,
   "full_phrase_index": null,
@@ -29,77 +29,77 @@
   "files": [
     {
       "path": "runtime/runtime-entry.md",
-      "sha256": "fd7772d5ab21fa6e4c85b2a58150f4eb2a3a0e0d31316807fe39dd504fbedd56",
-      "size": 5133
+      "sha256": "1e7c40abc5f438b41a7cbf4dac8834ca12447d0b6ce2d4b06d0063c1f9e1000d",
+      "size": 7424
     },
     {
       "path": "runtime/route-index.json",
-      "sha256": "ea31e4604a257631d63c26c7044753be22df6949e2b6945d07eae2d71ca5d83b",
-      "size": 24523
+      "sha256": "4c82223f2d10c7ec26c6a3c662405019b39148d99eb5350fdbb9f67c5cea5721",
+      "size": 29473
     },
     {
       "path": "runtime/navigation-index.json",
-      "sha256": "e91c782de36f1e777181f2ec36031643eeeb912f4298b6bc896b1022f69c7810",
-      "size": 1617
+      "sha256": "5391490a6f6e4c84266afed80d7c8614a063c403f74542a2aa0a1bab7aaa36af",
+      "size": 1675
     },
     {
       "path": "runtime/unit-index.json",
-      "sha256": "65a036a268a59197f3cc131ecddccdb2eb9a8eb635ddf2492c17d888b3d105a5",
-      "size": 133525
+      "sha256": "d402ad1aee666fbb46c5d4aa3f8615d73b16ad61591c948906363d2ab59ca5b2",
+      "size": 136509
     },
     {
       "path": "runtime/phrase-route-index.json",
-      "sha256": "58558e243ae35cb40a4b59e130b22b62eb387445e1da557d5ac9332fc80e3cc4",
+      "sha256": "8fcb3a4f0698d67ffbd29e158c24a7059dd8f1ff801bbedc6b2b0b899afbd4e7",
       "size": 9525
     },
     {
       "path": "runtime/phrase-routes/boundary_channel.json",
-      "sha256": "c575cc159e3cc7ecb66fa4d5266303c301ac4842ec4b3658cbf2daeacb02b060",
+      "sha256": "e35e703ccf99f234a968e60e6e6aea4765fdcc659ea731d440f5fc794220f824",
       "size": 9739
     },
     {
       "path": "runtime/phrase-routes/clarify_open.json",
-      "sha256": "7fa9dab09eecec3c03b59db7379cacae79599eebbee5da3ce74e524850b4276e",
+      "sha256": "336ae070d4424d7ae1363f5f6038609c173f35f836baba1649af12e741357d17",
       "size": 11185
     },
     {
       "path": "runtime/phrase-routes/concern_test.json",
-      "sha256": "a4c6a9d32e86f7007f4916e6dd4615f2351427b77392ad9c9c6a2e7023757661",
+      "sha256": "3378431bedba106fc27c20728c3a422514f26ebfc273512e36183b56769baeb6",
       "size": 9735
     },
     {
       "path": "runtime/phrase-routes/connection_repair.json",
-      "sha256": "7d6684ffc6cf870e8ebd88f6ab96cd7dc7aa1f2f58d7a843f7c20d2b99af8429",
+      "sha256": "40fb6ad3160862c492ec7017af5cf7f684fb781e49a9192c990470c6839c2eb7",
       "size": 9843
     },
     {
       "path": "runtime/phrase-routes/intimacy_conditional.json",
-      "sha256": "036ab59a2e71b9f4348ee2ef136d4da51f23f4439e818033ab99761316e48e06",
+      "sha256": "1b65629514291582e8eb57c3080f29aa4ea62d140c6e5f16d12fd26554843529",
       "size": 5908
     },
     {
       "path": "runtime/phrase-routes/invite_schedule.json",
-      "sha256": "fd07ce1a069482b11e854c6f857ee71e0f603282f5c2a8777eccb5075be120cf",
+      "sha256": "5c02bd6c8d456013c7aaf23a5569c1e7ff3c600ee00b605ded8667fb28448999",
       "size": 13209
     },
     {
       "path": "runtime/phrase-routes/low_response_recovery.json",
-      "sha256": "515583c4bcdd916c6dcd34b7115248edf9c7ecf09dedb50ea80b484af76d7e2e",
+      "sha256": "7ad9577687f64d1e00ce5064cbcc63705bb34433418db77a5c02305ec1a56731",
       "size": 7812
     },
     {
       "path": "runtime/phrase-routes/stop_boundary.json",
-      "sha256": "4afc38fbd24a0232a0ca7f72955f24714c636c58893709e87908509f0be888bb",
+      "sha256": "e5dfffaaba182871e4e4be951d4ba9f963d2a1fd0a4f20edbc5e29d763a410a8",
       "size": 4018
     },
     {
       "path": "runtime/phrase-routes/teasing_push_pull.json",
-      "sha256": "0252438a8365971cf1229c8d7e4629a1d413fd33c5ce47813849f8dcd3f56cad",
+      "sha256": "aa31e566958b7f9ce8b98c055a1a49b9fc46c617b80cf3dfc7ab9a64e8977a23",
       "size": 9853
     },
     {
       "path": "runtime/phrase-routes/true_feedback.json",
-      "sha256": "64d51e00b656426e031ecffd1226cc604ef50a6dd2d986783e05c12ba55110b9",
+      "sha256": "1c5025d541218975815f30c8f57882523d79a09c8b08ffc1e89e4343814205ea",
       "size": 6647
     }
   ]

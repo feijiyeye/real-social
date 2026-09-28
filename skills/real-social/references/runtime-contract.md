@@ -1,6 +1,6 @@
 # 运行时输出契约
 
-运行时先把当前 Skill 目录下的 `knowledge/` 设为唯一知识根目录，并读取 `runtime/runtime-entry.md`、`runtime/route-index.json` 和 `runtime/unit-index.json`。普通聊天不读取完整 `knowledge/manifest.json`；只有维护或校验时才读取它。公开包不发布原始来源映射；`source_refs.scope=local_only` 的条目必须回到本地完整版审计，不得把公开包路径当作原件路径。
+运行时先把当前 Skill 目录下的 `knowledge/` 设为唯一知识根目录，并读取 `runtime/runtime-entry.md`、`runtime/route-index.json` 和 `runtime/unit-index.json`。普通聊天不读取完整 `knowledge/manifest.json`；只有来源审计、构建或校验时才读取它。不得依赖构建机器的绝对路径；历史绝对来源路径在需要回读时通过 manifest 的 `source_path_map` 解析到包内文件。
 
 ## 两级路由契约
 
@@ -22,11 +22,49 @@
 
 状态优先级固定为：`stop_boundary` -> `privacy_safety_age_consent` -> `recovery` -> `clarify` -> `concern_condition` -> `low_response` -> `invite` -> `interest_push_pull` -> `unknown_stage`。完整匹配词和读取计划见 `runtime/route-index.json`。
 
-普通聊天的最小读取集是运行时入口、路由索引、单元索引和正式流程单元 `K-20260826-001`。公开候选分片和续接摘要按需读取；完整话术索引、原始资料和外部来源只在本地完整版可用。
+普通聊天的最小读取集是运行时入口、路由索引、单元索引、九步骤主流程 `K-20260821-002` 和步骤内状态流程 `K-20260826-001`。完整话术索引、续接摘要、原始资料和外部来源均为按需资源。
+
+## 知识库锚定契约
+
+对 `analyze_chat`、`reply_request`、`case_lookup`、`source_audit`、`ingest_material` 和 `architecture_maintenance`，知识检索是本轮交付前的必需步骤。每一轮新证据都必须进行新检索；上一轮的 `session_state`、滚动摘要或模型记忆不能充当本轮检索回执。
+
+调用方完成读取后，应传入当前轮 `knowledge_trace`，至少包含 `retrieval_status`、`consulted_units` 或 `consulted_paths`、`claims_used`、`model_inference`，以及检索失败时的 `no_hit_reason`。
+
+运行时返回 `knowledge_grounding` 回执。只有 `retrieval_status=grounded` 且所有 `required_reads` 被覆盖、`claims_used` 非空时，`answer_permission` 才为 `allowed_after_grounding`。缺少回执、只覆盖部分文件、检索失败或没有相关命中时，必须阻止自由发挥，返回缺口或要求补充信息。
+
+知识库依据与模型推断必须分开标记。不能把模型常识、临时推理或聊天对象的单句解读伪装成知识库结论，也不能为了满足回执而虚构命中或引用不相关文件。该契约不要求每轮展示原始话术；话术库原句仍按阶段、方向和边界门槛按需展示。
 
 ## 输入最低要求
 
 优先要求用户提供：最近一段完整聊天、说话人、消息时间间隔、关系背景、当前目标、上一轮发生了什么，以及已经知道的边界。信息不足时只追问真正影响阶段判断的变量。
+
+## 窗口级连续性（第一版）
+
+同一窗口内的每次文字或图片输入都视为同一个 `conversation_session` 的新证据，除非用户明确重置或聊天对象发生冲突。运行时不把状态写入长期知识库；调用方应把上一轮返回的 `session_state` 原样带入下一轮。
+
+最小状态包含：
+
+```yaml
+conversation_session:
+  session_id: string
+  status: active | ambiguous | reset
+  subject_key: string | null
+  turn_index: integer
+  continuity_confidence: high | medium | low | unknown
+conversation_ledger:
+  conversation_summary: object
+  turns: [最近详细窗口；压缩后通常保留 6-12 轮]
+  current_stage: string | null
+  counters: object
+  last_direction: push | pull | null
+  last_feedback: string | null
+```
+
+每一轮必须输出 `continuity` 区块，说明本窗口轮次、上一轮判断、本轮新增证据、累计计数、上一轮方向与反馈，以及历史摘要覆盖的轮次。详细窗口超过 12 轮时，将最早 6 轮压缩进 `conversation_summary`，保留后续详细记录；之后每新增 6 轮重复一次。新证据到达后重新计算阶段、计数器、状态路由和反馈门控，不能只分析最新图片，也不能机械沿用上一轮方向。
+
+图片输入应尽量标记 `input_kind=image`、`evidence_id` 和 `subject_key`。截图有重叠、说话人或顺序无法确认时，标记低连续性并只追问一个确认问题；不同对象不得自动合并。
+
+调用方可使用 `reset_session=true` 或明确的“新开一段聊天/换一个对象/清空上下文”重置。会话状态默认只在当前窗口临时使用；未经用户明确保存，不建立跨会话第三方关系档案。
 
 ## 元数据兼容
 
@@ -34,19 +72,23 @@
 
 ## 阶段判断
 
-输出当前阶段节点、最多三个候选阶段节点、可能命中的候选分链、置信度、支持证据和反证。体系不设唯一主链：相同阶段节点可以被多条分链复用，不同顺序或转移条件保留为不同分链。证据不足、多个阶段互斥或命中未裁决冲突时，使用“暂不判定”并提出澄清问题。
+所有聊天以一个固定主流程导航：吸引力（打开 → 前提 → 假性评估）→ 联系感（真性评估 → 自我叙事 → 共同叙事）→ 延续性（女朋友 → 阶段收尾 → 游戏规则）。模型先依据聊天输出 `model_assessed_stage`、支持证据、反证和置信度；无法确认时列出九步并直接询问用户自认为在哪一步，把回答记录为 `user_reported_stage`。两者冲突时标记 `conflicted` 并保留两份证据，不静默覆盖。
 
-阶段识别和分链识别是两个层次：先判断当前在什么状态，再判断这条状态序列更接近哪些案例分链。不能因为命中某条分链，就把该分链的下一步当成必然动作。
+案例分支和状态分流只能解释当前步骤内部的变化，必须映射回九步骤主流程，不得替代主流程或自动跳步。假性评估阶段维护 `qualification_count`：标准参考 5–6，默认最低线 5；真性评估阶段维护 `female_true_evaluation_count`：标准参考 4–5，默认最低线 4。稳妥节奏分别以 6、5 为目标；激进节奏允许在明确告知未达默认下限后提前建议转段。计数只包含去重的独立可观察证据，仅决定是否可以建议转段，不证明兴趣、同意或成功，也不覆盖停止、安全、拒绝、顾虑和实时反馈。
+
+自我叙事步骤每轮必须标记 `narrative_purpose`，只允许 `value_display`（真实价值展示）或 `logistics_negotiation`（商量双方见面的时间地点）。无法判定目的时标记 `unclear` 并询问，不生成叙事推进示例。物流可先核对双方见面意愿，再协商时间、地点、方便和安全；单方提议、礼貌回应或沉默不等于见面共识。
 
 ## 方向教学
 
-阶段确认后，每个方向至少说明：目标、适用条件、预期代价、不适用条件。默认提供方向，不提供完整回复。
+阶段确认后，每个方向至少说明：目标、适用条件、预期代价、不适用条件。默认只提供方向，不提供 AI 代写或改写的完整回复。
+
+当阶段、方向和边界都明确时，可按需展示最多 1-2 条 `phrase_library_originals`。这些条目必须是从真实社交知识库逐字保留的“话术库原句”，并带 `phrase_key`、来源文件、定位、原场景、说话人（若可识别）、相关点和不适用条件。它们是原版材料，不是建议发送内容、效果保证或 canonical 规则；找不到贴合条目时返回空集合并说明原因。
 
 ## 阶段导航优先原则
 
-本原则仅约束聊天分析和回复任务；素材审计、入库和架构维护继续使用各自的输出契约。默认交付先建立阶段导航，不先给孤立句子。收到新的聊天证据后，先把证据分为 `observed`（可直接看到的消息或行为）、`reported`（客户或来源明确报告的情况）和 `inferred`（基于前两者的暂定推断），再输出：已完成事项、当前要解决的问题、当前阶段节点及最多三个候选分链、适用的 `state_route`、下一步允许的 `push` / `pull` 或独立分流、方向目的、待观察反馈，以及继续、切换或暂停条件。阶段名称和体系术语只能解释有证据支持的结构与转移条件，不能直接充当话术模板。
+本原则仅约束聊天分析和回复任务；素材审计、入库和架构维护继续使用各自的输出契约。默认交付先建立九步骤定位，不先给孤立句子。收到新的聊天证据后，先把证据分为 `observed`（可直接看到的消息或行为）、`reported`（客户或来源明确报告的情况）和 `inferred`（基于前两者的暂定推断），再输出：模型判断、用户自报、冲突状态、已完成步骤、当前步骤、下一步骤、适用计数器与缺口、节奏模式、当前问题、适用的 `state_route`、下一步允许的 `push` / `pull` 或独立分流、方向目的、待观察反馈，以及继续、切换或暂停条件。阶段名称和体系术语只能解释有证据支持的结构与转移条件，不能直接充当话术模板。
 
-日常话题可以服务于激活、主题、调整、前提、恋爱意图回锚或邀约签约，但不能让局部句子取代整体进程判断。只有阶段与方向已经明确、用户明确要求可发送内容且边界条件满足时，才补充少量示例；示例必须服从阶段导航，不能替代阶段、方向、反馈分流或安全判断。收到新反馈后，必须重新计算阶段、方向、反馈门控和下一步，取消不再适用的预案，不机械延续上一条建议。
+日常话题可以服务于激活、主题、调整、前提、恋爱意图回锚或邀约签约，但不能让局部句子取代整体进程判断。只有阶段、方向和边界已经明确时，才按需展示少量话术库原句；不得由 AI 改写成当前聊天的回复，不能替代阶段、方向、反馈分流或安全判断。收到新反馈后，必须重新计算阶段、方向、反馈门控和下一步，取消不再适用的预案，不机械延续上一轮原句。
 
 ## 正式线上流程方向与分流
 
@@ -68,11 +110,11 @@
 
 回蓝是可跨阶段触发的操作者恢复闸门，不是聊天阶段、女性兴趣信号、回复方向或重新联系许可。命中后只提示暂停推进、收回投入，并设置 `phrase_retrieval: disabled`；不检索、展示、改写或生成任何回蓝话术。明确拒绝、停止、删除或“不要再联系”始终优先，回蓝不能覆盖或改写这些边界。
 
-## 示例门槛
+## 话术库原句展示
 
-用户明确选择方向并要求参考答案时，才生成示例。用户明确要求直接回复但未选方向时，先用最少问题对齐其当下想达成的结果、希望语气或主要顾虑；需求明确后，由 AI 从已展示的 2-4 个方向中选择最匹配的一条并说明依据，再生成 1-3 个示例。需求仍不清楚时不得随机代选。
+用户明确要求直接回复但未选方向时，先用最少问题对齐其当下想达成的结果、希望语气或主要顾虑；需求明确后，由 AI 从已展示的 2-4 个方向中选择最匹配的一条并说明依据，但仍不生成具体回复。
 
-示例必须标为“示例”，不能伪装成体系唯一答案，也不能从单个案例推导普遍规律。检索话术时先查人工候选清单和 Apple Notes 增补，再按需查完整去重索引；每次命中都要回读来源上下文、核对说话人并通过边界过滤。回蓝闸门命中时只输出状态、依据、暂停动作和重新判断条件，禁止生成任何具体话术。
+满足阶段、方向和边界门槛后，才可按需展示 1-2 条“话术库原句”。逐字保留原句，标明它来自真实社交知识库，并附来源文件、定位、场景、说话人和不适用条件。不能将其称为建议发送、唯一答案或当前聊天的改写。检索话术时先查人工候选清单和 Apple Notes 增补，再按需查完整去重索引；每次命中都要回读来源上下文、核对说话人并通过边界过滤。回蓝闸门命中时只输出状态、依据、暂停动作和重新判断条件，禁止展示推进性话术库原句。
 
 双方明确进入同类性/亲密话题后，相关露骨表达可以进入候选检索，但仍要核对成年和身份依据、持续互惠反馈、退出条件以及拒绝或不适信号。明确拒绝、停止、不适、欺骗、施压、强迫、羞辱和私密空间诱导不因性话题而放行。
 
@@ -88,7 +130,7 @@
 - `conflicting_rules`：体系内冲突未裁决，报告冲突编号。
 - `unconfigured_framework`：阶段或价值观尚未配置，只做素材审计。
 - `privacy_redaction_needed`：材料包含可识别第三方信息，先要求脱敏。
-- `source_unavailable`：公开包没有原始来源，或本地完整版也无法解析历史来源路径，明确说明不可回读，不以相似文件替代。
+- `source_unavailable`：manifest 和包内来源目录都无法解析历史来源路径，明确说明不可回读，不以相似文件替代。
 
 ## 正式流程运行字段
 
@@ -96,16 +138,44 @@
 
 ```yaml
 tactical_direction: push | pull | null
+main_flow:
+  status: confirmed | model_assessed | user_reported | conflicted | unresolved
+  model_assessed_stage: opening | premise | false_evaluation | true_evaluation | self_narrative | shared_narrative | girlfriend | stage_close | game_rules | null
+  user_reported_stage: opening | premise | false_evaluation | true_evaluation | self_narrative | shared_narrative | girlfriend | stage_close | game_rules | null
+  current_stage: opening | premise | false_evaluation | true_evaluation | self_narrative | shared_narrative | girlfriend | stage_close | game_rules | null
+counters:
+  qualification: {count: integer | null, reference_band: [5, 6], default_minimum: 5}
+  female_true_evaluation: {count: integer | null, reference_band: [4, 5], default_minimum: 4}
+pace: standard | aggressive | cautious
+narrative_purpose:
+  status: selected | unclear | not_applicable
+  purpose: value_display | logistics_negotiation | null
 stage_navigation:
   priority: before_reply
   scope: [analyze_chat, reply_request]
   evidence_layers: [observed, reported, inferred]
   max_stage_candidates: 3
   required_outputs: [completed, current_problem, state_route, allowed_next, direction_purpose, feedback_gate, continue_switch_pause]
-  examples_require: [stage_clear, direction_clear, explicit_sendable_request, boundaries_satisfied]
+  phrase_library_require: [stage_clear, direction_clear, narrative_purpose_clear, boundaries_satisfied]
+  output_policy: direction_first_no_ai_composed_reply; optionally_show_1_to_2_phrase_library_originals_after_context_review
   on_new_feedback: reassess_stage_direction_feedback_gate_next_step
   terminology_policy: evidence_bound_not_template
   mechanical_continuation: forbidden
+conversation_continuity:
+  scope: current_window_only
+  state_transport: caller_passes_previous_session_state
+  detailed_turn_window: 12
+  compaction_batch: 6
+  summary_fields: [stage_path, counter_snapshots, direction_feedback, evidence_refs]
+  required_output: continuity_block
+  reset_on: [explicit_reset, subject_conflict]
+  cross_session_persistence: forbidden_without_user_request
+knowledge_grounding:
+  required_tasks: [analyze_chat, reply_request, case_lookup, source_audit, ingest_material, architecture_maintenance]
+  fresh_retrieval_each_turn: true
+  required_receipt: knowledge_trace
+  block_on_missing_or_insufficient: true
+  ai_only_answer_forbidden: true
 push_back_eligible: true | false | unknown
 post_push_check: required
 pull_after_push: preferred_if_positive_feedback | not_applicable | blocked

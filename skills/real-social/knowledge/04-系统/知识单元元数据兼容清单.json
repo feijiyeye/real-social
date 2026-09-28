@@ -9,34 +9,6 @@
       "allow_missing": ["type", "version"],
       "reason": "旧版短视频知识单元模板；不属于男性情感聊天 Skill。"
     },
-    "K-20260816-001": {
-      "scope": "short-video",
-      "accepted_status": "active",
-      "required_canonical": true,
-      "allow_missing": ["type", "version"],
-      "reason": "旧版短视频知识单元模板；不属于男性情感聊天 Skill。"
-    },
-    "K-20260816-002": {
-      "scope": "short-video",
-      "accepted_status": "active",
-      "required_canonical": true,
-      "allow_missing": ["type", "version"],
-      "reason": "旧版短视频知识单元模板；不属于男性情感聊天 Skill。"
-    },
-    "K-20260817-001": {
-      "scope": "short-video",
-      "accepted_status": "active",
-      "required_canonical": true,
-      "allow_missing": ["type", "version"],
-      "reason": "旧版短视频知识单元模板；不属于男性情感聊天 Skill。"
-    },
-    "K-20260817-002": {
-      "scope": "short-video",
-      "accepted_status": "active",
-      "required_canonical": true,
-      "allow_missing": ["type", "version"],
-      "reason": "旧版短视频知识单元模板；不属于男性情感聊天 Skill。"
-    },
     "K-20260821-001": {
       "scope": "male-emotion-chat",
       "accepted_status": "active",

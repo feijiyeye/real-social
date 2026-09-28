@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-07T19:34:28+08:00",
+  "generated_at": "2026-09-28T12:03:42+08:00",
   "package_id": "real-social",
   "rules": [
     {
@@ -11,9 +11,9 @@
     },
     {
       "from": "analyze_chat",
-      "when": "需要可发送示例且目标已说清",
+      "when": "需要查看话术库原句且方向已说清",
       "next": "reply_request",
-      "reason": "先完成阶段和边界判断，再进入示例门槛"
+      "reason": "先完成阶段、方向和边界判断，再展示带出处的话术库原句；不生成 AI 改写回复"
     },
     {
       "from": "analyze_chat",

@@ -97,6 +97,8 @@ def read_text(path: Path) -> str:
 
 def sanitize_public_text(text: str) -> str:
     """Remove raw/external source paths from public structured artifacts."""
+    text = re.sub(r"/Users/company/[^\"`\n )]+", "local_only", text)
+    text = re.sub(r"/Volumes/[^\"`\n )]+", "local_only", text)
     text = re.sub(
         r"/Users/company/Documents/Dragon知识库/(?:01-原始资料|external-sources)/[^\"`\n )]+",
         "local_only",

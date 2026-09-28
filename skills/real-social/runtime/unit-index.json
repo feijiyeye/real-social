@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-07T19:34:28+08:00",
+  "generated_at": "2026-09-28T12:03:42+08:00",
   "package_id": "real-social",
-  "unit_count": 49,
-  "canonical_count": 2,
+  "unit_count": 50,
+  "canonical_count": 3,
   "candidate_count": 47,
   "units": [
     {
@@ -23,6 +23,7 @@
         "情感聊天体系工程 V0"
       ],
       "related": [
+        "K-20260821-002",
         "K-20260822-025",
         "K-20260822-026",
         "K-20260822-027",
@@ -61,6 +62,89 @@
         "architecture_maintenance",
         "first_use",
         "ingest_material",
+        "source_audit"
+      ]
+    },
+    {
+      "id": "K-20260821-002",
+      "type": "policy",
+      "title": "Jackson Flow 三阶段九步骤正式主流程",
+      "status": "canonical",
+      "canonical": true,
+      "version": 3,
+      "path": "knowledge/02-知识单元/K-20260821-002_JacksonFlow三阶段九步骤正式主流程.md",
+      "topics": [
+        "男性情感聊天教学",
+        "Jackson Flow",
+        "真实社交",
+        "正式流程",
+        "阶段地图"
+      ],
+      "aliases": [
+        "游戏地图",
+        "三阶段模型",
+        "九步骤",
+        "真实社交主流程"
+      ],
+      "related": [
+        "K-20260821-001",
+        "K-20260821-003",
+        "K-20260821-004",
+        "K-20260821-010",
+        "K-20260821-013",
+        "K-20260821-017",
+        "K-20260821-018",
+        "K-20260822-026",
+        "K-20260826-001"
+      ],
+      "trigger_signals": [
+        "用户提交聊天记录，要求判断阶段、下一步或回复方向",
+        "用户明确自报当前处于九步骤中的某一步",
+        "聊天中出现可核对的赋格或女方真性评估，需要更新计数",
+        "用户要求按 Jackson Flow 三阶段九步骤推进"
+      ],
+      "disconfirming_signals": [
+        "聊天记录缺少起始上下文、说话人或关键反馈，无法可靠识别步骤",
+        "用户自报阶段与可观察聊天证据明显冲突",
+        "出现明确停止、拒绝、不适、安全、隐私、成年或同意风险"
+      ],
+      "allowed_directions": [
+        "先按聊天 observed 证据判断当前步骤，并给出支持证据、反证和置信度",
+        "判断不出来时列出三阶段九步骤，让用户直接选择其自认为的当前步骤；不得随机代选",
+        "保留 model_assessed_stage 与 user_reported_stage；一致时确认，不一致时说明冲突并追问一个最影响判断的问题",
+        "假性评估阶段逐条列出可核对赋格证据并去重计数；标准节奏少于 5 条时建议继续收集，5 至 6 条时建议可以进入真性评估，超过 6 条时提示已超过最低参考线，不要为刷数量机械停留",
+        "真性评估阶段逐条列出女方对用户的真性评估或兴趣指标并去重计数；标准节奏少于 4 个时建议继续观察，4 至 5 个时建议可以进入自我叙事，超过 5 个时提示已超过最低参考线",
+        "激进节奏允许用户在低于参考线时选择提前尝试转段，但必须标明尚未达到默认最低参考线；稳妥节奏优先达到赋格 6 条或女方真性评估 5 个，并继续核对质量、互惠和舒适度",
+        "每次收到新聊天记录都重新核对阶段和计数；计数必须能回指当前材料中的具体证据，不凭印象累计",
+        "自我叙事每次只能选择一个主要目的：展示真实价值，或商量双方见面的时间与地点（物流）；若两者都不明确，先澄清目的，不把泛泛聊天当作有效叙事推进"
+      ],
+      "forbidden_moves": [
+        "不得在证据不足时把模型猜测写成已确认阶段",
+        "不得把用户自报阶段伪装成聊天记录直接证明的 observed 事实",
+        "不得把同一条表达重复计入赋格或女方真性评估",
+        "不得把普通回复、礼貌回应、表情、点赞、慢回或长消息单独计为赋格或真性评估",
+        "不得把达到计数阈值解释成兴趣、同意、约会许可或结果保证",
+        "不得为了达到计数而连续机械假评、施压、忽视负反馈或越过停止与安全边界",
+        "不得因用户选择激进节奏而降低拒绝、停止、隐私、安全、成年或同意标准",
+        "不得把自我叙事扩展成第三种目的，不得用无目标的个人故事、情绪倾诉或信息堆积冒充价值展示或物流协商"
+      ],
+      "scope_stage": "三阶段九步骤统一主流程",
+      "authority": "developer_approved",
+      "confidence": "1.0",
+      "callability": "",
+      "source_ref_files": [
+        "local_only flow体系/老版体系无广告/体系txt/Jackson flow｜第一期｜游戏地图.txt",
+        "local_only flow体系/老版体系无广告/体系txt/第五节｜假性评估.txt",
+        "2026-09-27 用户裁决",
+        "2026-09-27 用户补充"
+      ],
+      "route_ids": [
+        "analyze_chat",
+        "architecture_maintenance",
+        "case_lookup",
+        "first_use",
+        "ingest_material",
+        "reply_request",
         "source_audit"
       ]
     },
@@ -124,13 +208,8 @@
         "K-20260822-034"
       ],
       "source_ref_files": [
-        "local_only",
-        "local_only",
-        "local_only",
-        "local_only",
-        "local_only",
-        "local_only",
-        "local_only",
+        "local_only flow体系/老版体系无广告/体系txt/第三节.txt",
+        "local_only flow体系/老版体系无广告/体系txt/第四节.srt",
         "local_only"
       ]
     },
@@ -190,10 +269,9 @@
       ],
       "source_ref_files": [
         "2026-08-21 用户术语裁决",
+        "local_only flow体系/老版体系无广告/体系txt/第五节｜假性评估.txt",
         "local_only",
-        "local_only",
-        "2026-08-22 用户裁决",
-        "local_only"
+        "2026-08-22 用户裁决"
       ],
       "route_ids": [
         "interest_push_pull"
@@ -240,7 +318,7 @@
       "confidence": "0.78",
       "callability": "",
       "source_ref_files": [
-        "local_only"
+        "local_only flow体系/老版体系无广告/体系txt/第五节｜假性评估.txt"
       ]
     },
     {
@@ -280,8 +358,7 @@
         "K-20260822-025"
       ],
       "source_ref_files": [
-        "local_only",
-        "local_only",
+        "local_only flow体系/老版体系无广告/体系txt/第三节.txt",
         "local_only"
       ]
     },
@@ -317,7 +394,7 @@
       "confidence": "0.5",
       "callability": "",
       "source_ref_files": [
-        "local_only"
+        "local_only flow体系/老版体系无广告/体系txt/第五节｜假性评估.txt"
       ]
     },
     {
@@ -366,8 +443,8 @@
       "confidence": "0.86",
       "callability": "",
       "source_ref_files": [
-        "local_only",
-        "local_only",
+        "local_only flow体系/老版体系无广告/体系txt/第五节｜假性评估.txt",
+        "local_only flow体系/老版体系无广告/体系txt/第三节.txt",
         "local_only",
         "2026-08-22 用户裁决"
       ]
@@ -409,7 +486,7 @@
       "confidence": "0.9",
       "callability": "",
       "source_ref_files": [
-        "local_only",
+        "local_only flow体系/老版体系无广告/体系txt/第五节｜假性评估.txt",
         "2026-08-21 用户术语裁决"
       ]
     },
@@ -539,7 +616,6 @@
         "K-20260822-030"
       ],
       "source_ref_files": [
-        "local_only",
         "local_only"
       ]
     },
@@ -593,9 +669,8 @@
       ],
       "source_ref_files": [
         "local_only",
-        "local_only",
-        "2026-08-22 用户裁决",
-        "local_only"
+        "local_only flow体系/老版体系无广告/体系txt/第五节｜假性评估.txt",
+        "2026-08-22 用户裁决"
       ],
       "route_ids": [
         "interest_push_pull"
@@ -692,13 +767,6 @@
         "K-20260823-048"
       ],
       "source_ref_files": [
-        "local_only",
-        "local_only",
-        "local_only",
-        "local_only",
-        "local_only",
-        "local_only",
-        "local_only",
         "local_only"
       ],
       "route_ids": [
@@ -832,13 +900,6 @@
         "K-20260823-048"
       ],
       "source_ref_files": [
-        "local_only",
-        "local_only",
-        "local_only",
-        "local_only",
-        "local_only",
-        "local_only",
-        "local_only",
         "local_only"
       ],
       "route_ids": [
@@ -928,12 +989,7 @@
       "source_ref_files": [
         "local_only",
         "2026-08-21 用户 B4/B9 边界裁决",
-        "2026-08-22 用户裁决",
-        "local_only",
-        "local_only",
-        "local_only",
-        "local_only",
-        "local_only"
+        "2026-08-22 用户裁决"
       ],
       "route_ids": [
         "stop_boundary"
@@ -1032,7 +1088,6 @@
       "confidence": "0.9",
       "callability": "",
       "source_ref_files": [
-        "knowledge/02-知识单元/K-20260821-012_JacksonFlow反对编造和夸大边界候选.md",
         "local_only",
         "2026-08-22 用户裁决"
       ]
@@ -1085,7 +1140,6 @@
       "confidence": "0.55",
       "callability": "",
       "source_ref_files": [
-        "local_only",
         "local_only",
         "2026-08-22 用户裁决"
       ]
@@ -1167,8 +1221,6 @@
       ],
       "source_ref_files": [
         "local_only",
-        "local_only",
-        "local_only",
         "2026-08-22 用户裁决"
       ]
     },
@@ -1239,11 +1291,7 @@
       ],
       "source_ref_files": [
         "local_only",
-        "local_only",
-        "local_only",
-        "2026-08-22 用户裁决",
-        "local_only",
-        "local_only"
+        "2026-08-22 用户裁决"
       ]
     },
     {
@@ -1330,13 +1378,6 @@
         "K-20260823-048"
       ],
       "source_ref_files": [
-        "local_only",
-        "local_only",
-        "local_only",
-        "local_only",
-        "local_only",
-        "local_only",
-        "local_only",
         "local_only"
       ]
     },
@@ -1399,10 +1440,6 @@
         "K-20260823-048"
       ],
       "source_ref_files": [
-        "local_only",
-        "local_only",
-        "local_only",
-        "local_only",
         "local_only"
       ]
     },
@@ -1451,7 +1488,6 @@
         "K-20260822-025"
       ],
       "source_ref_files": [
-        "knowledge/02-知识单元/K-20260821-021_zhenshi明确拒绝与停止时不纠缠边界候选.md",
         "local_only",
         "2026-08-22 用户裁决"
       ]
@@ -1524,7 +1560,6 @@
         "K-20260822-031"
       ],
       "source_ref_files": [
-        "local_only",
         "local_only"
       ]
     },
@@ -1594,8 +1629,6 @@
         "K-20260823-048"
       ],
       "source_ref_files": [
-        "local_only",
-        "local_only",
         "local_only"
       ]
     },
@@ -1687,13 +1720,6 @@
         "K-20260823-048"
       ],
       "source_ref_files": [
-        "local_only",
-        "local_only",
-        "local_only",
-        "local_only",
-        "local_only",
-        "local_only",
-        "local_only",
         "local_only"
       ],
       "route_ids": [
@@ -2066,13 +2092,6 @@
         "K-20260823-048"
       ],
       "source_ref_files": [
-        "local_only",
-        "local_only",
-        "local_only",
-        "local_only",
-        "local_only",
-        "local_only",
-        "local_only",
         "local_only"
       ],
       "route_ids": [
@@ -2809,7 +2828,6 @@
         "K-20260823-050"
       ],
       "source_ref_files": [
-        "local_only",
         "local_only"
       ]
     },
@@ -2956,18 +2974,18 @@
       "title": "体系话术参考调用协议（候选）",
       "status": "candidate",
       "canonical": false,
-      "version": 3,
+      "version": 4,
       "path": "knowledge/02-知识单元/K-20260823-051_体系话术参考调用协议候选.md",
       "topics": [
         "男性情感聊天教学",
         "线上聊天候选",
-        "话术参考",
-        "示例生成"
+        "话术库原句",
+        "方向教学"
       ],
       "aliases": [
         "常用话术调用协议",
-        "回复示例参考层",
-        "Jackson话术参考库"
+        "话术库原句展示层",
+        "Jackson话术库"
       ],
       "related": [
         "K-20260821-001",
@@ -2998,8 +3016,8 @@
       ],
       "allowed_directions": [
         "先按阶段、方向和对方原消息检索去重索引，再回到原件或稳定文本查看相邻上下文",
-        "优先提取表达意图、结构和语气，再根据当前关系与用户风格改写",
-        "一次只给少量示例，并清楚标明是可调整的示例而非唯一答案",
+        "优先核对原句的表达意图、结构、语气、说话人和场景，再说明它与当前方向的相关点；不根据当前关系改写",
+        "一次只展示最多 1-2 条话术库原句，逐字保留并清楚标明来源、场景和限制",
         "保留每条候选的稳定 phrase_key、当前 phrase_id、来源文件、章节和定位，便于复核",
         "客户未选方向时，先用最少问题完成需求对齐，再从已展示的 2-4 个方向中选一条并说明选择依据"
       ],
@@ -3008,20 +3026,13 @@
         "不得把对方说的话、情景说明、经验总结或标题误当成男方回复",
         "不得机械粘贴姓名、地点、身份、关系状态或事实性经历",
         "不得为贴近来源而编造经历、隐瞒关系、制造嫉妒、施压或绕过拒绝",
-        "不得把 candidate/source_only 话术描述为 canonical 体系规则"
+        "不得把 candidate/source_only 话术描述为 canonical 体系规则、建议发送内容或效果保证"
       ],
-      "scope_stage": "完成阶段判断后的示例参考层",
+      "scope_stage": "完成阶段判断后的话术库原句展示层",
       "authority": "developer_approved",
       "confidence": "0.96",
       "callability": "",
       "source_ref_files": [
-        "local_only",
-        "local_only",
-        "local_only",
-        "local_only",
-        "local_only",
-        "local_only",
-        "local_only",
         "local_only"
       ],
       "route_ids": [
@@ -3063,7 +3074,7 @@
       "trigger_signals": [
         "当前阶段节点、对方原消息和目标方向已经确定",
         "客户已说明当下真实需求；若未选方向，已具备从候选方向中代选的依据",
-        "需要从本批来源中寻找相似表达结构或语气参考"
+        "需要从本批来源中寻找与当前方向相似的话术库原句"
       ],
       "disconfirming_signals": [
         "尚未确定当前阶段或用户目标",
@@ -3088,10 +3099,6 @@
       "confidence": "0.83",
       "callability": "",
       "source_ref_files": [
-        "local_only",
-        "local_only",
-        "local_only",
-        "local_only",
         "local_only"
       ],
       "route_ids": [
@@ -3160,11 +3167,6 @@
       "confidence": "0.94",
       "callability": "",
       "source_ref_files": [
-        "local_only",
-        "local_only",
-        "local_only",
-        "local_only",
-        "local_only",
         "local_only"
       ],
       "route_ids": [
@@ -3179,7 +3181,7 @@
       "title": "真实社交线上聊天流程：推拉方向与回蓝闸门",
       "status": "canonical",
       "canonical": true,
-      "version": 7,
+      "version": 13,
       "path": "knowledge/02-知识单元/K-20260826-001_真实社交线上流程推拉方向与回蓝闸门.md",
       "topics": [
         "男性情感聊天教学",
@@ -3191,7 +3193,8 @@
         "兴趣证据收集流程",
         "推拉二方向",
         "回蓝提示",
-        "回蓝恢复闸门"
+        "回蓝恢复闸门",
+        "九步骤运行契约"
       ],
       "trigger_signals": [
         "对方仍持续参与，当前话题适合轻度调侃或关系推进，且没有拒绝、不适或安全红灯",
@@ -3237,14 +3240,9 @@
       "confidence": "0.95",
       "callability": "",
       "source_ref_files": [
-        "knowledge/SOURCE_OF_TRUTH.md",
-        "knowledge/02-知识单元/K-20260821-017_zhenshi假性评估类型时机与强度来源观点.md",
-        "knowledge/02-知识单元/K-20260821-020_zhenshi低回应时减少投入方向候选.md",
-        "knowledge/02-知识单元/K-20260821-021_zhenshi明确拒绝与停止时不纠缠边界候选.md",
         "local_only",
         "2026-08-26 用户明确裁决",
-        "2026-08-27 用户明确补充",
-        "knowledge/02-知识单元/K-20260821-003_JacksonFlow前提阶段线上候选.md"
+        "2026-08-27 用户明确补充"
       ],
       "route_ids": [
         "analyze_chat",
