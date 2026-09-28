@@ -27,16 +27,16 @@
 
 ## 获取更新
 
-已安装旧版本的用户，执行下面的命令更新：
+不需要懂代码。把仓库地址发给能够访问 GitHub并操作本地文件的 AI：
 
-```bash
-npx -y skills update real-social -g -y
-```
+**https://github.com/feijiyeye/real-social**
 
-第一次安装的用户使用：
+第一次安装时，对 AI 说：
 
-```bash
-npx -y skills add feijiyeye/real-social -g -s real-social -a codex -y
-```
+> 请访问这个仓库，阅读 README、skills/real-social/SKILL.md 和 VERSION，然后把 skills/real-social 安装到你当前环境的用户级 Skill 目录。只安装 real-social，不要修改其他 Skill。完成后检查文件是否完整，并告诉我是否需要重新打开会话。
 
-更新或安装完成后重新打开一轮 Codex，再使用 `$real-social`。如果本地改过同名 Skill，请先备份本地修改。
+更新旧版本时，对 AI 说：
+
+> 请访问这个仓库，比较仓库 VERSION 和我本地 real-social 的 VERSION。如果本地版本较旧，请先检查是否有本地修改；有修改时先备份，再只更新 real-social。更新后告诉我最终版本，并检查窗口连续性和知识库锚定规则是否完整。
+
+需要注意：AI 必须具有访问 GitHub、读取仓库和写入本地 Skill 目录的权限。普通网页聊天 AI 只能提供指导，不能直接修改用户的电脑。安装或更新完成后重新打开一轮 Codex，再使用 `$real-social`。
