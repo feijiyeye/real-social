@@ -27,10 +27,16 @@
 
 ## 获取更新
 
-已安装旧版本的用户，重新执行下面的命令即可更新：
+已安装旧版本的用户，执行下面的命令更新：
+
+```bash
+npx -y skills update real-social -g -y
+```
+
+第一次安装的用户使用：
 
 ```bash
 npx -y skills add feijiyeye/real-social -g -s real-social -a codex -y
 ```
 
-安装完成后重新打开一轮 Codex，再使用 `$real-social`。如果本地改过同名 Skill，请先备份本地修改。
+更新或安装完成后重新打开一轮 Codex，再使用 `$real-social`。如果本地改过同名 Skill，请先备份本地修改。

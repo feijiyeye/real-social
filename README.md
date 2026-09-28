@@ -138,6 +138,16 @@ npx -y skills add feijiyeye/real-social -g -s real-social -a codex -y
 
 `skills` CLI 重新安装时可能覆盖目标目录中的同名文件。若你改过本地 Skill，请先备份或确认目标目录后再执行；不要把公开仓库内容直接覆盖到含有个人修改的目录。
 
+### 更新已有版本
+
+已通过 `skills` CLI 安装的用户，执行下面的命令获取最新公开快照：
+
+```bash
+npx -y skills update real-social -g -y
+```
+
+如果本地改过同名 Skill，请先备份本地修改；更新后重新打开一轮 Codex，再使用 `$real-social`。
+
 ### Codex 专用备用方式
 
 如果不想使用 Node.js/npm，也可以使用 Codex 自带的 `skill-installer`：
