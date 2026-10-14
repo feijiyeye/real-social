@@ -4,7 +4,7 @@
 
 ## 两级路由契约
 
-每次调用先识别 `task_route`，再按优先级识别 `state_route`。状态路由覆盖一般任务意图；最终只选择一个 `primary_module`，最多携带两个 `auxiliary_modules`。机器路由只缩小读取范围，不替代证据判断。
+每次调用先识别 `task_route`，再按优先级识别 `state_route`。状态路由覆盖一般任务意图；最终只选择一个 `primary_module`，最多携带两个 `auxiliary_modules`。机器路由只缩小读取范围，不替代证据判断。路由索引中的话术候选资格不能覆盖本文末尾规定的当前关闭状态。
 
 ```json
 {
@@ -15,7 +15,7 @@
   "read_plan": {
     "required": [],
     "deferred": [],
-    "phrase_retrieval": "enabled_after_context_review"
+    "phrase_retrieval": "disabled"
   }
 }
 ```
@@ -28,11 +28,11 @@
 
 对 `analyze_chat`、`reply_request`、`case_lookup`、`source_audit`、`ingest_material` 和 `architecture_maintenance`，知识检索是本轮交付前的必需步骤。每一轮新证据都必须进行新检索；上一轮的 `session_state`、滚动摘要或模型记忆不能充当本轮检索回执。
 
-调用方完成读取后，应传入当前轮 `knowledge_trace`，至少包含 `retrieval_status`、`consulted_units` 或 `consulted_paths`、`claims_used`、`model_inference`，以及检索失败时的 `no_hit_reason`。
+调用方完成读取后，应在内部记录当前轮 `knowledge_trace`，至少包含 `retrieval_status`、`consulted_units` 或 `consulted_paths`、`claims_used`、`model_inference`，以及检索失败时的 `no_hit_reason`。
 
-运行时返回 `knowledge_grounding` 回执。只有 `retrieval_status=grounded` 且所有 `required_reads` 被覆盖、`claims_used` 非空时，`answer_permission` 才为 `allowed_after_grounding`。缺少回执、只覆盖部分文件、检索失败或没有相关命中时，必须阻止自由发挥，返回缺口或要求补充信息。
+运行时返回 `knowledge_grounding` 回执。只有 `retrieval_status=grounded` 且所有 `required_reads` 被覆盖、`claims_used` 非空时，`answer_permission` 才为 `allowed_after_grounding`。缺少回执、只覆盖部分文件、检索失败或没有相关命中时，必须阻止自由发挥，并用自然语言说明当前依据不足或需要补充的信息。
 
-知识库依据与模型推断必须分开标记。不能把模型常识、临时推理或聊天对象的单句解读伪装成知识库结论，也不能为了满足回执而虚构命中或引用不相关文件。该契约不要求每轮展示原始话术；话术库原句仍按阶段、方向和边界门槛按需展示。
+知识库依据与模型推断必须在内部区分。不能把模型常识、临时推理或聊天对象的单句解读伪装成知识库结论，也不能为了满足回执而虚构命中或引用不相关文件。普通用户视图不展示读取文件、知识单元编号、完整回执、路由 ID、内部字段、测试结果或日志；用户明确要求测试、调试或检索详情时，才切换到诊断视图，并只展示相关部分。当前话术库原句功能关闭，不检索或展示原句。
 
 ## 输入最低要求
 
@@ -60,7 +60,7 @@ conversation_ledger:
   last_feedback: string | null
 ```
 
-每一轮必须输出 `continuity` 区块，说明本窗口轮次、上一轮判断、本轮新增证据、累计计数、上一轮方向与反馈，以及历史摘要覆盖的轮次。详细窗口超过 12 轮时，将最早 6 轮压缩进 `conversation_summary`，保留后续详细记录；之后每新增 6 轮重复一次。新证据到达后重新计算阶段、计数器、状态路由和反馈门控，不能只分析最新图片，也不能机械沿用上一轮方向。
+每一轮必须在内部维护 `continuity` 状态，覆盖本窗口轮次、上一轮判断、本轮新增证据、累计计数、上一轮方向与反馈，以及历史摘要覆盖的轮次。普通用户视图将其整理成简短自然语言摘要，不输出 `session_id`、`subject_key`、原始账本或其他内部字段。详细窗口超过 12 轮时，将最早 6 轮压缩进 `conversation_summary`，保留后续详细记录；之后每新增 6 轮重复一次。新证据到达后重新计算阶段、计数器、状态路由和反馈门控，不能只分析最新图片，也不能机械沿用上一轮方向。
 
 图片输入应尽量标记 `input_kind=image`、`evidence_id` 和 `subject_key`。截图有重叠、说话人或顺序无法确认时，标记低连续性并只追问一个确认问题；不同对象不得自动合并。
 
@@ -82,13 +82,13 @@ conversation_ledger:
 
 阶段确认后，每个方向至少说明：目标、适用条件、预期代价、不适用条件。默认只提供方向，不提供 AI 代写或改写的完整回复。
 
-当阶段、方向和边界都明确时，可按需展示最多 1-2 条 `phrase_library_originals`。这些条目必须是从真实社交知识库逐字保留的“话术库原句”，并带 `phrase_key`、来源文件、定位、原场景、说话人（若可识别）、相关点和不适用条件。它们是原版材料，不是建议发送内容、效果保证或 canonical 规则；找不到贴合条目时返回空集合并说明原因。
+方向说明必须覆盖目标、适用条件、预期代价和不适用条件。话术库原句功能状态以本文末尾“话术库原句功能状态”为准。
 
 ## 阶段导航优先原则
 
-本原则仅约束聊天分析和回复任务；素材审计、入库和架构维护继续使用各自的输出契约。默认交付先建立九步骤定位，不先给孤立句子。收到新的聊天证据后，先把证据分为 `observed`（可直接看到的消息或行为）、`reported`（客户或来源明确报告的情况）和 `inferred`（基于前两者的暂定推断），再输出：模型判断、用户自报、冲突状态、已完成步骤、当前步骤、下一步骤、适用计数器与缺口、节奏模式、当前问题、适用的 `state_route`、下一步允许的 `push` / `pull` 或独立分流、方向目的、待观察反馈，以及继续、切换或暂停条件。阶段名称和体系术语只能解释有证据支持的结构与转移条件，不能直接充当话术模板。
+本原则仅约束聊天分析和回复任务；素材审计、入库和架构维护继续使用各自的输出契约。默认交付先建立九步骤定位，不先给孤立句子。收到新的聊天证据后，先把证据分为 `observed`（可直接看到的消息或行为）、`reported`（客户或来源明确报告的情况）和 `inferred`（基于前两者的暂定推断），再判断模型阶段、用户自报、冲突状态、已完成步骤、当前步骤、下一步骤、适用计数器与缺口、节奏模式、当前问题、适用分流、下一步允许的 `push` / `pull` 或暂缓、方向目的、待观察反馈，以及继续、切换或暂停条件。路由 ID 和结构字段只用于内部判断；普通用户视图以自然语言呈现相关结论。阶段名称和体系术语只能解释有证据支持的结构与转移条件，不能直接充当话术模板。
 
-日常话题可以服务于激活、主题、调整、前提、恋爱意图回锚或邀约签约，但不能让局部句子取代整体进程判断。只有阶段、方向和边界已经明确时，才按需展示少量话术库原句；不得由 AI 改写成当前聊天的回复，不能替代阶段、方向、反馈分流或安全判断。收到新反馈后，必须重新计算阶段、方向、反馈门控和下一步，取消不再适用的预案，不机械延续上一轮原句。
+日常话题可以服务于激活、主题、调整、前提、恋爱意图回锚或邀约签约，但不能让局部句子取代整体进程判断。当前话术库原句功能关闭，不检索或展示逐字原句，也不以 AI 改写的可发送回复替代方向分析。收到新反馈后，必须重新计算阶段、方向、反馈门控和下一步。
 
 ## 正式线上流程方向与分流
 
@@ -110,13 +110,11 @@ conversation_ledger:
 
 回蓝是可跨阶段触发的操作者恢复闸门，不是聊天阶段、女性兴趣信号、回复方向或重新联系许可。命中后只提示暂停推进、收回投入，并设置 `phrase_retrieval: disabled`；不检索、展示、改写或生成任何回蓝话术。明确拒绝、停止、删除或“不要再联系”始终优先，回蓝不能覆盖或改写这些边界。
 
-## 话术库原句展示
+## 话术库原句功能状态
 
-用户明确要求直接回复但未选方向时，先用最少问题对齐其当下想达成的结果、希望语气或主要顾虑；需求明确后，由 AI 从已展示的 2-4 个方向中选择最匹配的一条并说明依据，但仍不生成具体回复。
+当前版本关闭话术库原句功能：不得检索、回读、引用或展示知识库原句，也不得以 AI 改写的可发送话术替代。只有用户明确要求重新启用后，才恢复原句调用流程；普通的方向咨询或“帮我回复”请求不等于重新启用。用户明确要求直接回复但未选方向时，仍先对齐其当下目标、希望语气或主要顾虑，再给出适配的行动方向，不生成具体回复。
 
-满足阶段、方向和边界门槛后，才可按需展示 1-2 条“话术库原句”。逐字保留原句，标明它来自真实社交知识库，并附来源文件、定位、场景、说话人和不适用条件。不能将其称为建议发送、唯一答案或当前聊天的改写。检索话术时先查人工候选清单和 Apple Notes 增补，再按需查完整去重索引；每次命中都要回读来源上下文、核对说话人并通过边界过滤。回蓝闸门命中时只输出状态、依据、暂停动作和重新判断条件，禁止展示推进性话术库原句。
-
-双方明确进入同类性/亲密话题后，相关露骨表达可以进入候选检索，但仍要核对成年和身份依据、持续互惠反馈、退出条件以及拒绝或不适信号。明确拒绝、停止、不适、欺骗、施压、强迫、羞辱和私密空间诱导不因性话题而放行。
+无论用户视图如何，停止、拒绝、不适、安全、隐私、成年、身份和同意边界都保持最高优先级。
 
 脚本的 `--sexual-context` 仅保留为上游兼容标记，不是四项核对的替代品；调用亲密路由时仍必须同时传入 `--explicit-same-topic`、`--age-identity-basis`、`--mutual-feedback` 和 `--no-refusal-or-discomfort`。
 
@@ -155,9 +153,10 @@ stage_navigation:
   scope: [analyze_chat, reply_request]
   evidence_layers: [observed, reported, inferred]
   max_stage_candidates: 3
-  required_outputs: [completed, current_problem, state_route, allowed_next, direction_purpose, feedback_gate, continue_switch_pause]
-  phrase_library_require: [stage_clear, direction_clear, narrative_purpose_clear, boundaries_satisfied]
-  output_policy: direction_first_no_ai_composed_reply; optionally_show_1_to_2_phrase_library_originals_after_context_review
+  required_outputs: [completed, current_problem, allowed_next, direction_purpose, feedback_gate, continue_switch_pause]
+  internal_fields: [task_route, state_route, primary_module, auxiliary_modules, read_plan, knowledge_trace, conversation_session, conversation_ledger]
+  phrase_library_require: inactive_while_disabled
+  output_policy: ordinary_view_hides_internal_details; direction_first_no_ai_composed_reply; phrase_library_originals_disabled
   on_new_feedback: reassess_stage_direction_feedback_gate_next_step
   terminology_policy: evidence_bound_not_template
   mechanical_continuation: forbidden
@@ -225,6 +224,6 @@ recontact_permitted: true | false | unknown
 reentry_evidence_required: true
 ```
 
-路由结果应同时保留 `task_route` 和 `state_route`，避免把“用户要生成回复”误写成“当前一定适合推拉”。`recovery` 路由固定将 `phrase_retrieval` 设为 `disabled`；`stop_boundary` 固定覆盖所有战术和自动重启。
+内部路由结果应同时保留 `task_route` 和 `state_route`，避免把“用户要生成回复”误写成“当前一定适合推拉”；这些 ID 不属于普通用户视图。当前普通运行将 `phrase_retrieval` 设为 `disabled`；`recovery` 路由固定禁用话术检索，`stop_boundary` 固定覆盖所有战术和自动重启。
 
 明确拒绝、删除或整体停止后，`recontact_permitted` 必须为 `false`；回蓝结束后也必须凭新的自愿、可观察互动证据重新判断，不按固定等待天数自动重启。
