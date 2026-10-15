@@ -14,10 +14,24 @@ from typing import Any
 SKILL_ROOT = Path(__file__).resolve().parents[1]
 ROUTE_INDEX = SKILL_ROOT / "runtime" / "route-index.json"
 NAVIGATION_INDEX = SKILL_ROOT / "runtime" / "navigation-index.json"
+RUNTIME_FEATURES = SKILL_ROOT / "runtime" / "runtime-features.json"
 
 SESSION_SCHEMA_VERSION = 1
 MAX_SESSION_TURNS = 12
 SUMMARY_COMPACT_BATCH = 6
+
+
+def phrase_library_originals_enabled() -> bool:
+    """Fail closed unless the feature flag is explicitly enabled."""
+    try:
+        features = json.loads(RUNTIME_FEATURES.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return False
+    return (
+        isinstance(features, dict)
+        and features.get("schema_version") == 1
+        and features.get("phrase_library_originals") is True
+    )
 
 GROUNDING_REQUIRED_TASKS = {
     "analyze_chat",
@@ -931,10 +945,16 @@ def route_request(
         auxiliary.append("analyze_chat")
     auxiliary = unique(auxiliary)[:2]
 
+    phrase_feature_enabled = phrase_library_originals_enabled()
     required_reads = unique(
         [str(item) for item in task.get("load", [])]
         + [str(item) for item in state.get("required_reads", [])]
     )
+    if not phrase_feature_enabled:
+        required_reads = [
+            path for path in required_reads
+            if path != "runtime/phrase-route-index.json"
+        ]
     deferred_reads = unique(
         [str(item) for item in task.get("defer", [])]
         + [str(item) for item in state.get("defer", [])]
@@ -961,6 +981,8 @@ def route_request(
         phrase_policy = "boundary_only"
     if narrative["status"] == "unclear" and phrase_policy == "enabled_after_context_review":
         phrase_policy = "disabled_until_narrative_purpose"
+    if not phrase_feature_enabled:
+        phrase_policy = "disabled_by_feature_flag"
 
     flags: list[str] = []
     if state_id == "stop_boundary":
@@ -1132,7 +1154,8 @@ def route_request(
         "direction_clear": direction_clear,
         "boundaries_satisfied": boundaries_satisfied,
         "allowed": bool(
-            flow_stage_clear
+            phrase_feature_enabled
+            and flow_stage_clear
             and narrative["status"] != "unclear"
             and direction_clear
             and boundaries_satisfied
@@ -1141,6 +1164,8 @@ def route_request(
         "display_label": "话术库原句",
         "max_items": 2,
         "ai_composed_reply": False,
+        "feature_enabled": phrase_feature_enabled,
+        "disabled_reason": None if phrase_feature_enabled else "disabled_by_feature_flag",
     }
 
     next_session_state, continuity_block = build_session_state(
@@ -1252,6 +1277,7 @@ def route_request(
             "recovery_gate": recovery_gate,
             "recovery_reason": recovery_reason,
             "phrase_retrieval": phrase_policy,
+            "phrase_library_originals_enabled": phrase_feature_enabled,
             "recontact_permitted": recontact_permitted,
             "reentry_evidence_required": True,
             "stage_navigation": stage_navigation,

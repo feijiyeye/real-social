@@ -29,8 +29,13 @@
   "files": [
     {
       "path": "runtime/runtime-entry.md",
-      "sha256": "1e7c40abc5f438b41a7cbf4dac8834ca12447d0b6ce2d4b06d0063c1f9e1000d",
-      "size": 7424
+      "sha256": "b78969fc1438a51e19fd3644a8d2778a084285d6687d438670bdac92825b2060",
+      "size": 8269
+    },
+    {
+      "path": "runtime/runtime-features.json",
+      "sha256": "76115480a485c0fd71f38cef6a92aaa51cd330ff7b179dc9f5aa9f43dea87f87",
+      "size": 63
     },
     {
       "path": "runtime/route-index.json",

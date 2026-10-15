@@ -29,6 +29,7 @@ REQUIRED = (
     "knowledge/04-系统/真实社交运行时路由设计.md",
     "knowledge/04-系统/真实社交运行时路由配置.json",
     "runtime/runtime-entry.md",
+    "runtime/runtime-features.json",
     "runtime/route-index.json",
     "runtime/navigation-index.json",
     "runtime/unit-index.json",
@@ -62,6 +63,7 @@ def read_json(path: Path, errors: list[str]) -> dict[str, object]:
 def validate_runtime(root: Path, errors: list[str]) -> None:
     runtime_root = root / "runtime"
     route_index = read_json(runtime_root / "route-index.json", errors)
+    runtime_features = read_json(runtime_root / "runtime-features.json", errors)
     navigation_index = read_json(runtime_root / "navigation-index.json", errors)
     unit_index = read_json(runtime_root / "unit-index.json", errors)
     phrase_index = read_json(runtime_root / "phrase-route-index.json", errors)
@@ -72,6 +74,13 @@ def validate_runtime(root: Path, errors: list[str]) -> None:
         errors.append("unit-index units must be a list")
         units = []
     unit_ids = {str(item.get("id")) for item in units if isinstance(item, dict)}
+    formal_ids = {
+        str(item.get("id"))
+        for item in units
+        if isinstance(item, dict)
+        and item.get("status") == "canonical"
+        and item.get("canonical") is True
+    }
     formal = [
         item for item in units
         if isinstance(item, dict)
@@ -81,6 +90,8 @@ def validate_runtime(root: Path, errors: list[str]) -> None:
     ]
     if not formal:
         errors.append("runtime unit-index must contain canonical K-20260826-001")
+    if "K-20260821-002" not in formal_ids:
+        errors.append("runtime unit-index must contain canonical K-20260821-002")
     actual_unit_count = len(units)
     actual_canonical_count = sum(
         1 for item in units
@@ -130,6 +141,10 @@ def validate_runtime(root: Path, errors: list[str]) -> None:
         errors.append("stop_boundary priority must exceed recovery priority")
     if recovery.get("phrase_retrieval") != "disabled":
         errors.append("recovery route must disable phrase retrieval")
+    if runtime_features.get("schema_version") != 1 or not isinstance(
+        runtime_features.get("phrase_library_originals"), bool
+    ):
+        errors.append("runtime-features must declare a boolean phrase_library_originals flag")
     if route_index.get("default_state_route") not in state_by_id:
         errors.append("route-index default_state_route is not defined")
 

@@ -3,11 +3,14 @@
 from __future__ import annotations
 
 import json
+import importlib.util
 import re
 import subprocess
 import sys
+import tempfile
 import unittest
 from pathlib import Path
+from unittest.mock import patch
 
 
 BUNDLE = Path(__file__).resolve().parents[1]
@@ -16,6 +19,7 @@ PHRASE_SCRIPT = BUNDLE / "scripts" / "search_phrases.py"
 ROUTE_INDEX = BUNDLE / "runtime" / "route-index.json"
 ROUTE_CONFIG = BUNDLE / "knowledge" / "04-系统" / "真实社交运行时路由配置.json"
 RUNTIME_ENTRY = BUNDLE / "runtime" / "runtime-entry.md"
+RUNTIME_FEATURES = BUNDLE / "runtime" / "runtime-features.json"
 
 
 def run_json(script: Path, *args: str) -> dict:
@@ -27,6 +31,15 @@ def run_json(script: Path, *args: str) -> dict:
         text=True,
     )
     return json.loads(result.stdout)
+
+
+def load_script_module(name: str, path: Path):
+    spec = importlib.util.spec_from_file_location(name, path)
+    if spec is None or spec.loader is None:
+        raise RuntimeError(f"could not load script module: {path}")
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    return module
 
 
 class RuntimeRoutingTests(unittest.TestCase):
@@ -54,12 +67,31 @@ class RuntimeRoutingTests(unittest.TestCase):
         ):
             self.assertIn(term, skill_text)
 
-    def test_phrase_library_originals_require_context_before_retrieval(self) -> None:
+    def test_ordinary_view_hides_diagnostics_and_debug_requires_explicit_request(self) -> None:
+        skill_text = (BUNDLE / "SKILL.md").read_text(encoding="utf-8")
+        self.assertIn("普通用户视图是默认视图", skill_text)
+        self.assertIn("只有用户明确要求查看测试、调试或检索详情时", skill_text)
+        self.assertIn("普通用户视图仍基于完整的必需检索作判断", skill_text)
+
+        output_format = skill_text.split("## 输出格式", 1)[1]
+        ordinary_items = output_format.split("检索回执", 1)[0]
+        self.assertIn("普通用户视图默认只输出", ordinary_items)
+        for diagnostic in (
+            "调用的知识单元",
+            "来源路径",
+            "完整回执",
+            "读取计划",
+            "测试执行结果",
+            "调试日志",
+        ):
+            self.assertNotIn(diagnostic, ordinary_items)
+
+    def test_phrase_library_originals_stay_disabled_across_chat_routes(self) -> None:
         no_request = run_json(ROUTE_SCRIPT, "--text", "分析这段聊天")
         self.assertEqual(no_request["task_route"]["id"], "analyze_chat")
         self.assertEqual(
             no_request["read_plan"]["phrase_retrieval"],
-            "disabled_until_reply_request",
+            "disabled_by_feature_flag",
         )
 
         no_context = run_json(
@@ -72,7 +104,7 @@ class RuntimeRoutingTests(unittest.TestCase):
         self.assertEqual(no_context["state_route"]["id"], "unknown_stage")
         self.assertEqual(
             no_context["read_plan"]["phrase_retrieval"],
-            "disabled_until_context",
+            "disabled_by_feature_flag",
         )
 
         ready_for_review = run_json(
@@ -95,8 +127,105 @@ class RuntimeRoutingTests(unittest.TestCase):
         self.assertEqual(ready_for_review["state_route"]["id"], "interest_push_pull")
         self.assertEqual(
             ready_for_review["read_plan"]["phrase_retrieval"],
-            "enabled_after_context_review",
+            "disabled_by_feature_flag",
         )
+
+    def test_phrase_feature_flag_fails_closed_without_loading_phrase_index(self) -> None:
+        settings = json.loads(RUNTIME_FEATURES.read_text(encoding="utf-8"))
+        self.assertFalse(settings["phrase_library_originals"])
+
+        search_module = load_script_module("real_social_search_phrases", PHRASE_SCRIPT)
+        with patch.object(search_module, "load_json") as load_index:
+            result = search_module.search("teasing_push_pull", "调侃")
+        load_index.assert_not_called()
+        self.assertEqual(result["retrieval_status"], "disabled_by_feature_flag")
+        self.assertEqual(result["matches"], [])
+
+        with tempfile.TemporaryDirectory() as temporary_directory:
+            missing_settings = Path(temporary_directory) / "missing.json"
+            with patch.object(search_module, "RUNTIME_FEATURES", missing_settings):
+                self.assertFalse(search_module.phrase_library_originals_enabled())
+                missing_settings.write_text("{invalid", encoding="utf-8")
+                self.assertFalse(search_module.phrase_library_originals_enabled())
+
+    def test_substantive_chat_requires_fresh_knowledge_grounding(self) -> None:
+        ungrounded = run_json(ROUTE_SCRIPT, "--text", "分析这段聊天")
+        self.assertEqual(
+            ungrounded["knowledge_grounding"]["retrieval_status"],
+            "not_provided",
+        )
+        self.assertEqual(
+            ungrounded["knowledge_grounding"]["answer_permission"],
+            "blocked_until_knowledge_trace",
+        )
+        self.assertTrue(ungrounded["knowledge_grounding"]["ai_only_answer_forbidden"])
+
+        grounded = run_json(
+            ROUTE_SCRIPT,
+            "--text", "分析这段聊天",
+            "--knowledge-trace-json",
+            json.dumps(
+                {
+                    "retrieval_status": "hit",
+                    "consulted_units": ["K-20260821-002", "K-20260826-001"],
+                    "claims_used": ["九步骤主流程", "新反馈重新判断"],
+                    "model_inference": ["当前阶段暂定未知"],
+                },
+                ensure_ascii=False,
+            ),
+        )
+        self.assertEqual(grounded["knowledge_grounding"]["retrieval_status"], "grounded")
+        self.assertEqual(
+            grounded["knowledge_grounding"]["answer_permission"],
+            "allowed_after_grounding",
+        )
+
+    def test_grounding_policy_is_published_in_runtime_index(self) -> None:
+        route_index = json.loads(ROUTE_INDEX.read_text(encoding="utf-8"))
+        policy = route_index["knowledge_grounding"]
+        self.assertTrue(policy["fresh_retrieval_each_turn"])
+        self.assertTrue(policy["block_on_missing_or_insufficient"])
+        self.assertEqual(policy["required_receipt"], "knowledge_trace")
+
+    def test_partial_knowledge_grounding_blocks_freeform_guidance(self) -> None:
+        result = run_json(
+            ROUTE_SCRIPT,
+            "--text", "分析这段聊天",
+            "--knowledge-trace-json",
+            json.dumps(
+                {
+                    "retrieval_status": "hit",
+                    "consulted_units": ["K-20260826-001"],
+                    "claims_used": ["反馈后重新判断"],
+                },
+                ensure_ascii=False,
+            ),
+        )
+        self.assertEqual(result["knowledge_grounding"]["retrieval_status"], "insufficient")
+        self.assertEqual(
+            result["knowledge_grounding"]["answer_permission"],
+            "blocked_until_grounded",
+        )
+        self.assertIn(
+            "knowledge/02-知识单元/K-20260821-002_JacksonFlow三阶段九步骤正式主流程.md",
+            result["knowledge_grounding"]["missing_reads"],
+        )
+
+    def test_phrase_feature_can_be_reenabled_by_explicit_setting(self) -> None:
+        search_module = load_script_module("real_social_search_enabled", PHRASE_SCRIPT)
+        with tempfile.TemporaryDirectory() as temporary_directory:
+            settings_path = Path(temporary_directory) / "runtime-features.json"
+            settings_path.write_text(
+                json.dumps({"schema_version": 1, "phrase_library_originals": True}),
+                encoding="utf-8",
+            )
+            with patch.object(search_module, "RUNTIME_FEATURES", settings_path):
+                self.assertTrue(search_module.phrase_library_originals_enabled())
+                result = search_module.search("teasing_push_pull", "", limit=1)
+        self.assertEqual(
+            result["retrieval_status"], "candidate_reference_after_context_review"
+        )
+        self.assertEqual(len(result["matches"]), 1)
 
     def test_new_feedback_recomputes_direction_instead_of_reusing_previous_push(self) -> None:
         positive = run_json(
@@ -141,77 +270,7 @@ class RuntimeRoutingTests(unittest.TestCase):
         self.assertEqual(result["primary_module"], "analyze_chat")
         self.assertEqual(
             result["runtime_fields"]["phrase_retrieval"],
-            "disabled_until_reply_request",
-        )
-
-    def test_substantive_chat_requires_fresh_knowledge_grounding(self) -> None:
-        ungrounded = run_json(ROUTE_SCRIPT, "--text", "分析这段聊天")
-        self.assertEqual(
-            ungrounded["knowledge_grounding"]["retrieval_status"],
-            "not_provided",
-        )
-        self.assertEqual(
-            ungrounded["knowledge_grounding"]["answer_permission"],
-            "blocked_until_knowledge_trace",
-        )
-        self.assertTrue(ungrounded["knowledge_grounding"]["ai_only_answer_forbidden"])
-
-        grounded = run_json(
-            ROUTE_SCRIPT,
-            "--text", "分析这段聊天",
-            "--knowledge-trace-json",
-            json.dumps(
-                {
-                    "retrieval_status": "hit",
-                    "consulted_units": ["K-20260821-002", "K-20260826-001"],
-                    "claims_used": ["九步骤主流程", "新反馈重新判断"],
-                    "model_inference": ["当前阶段暂定未知"],
-                },
-                ensure_ascii=False,
-            ),
-        )
-        self.assertEqual(
-            grounded["knowledge_grounding"]["retrieval_status"],
-            "grounded",
-        )
-        self.assertEqual(
-            grounded["knowledge_grounding"]["answer_permission"],
-            "allowed_after_grounding",
-        )
-        self.assertEqual(
-            grounded["knowledge_grounding"]["source_refs"],
-            [
-                "knowledge/02-知识单元/K-20260821-002_JacksonFlow三阶段九步骤正式主流程.md",
-                "knowledge/02-知识单元/K-20260826-001_真实社交线上流程推拉方向与回蓝闸门.md",
-            ],
-        )
-
-    def test_grounding_policy_is_published_in_runtime_index(self) -> None:
-        route_index = json.loads(ROUTE_INDEX.read_text(encoding="utf-8"))
-        policy = route_index["knowledge_grounding"]
-        self.assertTrue(policy["fresh_retrieval_each_turn"])
-        self.assertTrue(policy["block_on_missing_or_insufficient"])
-        self.assertEqual(policy["required_receipt"], "knowledge_trace")
-
-    def test_partial_knowledge_grounding_blocks_freeform_guidance(self) -> None:
-        result = run_json(
-            ROUTE_SCRIPT,
-            "--text", "分析这段聊天",
-            "--knowledge-trace-json",
-            json.dumps(
-                {
-                    "retrieval_status": "hit",
-                    "consulted_units": ["K-20260826-001"],
-                    "claims_used": ["反馈后重新判断"],
-                },
-                ensure_ascii=False,
-            ),
-        )
-        self.assertEqual(result["knowledge_grounding"]["retrieval_status"], "insufficient")
-        self.assertEqual(result["knowledge_grounding"]["answer_permission"], "blocked_until_grounded")
-        self.assertIn(
-            "knowledge/02-知识单元/K-20260821-002_JacksonFlow三阶段九步骤正式主流程.md",
-            result["knowledge_grounding"]["missing_reads"],
+            "disabled_by_feature_flag",
         )
 
     def test_window_continuity_carries_state_and_emits_block(self) -> None:
@@ -286,15 +345,14 @@ class RuntimeRoutingTests(unittest.TestCase):
         self.assertEqual(len(result["conversation_ledger"]["turns"]), 7)
 
         for turn in range(14, 20):
-            result = run_json(
-                ROUTE_SCRIPT,
+            args = [
                 "--text", f"聊天证据第 {turn} 轮",
                 "--subject-key", "same-chat",
                 "--evidence-id", f"e-{turn}",
-                "--session-state-json", json.dumps(state, ensure_ascii=False),
-            )
+            ]
+            args.extend(["--session-state-json", json.dumps(state, ensure_ascii=False)])
+            result = run_json(ROUTE_SCRIPT, *args)
             state = result["session_state"]
-        assert result is not None
         self.assertTrue(result["continuity"]["summary"]["compacted_this_turn"])
         self.assertEqual(result["continuity"]["summary"]["covered_turn_start"], 1)
         self.assertEqual(result["continuity"]["summary"]["covered_turn_end"], 12)
@@ -315,7 +373,7 @@ class RuntimeRoutingTests(unittest.TestCase):
         )
         self.assertEqual(result["state_route"]["id"], "stop_boundary")
         self.assertEqual(result["primary_module"], "stop_boundary")
-        self.assertEqual(result["runtime_fields"]["phrase_retrieval"], "boundary_only")
+        self.assertEqual(result["runtime_fields"]["phrase_retrieval"], "disabled_by_feature_flag")
         self.assertFalse(result["runtime_fields"]["recontact_permitted"])
 
     def test_block_and_hide_signals_are_stop_boundary(self) -> None:
@@ -339,18 +397,18 @@ class RuntimeRoutingTests(unittest.TestCase):
                 )
                 self.assertEqual(
                     result["runtime_fields"]["phrase_retrieval"],
-                    "disabled_until_verified",
+                    "disabled_by_feature_flag",
                 )
 
     def test_recovery_disables_phrase_retrieval(self) -> None:
         result = run_json(ROUTE_SCRIPT, "--text", "我很焦虑，忍不住追问")
         self.assertEqual(result["state_route"]["id"], "recovery")
         self.assertEqual(result["runtime_fields"]["recovery_gate"], "can_return_blue")
-        self.assertEqual(result["runtime_fields"]["phrase_retrieval"], "disabled")
+        self.assertEqual(result["runtime_fields"]["phrase_retrieval"], "disabled_by_feature_flag")
         self.assertFalse(result["runtime_fields"]["recontact_permitted"])
 
         search = run_json(PHRASE_SCRIPT, "--route", "recovery", "--query", "回蓝")
-        self.assertEqual(search["retrieval_status"], "disabled")
+        self.assertEqual(search["retrieval_status"], "disabled_by_feature_flag")
         self.assertEqual(search["matches"], [])
 
     def test_push_pull_route_exposes_conditional_combination_logic(self) -> None:
@@ -751,7 +809,7 @@ class RuntimeRoutingTests(unittest.TestCase):
         )
         self.assertEqual(
             result["runtime_fields"]["phrase_retrieval"],
-            "boundary_only",
+            "disabled_by_feature_flag",
         )
 
     def test_later_false_evaluation_keeps_normal_direction_selection(self) -> None:
@@ -889,7 +947,7 @@ class RuntimeRoutingTests(unittest.TestCase):
         )
         self.assertEqual(
             discomfort["runtime_fields"]["phrase_retrieval"],
-            "boundary_only",
+            "disabled_by_feature_flag",
         )
 
         low_response = run_json(
@@ -945,7 +1003,7 @@ class RuntimeRoutingTests(unittest.TestCase):
             "她说不想再聊这个话题，但推拉还要继续吗",
         )
         self.assertEqual(result["state_route"]["id"], "stop_boundary")
-        self.assertEqual(result["runtime_fields"]["phrase_retrieval"], "boundary_only")
+        self.assertEqual(result["runtime_fields"]["phrase_retrieval"], "disabled_by_feature_flag")
         self.assertFalse(result["runtime_fields"]["recontact_permitted"])
 
     def test_discomfort_or_topic_stop_overrides_push_pull(self) -> None:
@@ -958,7 +1016,7 @@ class RuntimeRoutingTests(unittest.TestCase):
             with self.subTest(text=text):
                 result = run_json(ROUTE_SCRIPT, "--text", text)
                 self.assertEqual(result["state_route"]["id"], "stop_boundary")
-                self.assertEqual(result["runtime_fields"]["phrase_retrieval"], "boundary_only")
+                self.assertEqual(result["runtime_fields"]["phrase_retrieval"], "disabled_by_feature_flag")
                 self.assertEqual(result["runtime_fields"]["push_back_eligible"], False)
 
     def test_natural_counter_push_context_routes_to_interest(self) -> None:
@@ -972,62 +1030,61 @@ class RuntimeRoutingTests(unittest.TestCase):
         self.assertEqual(result["runtime_fields"]["post_push_check"], "required")
 
     def test_intimacy_requires_all_context_flags(self) -> None:
-        blocked = run_json(
-            PHRASE_SCRIPT,
-            "--route",
-            "intimacy_conditional",
-            "--query",
-            "暧昧",
-            "--explicit-same-topic",
-            "--age-identity-basis",
-            "--mutual-feedback",
-        )
+        search_module = load_script_module("real_social_search_intimacy", PHRASE_SCRIPT)
+        with tempfile.TemporaryDirectory() as temporary_directory:
+            settings_path = Path(temporary_directory) / "runtime-features.json"
+            settings_path.write_text(
+                json.dumps({"schema_version": 1, "phrase_library_originals": True}),
+                encoding="utf-8",
+            )
+            with patch.object(search_module, "RUNTIME_FEATURES", settings_path):
+                blocked = search_module.search(
+                    "intimacy_conditional",
+                    "暧昧",
+                    explicit_same_topic=True,
+                    age_identity_basis=True,
+                    mutual_feedback=True,
+                )
+                allowed = search_module.search(
+                    "intimacy_conditional",
+                    "暧昧",
+                    explicit_same_topic=True,
+                    age_identity_basis=True,
+                    mutual_feedback=True,
+                    no_refusal_or_discomfort=True,
+                )
+                shortcut = search_module.search(
+                    "intimacy_conditional", "暧昧", sexual_context=True
+                )
+
         self.assertEqual(blocked["retrieval_status"], "blocked_until_context_verified")
         self.assertEqual(blocked["matches"], [])
-
-        allowed = run_json(
-            PHRASE_SCRIPT,
-            "--route",
-            "intimacy_conditional",
-            "--query",
-            "暧昧",
-            "--explicit-same-topic",
-            "--age-identity-basis",
-            "--mutual-feedback",
-            "--no-refusal-or-discomfort",
-        )
         self.assertEqual(
             allowed["retrieval_status"],
             "candidate_reference_after_context_review",
         )
         self.assertTrue(allowed["matches"])
-
-        shortcut = run_json(
-            PHRASE_SCRIPT,
-            "--route",
-            "intimacy_conditional",
-            "--query",
-            "暧昧",
-            "--sexual-context",
-        )
         self.assertEqual(shortcut["retrieval_status"], "blocked_until_context_verified")
 
-    def test_full_index_is_source_only_audit(self) -> None:
-        result = run_json(
-            PHRASE_SCRIPT,
-            "--route",
-            "teasing_push_pull",
-            "--query",
-            "调侃",
-            "--full-index",
-        )
+    def test_public_full_index_request_respects_local_only_scope(self) -> None:
+        search_module = load_script_module("real_social_search_full_index", PHRASE_SCRIPT)
+        with tempfile.TemporaryDirectory() as temporary_directory:
+            settings_path = Path(temporary_directory) / "runtime-features.json"
+            settings_path.write_text(
+                json.dumps({"schema_version": 1, "phrase_library_originals": True}),
+                encoding="utf-8",
+            )
+            with patch.object(search_module, "RUNTIME_FEATURES", settings_path):
+                result = search_module.search(
+                    "teasing_push_pull", "调侃", full_index=True
+                )
         self.assertEqual(
             result["retrieval_status"],
             "candidate_reference_after_context_review",
         )
         self.assertEqual(result["source"], "candidate_index")
         self.assertEqual(result["sendability"], "requires_context_review")
-        self.assertTrue(any("公开包" in warning for warning in result["warnings"]))
+        self.assertTrue(any("未随公开包发布" in warning for warning in result["warnings"]))
 
     def test_all_shards_and_counts_are_consistent(self) -> None:
         phrase_index = json.loads(
@@ -1206,7 +1263,7 @@ class RuntimeRoutingTests(unittest.TestCase):
         self.assertEqual(unclear["narrative_purpose"]["status"], "unclear")
         self.assertIn("展示自己的真实价值", unclear["narrative_purpose"]["ask_user"])
         self.assertFalse(unclear["phrase_library_gate"]["allowed"])
-        self.assertEqual(unclear["read_plan"]["phrase_retrieval"], "disabled_until_narrative_purpose")
+        self.assertEqual(unclear["read_plan"]["phrase_retrieval"], "disabled_by_feature_flag")
 
         for purpose in ("value_display", "logistics_negotiation"):
             with self.subTest(purpose=purpose):

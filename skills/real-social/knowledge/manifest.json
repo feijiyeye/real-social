@@ -21,11 +21,11 @@
     "runtime/runtime-manifest.json"
   ],
   "counts": {
-    "files": 99,
+    "files": 100,
     "knowledge_units": 50,
     "raw_sources": 0,
     "external_sources": 0,
-    "runtime_files": 16
+    "runtime_files": 17
   },
   "files": [
     {
@@ -607,14 +607,20 @@
     {
       "source_label": "runtime_generated",
       "bundle_path": "runtime/runtime-entry.md",
-      "sha256": "1e7c40abc5f438b41a7cbf4dac8834ca12447d0b6ce2d4b06d0063c1f9e1000d",
-      "size": "7424"
+      "sha256": "b78969fc1438a51e19fd3644a8d2778a084285d6687d438670bdac92825b2060",
+      "size": "8269"
+    },
+    {
+      "source_label": "runtime_generated",
+      "bundle_path": "runtime/runtime-features.json",
+      "sha256": "76115480a485c0fd71f38cef6a92aaa51cd330ff7b179dc9f5aa9f43dea87f87",
+      "size": "63"
     },
     {
       "source_label": "runtime_generated",
       "bundle_path": "runtime/runtime-manifest.json",
-      "sha256": "8b47ea1418e33d58c1929f7377764a795f37c1cdba103b42fa79dd5bbe615ab2",
-      "size": "3597"
+      "sha256": "127a277335dc03ccfb717ad76ef9d8e20be42cf1bf96a120f77b73f8cf3711ac",
+      "size": "3758"
     },
     {
       "source_label": "runtime_generated",

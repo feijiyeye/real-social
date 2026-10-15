@@ -19,9 +19,10 @@
 - `runtime/navigation-index.json`：任务完成后的单步导航规则。
 - `runtime/unit-index.json`：知识单元的紧凑元数据索引，不复制正文。
 - `runtime/phrase-route-index.json`：候选话术入口与路由分片；完整索引仅按需读取。
+- `runtime/runtime-features.json`：运行时功能开关；`phrase_library_originals` 当前关闭，配置缺失或无效时按关闭处理。
 - `runtime/runtime-manifest.json`：运行时文件的独立哈希和计数。
 
-聊天分析和回复默认遵循阶段导航优先契约：先区分 `observed`、`reported`、`inferred` 并输出阶段、方向、状态路由和反馈门控；默认不生成 AI 改写回复，只有阶段、方向和边界满足时才按需展示 1-2 条逐字保留的“话术库原句”，并附来源、场景和限制。新反馈到达后重新判断。该契约由 `runtime/route-index.json` 的 `stage_navigation` 元数据发布，不改变候选单元状态。
+聊天分析和回复默认遵循阶段导航优先契约：内部区分 `observed`、`reported`、`inferred`，保留阶段、状态路由和反馈门槛；普通用户视图只用自然语言呈现当前阶段及简要依据、当前问题、可选方向、必要的话题承接和下一步条件。底层知识检索照常执行，检索回执和机器诊断只在用户明确要求时展示。默认不生成 AI 改写回复；话术库原句功能关闭期间不检索或展示库内原句。新反馈到达后重新判断。该契约由 `runtime/route-index.json` 的 `stage_navigation` 元数据发布，不改变候选单元状态。
 
 ## 路径解析
 

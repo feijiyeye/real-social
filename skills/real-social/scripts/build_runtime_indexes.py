@@ -479,16 +479,12 @@ def render_runtime_entry(config: dict[str, Any]) -> str:
         f"{int(route.get('priority', 0)):>3}  `{route.get('id', '')}`：{route.get('label', '')}" for route in state_routes
     )
     task_lines = "\n".join(
-        f"- `{route.get('id', '')}`：{route.get('label', '')}"
+        f"- `{route.get('id', '')}`：{('回复需求对齐与行动方向' if route.get('id') == 'reply_request' else route.get('label', ''))}"
         for route in config.get("task_routes", [])
         if isinstance(route, dict)
     )
     stage_navigation = config.get("stage_navigation", {})
-    required_outputs = stage_navigation.get("required_outputs", []) if isinstance(stage_navigation, dict) else []
-    phrase_library_require = stage_navigation.get("phrase_library_require", []) if isinstance(stage_navigation, dict) else []
     evidence_layers = stage_navigation.get("evidence_layers", []) if isinstance(stage_navigation, dict) else []
-    required_output_text = "、".join(f"`{item}`" for item in required_outputs)
-    phrase_library_require_text = "、".join(f"`{item}`" for item in phrase_library_require)
     evidence_layers_text = "、".join(f"`{item}`" for item in evidence_layers)
     knowledge_grounding = config.get("knowledge_grounding", {})
     grounding_tasks = knowledge_grounding.get("required_tasks", []) if isinstance(knowledge_grounding, dict) else []
@@ -499,19 +495,22 @@ def render_runtime_entry(config: dict[str, Any]) -> str:
     flow_text = " → ".join(str(item.get("label", "")) for item in flow_steps if isinstance(item, dict))
     return f"""# 真实社交运行时入口
 
-这是 `real-social` 的轻量启动层。先读本文件和 `route-index.json`，再根据当前输入只选择一个主模块；不要在普通聊天首轮加载完整 `manifest`、续接摘要或 2867 条话术索引。
+这是 `real-social` 的轻量启动层。先读本文件、`route-index.json`、`unit-index.json` 和 `runtime-features.json`，再根据当前输入只选择一个主模块；不要在普通聊天首轮加载完整 `manifest`、续接摘要或话术索引。
 
 ## 调用顺序
 
 ```text
 任务模式识别 -> 硬边界/状态识别 -> 选择一个主模块
--> 读取正式单元与小型索引 -> 按需召回案例/话术
--> 输出证据、阶段、方向、状态字段与下一步
+-> 读取本轮必需的正式单元与小型索引
+-> 内部完成证据、阶段、方向与状态判断
+-> 默认输出普通用户视图；明确请求诊断时才输出必要后台信息
 ```
 
 ## 阶段导航优先
 
-聊天分析和回复任务默认先做阶段导航，再决定是否展示话术库原句。新聊天证据先区分 {evidence_layers_text}，并输出 {required_output_text}；术语必须受证据约束，不能直接当话术模板。只有阶段、方向和边界明确（{phrase_library_require_text}）时，才按需展示最多 1-2 条逐字保留的“话术库原句”，不由 AI 生成或改写具体回复。收到新反馈后重新判断阶段、方向、反馈门控和下一步，不机械延续上一轮原句。
+聊天分析和回复任务默认先做阶段导航。新聊天证据在内部区分 {evidence_layers_text}，更新已完成步骤、当前问题、阶段判断、计数、状态路由、允许方向、方向目的、反馈门槛及继续/切换/暂停条件。普通用户视图只用自然语言呈现与判断和选择有关的结论，不显示路由字段、运行时字段或检索诊断。收到新反馈后重新判断阶段、方向、反馈门控和下一步。
+
+视图规则：默认使用普通用户视图，只显示当前阶段及简要聊天依据、需要处理的问题、可选方向和必要的话题承接思路、待观察反馈及继续/切换/暂停条件。只有用户明确要求测试、调试或检索详情时才进入诊断视图，并按请求展示必要信息。普通视图不显示文件名/路径、知识单元 ID、原始检索结果、完整回执、读取计划、路由 ID、内部字段、测试结果或日志。底层知识检索与用户展示分离：隐藏回执不代表省略本轮必需检索。
 
 唯一主流程：{flow_text}。先由模型根据聊天判断；判断不出时列出九步并直接询问用户自认为在哪一步。假性评估维护赋格计数器，标准参考 5–6、最低线 5；真性评估维护女方真性评估计数器，标准参考 4–5、最低线 4。达到下限只表示可以建议转段，用户选择激进或稳妥节奏时按其节奏调整，安全与停止边界始终优先。
 
@@ -519,7 +518,7 @@ def render_runtime_entry(config: dict[str, Any]) -> str:
 
 ## 知识库锚定
 
-以下任务每一轮都必须重新检索知识库并生成 `{grounding_receipt}`：{grounding_tasks_text}。上一轮的会话状态、滚动摘要或模型记忆不算本轮检索回执。缺少回执、只命中部分必读单元、检索失败、明确无命中或没有记录实际采用的知识库主张时，`knowledge_grounding.answer_permission` 必须阻断自由发挥，不得仅凭模型能力给出阶段方向或行动建议；只能说明缺口、请求补充检索结果，或处理更高优先级的停止、安全、拒绝和真实顾虑。知识库主张与本轮 `model_inference` 必须分开标注，不能伪造命中或引用。
+以下任务每一轮都必须重新检索知识库并在内部生成 `{grounding_receipt}`：{grounding_tasks_text}。上一轮的会话状态、滚动摘要或模型记忆不算本轮检索回执。缺少回执、只命中部分必读单元、检索失败、明确无命中或没有记录实际采用的知识库主张时，`knowledge_grounding.answer_permission` 必须阻断自由发挥，不得仅凭模型能力给出阶段方向或行动建议；普通视图用自然语言说明判断仍缺少依据，不输出后台缺口字段。知识库主张与本轮 `model_inference` 必须在内部区分，不能伪造命中或引用。
 
 任务路由：
 
@@ -541,14 +540,16 @@ def render_runtime_entry(config: dict[str, Any]) -> str:
 ## 条件读取
 
 - `runtime/navigation-index.json`：任务完成或收到新反馈时；
-- `runtime/phrase-route-index.json`：方向已确定且满足话术库原句展示门槛时；
+- `runtime/runtime-features.json`：确定话术库原句功能当前是否启用；缺失或无效时按关闭处理；
+- `runtime/phrase-route-index.json`：仅在用户明确重新启用原句功能且其他上下文与边界条件满足后读取；
 - `knowledge/02-知识单元/`：只打开命中路由的少量单元；
-- `runtime/phrase-routes/*.json`：只在方向已确定且满足话术库原句展示门槛时读取公开候选；原始来源回读仅在本地完整版进行；
+- `runtime/phrase-routes/*.json`：仅在用户明确重新启用原句功能且其他条件满足后读取公开候选；
+- `knowledge/01-原始资料/`、`knowledge/external-sources/`：仅在本地完整版按需读取，公开包不包含这些资料；
 - `knowledge/manifest.json`、续接摘要和完整索引：仅来源审计、入库、维护或构建校验时。
 
-## 话术库原句展示
+## 话术库原句功能开关
 
-话术库原句来自真实社交知识库的原版材料，逐字保留，并附来源、定位、场景、说话人和不适用条件。它们不是 AI 代写回复、建议发送内容、效果保证或 canonical 规则；找不到合适条目时不自行补写。
+`runtime/runtime-features.json` 的 `phrase_library_originals` 默认关闭。关闭期间，不调用原句搜索脚本，不读取话术路由索引来寻找原句，也不引用或展示库内逐字原句；不得自动生成 AI 改写的可发送话术作为替代。阶段判断仍须检索本轮必需的正式知识单元和规则。只有用户明确要求重新启用后才修改开关；明确要求某一来源时，只按需提供该来源信息，不因此自动启用原句功能。
 
 ## 硬边界
 
@@ -569,8 +570,9 @@ def render_runtime_entry(config: dict[str, Any]) -> str:
 
 ```text
 python3 scripts/route_request.py --text "用户当前输入"
-python3 scripts/search_phrases.py --route <route_id> --query "对方原消息" --limit 3
 ```
+
+仅在用户明确重新启用原句功能、且其他上下文与边界门槛满足后，才调用 `scripts/search_phrases.py`。
 
 索引是从 Dragon 主库派生的运行资产，不是新的知识权威。完整规则见 `knowledge/04-系统/真实社交运行时路由设计.md`。
 """
@@ -621,6 +623,9 @@ def build_indexes(skill_root: Path, config_path: Path | None = None) -> list[Pat
         shard_files.append(shard_path)
 
     generated_files = [runtime_root / name for name in payloads] + shard_files
+    feature_config = runtime_root / "runtime-features.json"
+    if feature_config.is_file():
+        generated_files.append(feature_config)
     runtime_manifest = {
         "schema_version": 1,
         "generated_at": now_iso(),

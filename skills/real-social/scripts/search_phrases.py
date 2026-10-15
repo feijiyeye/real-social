@@ -12,6 +12,7 @@ from typing import Any
 
 SKILL_ROOT = Path(__file__).resolve().parents[1]
 PHRASE_INDEX = SKILL_ROOT / "runtime" / "phrase-route-index.json"
+RUNTIME_FEATURES = SKILL_ROOT / "runtime" / "runtime-features.json"
 
 STATE_ONLY_ROUTES = {
     "recovery": {
@@ -43,6 +44,19 @@ def load_json(path: Path) -> dict[str, Any]:
 
 def normalize(text: str) -> str:
     return re.sub(r"\s+", "", text or "").lower()
+
+
+def phrase_library_originals_enabled() -> bool:
+    """Fail closed unless the feature flag is explicitly enabled."""
+    try:
+        features = json.loads(RUNTIME_FEATURES.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return False
+    return (
+        isinstance(features, dict)
+        and features.get("schema_version") == 1
+        and features.get("phrase_library_originals") is True
+    )
 
 
 def terms(text: str) -> set[str]:
@@ -136,6 +150,14 @@ def load_full_entries(route: dict[str, Any]) -> list[dict[str, Any]]:
 
 
 def search(route_id: str, query: str, limit: int = 3, stage: str | None = None, direction: str | None = None, speaker: str | None = None, full_index: bool = False, include_boundary: bool = False, sexual_context: bool = False, explicit_same_topic: bool = False, age_identity_basis: bool = False, mutual_feedback: bool = False, no_refusal_or_discomfort: bool = False) -> dict[str, Any]:
+    if not phrase_library_originals_enabled():
+        return {
+            "schema_version": 1,
+            "route": route_id,
+            "retrieval_status": "disabled_by_feature_flag",
+            "matches": [],
+            "reason": "话术库原句功能当前关闭；未读取话术路由索引",
+        }
     data = load_json(PHRASE_INDEX)
     if route_id in STATE_ONLY_ROUTES:
         state_result = STATE_ONLY_ROUTES[route_id]
